@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header svg {
+    height: 50px;
+    fill: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+header a {
+    margin-left: 434.5px;
+    margin-right: 434.5px;
+    font-size: 16px;
+    width: 93px;
+    height: 50px;
+}
