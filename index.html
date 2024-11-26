@@ -1,224 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ubisoft</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .container,
-        .body {
-            position: relative;
-            height: 100%;
-        }
-        
-        .body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .body {
-            background: #000;
-            color: #000;
-        }
-        
-        .swiper {
-            width: 100%;
-            height: 300px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .swiper-slide {
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .mySwiper2 {
-            height: 80%;
-            width: 100%;
-        }
-        
-        .mySwiper {
-            height: 20%;
-            box-sizing: border-box;
-            padding: 10px 0;
-        }
-        
-        .mySwiper .swiper-slide {
-            width: 25%;
-            height: 100%;
-            opacity: 0.4;
-        }
-        
-        .mySwiper .swiper-slide-thumb-active {
-            opacity: 1;
-        }
-        
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+      .container1,
+      .body {
+        position: relative;
+
+        height: 100%;
+      }
+
+      .body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+      } */
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .body {
+        background: transparent;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        /* width: 220px;
+        height: 250px; */
+        display: flex;
+        justify-content: center;
+        min-height: 1px;
+        align-items: flex-end;
+        line-height: 24px;
+        background: transparent;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+
+        /* width: 220px;
+        height: 250px; */
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <!-- header -->
-        <header class="header">
-            <button class="menu"><i class="fa-solid fa-ellipsis-vertical"></i></button>
-            <a href="">
-                <svg role="img" class="icon icon-ubisoft-logo-desktop" xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
-          <title id="logo-desktop-title">Ubisoft</title>
-          <path class="st0"
-            d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
-          </path>
-          <path class="st0"
-            d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z">
-          </path>
-        </svg>
-            </a>
-            <button class="user"><i class="fa-solid fa-user"></i></button>
-        </header>
-        <!-- banner -->
-        <div class="banner">
-            <p>Get 25% off Star Wars Outlaws during our Black Friday Sale!</p>
-            <button class="btn">shop now</button>
-        </div>
-        <!-- swiper -->
-        <div class="body">
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+  <body class="bg-red-500">
+    <div class="container1 w-full">
+      <!-- header -->
+      <header class="header w-full">
+        <button class="menu">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <a href="">
+          <svg
+            role="img"
+            class="icon icon-ubisoft-logo-desktop"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            aria-labelledby="logo-desktop-title"
+            viewBox="0 0 99.2 31.6"
+          >
+            <title id="logo-desktop-title">Ubisoft</title>
+            <path
+              class="st0"
+              d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z"
+            ></path>
+            <path
+              class="st0"
+              d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z"
+            ></path>
+          </svg>
+        </a>
+        <button class="user"><i class="fa-solid fa-user"></i></button>
+      </header>
+      <!-- banner -->
+      <div class="banner w-full">
+        <p>Get 25% off Star Wars Outlaws during our Black Friday Sale!</p>
+        <button class="btn">shop now</button>
+      </div>
+      <!-- swiper -->
+      <div class="body w-full">
+        <div
+          style="
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
+          "
+          class="swiper mySwiper2"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
             </div>
-            <div thumbsSlider="" class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                    </div>
-                </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
             </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="images/iconImages/ridersrepublicicon.png"
+                  class="w-full"
+                />
+                <span
+                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
+                  >riders republic</span
+                >
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/division2icon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/skullsndbonesicon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/rainbowsixsiegeicon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/ubisofticon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/starwarsoutlawsicon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/xdefianticon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/thecrewmotorfesticon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/justdanceicon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/assasincreedshadowsicon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/forhonoricon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/assasincreedsyndicateicon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/princeofpersiaicon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/battlecoreicon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/iconImages/avataricon.png" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- Join now section -->
+      <section
+        class="join_now w-full relative h-[380px] bg-[url('/images/ubisoft+wallpaper.jpg')] bg-cover bg-center"
+      >
+        <img
+          src="images/ubisoft+.png"
+          alt=""
+          class="absolute top-0 left-0 w-[150px] h-[51.1094px]"
+        />
 
+        <div
+          class="content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
+        >
+          <h2
+            class="text-[32px] font-[700] leading-[36px] duration-[1.2s] transition-all delay-[0.2s] text-white text-center mt-[10px] mb-[5px] mx-[30px] transform custom-ease custom-matrix w-[667px]"
+          >
+            Get the XDefiant Battle Pass with Ubisoft+!
+          </h2>
+          <p
+            class="text-[18px] font-[500] leading-[26px] duration-[1.2s] transition-all delay-[0.2s] custom-ease transform custom-matrix my-[20px] mx-[10px] text-white text-center ms-[10px] me-[10px]"
+          >
+            Unlock access to new rewards and dive right into the action.
+          </p>
+          <button
+            class="bg-[#d80388] w-[167.531px] h-[54px] tracking-[1.6px] leading-[15px] m-[10px] text-[15px] font-[700] max-w-[300px] min-w-[100px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer"
+          >
+            join now
+          </button>
+        </div>
+      </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            loop: true,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            thumbs: {
-                swiper: swiper,
-            },
-            autoplay: {
-                delay: 10000,
-                disableOnInteraction: false,
-            },
-        });
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false,
+        },
+      });
     </script>
 
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
