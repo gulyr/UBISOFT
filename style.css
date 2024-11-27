@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Ubisoft Sans";
-  src: url("fonts/UbisoftSansRegular/Ubisoft-Sans-Regular.ttf")
-    format("truetype");
+  font-family: 'Ubisoft Sans';
+  src: url('fonts/UbisoftSansRegular/Ubisoft-Sans-Regular.ttf')
+    format('truetype');
 }
 @font-face {
-  font-family: "Ubisoft Sans Bold";
-  src: url("fonts/UbisoftSansBold/Ubisoft-Sans-Bold") format("truetype");
+  font-family: 'Ubisoft Sans Bold';
+  src: url('fonts/UbisoftSansBold/Ubisoft-Sans-Bold') format('truetype');
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ubisoft Sans", sans-serif;
+  font-family: 'Ubisoft Sans', sans-serif;
 }
 
 /* header */
@@ -42,4 +42,12 @@ header a {
   font-size: 16px;
   width: 93px;
   height: 50px;
+}
+.ubisoft_connect button {
+  touch-action: manipulation;
+  transition-behavior: normal normal;
+  transition-property: background-color border;
+  transition-timing-function: ease ease;
+  transition-duration: 0.3s 0.3s;
+  transition-delay: 0s 0s;
 }
