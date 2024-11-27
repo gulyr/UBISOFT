@@ -45,9 +45,17 @@ header a {
 }
 .ubisoft_connect button {
   touch-action: manipulation;
-  transition-behavior: normal normal;
+  /* transition-behavior: normal normal; */
   transition-property: background-color border;
   transition-timing-function: ease ease;
   transition-duration: 0.3s 0.3s;
   transition-delay: 0s 0s;
+}
+.ubisoft_channels p {
+  transform: matrix(1, 0, 0, 1, 0, -7.3125);
+}
+.ubisoft_channels::before {
+  content: '';
+  display: table;
+  clear: both;
 }
