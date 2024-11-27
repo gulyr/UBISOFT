@@ -35,6 +35,13 @@ header svg {
   cursor: pointer;
   overflow: hidden;
 }
+footer svg {
+  width: 122px;
+  height: 39px;
+  fill: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
 
 header a {
   margin-left: 434.5px;
