@@ -12,6 +12,9 @@ module.exports = {
       transform: {
         "custom-matrix-2": "matrix(1.5, 0.5, 0.5, 1.5, 20, 20)",
       },
+      gridTemplateColumns: {
+        custom1: "664.5px 664.5px",
+      },
     },
   },
   plugins: [],
