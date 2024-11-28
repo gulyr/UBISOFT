@@ -6,6 +6,7 @@
 @font-face {
   font-family: "Ubisoft Sans Bold";
   src: url("fonts/UbisoftSansBold/Ubisoft-Sans-Bold") format("truetype");
+  font-style: normal;
 }
 * {
   margin: 0;

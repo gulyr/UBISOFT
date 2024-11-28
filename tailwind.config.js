@@ -15,6 +15,9 @@ module.exports = {
       gridTemplateColumns: {
         custom1: "664.5px 664.5px",
       },
+      fontFamily: {
+        "ubisoft-bold": ["Ubisoft Sans Bold", "sans-serif"],
+      },
     },
   },
   plugins: [],
