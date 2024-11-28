@@ -1,1238 +1,863 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ubisoft</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-    />
 
-    <link href="src/output.css" rel="stylesheet" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .container1,
-      .body {
-        position: relative;
-        height: 100%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubisoft</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
 
-      .body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
+  <link href="src/output.css" rel="stylesheet" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .container1,
+    .body {
+      position: relative;
+      height: 100%;
+    }
 
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    .body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
-      .body {
-        background: transparent;
-      }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
-      .swiper {
-        width: 100%;
-        height: 300px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-      .swiper-slide {
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 1px;
-        align-items: center;
-        line-height: 24px;
-        background: transparent;
-      }
+    .body {
+      background: transparent;
+    }
 
-      .mySwiper2 {
-        height: 80%;
-        width: 100%;
-      }
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .mySwiper {
-        height: 20%;
-        box-sizing: border-box;
-        padding: 10px 0;
-      }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 1px;
+      align-items: center;
+      line-height: 24px;
+      background: transparent;
+    }
 
-      .mySwiper .swiper-slide {
-        width: 25%;
-        height: 100%;
-        opacity: 0.4;
-        /* width: 220px;
+    .mySwiper2 {
+      height: 80%;
+      width: 100%;
+    }
+
+    .mySwiper {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .mySwiper .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+      /* width: 220px;
         height: 250px; */
-      }
+    }
 
-      .mySwiper .swiper-slide-thumb-active {
-        opacity: 1;
-      }
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-      /* swiper-3 */
+    /* swiper-3 */
 
-      .mySwiper3 {
-        width: 100%;
-        height: 100%;
-      }
+    .mySwiper3 {
+      width: 100%;
+      height: 100%;
+    }
 
-      .mySwiper3.swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .mySwiper3.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
-  </head>
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
 
-  <body class="">
-    <div class="container1 w-full flex flex-col">
-      <!-- header -->
-      <header class="header w-full fixed top-0 left-0 z-10">
-        <button class="menu">
-          <i class="fa-solid fa-ellipsis-vertical"></i>
-        </button>
-        <a href="">
-          <svg
-            role="img"
-            class="icon icon-ubisoft-logo-desktop"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            aria-labelledby="logo-desktop-title"
-            viewBox="0 0 99.2 31.6"
-          >
-            <title id="logo-desktop-title">Ubisoft</title>
-            <path
-              class="st0"
-              d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z"
-            ></path>
-            <path
-              class="st0"
-              d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z"
-            ></path>
-          </svg>
-        </a>
-        <button class="user"><i class="fa-solid fa-user"></i></button>
-      </header>
-      <!-- banner -->
-      <div class="banner w-full">
-        <p>Get 25% off Star Wars Outlaws during our Black Friday Sale!</p>
-        <button class="btn">shop now</button>
-      </div>
-      <!-- swiper -->
-      <div class="body w-full">
-        <div
-          style="
+<body class="">
+  <div class="container1 w-full flex flex-col">
+    <!-- header -->
+    <header class="header w-full fixed top-0 left-0 z-10">
+      <button class="menu">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+      <a href="">
+        <svg role="img" class="icon icon-ubisoft-logo-desktop" xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title"
+          viewBox="0 0 99.2 31.6">
+          <title id="logo-desktop-title">Ubisoft</title>
+          <path class="st0"
+            d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
+          </path>
+          <path class="st0"
+            d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z">
+          </path>
+        </svg>
+      </a>
+      <button class="user"><i class="fa-solid fa-user"></i></button>
+    </header>
+    <!-- banner -->
+    <div class="banner w-full">
+      <p>Get 25% off Star Wars Outlaws during our Black Friday Sale!</p>
+      <button class="btn">shop now</button>
+    </div>
+    <!-- swiper -->
+    <div class="body w-full">
+      <div style="
             --swiper-navigation-color: #fff;
             --swiper-pagination-color: #fff;
-          "
-          class="swiper mySwiper2 bg-slate-400"
-        >
-          <div class="swiper-wrapper relative">
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-            </div>
+          " class="swiper mySwiper2 bg-slate-400">
+        <div class="swiper-wrapper relative">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" loading="lazy" alt="Slide 1 image" />
           </div>
-          <div class="swiper-button-next absolute top-[85%] text-black"></div>
-          <div class="swiper-button-prev absolute top-[85%] text-black"></div>
-          <div thumbsSlider="" class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/ridersrepublicicon.png"
-                  class="w-full"
-                />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >riders republic</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/division2icon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >the division 2</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/skullsndbonesicon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >skull and bones</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/rainbowsixsiegeicon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >rainbow six siege</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/ubisofticon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >ubisoft store</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/starwarsoutlawsicon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >star wars outlaws</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/xdefianticon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >xdefiant</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/thecrewmotorfesticon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >the crew motorfest</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/justdanceicon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >just dance 2025 edition</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/assasincreedshadowsicon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >assassin's creed shadows</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/forhonoricon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >for honor</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/assasincreedsyndicateicon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >assassin's creed syndicate</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/princeofpersiaicon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >prince of persia</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/battlecoreicon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >battlecore arena</span
-                >
-              </div>
-              <div class="swiper-slide">
-                <img src="images/iconImages/avataricon.png" />
-                <span
-                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
-                  >avatar: fronties of pandora</span
-                >
-              </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" loading="lazy" alt="Slide 2 image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" loading="lazy" alt="Slide 3 image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" loading="lazy" alt="Slide 4 image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" loading="lazy" alt="Slide 5 image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" loading="lazy" alt="Slide 6 image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-7.jpg" loading="lazy" alt="Slide 7 image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-8.jpg" loading="lazy" alt="Slide 8 image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-9.jpg" loading="lazy" alt="Slide 9 image" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-10.jpg" loading="lazy" alt="Slide 10 image" />
+          </div>
+        </div>
+        <div class="swiper-button-next absolute top-[85%] text-black"></div>
+        <div class="swiper-button-prev absolute top-[85%] text-black"></div>
+        <div thumbsSlider="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/iconImages/ridersrepublicicon.png" class="w-full" loading="lazy" alt="Riders Republic icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">riders
+                republic</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/division2icon.png" loading="lazy" alt="Division 2 icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">the
+                division 2</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/skullsndbonesicon.png" loading="lazy" alt="Skull and Bones icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">skull
+                and bones</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/rainbowsixsiegeicon.png" loading="lazy" alt="Rainbow Six Siege icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">rainbow
+                six siege</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/ubisofticon.png" loading="lazy" alt="Ubisoft icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">ubisoft
+                store</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/starwarsoutlawsicon.png" loading="lazy" alt="Star Wars Outlaws icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">star
+                wars outlaws</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/xdefianticon.png" loading="lazy" alt="XDefiant icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">xdefiant</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/thecrewmotorfesticon.png" loading="lazy" alt="The Crew Motorfest icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">the
+                crew motorfest</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/justdanceicon.png" loading="lazy" alt="Just Dance icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">just
+                dance 2025 edition</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/assasincreedshadowsicon.png" loading="lazy" alt="Assassin's Creed Shadows icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">assassin's
+                creed shadows</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/forhonoricon.png" loading="lazy" alt="For Honor icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">for
+                honor</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/assasincreedsyndicateicon.png" loading="lazy" alt="Assassin's Creed Syndicate icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">assassin's
+                creed syndicate</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/princeofpersiaicon.png" loading="lazy" alt="Prince of Persia icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">prince
+                of persia</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/battlecoreicon.png" loading="lazy" alt="Battlecore icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">battlecore
+                arena</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/iconImages/avataricon.png" loading="lazy" alt="Avatar icon" />
+              <span
+                class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">avatar:
+                fronties of pandora</span>
             </div>
           </div>
         </div>
       </div>
-      <!-- Join now section -->
-      <section
-        class="join_now w-full relative h-[380px] bg-[url('/images/ubisoft+wallpaper.jpg')] bg-cover bg-center"
-      >
-        <img
-          src="images/ubisoft+.png"
-          alt="Ubisoft+ loqosu"
-          loading="lazy"
-          class="absolute top-0 left-0 w-[150px] h-[51.1094px]"
-        />
+    </div>
+    <!-- Join now section -->
+    <section class="join_now w-full relative h-[380px] bg-[url('/images/ubisoft+wallpaper.jpg')] bg-cover bg-center">
+      <img src="images/ubisoft+.png" alt="Ubisoft+ logo" loading="lazy" class="absolute top-0 left-0 w-[150px] h-[51.1094px]" />
 
-        <div
-          class="content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
-        >
-          <h2
-            class="text-[32px] font-[700] leading-[36px] duration-[1.2s] transition-all delay-[0.2s] text-white text-center mt-[10px] mb-[5px] mx-[30px] transform custom-ease custom-matrix w-[667px]"
-          >
-            Get the XDefiant Battle Pass with Ubisoft+!
-          </h2>
-          <p
-            class="text-[18px] font-[500] leading-[26px] duration-[1.2s] transition-all delay-[0.2s] custom-ease transform custom-matrix my-[20px] mx-[10px] text-white text-center ms-[10px] me-[10px]"
-          >
-            Unlock access to new rewards and dive right into the action.
-          </p>
-          <button
-            aria-label="Join Now"
-            class="bg-[#d80388] w-[167.531px] h-[54px] tracking-[1.6px] leading-[15px] m-[10px] text-[15px] font-[700] max-w-[300px] min-w-[100px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer"
-          >
-            join now
-          </button>
-        </div>
-      </section>
-      <!-- explore more games -->
-      <section class="explore_more_games w-full leading-[24px]">
+      <div class="content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
         <h2
-          class="w-full text-center uppercase text-black pt-[50px] pb-[45px] leading-[40px] text-[40px] font-[700]"
-        >
-          explore more games
+          class="text-[32px] font-[700] leading-[36px] duration-[1.2s] transition-all delay-[0.2s] text-white text-center mt-[10px] mb-[5px] mx-[30px] transform custom-ease custom-matrix w-[667px]">
+          Get the XDefiant Battle Pass with Ubisoft+!
         </h2>
-        <div class="swiper mySwiper3">
-          <div class="swiper-wrapper px-[20px]">
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/anno117card.jpg"
-                    alt="Card Anno 117"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
+        <p
+          class="text-[18px] font-[500] leading-[26px] duration-[1.2s] transition-all delay-[0.2s] custom-ease transform custom-matrix my-[20px] mx-[10px] text-white text-center ms-[10px] me-[10px]">
+          Unlock access to new rewards and dive right into the action.
+        </p>
+        <button aria-label="Join Now"
+          class="bg-[#d80388] w-[167.531px] h-[54px] tracking-[1.6px] leading-[15px] m-[10px] text-[15px] font-[700] max-w-[300px] min-w-[100px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer">
+          join now
+        </button>
+      </div>
+    </section>
+    <!-- explore more games -->
+    <section class="explore_more_games w-full leading-[24px]">
+      <h2 class="w-full text-center uppercase text-black pt-[50px] pb-[45px] leading-[40px] text-[40px] font-[700]">
+        explore more games
+      </h2>
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper px-[20px]">
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/anno117card.jpg" alt="Card Anno 117" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  Anno 117 : Pax Romana
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="fa-brands fa-windows mr-[5px]"></i>
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
                 </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    Anno 117 : Pax Romana
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="fa-brands fa-windows mr-[5px]"></i>
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/avatarcard.jpg"
-                    alt="Card Avatar"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
-                </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    Avatar: Frontiers of Pandora
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                    <i class="fa-brands fa-windows mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/skullandbonescard.jpg"
-                    alt="Card Skull and Bones"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
-                </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    Skull and Bones
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="fa-brands fa-windows mr-[5px]"></i>
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                    <i class="bi bi-triangle mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/princeofpersiacard.jpg"
-                    alt="Card Prince of Persia"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
-                </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    Prince of Persia: The Last Crown
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="fa-brands fa-windows mr-[5px]"></i>
-                    <i class="bi bi-triangle mr-[5px]"></i>
-                    <i class="bi bi-nintendo-switch mr-[5px]"></i>
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/thecrewmotorfestcard.jpg"
-                    alt="Card The Crew Motorfest"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
-                </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    The Crew Motorfest
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="fa-brands fa-windows mr-[5px]"></i>
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                    <i class="bi bi-triangle mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/assasincreedmiragecard.jpg"
-                    alt="Card Assassin's Creed Mirage"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
-                </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    Assassin's Creed Mirage
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-windows mr-[5px]"></i>
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                    <i class="bi bi-triangle mr-[5px]"></i>
-                    <i class="fa-brands fa-apple mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/justdancecard.jpg"
-                    alt="Card Just Dance"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
-                </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    Just Dance 2024 Edition
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="bi bi-nintendo-switch mr-[5px]"></i>
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/starwarsoutlawscard.jpg"
-                    alt="Card Star Wars Outlaws"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
-                </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    Star Wars Outlaws
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-windows mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/assasincreedshadowscard.jpg"
-                    alt="Card Assassin's Creed Shadows"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
-                </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    Assassin's Creed Shadows
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                    <i class="fa-brands fa-windows mr-[5px]"></i>
-                    <i class="bi bi-triangle mr-[5px]"></i>
-                    <i class="fa-brands fa-apple mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]"
-            >
-              <a href="" class="group card w-[230px] h-full cursor-pointer">
-                <div class="image w-[194px] h-[254.203px] leading-[24px]">
-                  <img
-                    src="images/cardImages/xdefiantcard.jpg"
-                    alt="Card XDefiant"
-                    loading="lazy"
-                    class="w-full object-cover"
-                  />
-                </div>
-                <div class="content w-[194px] h-[57.5938px]">
-                  <h3
-                    class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]"
-                  >
-                    XDefiant
-                  </h3>
-                  <div
-                    class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold"
-                  >
-                    <i class="fa-brands fa-windows mr-[5px]"></i>
-                    <i class="fa-brands fa-playstation mr-[5px]"></i>
-                    <i class="fa-brands fa-xbox mr-[5px]"></i>
-                    <i class="bi bi-triangle mr-[5px]"></i>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div
-            class="swiper-button-next absolute bottom-0 right-0 top-[95%]"
-          ></div>
-          <div class="w-full flex items-center justify-center">
-            <button
-              class="bg-[#d80388] w-[250px] h-[54px] tracking-[1.6px] leading-[15px] m-[10px] text-[15px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer"
-            >
-              view all games
-            </button>
-          </div>
-          <div
-            class="swiper-button-prev absolute bottom-0 left-0 top-[95%]"
-          ></div>
-        </div>
-      </section>
-      <!-- Latest News section -->
-      <section class="latest_news w-full bg-[#F0F3F4] flex flex-col">
-        <h2
-          class="pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-[700] text-black"
-        >
-          latest news
-        </h2>
-        <nav class="w-full mx-auto my-0">
-          <ul class="w-full flex justify-center">
-            <li
-              class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] font-[700] px-[20px] py-[6px] hover:text-black hover:underline"
-            >
-              <a href="#" class="">all news</a>
-            </li>
-            <li
-              class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
-            >
-              <a href="#">assassin's creed</a>
-            </li>
-            <li
-              class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
-            >
-              <a href="#">rainbow six</a>
-            </li>
-            <li
-              class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
-            >
-              <a href="#">star wars outlaws</a>
-            </li>
-            <li
-              class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
-            >
-              <a href="#">the division</a>
-            </li>
-          </ul>
-        </nav>
-        <div
-          class="cards justify-center max-w-[1472px] w-full font-[400] leading-[24px] flex-row flex-wrap grid grid-cols-[664.5px_664.5px] gap-4"
-        >
-          <a
-            href="#"
-            class="image mb-[16px] block cursor-pointer px-[16px] max-w-[750px] h-[475.781px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c] row-span-2 row-start-1"
-          >
-            <img
-              src="images/latestNewsImages/assassinscreedsyndicatenews.jpg"
-              alt=""
-              loading="lazy"
-              class="w-full"
-            />
-            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]"
-              >November 26, 2024</span
-            >
-            <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
-              Assassin's Creed Syndicate - Build an Underworld Empire in
-              Victorian London with Ubisoft+
-            </p>
-          </a>
-          <a
-            href="#"
-            class="image flex cursor-pointer max-w-[750px] h-[237.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]"
-          >
-            <img
-              src="images/latestNewsImages/starwarsoutlawsnews.jpeg"
-              alt=""
-              loading="lazy"
-              class="w-[300.25px] h-[168.891px]"
-            />
-            <div class="content m-[16px]">
-              <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]"
-                >November 21, 2024</span
-              >
-              <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
-                Star Wars Outlaws<sup>TM</sup> Now Available on Steam, Wild Card
-                Story Pack Out Now
-              </p>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="image flex cursor-pointer max-w-[750px] h-[237.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]"
-          >
-            <img
-              src="images/latestNewsImages/princeofpersianews.jpg"
-              alt=""
-              loading="lazy"
-              class="w-[300.25px] h-[168.891px]"
-            />
-            <div class="content m-[16px]">
-              <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]"
-                >November 21, 2024</span
-              >
-              <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
-                The Rogue Prince of Persia's The Second Act Update Out Now
-              </p>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="image flex cursor-pointer max-w-[750px] h-[200.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]"
-          >
-            <img
-              src="images/latestNewsImages/starwarsoutlawsnews2.jpg"
-              alt=""
-              loading="lazy"
-              class="w-[300.25px] h-[168.891px] max-w-full align-middle"
-            />
-            <div class="content m-[16px]">
-              <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]"
-                >November 21, 2024</span
-              >
-              <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
-                Star Wars Outlaws<sup>TM</sup> Accessibility Spotlight
-              </p>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="image flex cursor-pointer max-w-[750px] h-[200.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]"
-          >
-            <img
-              src="images/latestNewsImages/skullandbonesnews.jpg"
-              alt=""
-              loading="lazy"
-              class="w-[300.25px] h-[168.891px] max-w-full align-middle"
-            />
-            <div class="content m-[16px]">
-              <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]"
-                >November 19, 2024</span
-              >
-              <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
-                Skull and Bones Season 4: Shadows of the Deep Out Today
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="w-full flex justify-center">
-          <button
-            class="bg-[#d80388] mx-auto w-[250px] h-[54px] tracking-[1.6px] leading-[15px] text-[15px] my-[30px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer"
-          >
-            all news
-          </button>
-        </div>
-      </section>
-      <!-- Ubisoft Store section -->
-      <section class="ubisoft_store w-full flex flex-col">
-        <h2
-          class="pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-[700] text-black"
-        >
-          ubisoft store
-        </h2>
-        <div
-          class="cards flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full h-[589.547px] px-[30px] gap-10"
-        >
-          <a
-            href="#"
-            class="bg-[url('images/ubisoftStore/blackfridaydeal1.jpg')] bg-center bg-cover hover:underline text-white w-[30%] h-[500px] leading-[24px] grow-[1] shrink-0"
-          >
-            <h2
-              class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]"
-            >
-              black friday deal: £8.33
-            </h2>
-          </a>
-
-          <a
-            href="#"
-            class="bg-[url('images/ubisoftStore/blackfridaydeal2.jpg')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] max-w-[33.3%] leading-[24px] grow-[1] shrink-0"
-          >
-            <h2
-              class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]"
-            >
-              black friday deal: £4.20
-            </h2>
-          </a>
-
-          <a
-            href="#"
-            class="bg-[url('images/ubisoftStore/blackfridaydeal3.jpg')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] leading-[24px] grow-[1] shrink-0"
-          >
-            <h2
-              class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]"
-            >
-              black friday deal: £4.37
-            </h2>
-          </a>
-        </div>
-      </section>
-      <!-- Inside Ubisoft section -->
-      <section class="inside_ubisoft bg-[#F0F3F4] w-full flex flex-col">
-        <h2
-          class="font-['Ubisoft Sans Bold'] pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-bold text-black"
-        >
-          inside ubisoft
-        </h2>
-        <div
-          class="cards flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full px-[30px] gap-10"
-        >
-          <a
-            href="#"
-            class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0"
-          >
-            <img
-              src="images/insideUbisoft/insideubisoft1.png"
-              alt="Card1 image"
-              loading="lazy"
-              class="w-full object-cover rounded-xl"
-            />
-            <div
-              class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0"
-            >
-              <h2
-                class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center"
-              >
-                ubisoft forward 2024 announce
-              </h2>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="group relative cursor-pointer text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0"
-          >
-            <img
-              src="images/insideUbisoft/insideubisoft2.jpg"
-              alt="Card2 image"
-              loading="lazy"
-              class="w-full object-cover rounded-xl"
-            />
-            <div
-              class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0"
-            >
-              <h2
-                class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center"
-              >
-                the inside story of the crew
-              </h2>
-            </div>
-          </a>
-
-          <a
-            href="#"
-            class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0 rounded-sm"
-          >
-            <img
-              src="images/insideUbisoft/insideubisoft3.jpg"
-              alt="Inside Ubisoft Wallpaper"
-              loading="lazy"
-              class="w-full object-cover rounded-xl"
-            />
-            <div
-              class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0"
-            >
-              <h2
-                class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center"
-              >
-                ubisoft commitment to lgbtqia+ communities
-              </h2>
-            </div>
-          </a>
-        </div>
-      </section>
-      <!-- Ubisoft Wallpapers section -->
-      <section
-        class="ubisoft_wallpapers w-full h-[540px] flex justify-center items-center py-[70px] px-[70px] leading-[24px]"
-      >
-        <div class="content w-[50%] pl-[20px]">
-          <h2
-            class="w-[560px] text-black mb-[4px] leading-[40px] text-[40px] font-[700]"
-          >
-            Ubisoft Fan Kits, Wallpapers and More!
-          </h2>
-          <button
-            class="bg-[#d80388] mx-auto w-[300px] h-[54px] tracking-[1.6px] leading-[15px] text-[15px] my-[10px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[0.2s] transform transition-all delay-[0s] ease-custom-ease custom-matrix-2 cursor-pointer hover:bg-white hover:text-[#d80388]"
-          >
-            learn more
-          </button>
-        </div>
-        <div class="image w-[50%]">
-          <img
-            src="images/ubisoftWallpaper.jpg"
-            alt="Ubisoft wallpapers"
-            loading="lazy"
-            class="w-full object-cover"
-          />
-        </div>
-      </section>
-      <!-- Ubisoft Connect section -->
-      <section
-        class="ubisoft_connect w-full flex flex-row justify-center items-center relative bg-[#091225] px-[10px]"
-      >
-        <img
-          src="images/bottomtriangle.png"
-          alt="Triangle"
-          class="absolute top-0 left-[50%] transform -translate-x-1/2 w-[49px] h-[25px] z-20"
-        />
-        <div class="image w-[501.609px]">
-          <img
-            src="images/ubisoftconnect.png"
-            alt="Ubisoft connect"
-            loading="lazy"
-            class="w-full object-cover"
-          />
-        </div>
-        <div
-          class="content pl-[40px] w-[818.391px] flex flex-col justify-center items-start text-white grow-[8] basis-[62%]"
-        >
-          <h2
-            class="text-[46px] font-[700] grow-[1] basis-full shrink-[1] mt-[30px] leading-[46px]"
-          >
-            Ubisoft Connect
-          </h2>
-          <p class="text-[28px] leading-[28px] mt-[28px] mb-[28px] text-left">
-            All your games, friends, and benefits in one place.
-            <strong>PC | Console | Mobile </strong>
-          </p>
-          <button
-            class="uppercase rounded-[30px] inline-flex w-[265px] h-[40px] text-[16px] font-[700] flex-col justify-center items-center text-center cursor-pointer bg-[#006ef5] border-[2px] border-solid border-[#006ef5] m-w-[40px] max-w-[265px] leading-[16px] tracking-[1.6px] hover:bg-white hover:text-[#006ef5]"
-          >
-            get ubisoft connect
-          </button>
-        </div>
-      </section>
-      <!-- Ubisoft Channels -->
-      <section
-        class="ubisoft_channels w-full px-[60px] leading-[24px] bg-black flex justify-between items-center"
-      >
-        <div class="max-w-[1440px] w-[1258px] relative">
-          <h2
-            class="leading-[14.625px] text-[13px] font-[400] text-[#9B9B9B] absolute top-[27px] left-0 custom-matrix-2"
-          >
-            Visit Other Ubisoft Channels
-          </h2>
-          <div class="flex flex-wrap justify-center items-center">
-            <a
-              href="#"
-              class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]"
-              ><i
-                class="fa-brands fa-discord text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-              ></i
-            ></a>
-            <a
-              href="#"
-              class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]"
-            >
-              <i
-                class="fa-brands fa-linkedin-in text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-              ></i
-            ></a>
-          </div>
-        </div>
-      </section>
-      <!-- footer -->
-      <footer
-        class="w-full bg-[#1D1E22] h-[670px] tracking-[1px] px-[60px] py-[20px] flex flex-row flex-wrap items-center text-left"
-      >
-        <div
-          class="footer_top w-full flex justify-between text-white items-center"
-        >
-          <div class="logo w-[305.5px] h-[45px] cursor-pointer">
-            <a href="">
-              <svg
-                role="img"
-                class="icon icon-ubisoft-logo-desktop"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                aria-labelledby="logo-desktop-title"
-                viewBox="0 0 99.2 31.6"
-              >
-                <title id="logo-desktop-title">Ubisoft</title>
-                <path
-                  class="st0"
-                  d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z"
-                ></path>
-              </svg>
+              </div>
             </a>
           </div>
-          <div class="w-[629px] my-[20px] h-[56.5px]">
-            <button
-              class="uppercase py-[14px] px-[28px] ml-[45px] leading-[22.5px] tracking-[1.8px] text-center text-[18px] cursor-pointer text-white bg-[#70707033] border-[3px] border-solid border-[#70707033] rounded-[30px] font-bold bg-clip-padding hover:bg-[#6D6D6D]"
-            >
-              download ubisoft connect
-            </button>
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/avatarcard.jpg" alt="Card Avatar" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  Avatar: Frontiers of Pandora
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
+                  <i class="fa-brands fa-windows mr-[5px]"></i>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="w-[314.5px]h-[72px] my-[20px]">
-            <button
-              class="uppercase text-[15px] font-bold shadow-none tracking-[1px] flex justify-center items-center w-full h-full gap-2"
-            >
-              <i class="fa-solid fa-globe text-[24px]"></i>
-              english
-              <i class="fa-solid fa-chevron-down text-[8px]"></i>
-            </button>
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/skullandbonescard.jpg" alt="Card Skull and Bones" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  Skull and Bones
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="fa-brands fa-windows mr-[5px]"></i>
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
+                  <i class="bi bi-triangle mr-[5px]"></i>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
-        <div class="footer_bottom w-full flex">
-          <div
-            class="div1 flex flex-col w-[305.5px] h-[280px] my-[20px] leading-[24px]"
-          >
-            <ul class="flex flex-col text-white uppercase text-[16px]">
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]"
-              >
-                <a href="" class="hover:underline">contact</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]"
-              >
-                <a href="" class="hover:underline">privacy & legal</a>
-              </li>
-            </ul>
-            <ul class="flex flex-col text-[#9b9b9b] text-[14px]">
-              <li class="my-[10px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Notice At Collection</a
-                >
-              </li>
-              <li class="my-[10px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Interest-Based Ads</a
-                >
-              </li>
-              <li class="my-[10px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Do Not Sell / Share My Personal Information</a
-                >
-              </li>
-              <li class="my-[10px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Limit Use / Disclosure of My Sensitive Personal
-                  Information</a
-                >
-              </li>
-              <li class="my-[10px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Set cookies</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="div2 flex w-[611px] h-[112px] my-[20px] text-white">
-            <ul
-              class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]"
-            >
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">ubisoft connect</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">support</a>
-              </li>
-            </ul>
-            <ul
-              class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]"
-            >
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">investors</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">press</a>
-              </li>
-            </ul>
-            <ul
-              class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]"
-            >
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">about us</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">careers</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="">locations</a>
-              </li>
-            </ul>
-          </div>
-          <div class="div3 w-[305.5px] h-[212px] flex flex-col items-end">
-            <div class="text-right w-[76px] h-[102px] my-[16px]">
-              <img
-                src="images/privacyFooter.jpg"
-                alt="Privacy"
-                class="w-full object-cover"
-              />
-            </div>
-            <div class="w-[245.5px] h-[72px]">
-              <p
-                class="text-[12px] leading-[12px] text-right my-[12px] text-[#f0f3f4]"
-              >
-                © 2024 Ubisoft Entertainment. All Rights Reserved. Ubisoft,
-                Ubi.com and the Ubisoft logo are trademarks of Ubisoft
-                Entertainment in the U.S. and/or other countries.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        spaceBetween: 10,
-        slidesPerView: 4,
-        centeredSlides: true,
-        freeMode: true,
-        watchSlidesProgress: true,
-        autoplay: {
-          delay: 10000,
-          disableOnInteraction: false,
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        loop: true,
-        spaceBetween: 10,
-        centeredSlides: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-        autoplay: {
-          delay: 10000,
-          disableOnInteraction: false,
-        },
-      });
-      var swiper3 = new Swiper(".mySwiper3", {
-        loop: true,
-        slidesPerView: 6,
-        spaceBetween: 0,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
 
-    <script src="script.js"></script>
-  </body>
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/princeofpersiacard.jpg" alt="Card Prince of Persia" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  Prince of Persia: The Last Crown
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="fa-brands fa-windows mr-[5px]"></i>
+                  <i class="bi bi-triangle mr-[5px]"></i>
+                  <i class="bi bi-nintendo-switch mr-[5px]"></i>
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/thecrewmotorfestcard.jpg" alt="Card The Crew Motorfest" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  The Crew Motorfest
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="fa-brands fa-windows mr-[5px]"></i>
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
+                  <i class="bi bi-triangle mr-[5px]"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/assasincreedmiragecard.jpg" alt="Card Assassin's Creed Mirage" loading="lazy"
+                  class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  Assassin's Creed Mirage
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-windows mr-[5px]"></i>
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
+                  <i class="bi bi-triangle mr-[5px]"></i>
+                  <i class="fa-brands fa-apple mr-[5px]"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/justdancecard.jpg" alt="Card Just Dance" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  Just Dance 2024 Edition
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="bi bi-nintendo-switch mr-[5px]"></i>
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/starwarsoutlawscard.jpg" alt="Card Star Wars Outlaws" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  Star Wars Outlaws
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-windows mr-[5px]"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/assasincreedshadowscard.jpg" alt="Card Assassin's Creed Shadows" loading="lazy"
+                  class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  Assassin's Creed Shadows
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
+                  <i class="fa-brands fa-windows mr-[5px]"></i>
+                  <i class="bi bi-triangle mr-[5px]"></i>
+                  <i class="fa-brands fa-apple mr-[5px]"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide w-[230px] h-[347.797px] leading-[24px] px-[18px]">
+            <a href="" class="group card w-[230px] h-full cursor-pointer">
+              <div class="image w-[194px] h-[254.203px] leading-[24px]">
+                <img src="images/cardImages/xdefiantcard.jpg" alt="Card XDefiant" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="content w-[194px] h-[57.5938px]">
+                <h3 class="group-hover:underline font-[700] text-[18px] leading-[24px] min-h-[57.6px]">
+                  XDefiant
+                </h3>
+                <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+                  <i class="fa-brands fa-windows mr-[5px]"></i>
+                  <i class="fa-brands fa-playstation mr-[5px]"></i>
+                  <i class="fa-brands fa-xbox mr-[5px]"></i>
+                  <i class="bi bi-triangle mr-[5px]"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next absolute bottom-0 right-0 top-[95%]"></div>
+        <div class="w-full flex items-center justify-center">
+          <button
+            class="bg-[#d80388] w-[250px] h-[54px] tracking-[1.6px] leading-[15px] m-[10px] text-[15px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer">
+            view all games
+          </button>
+        </div>
+        <div class="swiper-button-prev absolute bottom-0 left-0 top-[95%]"></div>
+      </div>
+    </section>
+    <!-- Latest News section -->
+    <section class="latest_news w-full bg-[#F0F3F4] flex flex-col">
+      <h2 class="pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-[700] text-black">
+        latest news
+      </h2>
+      <nav class="w-full mx-auto my-0">
+        <ul class="w-full flex justify-center">
+          <li
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] font-[700] px-[20px] py-[6px] hover:text-black hover:underline">
+            <a href="#" class="">all news</a>
+          </li>
+          <li
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline">
+            <a href="#">assassin's creed</a>
+          </li>
+          <li
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline">
+            <a href="#">rainbow six</a>
+          </li>
+          <li
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline">
+            <a href="#">star wars outlaws</a>
+          </li>
+          <li
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline">
+            <a href="#">the division</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cards justify-center max-w-[1472px] w-full font-[400] leading-[24px] flex-row flex-wrap grid grid-cols-[664.5px_664.5px] gap-4">
+        <a href="#"
+          class="image mb-[16px] block cursor-pointer px-[16px] max-w-[750px] h-[475.781px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c] row-span-2 row-start-1">
+          <img src="images/latestNewsImages/assassinscreedsyndicatenews.jpg" alt="Assassin's Creed Syndicate" loading="lazy" class="w-full" />
+          <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 26, 2024</span>
+          <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
+            Assassin's Creed Syndicate - Build an Underworld Empire in
+            Victorian London with Ubisoft+
+          </p>
+        </a>
+        <a href="#"
+          class="image flex cursor-pointer max-w-[750px] h-[237.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+          <img src="images/latestNewsImages/starwarsoutlawsnews.jpeg" alt="Star Wars Outlaws" loading="lazy" class="w-[300.25px] h-[168.891px]" />
+          <div class="content m-[16px]">
+            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 21, 2024</span>
+            <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
+              Star Wars Outlaws<sup>TM</sup> Now Available on Steam, Wild Card
+              Story Pack Out Now
+            </p>
+          </div>
+        </a>
+        <a href="#"
+          class="image flex cursor-pointer max-w-[750px] h-[237.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+          <img src="images/latestNewsImages/princeofpersianews.jpg" alt="Prince of Persia" loading="lazy" class="w-[300.25px] h-[168.891px]" />
+          <div class="content m-[16px]">
+            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 21, 2024</span>
+            <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
+              The Rogue Prince of Persia's The Second Act Update Out Now
+            </p>
+          </div>
+        </a>
+        <a href="#"
+          class="image flex cursor-pointer max-w-[750px] h-[200.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+          <img src="images/latestNewsImages/starwarsoutlawsnews2.jpg" alt="Star Wars Outlaws" loading="lazy"
+            class="w-[300.25px] h-[168.891px] max-w-full align-middle" />
+          <div class="content m-[16px]">
+            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 21, 2024</span>
+            <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
+              Star Wars Outlaws<sup>TM</sup> Accessibility Spotlight
+            </p>
+          </div>
+        </a>
+        <a href="#"
+          class="image flex cursor-pointer max-w-[750px] h-[200.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+          <img src="images/latestNewsImages/skullandbonesnews.jpg" alt="Skull and Bones" loading="lazy"
+            class="w-[300.25px] h-[168.891px] max-w-full align-middle" />
+          <div class="content m-[16px]">
+            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 19, 2024</span>
+            <p class="leading-[28px] font-[700] text-[20px] cursor-pointer">
+              Skull and Bones Season 4: Shadows of the Deep Out Today
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="w-full flex justify-center">
+        <button
+          class="bg-[#d80388] mx-auto w-[250px] h-[54px] tracking-[1.6px] leading-[15px] text-[15px] my-[30px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer">
+          all news
+        </button>
+      </div>
+    </section>
+    <!-- Ubisoft Store section -->
+    <section class="ubisoft_store w-full flex flex-col">
+      <h2 class="pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-[700] text-black">
+        ubisoft store
+      </h2>
+      <div class="cards flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full h-[589.547px] px-[30px] gap-10">
+        <a href="#"
+          class="bg-[url('images/ubisoftStore/blackfridaydeal1.jpg')] bg-center bg-cover hover:underline text-white w-[30%] h-[500px] leading-[24px] grow-[1] shrink-0">
+          <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">
+            black friday deal: £8.33
+          </h2>
+        </a>
+
+        <a href="#"
+          class="bg-[url('images/ubisoftStore/blackfridaydeal2.jpg')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] max-w-[33.3%] leading-[24px] grow-[1] shrink-0">
+          <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">
+            black friday deal: £4.20
+          </h2>
+        </a>
+
+        <a href="#"
+          class="bg-[url('images/ubisoftStore/blackfridaydeal3.jpg')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] leading-[24px] grow-[1] shrink-0">
+          <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">
+            black friday deal: £4.37
+          </h2>
+        </a>
+      </div>
+    </section>
+    <!-- Inside Ubisoft section -->
+    <section class="inside_ubisoft bg-[#F0F3F4] w-full flex flex-col">
+      <h2 class="font-['Ubisoft Sans Bold'] pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-bold text-black">
+        inside ubisoft
+      </h2>
+      <div class="cards flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full px-[30px] gap-10">
+        <a href="#" class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
+          <img src="images/insideUbisoft/insideubisoft1.png" alt="Card1 image" loading="lazy" class="w-full object-cover rounded-xl" />
+          <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
+            <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
+              ubisoft forward 2024 announce
+            </h2>
+          </div>
+        </a>
+        <a href="#" class="group relative cursor-pointer text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
+          <img src="images/insideUbisoft/insideubisoft2.jpg" alt="Card2 image" loading="lazy" class="w-full object-cover rounded-xl" />
+          <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
+            <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
+              the inside story of the crew
+            </h2>
+          </div>
+        </a>
+
+        <a href="#" class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0 rounded-sm">
+          <img src="images/insideUbisoft/insideubisoft3.jpg" alt="Inside Ubisoft Wallpaper" loading="lazy" class="w-full object-cover rounded-xl" />
+          <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
+            <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
+              ubisoft commitment to lgbtqia+ communities
+            </h2>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- Ubisoft Wallpapers section -->
+    <section class="ubisoft_wallpapers w-full h-[540px] flex justify-center items-center py-[70px] px-[70px] leading-[24px]">
+      <div class="content w-[50%] pl-[20px]">
+        <h2 class="w-[560px] text-black mb-[4px] leading-[40px] text-[40px] font-[700]">
+          Ubisoft Fan Kits, Wallpapers and More!
+        </h2>
+        <button
+          class="bg-[#d80388] mx-auto w-[300px] h-[54px] tracking-[1.6px] leading-[15px] text-[15px] my-[10px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[0.2s] transform transition-all delay-[0s] ease-custom-ease custom-matrix-2 cursor-pointer hover:bg-white hover:text-[#d80388]">
+          learn more
+        </button>
+      </div>
+      <div class="image w-[50%]">
+        <img src="images/ubisoftWallpaper.jpg" alt="Ubisoft wallpapers" loading="lazy" class="w-full object-cover" />
+      </div>
+    </section>
+    <!-- Ubisoft Connect section -->
+    <section class="ubisoft_connect w-full flex flex-row justify-center items-center relative bg-[#091225] px-[10px]">
+      <img src="images/bottomtriangle.png" alt="Triangle" class="absolute top-0 left-[50%] transform -translate-x-1/2 w-[49px] h-[25px] z-20" />
+      <div class="image w-[501.609px]">
+        <img src="images/ubisoftconnect.png" alt="Ubisoft connect" loading="lazy" class="w-full object-cover" />
+      </div>
+      <div class="content pl-[40px] w-[818.391px] flex flex-col justify-center items-start text-white grow-[8] basis-[62%]">
+        <h2 class="text-[46px] font-[700] grow-[1] basis-full shrink-[1] mt-[30px] leading-[46px]">
+          Ubisoft Connect
+        </h2>
+        <p class="text-[28px] leading-[28px] mt-[28px] mb-[28px] text-left">
+          All your games, friends, and benefits in one place.
+          <strong>PC | Console | Mobile </strong>
+        </p>
+        <button
+          class="uppercase rounded-[30px] inline-flex w-[265px] h-[40px] text-[16px] font-[700] flex-col justify-center items-center text-center cursor-pointer bg-[#006ef5] border-[2px] border-solid border-[#006ef5] m-w-[40px] max-w-[265px] leading-[16px] tracking-[1.6px] hover:bg-white hover:text-[#006ef5]">
+          get ubisoft connect
+        </button>
+      </div>
+    </section>
+    <!-- Ubisoft Channels -->
+    <section class="ubisoft_channels w-full px-[60px] leading-[24px] bg-black flex justify-between items-center">
+      <div class="max-w-[1440px] w-[1258px] relative">
+        <h2 class="leading-[14.625px] text-[13px] font-[400] text-[#9B9B9B] absolute top-[27px] left-0 custom-matrix-2">
+          Visit Other Ubisoft Channels
+        </h2>
+        <div class="flex flex-wrap justify-center items-center">
+          <a href="#" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]"><i
+              class="fa-brands fa-discord text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i></a>
+          <a href="#" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]">
+            <i class="fa-brands fa-linkedin-in text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="w-full bg-[#1D1E22] h-[670px] tracking-[1px] px-[60px] py-[20px] flex flex-row flex-wrap items-center text-left">
+      <div class="footer_top w-full flex justify-between text-white items-center">
+        <div class="logo w-[305.5px] h-[45px] cursor-pointer">
+          <a href="">
+            <svg role="img" class="icon icon-ubisoft-logo-desktop" xmlns="http://www.w3.org/2000/svg" version="1.1"
+              aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
+              <title id="logo-desktop-title">Ubisoft</title>
+              <path class="st0"
+                d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
+              </path>
+              <path class="st0"
+                d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="w-[629px] my-[20px] h-[56.5px]">
+          <button
+            class="uppercase py-[14px] px-[28px] ml-[45px] leading-[22.5px] tracking-[1.8px] text-center text-[18px] cursor-pointer text-white bg-[#70707033] border-[3px] border-solid border-[#70707033] rounded-[30px] font-bold bg-clip-padding hover:bg-[#6D6D6D]">
+            download ubisoft connect
+          </button>
+        </div>
+        <div class="w-[314.5px]h-[72px] my-[20px]">
+          <button class="uppercase text-[15px] font-bold shadow-none tracking-[1px] flex justify-center items-center w-full h-full gap-2">
+            <i class="fa-solid fa-globe text-[24px]"></i>
+            english
+            <i class="fa-solid fa-chevron-down text-[8px]"></i>
+          </button>
+        </div>
+      </div>
+      <div class="footer_bottom w-full flex">
+        <div class="div1 flex flex-col w-[305.5px] h-[280px] my-[20px] leading-[24px]">
+          <ul class="flex flex-col text-white uppercase text-[16px]">
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]">
+              <a href="" class="hover:underline">contact</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]">
+              <a href="" class="hover:underline">privacy & legal</a>
+            </li>
+          </ul>
+          <ul class="flex flex-col text-[#9b9b9b] text-[14px]">
+            <li class="my-[10px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Notice At Collection</a>
+            </li>
+            <li class="my-[10px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Interest-Based Ads</a>
+            </li>
+            <li class="my-[10px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Do Not Sell / Share My Personal Information</a>
+            </li>
+            <li class="my-[10px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Limit Use / Disclosure of My Sensitive Personal
+                Information</a>
+            </li>
+            <li class="my-[10px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Set cookies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="div2 flex w-[611px] h-[112px] my-[20px] text-white">
+          <ul class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]">
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">ubisoft connect</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">support</a>
+            </li>
+          </ul>
+          <ul class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]">
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">investors</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">press</a>
+            </li>
+          </ul>
+          <ul class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]">
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">about us</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">careers</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="">locations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="div3 w-[305.5px] h-[212px] flex flex-col items-end">
+          <div class="text-right w-[76px] h-[102px] my-[16px]">
+            <img src="images/privacyFooter.jpg" alt="Privacy" class="w-full object-cover" />
+          </div>
+          <div class="w-[245.5px] h-[72px]">
+            <p class="text-[12px] leading-[12px] text-right my-[12px] text-[#f0f3f4]">
+              © 2024 Ubisoft Entertainment. All Rights Reserved. Ubisoft,
+              Ubi.com and the Ubisoft logo are trademarks of Ubisoft
+              Entertainment in the U.S. and/or other countries.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      centeredSlides: true,
+      freeMode: true,
+      watchSlidesProgress: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      centeredSlides: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      },
+    });
+    var swiper3 = new Swiper(".mySwiper3", {
+      loop: true,
+      slidesPerView: 6,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
