@@ -67,3 +67,9 @@ header a {
   display: table;
   clear: both;
 }
+.banner {
+  background-image: radial-gradient(ellipse at center, #f86531 0, #b23004 100%);
+}
+.banner p {
+  text-shadow: rgb(182, 51, 7) 0px 1px 1px;
+}
