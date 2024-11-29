@@ -1,18 +1,18 @@
 @font-face {
-  font-family: "Ubisoft Sans";
-  src: url("fonts/UbisoftSansRegular/Ubisoft-Sans-Regular.ttf")
-    format("truetype");
+  font-family: 'Ubisoft Sans';
+  src: url('fonts/UbisoftSansRegular/Ubisoft-Sans-Regular.ttf')
+    format('truetype');
 }
 @font-face {
-  font-family: "Ubisoft Sans Bold";
-  src: url("fonts/UbisoftSansBold/Ubisoft-Sans-Bold") format("truetype");
+  font-family: 'Ubisoft Sans Bold';
+  src: url('fonts/UbisoftSansBold/Ubisoft-Sans-Bold') format('truetype');
   font-style: normal;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ubisoft Sans", sans-serif;
+  font-family: 'Ubisoft Sans', sans-serif;
 }
 
 /* header */
@@ -63,7 +63,7 @@ header a {
   transform: matrix(1, 0, 0, 1, 0, -7.3125);
 }
 .ubisoft_channels::before {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -92,5 +92,15 @@ header button {
   transition-delay: 0.8s;
   transition-duration: 1.2s;
   transition: all;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.one_ecosystem .image,
+.multi_platform_ecosystem .image {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.one_ecosystem .content,
+.multi_platform_ecosystem .content {
+  transform: matrix(1, 0, 0, 1, 0, 0);
   transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
