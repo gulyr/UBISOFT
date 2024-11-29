@@ -78,14 +78,14 @@
       }
 
       .mySwiper2 {
-        height: 80%;
+        height: 100%;
         width: 100%;
       }
 
       .mySwiper {
         /* height: 20%; */
         box-sizing: border-box;
-        padding: 10px 0;
+        /* padding: 10px 0; */
       }
 
       .mySwiper .swiper-slide {
@@ -224,15 +224,15 @@
         </button>
       </div>
       <!-- swiper -->
-      <div class="body w-full">
+      <div class="body w-full h-full">
         <div
           style="
             --swiper-navigation-color: #fff;
             --swiper-pagination-color: #fff;
           "
-          class="swiper mySwiper2 bg-slate-400 relative"
+          class="swiper mySwiper2 bg-slate-400"
         >
-          <div class="swiper-wrapper relative">
+          <div class="swiper-wrapper">
             <div class="swiper-slide relative flex justify-center items-center">
               <img
                 src="images/sliderImages/ridersrepublic.jpg"
@@ -730,10 +730,12 @@
           <div class="swiper-button-next absolute top-[85%] text-black"></div>
           <div class="swiper-button-prev absolute top-[85%] text-black"></div>
 
-          <div thumbsSlider="" class="swiper mySwiper absolute bottom-0 left-0">
-            <div class="swiper-wrapper bg-red-800">
-              <div class="swiper-slide bg-fuchsia-600">
-                <div class="w-[211px] h-[80.7188px]">
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
                   <img
                     src="images/iconImages/ridersrepublicicon.png"
                     class="w-full object-cover"
@@ -746,155 +748,212 @@
                   >riders republic</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/division2icon.png"
-                  loading="lazy"
-                  alt="Division 2 icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/division2icon.png"
+                    class="w-full object-cover"
+                    loading="lazy"
+                    alt="Division 2 icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >the division 2</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/skullsndbonesicon.png"
-                  loading="lazy"
-                  alt="Skull and Bones icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/skullsndbonesicon.png"
+                    loading="lazy"
+                    alt="Skull and Bones icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >skull and bones</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/rainbowsixsiegeicon.png"
-                  loading="lazy"
-                  alt="Rainbow Six Siege icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/rainbowsixsiegeicon.png"
+                    loading="lazy"
+                    alt="Rainbow Six Siege icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >rainbow six siege</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/ubisofticon.png"
-                  loading="lazy"
-                  alt="Ubisoft icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/ubisofticon.png"
+                    loading="lazy"
+                    alt="Ubisoft icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >ubisoft store</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/starwarsoutlawsicon.png"
-                  loading="lazy"
-                  alt="Star Wars Outlaws icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/starwarsoutlawsicon.png"
+                    loading="lazy"
+                    alt="Star Wars Outlaws icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >star wars outlaws</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/xdefianticon.png"
-                  loading="lazy"
-                  alt="XDefiant icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/xdefianticon.png"
+                    loading="lazy"
+                    alt="XDefiant icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >xdefiant</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/thecrewmotorfesticon.png"
-                  loading="lazy"
-                  alt="The Crew Motorfest icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/thecrewmotorfesticon.png"
+                    loading="lazy"
+                    alt="The Crew Motorfest icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >the crew motorfest</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/justdanceicon.png"
-                  loading="lazy"
-                  alt="Just Dance icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/justdanceicon.png"
+                    loading="lazy"
+                    alt="Just Dance icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >just dance 2025 edition</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/assasincreedshadowsicon.png"
-                  loading="lazy"
-                  alt="Assassin's Creed Shadows icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/assasincreedshadowsicon.png"
+                    loading="lazy"
+                    alt="Assassin's Creed Shadows icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >assassin's creed shadows</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/forhonoricon.png"
-                  loading="lazy"
-                  alt="For Honor icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/forhonoricon.png"
+                    loading="lazy"
+                    alt="For Honor icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >for honor</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/assasincreedsyndicateicon.png"
-                  loading="lazy"
-                  alt="Assassin's Creed Syndicate icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/assasincreedsyndicateicon.png"
+                    loading="lazy"
+                    alt="Assassin's Creed Syndicate icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >assassin's creed syndicate</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/princeofpersiaicon.png"
-                  loading="lazy"
-                  alt="Prince of Persia icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/princeofpersiaicon.png"
+                    loading="lazy"
+                    alt="Prince of Persia icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >prince of persia</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/battlecoreicon.png"
-                  loading="lazy"
-                  alt="Battlecore icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/battlecoreicon.png"
+                    loading="lazy"
+                    alt="Battlecore icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >battlecore arena</span
                 >
               </div>
-              <div class="swiper-slide">
-                <img
-                  src="images/iconImages/avataricon.png"
-                  loading="lazy"
-                  alt="Avatar icon"
-                />
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/avataricon.png"
+                    loading="lazy"
+                    alt="Avatar icon"
+                  />
+                </div>
                 <span
                   class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
                   >avatar: fronties of pandora</span
@@ -1792,6 +1851,7 @@
         loop: true,
         spaceBetween: 0,
         centeredSlides: true,
+        cssMode: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
