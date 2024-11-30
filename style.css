@@ -104,3 +104,15 @@ header button {
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
+.title_section h2 {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.new_release h2 {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+.new_release .card {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
