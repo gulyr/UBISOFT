@@ -53,7 +53,6 @@ header a {
 }
 .ubisoft_connect button {
   touch-action: manipulation;
-  /* transition-behavior: normal normal; */
   transition-property: background-color border;
   transition-timing-function: ease ease;
   transition-duration: 0.3s 0.3s;
@@ -73,9 +72,7 @@ header a {
 .banner p {
   text-shadow: rgb(182, 51, 7) 0px 1px 1px;
 }
-header button {
-  /* transform: matrix(1, 0, 0, 1, 0, -25); */
-}
+
 .swiper-slide h2,
 .swiper-slide p {
   text-shadow: rgb(0, 0, 0) 0px 2px 10px;
@@ -119,42 +116,13 @@ header button {
   transform: matrix(1, 0, 0, 1, 0, 0);
   transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
-/* .feature_videos .grid_container {
-  grid-template-columns: 619.203px 34.4375px 275.188px 34.4375px 107px 91.7344px 107px;
-  grid-template-rows: 260px 50px 130px 60px;
-}
-.feature_videos .grid_container h2 {
-}
-.feature_videos .grid_container .row-1 {
-  grid-column-start: 1;
-  grid-column-end: 8;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.feature_videos .grid_container .row-2 {
-  grid-column-start: 3;
-  grid-column-end: 8;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-.feature_videos .grid_container .row-3 {
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 5;
-}
-.feature_videos .grid_container .row-4 {
-  grid-column-start: 7;
-  grid-column-end: 8;
-  grid-row-start: 4;
-  grid-row-end: 5;
-}
-.feature_videos .grid_container .row-5 {
-  grid-column-start: 6;
-  grid-column-end: 7;
-  grid-row-start: 4;
-  grid-row-end: 5;
-} */
+
 .feature_videos .svg_button:hover .svg {
   fill: red;
+}
+.more_information {
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 3px 6px;
+}
+.more_information a {
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 3px 6px;
 }
