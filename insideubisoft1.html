@@ -15,6 +15,106 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
     <link href="src/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ubisoft_forward .swiper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ubisoft_forward .swiper-slide {
+            width: 406.672px !important;
+            height: 536.25px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ubisoft_forward .swiper-slide img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .ubisoft_forward .mySwiper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ubisoft_forward .mySwiper .buttons {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 72%;
+            bottom: 0;
+        }
+
+        .ubisoft_forward .mySwiper .swiper-button-prev {
+            /* position: absolute;
+            top: 90%;
+            bottom: -100px;
+            left: 30px; */
+        }
+
+        .ubisoft_forward .mySwiper .swiper-button-next {
+            /* align-items: ; */
+            /* position: absolute;
+            top: 90%;
+            bottom: -100px;
+            right: 25px; */
+        }
+
+        .ubisoft_forward .mySwiper .swiper-button-next::after,
+        .ubisoft_forward .mySwiper .swiper-button-prev::after {
+            font-size: 24px !important;
+            color: #31164D !important;
+            font-weight: 900 !important;
+            padding: 15px 40px !important;
+            cursor: pointer !important;
+            text-align: center !important;
+            background: #e5e9ea66 !important;
+            width: 75px !important;
+            height: 60px !important;
+        }
+
+        .ubisoft_forward .mySwiper .swiper-button-next:hover::after,
+        .ubisoft_forward .mySwiper .swiper-button-prev:hover::after {
+            background: #e9eced !important;
+            color: #7a6b8c !important;
+        }
+
+        .ubisoft_forward .mySwiper .swiper-button-prev::after {
+            border-top-right-radius: 30px !important;
+            border-bottom-right-radius: 30px !important;
+            margin-left: 15px !important;
+        }
+
+        .ubisoft_forward .mySwiper .swiper-button-next::after {
+            border-top-left-radius: 30px !important;
+            border-bottom-left-radius: 30px !important;
+            margin-right: 25px !important;
+        }
+
+        .swiper-pagination-bullet {
+            width: 45px;
+            height: 6px;
+            margin: 2px;
+            border-radius: 0 !important;
+            padding-block-start: 1px;
+            padding-block-end: 1px;
+            padding-inline-start: 6px;
+            padding-inline-end: 6px;
+            background-color: #C1C1C1 !important;
+            opacity: 1 !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #6f6f6f !important;
+            opacity: 1 !important;
+        }
+    </style>
 </head>
 
 <body class="font-['Ubisoft Sans'] bg-[url('images/ubisoftInside1Images/ubisoftinside1wallpaper.jpg')] bg-cover bg-center bg-fixed">
@@ -79,7 +179,6 @@
                 <div class="svg_container w-full h-[299px]">
                     <button class="svg_button w-[320px] h-[180px] cursor-pointer items-start text-center relative">
                         <img src="images/ubisoftInside1Images/mqdefault.jpg" alt="" class="img w-full object-cover">
-                        <!-- <img src="images/ubisoftInside1Images/download.svg" alt="" class="w-[68px] h-[48px] absolute top-[65px] left-[130px]" /> -->
                         <svg version='1.0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 158 110'
                             class="w-[68px] h-[48px] absolute top-[65px] left-[130px]">
                             <path class="svg" fill='#282828'
@@ -98,6 +197,142 @@
                             Walkthrough | <br /> Ubisoft Forward
                         </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ubisoft Forward -->
+        <section class="ubisoft_forward w-full h-[860px] bg-transparent relative flex flex-col">
+            <h2 class="w-full text-center text-[40px] font-[700] pb-[20px] mb-[4px] leading-[40px] text-white text-[center]">News from Ubisoft Forward
+            </h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper px-[10px]">
+                    <div class="swiper-slide m-[20px]  flex flex-col items-start bg-white leading-[24px]">
+                        <div class="image w-[366.672px] h-[250.25px] pt-[24px] leading-[24px] pb-[20px]">
+                            <div class="w-full h-[206.25px]">
+                                <a href="" class="cursor-pointer w-full h-full flex flex-col">
+                                    <img src="images/ubisoftInside1Images/afopskybreaker__960_x_540_.jpeg" alt="UN-AC-Shadows_HR_Dual_Protagonsit"
+                                        class="w-full object-cover" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content flex flex-col items-start w-[366.672px] h-[221px] leading-[24px] pb-[20px]">
+                            <span class="leading-[21px] text-[16px] font-[700]">16 July 2024</span>
+                            <h3 class="text-[18px] font-[700] leading-[25px] text-left mt-[16px]">Avatar: Frontiers of Pandora’s First Story Pack, The
+                                Sky Breaker, Out Now</h3>
+                            <p class="text-left my-[10px] leading-[21px] text-[16px] font-[400] bg-transparent text-black shadow-none">
+                                Players who haven’t experienced the Western Frontier yet can also play a free trial of the main game.
+                            </p>
+                            <a href="" class="uppercase text-left leading-[28px] tracking-[3.52px] text-[16px] font-[700] w-[124.984px] h-[28px]">read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide m-[20px] p-[10px] flex flex-col bg-white leading-[24px]">
+                        <div class="image w-[366.672px] h-[250.25px] pt-[24px] leading-[24px] pb-[20px]">
+                            <div class="w-full h-[206.25px]">
+                                <a href="" class="cursor-pointer w-full h-full">
+                                    <img src="images/ubisoftInside1Images/960x540px_News-banner_UF_RECAP.jpg" alt="UN-AC-Shadows_HR_Dual_Protagonsit"
+                                        class="w-full object-cover" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content flex flex-col items-start w-[366.672px] h-[221px] leading-[24px] pb-[20px]">
+                            <span class="leading-[21px] text-[16px] font-[700]">11 June 2024</span>
+                            <h3 class="text-[18px] font-[700] leading-[25px] text-left mt-[16px]">Star Wars Outlaws and Assassin’s Creed Shadows
+                                Reveal New Gameplay, XDefiant Season 1 Details Announced</h3>
+                            <p class="text-left my-[10px] leading-[21px] text-[16px] font-[400] bg-transparent text-black shadow-none">
+                                Get ready to take on crime syndicates, fight through feudal Japan, build your own Roman empire, and so much more.
+                            </p>
+                            <a href="" class="uppercase text-left leading-[28px] tracking-[3.52px] text-[16px] font-[700] w-[124.984px] h-[28px]">read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide m-[20px] p-[10px] flex flex-col bg-white leading-[24px]">
+                        <div class="image w-[366.672px] h-[250.25px] pt-[24px] leading-[24px] pb-[20px]">
+                            <div class="w-full h-[206.25px]">
+                                <a href="" class="cursor-pointer w-full h-full">
+                                    <img src="images/ubisoftInside1Images/UN-AC-Shadows_HR_Dual_Protagonsit_16x9_960.jpg"
+                                        alt="UN-AC-Shadows_HR_Dual_Protagonsit" class="w-full object-cover" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content flex flex-col items-start w-[366.672px] h-[221px] leading-[24px] pb-[20px]">
+                            <span class="leading-[21px] text-[16px] font-[700]">11 June 2024</span>
+                            <h3 class="text-[18px] font-[700] leading-[25px] text-left mt-[16px]">Assassin’s Creed Shadows Shows Off New Combat and
+                                Stealth Gameplay</h3>
+                            <p class="text-left my-[10px] leading-[21px] text-[16px] font-[400] bg-transparent text-black shadow-none">
+                                Assassin’s Creed Shadows revealed gameplay highlighting samurai combat as Yasuke and stealthy shinobi tactics as Naoe
+                            </p>
+                            <a href="" class="uppercase text-left leading-[28px] tracking-[3.52px] text-[16px] font-[700] w-[124.984px] h-[28px]">read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide m-[20px] p-[10px] flex flex-col bg-white leading-[24px]">
+                        <div class="image w-[366.672px] h-[250.25px] pt-[24px] leading-[24px] pb-[20px]">
+                            <div class="w-full h-[206.25px]">
+                                <a href="" class="cursor-pointer w-full h-full">
+                                    <img src="images/ubisoftInside1Images/SWO_UbiFwd24.jpg" alt="UN-AC-Shadows_HR_Dual_Protagonsit"
+                                        class="w-full object-cover" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content flex flex-col items-start w-[366.672px] h-[221px] leading-[24px] pb-[20px]">
+                            <span class="leading-[21px] text-[16px] font-[700]">11 June 2024</span>
+                            <h3 class="text-[18px] font-[700] leading-[25px] text-left mt-[16px]">New Star Wars Outlaws™ Gameplay: Sneaking Into Hutt
+                                Territory On Tatooine</h3>
+                            <p class="text-left my-[10px] leading-[21px] text-[16px] font-[400] bg-transparent text-black shadow-none">
+                                At Ubisoft Forward, a new gameplay showcase video follows Kay Vess on a mission to Mos Eisley to track down an expert
+                                gunslinger.
+                            </p>
+                            <a href="" class="uppercase text-left leading-[28px] tracking-[3.52px] text-[16px] font-[700] w-[124.984px] h-[28px]">read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide m-[20px] p-[10px] flex flex-col bg-white leading-[24px]">
+                        <div class="image w-[366.672px] h-[250.25px] pt-[24px] leading-[24px] pb-[20px]">
+                            <div class="w-full h-[206.25px]">
+                                <a href="" class="cursor-pointer w-full h-full">
+                                    <img src="images/ubisoftInside1Images/un-xdefiant-fwd24-thumbnail.jpg" alt="UN-AC-Shadows_HR_Dual_Protagonsit"
+                                        class="w-full object-cover" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content flex flex-col items-start w-[366.672px] h-[221px] leading-[24px] pb-[20px]">
+                            <span class="leading-[21px] text-[16px] font-[700]">11 June 2024</span>
+                            <h3 class="text-[18px] font-[700] leading-[25px] text-left mt-[16px]">XDefiant Unveils New Faction, Maps, and More at
+                                Ubisoft Forward</h3>
+                            <p class="text-left my-[10px] leading-[21px] text-[16px] font-[400] bg-transparent text-black shadow-none">
+                                GS-Kommando brings the tactical thunder in Season 1, along with new weapons and Capture the Flag, starting July 2.
+                            </p>
+                            <a href="" class="uppercase text-left leading-[28px] tracking-[3.52px] text-[16px] font-[700] w-[124.984px] h-[28px]">read
+                                more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide m-[20px] p-[10px] flex flex-col bg-white leading-[24px]">
+                        <div class="image w-[366.672px] h-[250.25px] pt-[24px] leading-[24px] pb-[20px]">
+                            <div class="w-full h-[206.25px]">
+                                <a href="" class="cursor-pointer w-full h-full">
+                                    <img src="images/ubisoftInside1Images/XBX_TitledHeroArt_1920x1080.jpg" alt="UN-AC-Shadows_HR_Dual_Protagonsit"
+                                        class="w-full object-cover" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content flex flex-col items-start w-[366.672px] h-[221px] leading-[24px] pb-[20px]">
+                            <span class="leading-[21px] text-[16px] font-[700]">11 June 2024</span>
+                            <h3 class="text-[18px] font-[700] leading-[25px] text-left mt-[16px]">Anno 117: Pax Romana Coming in 2025</h3>
+                            <p class="text-left my-[10px] leading-[21px] text-[16px] font-[400] bg-transparent text-black shadow-none">
+                                Become a governor and reshape the destiny of an empire as the city-building franchise heads to Ancient Rome.
+                            </p>
+                            <a href="" class="uppercase text-left leading-[28px] tracking-[3.52px] text-[16px] font-[700] w-[124.984px] h-[28px]">read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons w-full h-[60px] flex justify-between my-[20px]">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -220,6 +455,24 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // cssmode,
+            slidesPerView: 3,
+            spaceBetween: 0,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
