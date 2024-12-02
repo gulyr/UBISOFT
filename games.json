@@ -137,7 +137,7 @@
     {
       "id": 15,
       "name": "The Division Resurgance",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dA78458QCHaC4f5mYPGzH/c9848a87ed283ed63b8df617cb8eac38/ac-jade-box-no-crest.jpg",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1QBKENDc0Bfx9Blg8JE460/12312d5a0a7f3222286dbd49fb0109fa/Resurgence_Packshot_464x608_EN.jpg",
       "icons": ["bi bi-apple", "bi bi-android2"]
     },
     {
@@ -281,61 +281,143 @@
     },
     {
       "id": 31,
-      "name": "",
-      "image": "",
+      "name": "Valiant Hearts: Coming Home",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5rlXuzbksSATFOSQhcYOrK/af01ed37f53809b44e66c21f5c931a9a/vhch-boxshot-464x608.jpg",
       "icons": [
+        "fa-brands fa-windows",
+        "bi bi-nintendo-switch",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox",
-        "bi bi-nintendo-switch",
-        "fa-brands fa-windows",
-        "bi bi-triangle"
+        "bi bi-apple",
+        "bi bi-android2"
       ]
     },
     {
       "id": 32,
-      "name": "",
-      "image": "",
-      "icons": [
-        "fa-brands fa-playstation",
-        "fa-brands fa-xbox",
-        "bi bi-nintendo-switch",
-        "fa-brands fa-windows",
-        "bi bi-triangle"
-      ]
+      "name": "Rainbow Six: SMOL",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1G1LG5x9m8ArpgZfuzGeeq/bd14cc4a12385683f3f4898e40a2e25b/r6smol_packshot.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"]
     },
     {
       "id": 33,
-      "name": "",
-      "image": "",
-      "icons": [
-        "fa-brands fa-playstation",
-        "fa-brands fa-xbox",
-        "bi bi-nintendo-switch",
-        "fa-brands fa-windows",
-        "bi bi-triangle"
-      ]
+      "name": "Invincible: Guarding the Globe",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6D0qcqyX5jDxbbyXARwehT/8db1dc21ec047c9f9821d0501b40ec80/IGTG-boxshot.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"]
     },
     {
       "id": 34,
-      "name": "",
-      "image": "",
+      "name": "Gwen's Getaway",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4rZYFCBNy6DNa3jPDS7jME/284a2dc98c191e4157f0ae5134ab8090/gg_packshot.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"]
+    },
+    {
+      "id": 35,
+      "name": "Anno 1800 Console Edition",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4I6QCZhBCKpidDtSLjt8EK/9be30b7e335b112bdda331c62fd8476a/anno1800_gamecard.jpg",
+      "icons": ["fa-brands fa-xbox", "fa-brands fa-playstation"]
+    },
+    {
+      "id": 36,
+      "name": "OddBallers",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/733AgNMf4OSGqsSMQGo1Oe/8c4cdec35a276ee6c8f4b12fc1899323/OddBallers_gamecard-v2.jpg",
       "icons": [
+        "fa-brands fa-windows",
+        "bi bi-nintendo-switch",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Just Dance 2023 Edition",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/39R4qgW9vOgKuGLaMJIbdV/aa8e509d1230e38e94626045355e8f25/jd23-boxshot-v1.jpg",
+      "icons": [
+        "bi bi-nintendo-switch",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Rabbids: Party of Legends",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/ohniW4oA5ibqKi95rCfxa/6f5555745465705f35c8a4e26c00b679/rabbids_party_of_legends_boxshot.jpg",
+      "icons": [
+        "bi bi-nintendo-switch",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "fa-brands fa-windows"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "TRIVIAL PURSUIT LIive! 2",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4s42FRlN0846EEDZyNR6Vm/b36112590f1db0870b85036d062d081a/MicrosoftTeams-image__6_.png",
+      "icons": [
+        "bi bi-nintendo-switch",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Rainbow Six Extraction",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7A2Kk4CzmRgGwtY6JUP6TZ/4b52fdd8ef5942d0802ca4bfa1eff89f/r6-extraction.jpg",
+      "icons": [
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation",
+        "fa-brands fa-windows"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Monopoly Madness",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1DcHuCnOlwhJDbxC1U2tVA/e55c8b7433b917818b1eb6acaf286a1b/monopoly-madness-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation",
         "bi bi-nintendo-switch",
         "fa-brands fa-windows",
         "bi bi-triangle"
       ]
     },
     {
-      "id": 35,
-      "name": "",
-      "image": "",
+      "id": 42,
+      "name": "Far Cry 6",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Ws9s8x33yHSJANZFl0W6h/a8e6ecd6a870204eccf5ef20bed352fa/far-cry-6.jpg",
       "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Clash of Beasts",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2kUxm0W5QrbVxXIrxDl1Uj/6c31cf65b12fa21bd2c336b6ea8c6761/clash-of-beasts.jpg",
+      "icons": ["bi bi-android2", "bi bi-apple"]
+    },
+    {
+      "id": 44,
+      "name": "Scott Pilgrim vs. The World: The Game - Complete Edition",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5EDx4It6Dm3ahl6RNDRlq2/ef76b3dda70fd5c219cb0fbb13acf257/scott-pilgrim-vs-the-world.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation",
+        "bi bi-nintendo-switch"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Immortals Fenyx Rising",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dcR6gg1mhwBz9L2viNBMi/46d8ec0260b8c128f0d1d817503cefa1/immortals-fenyx-rising.jpg",
+      "icons": [
+        "fa-brands fa-windows",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox",
         "bi bi-nintendo-switch",
-        "fa-brands fa-windows",
         "bi bi-triangle"
       ]
     }
