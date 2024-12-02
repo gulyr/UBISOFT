@@ -129,3 +129,25 @@ header .svg_link {
 .featured_games .cards {
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
+.games select {
+  background-image: url("images/viewAllGamesImages/download.svg");
+  appearance: none;
+  background-position-x: calc(100% - 11.2px);
+  background-position-y: 50%;
+  background-size: 9.6px;
+  background-color: #fff;
+  border-color: rgb(118, 118, 118);
+  border-image-width: 1;
+  background-repeat: no-repeat;
+  outline-color: #6daaeb !important;
+}
+.games select option {
+  text-align: start;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  min-block-size: 19.2px;
+  line-height: 28px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+}

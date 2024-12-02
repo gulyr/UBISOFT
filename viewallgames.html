@@ -83,7 +83,7 @@
 
       <!-- Pre-Order Now section -->
       <section
-        class="pre_order_now w-full h-[461.344px] max-w-[1460px] my-[50px]"
+        class="pre_order_now w-full h-[461.344px] max-w-[1460px] my-[50px] flex flex-col"
       >
         <div
           class="relative w-full h-full pt-[461.344px] bg-[url('images/viewAllGamesImages/ac_shadows_std_keyart_no_logo.jpg')] bg-center bg-cover"
@@ -110,6 +110,58 @@
           </div>
         </div>
       </section>
+
+      <!-- Games section -->
+      <section
+        class="games w-full mb-[60px] leading-[24px] flex flex-col px-[30px]"
+      >
+        <div
+          class="sort_by w-full h-[68px] max-w-[1500px] leading-[24px] flex flex-wrap justify-between items-center px-[20px] pb-[20px]"
+        >
+          <h2 class="text-[40px] font-[700] grow-[100] leading-[48px]">
+            Sort By:
+          </h2>
+          <div
+            class="w-[142.594px] leading-[24px] ml-[30px] grow-[1] border-b-[1px] border-solid border-[#d80388]"
+          >
+            <select
+              name=""
+              class="w-full text-start leading-[28px] text-[16px] font-[700] text-[#d80388] items-center"
+            >
+              <option value="">All Platforms</option>
+              <option value="PC">PC</option>
+              <option value="Xbox Series X|S">Xbox Series X|S</option>
+              <option value="PlayStation 5">PlayStation 5</option>
+              <option value="Xbox One">Xbox One</option>
+              <option value="PlayStation 4">PlayStation 4</option>
+              <option value="Xbox 360">Xbox 360</option>
+              <option value="PlayStation 3">PlayStation 3</option>
+              <option value="Nintendo Switch">Nintendo Switch</option>
+              <option value="Wii">Wii</option>
+              <option value="Android">Android</option>
+              <option value="iOS">IOS</option>
+              <option value="VR">Virtual Reality</option>
+            </select>
+          </div>
+          <div>
+            <div
+              class="w-[142.594px] leading-[24px] ml-[30px] grow-[1] border-b-[1px] border-solid border-[#d80388]"
+            >
+              <select
+                name=""
+                class="w-full text-start leading-[28px] text-[16px] font-[700] text-[#d80388] items-center"
+              >
+                <option value="descending">New to Old</option>
+                <option value="ascending">Old to New</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div
+          class="cards w-full max-w-[1500px] flex flex-row flex-wrap justify-start leading-[24px] bg-orange-400"
+        ></div>
+      </section>
+
       <!-- Featured games -->
       <section
         class="featured_games w-full h-[742.609px] leading-[24px] relative flex flex-col justify-center bg-[#F0F3F4] pr-[40px]"
