@@ -151,3 +151,10 @@ header .svg_link {
   color: #000;
   font-weight: 700;
 }
+/* .games .card {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.games .card:hover {
+  transform: scale(1.05);
+} */

@@ -159,7 +159,19 @@
         </div>
         <div
           class="cards w-full max-w-[1500px] flex flex-row flex-wrap justify-start leading-[24px] bg-orange-400"
-        ></div>
+        >
+          <!-- <button
+            class="load-more w-[200px] h-[50px] mt-[20px] mx-auto bg-[#d80388] text-white font-[700] text-[16px] rounded-md"
+            onclick="loadMoreCards()"
+          >
+            Load More
+          </button> -->
+        </div>
+        <button
+          class="w-[167.266px] h-[54px] font-[700] max-w-[300px] min-w-[100px] mx-[535.359px] mt-[20px] leading-[15px] tracking-[1.6px] text-center uppercase text-[15px] rounded-[30px] bg-[#d80388] border-[2px] border-solid border-[#d80388] text-white hover:bg-white hover:text-[#d80388]"
+        >
+          load more
+        </button>
       </section>
 
       <!-- Featured games -->
@@ -528,5 +540,51 @@
         </div>
       </footer>
     </div>
+    <!-- <script>
+      let cardsLoaded = 0;
+      const totalCards = 100; // Ümumi card sayı (məsələn, serverdən gələn məlumatın ümumi sayı)
+      const cardsPerLoad = 15; // Hər dəfə yüklənəcək card sayı
+
+      function createCard(index) {
+        const card = document.createElement("div");
+        card.classList.add(
+          "card",
+          "w-[300px]",
+          "h-[200px]",
+          "m-[10px]",
+          "bg-white",
+          "shadow-lg",
+          "flex",
+          "items-center",
+          "justify-center",
+          "text-black",
+          "font-[700]",
+          "text-[20px]"
+        );
+        card.innerText = `Card ${index + 1}`;
+        return card;
+      }
+
+      function loadMoreCards() {
+        const cardsContainer = document.querySelector(".cards");
+        const remainingCards = totalCards - cardsLoaded;
+        const cardsToLoad = Math.min(remainingCards, cardsPerLoad);
+
+        for (let i = 0; i < cardsToLoad; i++) {
+          const newCard = createCard(cardsLoaded + i);
+          cardsContainer.appendChild(newCard);
+        }
+
+        cardsLoaded += cardsToLoad;
+
+        // Bütün cardlar yükləndikdə Load More düyməsini gizlətmək
+        if (cardsLoaded >= totalCards) {
+          document.querySelector(".load-more").style.display = "none";
+        }
+      }
+
+      // İlk dəfə səhifə yükləndikdə 15 card yüklə
+      document.addEventListener("DOMContentLoaded", loadMoreCards);
+    </script> -->
   </body>
 </html>

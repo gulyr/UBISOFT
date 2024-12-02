@@ -1,0 +1,343 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Star Wars Outlaws",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/51bQpXtlo48CyMrxj8F1RU/8cc9f5ae3fa67c590b7d6d2ca51e883c/swo-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation",
+        "fa-brands fa-windows"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Assassin's Creed: Shadows",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/25jYqtlv4yZXspIIIrPYcy/a586ea8ff962a3391f450746928a9181/AC-Shadows-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "fa-brands fa-windows",
+        "bi bi-triangle",
+        "fa-brands fa-apple"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "XDefiant",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "fa-brands fa-windows",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Anno 117: Pax Romana",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2lepn90pHxYMhFRYD7s2Yk/7699afba40ed0a6425a8e5140bac583a/anno-117-pax-romana-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Avatar: Frontiers of Pandora",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3a1Eo3mixiKRP69sewbisM/19c27f9470353122ee7c4592a56c9e05/avatar-frontiers-of-pandora-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "fa-brands fa-windows"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Skull and Bones",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7k7xD3KL0E3WGKOQptarrY/6ffd9fc14fdbba6933cd388583344f9e/skull-and-bones.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Prince of Persia: The Lost Crown",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Ldpa61RRMW3ER8Ilvx5s8/d837c9914e3f19ae6688f210202fc911/POPTLC_Packshot_v2.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "bi bi-triangle",
+        "bi bi-nintendo-switch",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "The Crew Motorfest",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7DiCOQ3GnZhqEALF3sX6Kf/f9409175464a733696c30a9dec0939d9/TCM_Packshot.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Assassin's Creed Mirage",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/30dd8syYR9JAPhV759qTQe/66e1f4978d8a6ff11201bc1c6dd7b7f9/acm-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-windows",
+        "fa-brands fa-xbox",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Just Dance 2024 Edition",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/54Qzk9R0090zSHaHL1dTyy/092b2edba4f893833c24e252cd976ac6/jd24-gameCard-exp.jpg",
+      "icons": [
+        "bi bi-triangle",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Assassins's Creed Nexus VR",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/13wgIb1aUEmkTLCvYIka5R/de87abadc854a648bf590c46681e698a/acnx-box_art-official.jpg",
+      "icons": ["a-solid fa-vr-cardboard"]
+    },
+    {
+      "id": 12,
+      "name": "Riders Republic",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/TcdclIdtLBu6i1YW9Ysdx/a97ca5e8fc38d0d2fefffd769e5c4618/riders-republic.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Assassin's Creed Jade",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dA78458QCHaC4f5mYPGzH/c9848a87ed283ed63b8df617cb8eac38/ac-jade-box-no-crest.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"]
+    },
+    {
+      "id": 14,
+      "name": "Mario + Rabbids Sparks of Hope",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3l8a1iv0wCVkfNnNmPf95g/ff5d28fa91bfefdabe43523bae4d6315/rkb2-game_info-boxart-keyart-01-560x698-logo_Tablet-_1_.jpg",
+      "icons": ["bi bi-nintendo-switch"]
+    },
+    {
+      "id": 15,
+      "name": "The Division Resurgance",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dA78458QCHaC4f5mYPGzH/c9848a87ed283ed63b8df617cb8eac38/ac-jade-box-no-crest.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"]
+    },
+    {
+      "id": 16,
+      "name": "Roller Champions",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7eA295Gbsyn8ydRdJmRCM/af24716c28fb2ddf9b169880fc6e3015/roller-champions-s3-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-nintendo-switch"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Rocksmith+",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1k4oo2ekPcs0VLFkUxCHZP/a443aef524eb668032bb3076c0cc7f33/rsplus-game_info-boxart-keyart-02-348x434.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "The Settlers: New Allies",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/29G0BFEY0utT1gbvlGKQaL/33f1cbf10e85d8e483aad9c478143bbc/Boxshot.png",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-nintendo-switch",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Brawlhalla",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5UmjmHnuHsCtRZMCNyWg0k/d90be8ba795837385ccd8784e9f51e3d/bwl_keyart-gamecard__2_.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-apple",
+        "bi bi-android2"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "For Honor",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/ASrxpoQFPm53ba7kwnZWz/d3b6ac267b07d66a5639811b9da4786c/for-honor.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "NFL Primetime Fantasy",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6HoYFTxGASTjY7WU8zT4pE/ace8c35ecf83f08ad07062a38e89f2f6/nfl-primetime-fantasy-boxshot-fpo.jpg",
+      "icons": ["bi bi-nintendo-switch"]
+    },
+    {
+      "id": 22,
+      "name": "Prince of Persia: The sands of Time",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7xCWEWPL7e0Fy24ambzWv6/66fc66918e64f740f14df63c4f7193d8/POPR_temporaryPACKSHOT.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Beyond Good and Evil 2",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1MDP58pf0Z7FZgteuE9skd/8144ee26006e114a5b2796cf31ffdc89/BGE2_UBICOM_GAME_INFO_NAKED_BOXSHOT_Mobile.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Rainbow Six Mobile",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Rcg1PzbpLcmBbxyzpJBtn/b3218610d5f2cb6e8c74d01da89dda87/R6M-Explore-More-Games-Carrousel.png",
+      "icons": ["bi bi-nintendo-switch"]
+    },
+    {
+      "id": 25,
+      "name": "Just Dance 2025 Edition",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3IbgJKxwu2IL4o7BYd9rGh/0341fd2a8fe95a7e89d4fee3a560f5a5/just-dance-2025-boxshot.jpg",
+      "icons": [
+        "bi bi-nintendo-switch",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Just Dance VR",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2fhW1ZQN2DdwTeIje8pBRJ/6fb74b3f9b8fa18d44be4cfe4d12e418/jdVR-boxshot.jpg",
+      "icons": []
+    },
+    {
+      "id": 27,
+      "name": "MONOPOLY®",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1hcaftR8LPXqujrRAHHzx8/1b0772df0ecfcb800dfb89b3cdc79d9b/monopoly-2024-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation",
+        "bi bi-nintendo-switch",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Beyond Good & Evil 20th Anniversary Edition",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3f2S7WTjgIZ8Q7QVGARFF7/5b90a35392baf9160ce70cf2449e8856/BGER_Packshot.jpg",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-nintendo-switch",
+        "fa-brands fa-windows",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "BattleCore Arena",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1bsdTEbSIrToINLUPiU0TD/7f8a26a4ce3e62d629f6c08439a02444/BCA_Packshot.jpg",
+      "icons": ["fa-brands fa-windows"]
+    },
+    {
+      "id": 30,
+      "name": "The Rogue Prince of Persia",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3khj4gt1oXuEhkMkkUyaWD/39f186b04e598a5b708e08653a103d58/Musset--KEYART-Packshot-464x608.jpg",
+      "icons": []
+    },
+    {
+      "id": 31,
+      "name": "",
+      "image": "",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-nintendo-switch",
+        "fa-brands fa-windows",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "",
+      "image": "",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-nintendo-switch",
+        "fa-brands fa-windows",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "",
+      "image": "",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-nintendo-switch",
+        "fa-brands fa-windows",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "",
+      "image": "",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-nintendo-switch",
+        "fa-brands fa-windows",
+        "bi bi-triangle"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "",
+      "image": "",
+      "icons": [
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-nintendo-switch",
+        "fa-brands fa-windows",
+        "bi bi-triangle"
+      ]
+    }
+  ]
+}
