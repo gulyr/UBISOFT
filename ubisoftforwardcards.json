@@ -1,0 +1,46 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "image": "images/ubisoftInside1Images/afopskybreaker__960_x_540_.jpeg",
+      "date": "16 July 2024",
+      "title": "Avatar: Frontiers of Pandora’s First Story Pack, The Sky Breaker, Out Now",
+      "content": "Players who haven’t experienced the Western Frontier yet can also play a free trial of the main game."
+    },
+    {
+      "id": 2,
+      "image": "images/ubisoftInside1Images/960x540px_News-banner_UF_RECAP.jpg",
+      "date": "16 July 2024",
+      "title": "Star Wars Outlaws and Assassin’s Creed Shadows Reveal New Gameplay, XDefiant Season 1 Details Announced",
+      "content": "Get ready to take on crime syndicates, fight through feudal Japan, build your own Roman empire, and so much more."
+    },
+    {
+      "id": 3,
+      "image": "images/ubisoftInside1Images/UN-AC-Shadows_HR_Dual_Protagonsit_16x9_960.jpg",
+      "date": "16 July 2024",
+      "title": "Assassin’s Creed Shadows Shows Off New Combat and Stealth Gameplay",
+      "content": "Assassin’s Creed Shadows revealed gameplay highlighting samurai combat as Yasuke and stealthy shinobi tactics as Naoe"
+    },
+    {
+      "id": 4,
+      "image": "images/ubisoftInside1Images/SWO_UbiFwd24.jpg",
+      "date": "16 July 2024",
+      "title": "New Star Wars Outlaws™ Gameplay: Sneaking Into Hutt Territory On Tatooine",
+      "content": "At Ubisoft Forward, a new gameplay showcase video follows Kay Vess on a mission to Mos Eisley to track down an expert gunslinger."
+    },
+    {
+      "id": 5,
+      "image": "images/ubisoftInside1Images/un-xdefiant-fwd24-thumbnail.jpg",
+      "date": "16 July 2024",
+      "title": "XDefiant Unveils New Faction, Maps, and More at Ubisoft Forward",
+      "content": "GS-Kommando brings the tactical thunder in Season 1, along with new weapons and Capture the Flag, starting July 2."
+    },
+    {
+      "id": 6,
+      "image": "images/ubisoftInside1Images/XBX_TitledHeroArt_1920x1080.jpg",
+      "date": "16 July 2024",
+      "title": "Anno 117: Pax Romana Coming in 2025",
+      "content": "Become a governor and reshape the destiny of an empire as the city-building franchise heads to Ancient Rome."
+    }
+  ]
+}
