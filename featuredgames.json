@@ -1,0 +1,29 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "image": "images/cardImages/starwarsoutlawscard.jpg",
+      "name": "Star Wars Outlaws"
+    },
+    {
+      "id": 2,
+      "image": "images/cardImages/assasincreedmiragecard.jpg",
+      "name": "Assassin's Creed Mirage"
+    },
+    {
+      "id": 3,
+      "image": "images/cardImages/rkb2-game_info-boxart-keyart-01-560x698-logo_Tablet-_1_.jpg",
+      "name": "Mario + Rabbids Sparks of Hope"
+    },
+    {
+      "id": 4,
+      "image": "images/cardImages/xdefiantcard.jpg",
+      "name": "XDefiant"
+    },
+    {
+      "id": 5,
+      "image": "images/cardImages/thecrewmotorfestcard.jpg",
+      "name": "The Crew Motorfest"
+    }
+  ]
+}
