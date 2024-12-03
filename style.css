@@ -158,3 +158,9 @@ header .svg_link {
 .games .card:hover {
   transform: scale(1.05);
 } */
+.menu {
+  overflow: hidden;
+}
+.menu::-webkit-scrollbar {
+  display: none;
+}
