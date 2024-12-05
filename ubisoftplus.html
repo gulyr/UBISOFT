@@ -36,6 +36,12 @@
       crossorigin="anonymous"
     />
     <link href="src/output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-['Ubisoft Sans'] relative box-border overflow-x-hidden">
@@ -91,7 +97,7 @@
                   </svg>
                 </a>
               </div>
-              <div
+              <!-- <div
                 class="w-[795px] h-[76px] flex items-center justify-start grow-[1] shrink-[1] bg-slate-600"
               >
                 <ul
@@ -107,7 +113,7 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <div class="flex justify-end items-center">
               <div
@@ -133,10 +139,13 @@
                     ></path>
                   </svg>
                 </span>
-                <form action="" class="w-[180px] h-[37px] text-[#3a4570]">
+                <form
+                  action=""
+                  class="w-[180px] h-[37px] text-[#3a4570] outline-none"
+                >
                   <input
                     type="text"
-                    class="text-[16px] leading-[37px] text-white bg-transparent outline-none w-full h-full px-[40px]"
+                    class="text-[16px] leading-[37px] text-white bg-transparent outline-none w-full h-full px-[40px] border-none focus:outline-none focus:border-none"
                     placeholder="Search for Games"
                   />
                 </form>
@@ -200,6 +209,7 @@
         </nav>
       </div>
     </header>
+
     <!-- Ubisoft+ -->
     <section
       class="ubisoftplus w-full h-[721.166px] bg-[url('images/ubisoftPlusImages/Ubisoft+_GamingList-Mosaic_WEB_768x300_x2.jpg')] bg-cover bg-center"
@@ -358,6 +368,493 @@
         </p>
       </div>
     </section>
+    <!--  -->
+
+    <nav class="bg-red-300 border-gray-200">
+      <div
+        class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4"
+      >
+        <div
+          id="mega-menu"
+          class="w-[795px] h-[76px] flex items-center justify-start grow-[1] shrink-[1] bg-slate-600"
+        >
+          <ul
+            class="flex flex-wrap items-center leading-[25.6px] w-full h-[76px]"
+          >
+            <li class="list-item mr-[16px] text-left leading-[25.6px]">
+              <button
+                id="mega-menu-dropdown-button-1"
+                data-dropdown-toggle="mega-menu-dropdown-1"
+                class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Games
+                <svg
+                  class="w-2.5 h-2.5 ms-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <div
+                id="mega-menu-dropdown-1"
+                class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+              >
+                <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                  <ul
+                    class="space-y-4"
+                    aria-labelledby="mega-menu-dropdown-button"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Library
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Resources
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Pro Version
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                  <ul class="space-y-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Blog
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Newsletter
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Playground
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        License
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-4">
+                  <ul class="space-y-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Support Center
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="list-item mr-[16px] text-left leading-[25.6px]">
+              <button
+                id="mega-menu-dropdown-button-2"
+                data-dropdown-toggle="mega-menu-dropdown-2"
+                class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                DLC
+                <svg
+                  class="w-2.5 h-2.5 ms-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <div
+                id="mega-menu-dropdown-2"
+                class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+              >
+                <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                  <ul
+                    class="space-y-4"
+                    aria-labelledby="mega-menu-dropdown-button"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Library
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Resources
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Pro Version
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                  <ul class="space-y-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Blog
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Newsletter
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Playground
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        License
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-4">
+                  <ul class="space-y-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Support Center
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="list-item mr-[16px] text-left leading-[25.6px]">
+              <a
+                href="#"
+                class="block py-2 px-3 text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                aria-current="page"
+                >Deals</a
+              >
+            </li>
+            <li class="list-item mr-[16px] text-left leading-[25.6px]">
+              <button
+                id="mega-menu-dropdown-button-3"
+                data-dropdown-toggle="mega-menu-dropdown-3"
+                class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+              >
+                Ubisoft+
+                <svg
+                  class="w-2.5 h-2.5 ms-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <div
+                id="mega-menu-dropdown-3"
+                class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700"
+              >
+                <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                  <ul
+                    class="space-y-4"
+                    aria-labelledby="mega-menu-dropdown-button"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Library
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Resources
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Pro Version
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                  <ul class="space-y-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Blog
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Newsletter
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Playground
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        License
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="p-4">
+                  <ul class="space-y-4">
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      >
+                        Support Center
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="flex justify-end items-center">
+            <div
+              class="relative border-[1px] border-solid border-[#f2f2f] rounded-[20px] w-[182px] h-[40px] min-w-[180px] mr-[20px] flex items-center"
+            >
+              <span
+                class="absolute left-[14px] w-[14px] h-[14px] text-center align-middle text-[13px] flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.667 0a5.667 5.667 0 1 0 3.237 10.318l3.389 3.39a1 1 0 0 0 1.414-1.415l-3.389-3.389A5.667 5.667 0 0 0 5.666 0zM2 5.667a3.667 3.667 0 1 1 7.333 0 3.667 3.667 0 0 1-7.333 0z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+              </span>
+              <form
+                action=""
+                class="w-[180px] h-[37px] text-[#3a4570] outline-none"
+              >
+                <input
+                  type="text"
+                  class="text-[16px] leading-[37px] text-white bg-transparent outline-none w-full h-full px-[40px] border-none focus:outline-none focus:border-none"
+                  placeholder="Search for Games"
+                />
+              </form>
+            </div>
+            <div
+              class="flex justify-end items-center gap-x-[8px] gap-y-[8px] h-[40px]"
+            >
+              <a
+                href=""
+                class="w-[41px] m-w-[30px] h-[40px] px-[10px] text-[15px] flex items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0.88 2.04 12.25 11.08"
+                  fill="none"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.9661 2.90175C2.61969 2.32487 3.47504 2.04163 4.3127 2.04163C5.36338 2.04163 6.32259 2.47843 6.9938 3.22887C7.66524 2.47782 8.6329 2.05118 9.67776 2.05118C11.351 2.05118 13.1134 3.20954 13.125 5.44026L13.125 5.44328C13.125 6.58171 12.5277 7.66338 11.6989 8.71372C10.871 9.76286 9.73327 10.8754 8.50373 12.0776L8.47466 12.1061L8.42932 12.1514C8.4264 12.1544 8.42344 12.1573 8.42046 12.1601C8.19067 12.3805 7.966 12.596 7.74198 12.8202C7.73476 12.8274 7.72734 12.8345 7.71974 12.8413C7.52844 13.0136 7.27803 13.125 6.99523 13.125C6.74156 13.125 6.47275 13.0419 6.25328 12.825C6.1295 12.7058 6.00835 12.587 5.89061 12.4715L5.88627 12.4672C5.76541 12.3487 5.64823 12.2338 5.53144 12.1216L5.52694 12.1172L5.46734 12.0587C4.24886 10.8626 3.12224 9.75671 2.30089 8.71465C1.47225 7.66334 0.875 6.58167 0.875 5.44328C0.875 4.35318 1.30193 3.48796 1.9661 2.90175ZM2.73813 3.77644C2.33071 4.13603 2.04167 4.67998 2.04167 5.44328C2.04167 6.1774 2.43247 6.99691 3.21716 7.99246C3.99214 8.97569 5.07423 10.0379 6.3266 11.2673L6.342 11.2824C6.46311 11.3988 6.58382 11.5172 6.70325 11.6344L6.70604 11.6371C6.80223 11.7315 6.8977 11.8251 6.99406 11.9185C7.20078 11.7134 7.4066 11.516 7.60845 11.3224L7.65178 11.279L7.65659 11.2743C8.91615 10.0426 10.0047 8.97739 10.783 7.991C11.567 6.99753 11.9578 6.17847 11.9583 5.44477C11.95 3.98878 10.8489 3.21785 9.67776 3.21785C8.78835 3.21785 8.0109 3.65949 7.58511 4.38998C7.58088 4.39724 7.57648 4.40441 7.57194 4.41149L7.48602 4.54524C7.37871 4.7123 7.19378 4.8133 6.99523 4.8133C6.79667 4.8133 6.61174 4.7123 6.50443 4.54524L6.41851 4.41149C6.41478 4.40568 6.41115 4.3998 6.40763 4.39387C5.96879 3.65421 5.1955 3.20829 4.3127 3.20829C3.72794 3.20829 3.15611 3.40751 2.73813 3.77644Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div
+              class="flex justify-end items-center gap-x-[8px] gap-y-[8px] h-[40px] mr-[10px]"
+            >
+              <a
+                href=""
+                class="w-[41px] m-w-[30px] h-[40px] px-[10px] text-[15px] flex items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  fill="none"
+                  viewBox="0.88 0.88 12.22 12.25"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.078 1.016a.583.583 0 0 1 .822.062l1.53 1.775c.017.02.033.042.047.064h8.741a.875.875 0 0 1 .833 1.141L11.278 9.6a.875.875 0 0 1-.833.608H3.208a.875.875 0 0 1-.875-.875V3.368L1.016 1.84a.583.583 0 0 1 .062-.823zM3.5 9.042h6.732l.84-2.625H3.5v2.625zm0-3.792V4.083h8.318l-.373 1.167H3.5z"
+                    fill="#fff"
+                  ></path>
+                  <path
+                    d="M4.667 11.958a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0zM9.625 13.125a1.167 1.167 0 1 0 0-2.333 1.167 1.167 0 0 0 0 2.333z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <!-- footer -->
     <footer
