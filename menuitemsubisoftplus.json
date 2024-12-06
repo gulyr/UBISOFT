@@ -1,0 +1,52 @@
+{
+  "menus": [
+    {
+      "title": "Categories",
+      "menuitems": [
+        "Best Sellers",
+        "Coming Soon",
+        "Free Games",
+        "Latest Releases",
+        "Timeless Hits"
+      ]
+    },
+    {
+      "title": "Featured",
+      "menuitems": [
+        "Star Wars Outlaws",
+        "Assassin's Creed Shadows",
+        "Rainbow Six Siege",
+        "Assassin's Creed Mirage",
+        "Assassin's Creed Valhalla",
+        "Avatar: Frontiers of Pandora",
+        "Skull and Bones"
+      ]
+    },
+    {
+      "title": "Featured",
+      "menuitems": [
+        "Star Wars Outlaws",
+        "Rainbow Six Siege",
+        "Anno 1800",
+        "Assassin's Creed Valhalla",
+        "Assassin's Creed Mirage",
+        "For Honor",
+        "Avatar: Frontiers of Pandora",
+        "Far Cry 6",
+        "Skull and Bones",
+        "The Crew Motorfest",
+        "The Division 2"
+      ]
+    },
+    {
+      "title": "DLC Type",
+      "menuitems": [
+        "Currency",
+        "Season Pass",
+        "Extensions",
+        "Packs",
+        "Skins and cosmetics"
+      ]
+    }
+  ]
+}
