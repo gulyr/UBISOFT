@@ -186,9 +186,9 @@ header .header_bottom svg {
 .scroll::-webkit-scrollbar-track {
   background: transparent;
 }
-.list-item:hover .scroll::-webkit-scrollbar-thumb {
+/* .scroll li:hover .scroll::-webkit-scrollbar-thumb {
   background: #fff;
-}
+} */
 #mega-menu-dropdown-3 {
   box-shadow: rgb(158, 169, 189) 0px 10px 30px -14px;
 }
