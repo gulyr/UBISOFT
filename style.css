@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'Ubisoft Sans';
-  src: url('fonts/UbisoftSansRegular/Ubisoft-Sans-Regular.ttf')
-    format('truetype');
+  font-family: "Ubisoft Sans";
+  src: url("fonts/UbisoftSansRegular/Ubisoft-Sans-Regular.ttf")
+    format("truetype");
 }
 @font-face {
-  font-family: 'Ubisoft Sans Bold';
-  src: url('fonts/UbisoftSansBold/Ubisoft-Sans-Bold') format('truetype');
+  font-family: "Ubisoft Sans Bold";
+  src: url("fonts/UbisoftSansBold/Ubisoft-Sans-Bold") format("truetype");
   font-style: normal;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubisoft Sans', sans-serif;
+  font-family: "Ubisoft Sans", sans-serif;
 }
 
 /* header */
@@ -62,7 +62,7 @@ header .svg_link {
   transform: matrix(1, 0, 0, 1, 0, -7.3125);
 }
 .ubisoft_channels::before {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -130,7 +130,7 @@ header .svg_link {
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .games select {
-  background-image: url('images/viewAllGamesImages/download.svg');
+  background-image: url("images/viewAllGamesImages/download.svg");
   appearance: none;
   background-position-x: calc(100% - 11.2px);
   background-position-y: 50%;
@@ -168,4 +168,27 @@ header .svg_link {
 }
 header .header_bottom svg {
   /* background: white !important; */
+}
+#mega-menu-dropdown-1 {
+  box-shadow: rgb(158, 169, 189) 0px 10px 30px -14px;
+}
+#mega-menu-dropdown-2 {
+  box-shadow: rgb(158, 169, 189) 0px 10px 30px -14px;
+}
+.scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background: transparent;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.list-item:hover .scroll::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+#mega-menu-dropdown-3 {
+  box-shadow: rgb(158, 169, 189) 0px 10px 30px -14px;
 }
