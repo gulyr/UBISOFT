@@ -17,9 +17,20 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link href="src/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* .news .grid_container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            row-gap: 150px;
+            justify-content: center;
+            line-height: 24px;
+        }
+
+        .news .grid_item {} */
+    </style>
 </head>
 
-<body>
+<body class="text-[14px]">
     <div class="container1 w-full flex flex-col relative">
         <!-- header -->
         <header class="header flex text-center justify-around items-center gap-[100px] w-full sticky top-0 left-0 z-10">
@@ -67,6 +78,37 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- News section -->
+        <section class="news w-full flex flex-col pt-[50px]">
+            <div class="grid_container flex flex-col gap-[150px] justify-center items-center w-full">
+                <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                    <div class="flex w-full h-full justify-center">
+                        <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                            <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oheIoncCkrrQVCMNXwwI/d2a14f2680fa1993d6fac1b759ac722e/BrandNewsArticle_Ubisoft__CLASSICS__1_Agnostic_July24_960x540.jpg"
+                                alt="" class="w-full object-cover">
+                        </div>
+                        <div class="max-w-[550px] w-[34rem]">
+                            <p class="leading-[21px] text-[16px] font-[400]">
+                                <span>December 6, 2024</span> |
+                                <span>1 Min Read</span>
+                            </p>
+                            <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">Get Your First Month of Ubisoft+ Classics for
+                                $1
+                            </h2>
+                            <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">Play beloved games like Assassin’s Creed
+                                Valhalla, Far Cry 6, and Rainbow Six Siege with your subscription.
+                            </p>
+                            <div class="flex">
+                                <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read
+                                    more</span>
+                                <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </section>
 
