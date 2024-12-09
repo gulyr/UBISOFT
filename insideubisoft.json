@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "href": "insideubisoft1.html",
+      "image": "images/insideUbisoft/insideubisoft1.png",
+      "title": "ubisoft forward 2024 announce"
+    },
+    {
+      "href": "#",
+      "image": "images/insideUbisoft/insideubisoft2.jpg",
+      "title": "the inside story of the crew"
+    },
+    {
+      "href": "#",
+      "image": "images/insideUbisoft/insideubisoft3.jpg",
+      "title": "ubisoft commitment to lgbtqia+ communities"
+    }
+  ]
+}

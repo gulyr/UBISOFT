@@ -1153,8 +1153,8 @@
       <h2 class="font-['Ubisoft Sans Bold'] pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-bold text-black">
         inside ubisoft
       </h2>
-      <div class="cards flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full px-[30px] gap-10">
-        <a href="insideubisoft1.html" target="_blank"
+      <div class="cards_inside flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full px-[30px] gap-10">
+        <!-- <a href="insideubisoft1.html" target="_blank"
           class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
           <img src="images/insideUbisoft/insideubisoft1.png" alt="Card1 image" loading="lazy" class="w-full object-cover rounded-xl" />
           <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
@@ -1162,23 +1162,23 @@
               ubisoft forward 2024 announce
             </h2>
           </div>
-        </a>
-        <a href="#" class="group relative cursor-pointer text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
+        </a> -->
+        <!-- <a href="#" class="group relative cursor-pointer text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
           <img src="images/insideUbisoft/insideubisoft2.jpg" alt="Card2 image" loading="lazy" class="w-full object-cover rounded-xl" />
           <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
             <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
               the inside story of the crew
             </h2>
           </div>
-        </a>
-        <a href="#" class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0 rounded-sm">
+        </a> -->
+        <!-- <a href="#" class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0 rounded-sm">
           <img src="images/insideUbisoft/insideubisoft3.jpg" alt="Inside Ubisoft Wallpaper" loading="lazy" class="w-full object-cover rounded-xl" />
           <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
             <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
               ubisoft commitment to lgbtqia+ communities
             </h2>
           </div>
-        </a>
+        </a> -->
       </div>
     </section>
 
@@ -1461,6 +1461,33 @@
               </div>
             </div>
           </div>
+          `
+          )
+          .join("");
+      })
+      .catch((error) => {
+        console.error("JSON fayl yüklənmədi:", error);
+      });
+
+    // inside ubisoft slides
+    axios
+      .get("insideubisoft.json")
+      .then((response) => {
+        const cards = response.data.cards;
+        const cardsInside = document.querySelector(".cards_inside");
+
+        cardsInside.innerHTML += cards
+          .map(
+            (card, index) => `
+         <a href="${card.href}" target="_blank"
+          class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
+          <img src="${card.image}" alt="Card1 image" loading="lazy" class="w-full object-cover rounded-xl" />
+          <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
+            <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
+              ${card.title}
+            </h2>
+          </div>
+        </a>
           `
           )
           .join("");
