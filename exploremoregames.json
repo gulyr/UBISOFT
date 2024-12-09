@@ -1,0 +1,105 @@
+{
+  "games": [
+    {
+      "image": "images/cardImages/assasincreedshadowscard.jpg",
+      "title": "Assassin's Creed Shadows",
+      "icons": [
+        " fa-brands fa-playstation ",
+        " fa-brands fa-xbox ",
+        " fa-brands fa-windows ",
+        " bi bi-triangle ",
+        " fa-brands fa-apple "
+      ]
+    },
+    {
+      "image": "images/cardImages/starwarsoutlawscard.jpg",
+      "title": "Star Wars Outlaws",
+      "icons": [
+        " fa-brands fa-xbox ",
+        " fa-brands fa-playstation ",
+        " fa-brands fa-windows "
+      ]
+    },
+    {
+      "image": "images/cardImages/anno117card.jpg",
+      "title": "Anno 117 : Pax Romana",
+      "icons": [
+        " fa-brands fa-windows ",
+        " fa-brands fa-playstation ",
+        " fa-brands fa-xbox "
+      ]
+    },
+    {
+      "image": "images/cardImages/avatarcard.jpg",
+      "title": "Avatar: Frontiers of Pandora",
+      "icons": [
+        " fa-brands fa-playstation ",
+        " fa-brands fa-xbox ",
+        " fa-brands fa-windows "
+      ]
+    },
+    {
+      "image": "images/cardImages/skullandbonescard.jpg",
+      "title": "Skull and Bones",
+      "icons": [
+        " fa-brands fa-windows ",
+        " fa-brands fa-playstation ",
+        " fa-brands fa-xbo ",
+        " bi bi-triangle "
+      ]
+    },
+    {
+      "image": "images/cardImages/princeofpersiacard.jpg",
+      "title": "Prince of Persia: The Last Crown",
+      "icons": [
+        " fa-brands fa-windows ",
+        " bi bi-triangle ",
+        " bi bi-nintendo-switch ",
+        " fa-brands fa-playstation ",
+        " fa-brands fa-xbox ",
+        " fa-brands fa-playstation "
+      ]
+    },
+    {
+      "image": "images/cardImages/thecrewmotorfestcard.jpg",
+      "title": "The Crew Motorfest",
+      "icons": [
+        " fa-brands fa-windows ",
+        " fa-brands fa-playstation ",
+        " fa-brands fa-xbox ",
+        " bi bi-triangle "
+      ]
+    },
+    {
+      "image": "images/cardImages/assasincreedmiragecard.jpg",
+      "title": "Assassin's Creed Mirage",
+      "icons": [
+        " fa-brands fa-playstation ",
+        " fa-brands fa-windows ",
+        " fa-brands fa-xbox ",
+        " bi bi-triangle ",
+        " fa-brands fa-apple "
+      ]
+    },
+    {
+      "image": "images/cardImages/justdancecard.jpg",
+      "title": "Just Dance 2024 Edition",
+      "icons": [
+        " bi bi-nintendo-switch ",
+        " fa-brands fa-playstation ",
+        " fa-brands fa-xbox "
+      ]
+    },
+
+    {
+      "image": "images/cardImages/xdefiantcard.jpg",
+      "title": "XDefiant",
+      "icons": [
+        " fa-brands fa-windows ",
+        " fa-brands fa-playstation ",
+        " fa-brands fa-xbox ",
+        " bi bi-triangle "
+      ]
+    }
+  ]
+}
