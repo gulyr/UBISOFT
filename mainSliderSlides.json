@@ -1,0 +1,284 @@
+{
+  "slides": [
+    {
+      "image": "images/sliderImages/IMG_Background.jpg",
+      "title": "winter challenge",
+      "description": "Join the Winter Challenge and play games for a chance to win prizes!",
+      "buttons": [
+        {
+          "text": "join now",
+          "classes": [
+            "bg-[#FF0D78]",
+            "border-[#FF0D78]",
+            "hover:bg-white",
+            "hover:text-[#FF0D78]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/starwarsoutlaws.jpg",
+      "title": "STAR WARS OUTLAWS",
+      "description": "STORY PACK #1: WILD CARD",
+      "buttons": [
+        {
+          "text": "visit website",
+          "classes": [
+            "bg-black",
+            "border-black",
+            "hover:bg-white",
+            "hover:text-black"
+          ]
+        },
+        {
+          "text": "buy now",
+          "classes": [
+            "bg-black",
+            "border-black",
+            "hover:bg-white",
+            "hover:text-black"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/forhonor.jpg",
+      "title": "For Honor x Destiny Halloween Event",
+      "description": "Exclusive For Honor x Destiny Halloween crossover event with not only one—but two Hero Skins inspired by the world of Destiny.",
+      "buttons": [
+        {
+          "text": "watch trailer",
+          "classes": [
+            "bg-[#A99159]",
+            "border-[#A99159]",
+            "hover:bg-white",
+            "hover:text-[#A99159]"
+          ]
+        },
+        {
+          "text": "visit website",
+          "classes": [
+            "bg-[#A99159]",
+            "border-[#A99159]",
+            "hover:bg-white",
+            "hover:text-[#A99159]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/justdance.jpg",
+      "title": "Just Dance 2025 Edition: AVAILABLE NOW",
+      "description": "Get your friends and family together to let loose on Just Dance! To party, exercise, or create special family moments, Just Dance 2025 Edition has something for everyone, with 40 hot new songs.",
+      "buttons": [
+        {
+          "text": "watch trailer",
+          "classes": [
+            "bg-[#004347]",
+            "border-[#004347]",
+            "hover:bg-white",
+            "hover:text-[#004347]"
+          ]
+        },
+        {
+          "text": "buy now",
+          "classes": [
+            "bg-[#004347]",
+            "border-[#004347]",
+            "hover:bg-white",
+            "hover:text-[#004347]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/assasincreedshadow.jpg",
+      "title": "Assassin's Creed Shadows releases February 14th",
+      "description": "Become a legendary samurai and a shinobi assassin in feudal Japan. Watch more than 12 minutes of gameplay footage now.",
+      "buttons": [
+        {
+          "text": "watch trailer",
+          "classes": [
+            "bg-black",
+            "border-black",
+            "hover:bg-white",
+            "hover:text-black"
+          ]
+        },
+        {
+          "text": "visit website",
+          "classes": [
+            "bg-black",
+            "border-black",
+            "hover:bg-white",
+            "hover:text-black"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/assasincreedsyndicate.jpg",
+      "title": "NOW AT 60 FPS",
+      "description": "Rediscover this classic, now at 60 FPS on Xbox Series X|S, PS5, and PS5 Pro!",
+      "buttons": [
+        {
+          "text": "watch trailer",
+          "classes": [
+            "bg-[#7F1A1A]",
+            "border-[#7F1A1A]",
+            "hover:bg-white",
+            "hover:text-[#7F1A1A]"
+          ]
+        },
+        {
+          "text": "buy now",
+          "classes": [
+            "bg-[#7F1A1A]",
+            "border-[#7F1A1A]",
+            "hover:bg-white",
+            "hover:text-[#7F1A1A]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/princeofpersian.jpg",
+      "title": "Prince of Persia: 35th Anniversary",
+      "description": "Embark on a legendary journey through time and adventure with the iconic Prince of Persia franchise, celebrating its 35th anniversary this year.",
+      "buttons": [
+        {
+          "text": "visit website",
+          "classes": [
+            "bg-[#E28935]",
+            "border-[#E28935]",
+            "hover:bg-white",
+            "hover:text-[#E28935]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/battlecore.jpg",
+      "title": "Battlecore Arena - Play for free now!",
+      "description": "BattleCore Arena is a competitive platform shooter where gravity mastery is the key to victory.",
+      "buttons": [
+        {
+          "text": "play for free",
+          "classes": [
+            "bg-[#F94308]",
+            "border-[#F94308]",
+            "hover:bg-white",
+            "hover:text-[#F94308]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/avatar.jpg",
+      "title": "Protect Pandora. Become Na'vi.",
+      "description": "Reconnect with your lost heritage, discover what it truly means to be Na'vi, and join other clans to protect Pandora.",
+      "buttons": [
+        {
+          "text": "watch trailer",
+          "classes": [
+            "bg-[#016AA4]",
+            "border-[#016AA4]",
+            "hover:bg-white",
+            "hover:text-[#016AA4]"
+          ]
+        },
+        {
+          "text": "buy now",
+          "classes": [
+            "bg-[#016AA4]",
+            "border-[#016AA4]",
+            "hover:bg-white",
+            "hover:text-[#016AA4]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/ridersrepublic.jpg",
+      "title": "it's fall season",
+      "description": "As the leaves turn and the air cools, the Republic is bringing exciting new content, including the all-new Mountainboard! Get ready for 13 weeks full of off-road thrills, massive adventures, and a competitive edge!",
+      "buttons": [
+        {
+          "text": "visit website",
+          "classes": [
+            "bg-[#FD6D11]",
+            "border-[#FD6D11]",
+            "hover:bg-white",
+            "hover:text-[#FD6D11]"
+          ]
+        },
+        {
+          "text": "buy now",
+          "classes": [
+            "bg-[#FD6D11]",
+            "border-[#FD6D11]",
+            "hover:bg-white",
+            "hover:text-[#FD6D11]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/skullandbones.jpg",
+      "title": "Skull And Bones - Shadows of the Deep",
+      "description": "The Indian Ocean stands on the verge of chaos as the Great Shadow, Vikram Rajan, and his cursed beasts descend upon its waters.",
+      "buttons": [
+        {
+          "text": "visit vebsite",
+          "classes": [
+            "bg-[#B66030]",
+            "border-[#B66030]",
+            "hover:bg-white",
+            "hover:text-[#B66030]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/rainbowsixsiege.jpg",
+      "title": "Operation Collision Point",
+      "description": "This season brings exciting new features to Rainbow Six Siege, including crossplay between PC and console, strengthened player protection with the Cheater Match Cancellation system and Mousetrap V2, balancing update for shields, a remaster of Blackbeard and the full release of the Siege Cup tournament.",
+      "buttons": [
+        {
+          "text": "visit website",
+          "classes": [
+            "bg-[#F28233]",
+            "border-[#C1912D]",
+            "hover:bg-white",
+            "hover:text-[#C1912D]"
+          ]
+        }
+      ]
+    },
+    {
+      "image": "images/sliderImages/thecrewmotorfest.jpg",
+      "title": "THE CREW MOTORFEST - SEASON 5",
+      "description": "With Season 5, The Crew Motorfest is bringing the biggest map expansion ever, the return of a fan-favorite Playlist, and the exhilarating premium Chase Squad experience.",
+      "buttons": [
+        {
+          "text": "visit website",
+          "classes": [
+            "bg-[#F28233]",
+            "border-[#F28233]",
+            "hover:bg-white",
+            "hover:text-[#F28233]"
+          ]
+        },
+        {
+          "text": "watch trailer",
+          "classes": [
+            "bg-[#F28233]",
+            "border-[#F28233]",
+            "hover:bg-white",
+            "hover:text-[#F28233]"
+          ]
+        }
+      ]
+    }
+  ]
+}

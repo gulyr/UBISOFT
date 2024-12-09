@@ -17,6 +17,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link href="src/output.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <style>
     .container1,
     .body {
@@ -298,26 +299,30 @@
             --swiper-navigation-color: #fff;
             --swiper-pagination-color: #fff;
           " class="swiper mySwiper2 bg-slate-400">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/sliderImages/ubisoftstore.jpg" loading="lazy" alt="Slide 1 image" />
+        <div class="swiper-wrapper" id="myswiper2">
+
+          <!-- Winter Challenge swiper slide -->
+          <!-- <div class="swiper-slide">
+            <img src="images/sliderImages/IMG_Background.jpg" loading="lazy" alt="Slide 1 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
               <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
-                Up to 85% off
+                winter challenge
               </h2>
               <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
-                The biggest discounts of the year for Black Friday!
+                Join the Winter Challenge and play games for a chance to win prizes!
               </p>
               <div class="buttons flex text-white">
-                <button
-                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#FF0D78] border-[2px] border-solid border-[#FF0D78] hover:bg-white hover:text-[#FF0D78] mb-[40px] mt-[15px] mx-[15px]  text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
-                  visit website
-                </button>
+                <a href=""
+                  class="flex justify-center items-center uppercase rounded-[30px] w-[260px] h-[54px] bg-[#FF0D78] border-[2px] border-solid border-[#FF0D78] hover:bg-white hover:text-[#FF0D78] mb-[40px] mt-[15px] mx-[15px]  text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  <span>join now</span>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
+          </div> -->
+
+          <!-- Star Wars swiper slide -->
+          <!-- <div class="swiper-slide">
             <img src="images/sliderImages/starwarsoutlaws.jpg" loading="lazy" alt="Slide 2 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
@@ -338,53 +343,34 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/sliderImages/xdefiant.jpg" loading="lazy" alt="Slide 3 image" />
+          </div> -->
+
+          <!-- For Honor swiper slide -->
+          <!-- <div class="swiper-slide">
+            <img src="images/sliderImages/forhonor.jpg" loading="lazy" alt="Slide 7 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
               <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
-                XDEFIANT: PLAY SEASON 2 NOW
+                For Honor x Destiny Halloween Event
               </h2>
               <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
-                Cause chaos as the Highwaymen and check out new weapons, maps, and the much-anticipated Bomb mode!
+                Exclusive For Honor x Destiny Halloween crossover event with not only one—but two Hero Skins inspired by the world of Destiny.
               </p>
               <div class="buttons flex">
                 <button
-                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F54682] border-[2px] border-solid border-[#F54682] hover:bg-white hover:text-[#F54682] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#A99159] border-[2px] border-solid border-[#A99159] hover:bg-white hover:text-[#A99159] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
                   watch trailer
                 </button>
                 <button
-                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F54682] border-[2px] border-solid border-[#F54682] hover:bg-white hover:text-[#F54682] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
-                  play free now
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/sliderImages/thecrewmotorfest.jpg" loading="lazy" alt="Slide 4 image" />
-            <div
-              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
-              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
-                THE CREW MOTORFEST - SEASON 5
-              </h2>
-              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
-                With Season 5, The Crew Motorfest is bringing the biggest map expansion ever, the return of a fan-favorite Playlist, and the
-                exhilarating premium Chase Squad experience.
-              </p>
-              <div class="buttons flex">
-                <button
-                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F28233] border-[2px] border-solid border-[#F28233] hover:bg-white hover:text-[#F28233] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#A99159] border-[2px] border-solid border-[#A99159] hover:bg-white hover:text-[#A99159] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
                   visit website
                 </button>
-                <button
-                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F28233] border-[2px] border-solid border-[#F28233] hover:bg-white hover:text-[#F28233] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
-                  watch trailer
-                </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
+          </div> -->
+
+          <!-- Just Dance swiper slide -->
+          <!-- <div class="swiper-slide">
             <img src="images/sliderImages/justdance.jpg" loading="lazy" alt="Slide 5 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
@@ -406,8 +392,10 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
+          </div> -->
+
+          <!-- Assassin's Creed Shadows swiper slide -->
+          <!-- <div class="swiper-slide">
             <img src="images/sliderImages/assasincreedshadow.jpg" loading="lazy" alt="Slide 6 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
@@ -428,30 +416,10 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/sliderImages/forhonor.jpg" loading="lazy" alt="Slide 7 image" />
-            <div
-              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
-              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
-                For Honor x Destiny Halloween Event
-              </h2>
-              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
-                Exclusive For Honor x Destiny Halloween crossover event with not only one—but two Hero Skins inspired by the world of Destiny.
-              </p>
-              <div class="buttons flex">
-                <button
-                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#A99159] border-[2px] border-solid border-[#A99159] hover:bg-white hover:text-[#A99159] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
-                  watch trailer
-                </button>
-                <button
-                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#A99159] border-[2px] border-solid border-[#A99159] hover:bg-white hover:text-[#A99159] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
-                  visit website
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
+          </div> -->
+
+          <!-- Assassin's Creed Syndicate swiper slide -->
+          <!-- <div class="swiper-slide">
             <img src="images/sliderImages/assasincreedsyndicate.jpg" loading="lazy" alt="Slide 8 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
@@ -472,8 +440,10 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
+          </div> -->
+
+          <!-- Prince of Persia swiper slide -->
+          <!-- <div class="swiper-slide">
             <img src="images/sliderImages/princeofpersian.jpg" loading="lazy" alt="Slide 9 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
@@ -491,8 +461,10 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
+          </div> -->
+
+          <!-- Battlecore Arena swiper slide -->
+          <!-- <div class="swiper-slide">
             <img src="images/sliderImages/battlecore.jpg" loading="lazy" alt="Slide 10 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
@@ -509,8 +481,10 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
+          </div> -->
+
+          <!-- Avatar swiper slide -->
+          <!-- <div class="swiper-slide">
             <img src="images/sliderImages/avatar.jpg" loading="lazy" alt="Slide 11 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
@@ -531,8 +505,10 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide relative flex justify-center items-center">
+          </div> -->
+
+          <!-- Riders of Republic swiper slide -->
+          <!-- <div class="swiper-slide relative flex justify-center items-center">
             <img src="images/sliderImages/ridersrepublic.jpg" loading="lazy" alt="Slide 12 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
@@ -554,8 +530,125 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
+          </div> -->
+
+          <!-- Skull And Bones swiper slide -->
+          <!-- <div class="swiper-slide">
+            <img src="images/sliderImages/skullandbones.jpg" loading="lazy" alt="Slide 14 image" />
+            <div
+              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
+              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
+                Skull And Bones - Shadows of the Deep
+              </h2>
+              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
+                The Indian Ocean stands on the verge of chaos as the Great Shadow, Vikram Rajan, and his cursed beasts descend upon its waters.
+              </p>
+              <div class="buttons flex">
+                <button
+                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#B66030] border-[2px] border-solid border-[#B66030] hover:bg-white hover:text-[#B66030] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  visit vebsite
+                </button>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Rainbow Six Siege swiper slide -->
+          <!-- <div class="swiper-slide">
+            <img src="images/sliderImages/rainbowsixsiege.jpg" loading="lazy" alt="Slide 15 image" />
+            <div
+              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
+              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
+                Operation Collision Point
+              </h2>
+              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
+                This season brings exciting new features to Rainbow Six Siege, including crossplay between PC and console, strengthened player
+                protection with the Cheater Match Cancellation system and Mousetrap V2, balancing update for shields, a remaster of Blackbeard
+                and the full release of the Siege Cup tournament.
+              </p>
+              <div class="buttons flex">
+                <button
+                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#C1912D] border-[2px] border-solid border-[#C1912D] hover:bg-white hover:text-[#C1912D] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  visit website
+                </button>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- THE crew motorfest swiper slide -->
+          <!-- <div class="swiper-slide">
+            <img src="images/sliderImages/thecrewmotorfest.jpg" loading="lazy" alt="Slide 4 image" />
+            <div
+              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
+              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
+                THE CREW MOTORFEST - SEASON 5
+              </h2>
+              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
+                With Season 5, The Crew Motorfest is bringing the biggest map expansion ever, the return of a fan-favorite Playlist, and the
+                exhilarating premium Chase Squad experience.
+              </p>
+              <div class="buttons flex">
+                <button
+                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F28233] border-[2px] border-solid border-[#F28233] hover:bg-white hover:text-[#F28233] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  visit website
+                </button>
+                <button
+                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F28233] border-[2px] border-solid border-[#F28233] hover:bg-white hover:text-[#F28233] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  watch trailer
+                </button>
+              </div>
+            </div>
+          </div> -->
+
+
+
+
+
+          <!-- swiper slide -->
+          <!-- <div class="swiper-slide">
+            <img src="images/sliderImages/ubisoftstore.jpg" loading="lazy" alt="Slide 1 image" />
+            <div
+              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
+              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
+                Up to 85% off
+              </h2>
+              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
+                The biggest discounts of the year for Black Friday!
+              </p>
+              <div class="buttons flex text-white">
+                <button
+                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#FF0D78] border-[2px] border-solid border-[#FF0D78] hover:bg-white hover:text-[#FF0D78] mb-[40px] mt-[15px] mx-[15px]  text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  visit website
+                </button>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- swiper slide -->
+          <!-- <div class="swiper-slide">
+            <img src="images/sliderImages/xdefiant.jpg" loading="lazy" alt="Slide 3 image" />
+            <div
+              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
+              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
+                XDEFIANT: PLAY SEASON 2 NOW
+              </h2>
+              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
+                Cause chaos as the Highwaymen and check out new weapons, maps, and the much-anticipated Bomb mode!
+              </p>
+              <div class="buttons flex">
+                <button
+                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F54682] border-[2px] border-solid border-[#F54682] hover:bg-white hover:text-[#F54682] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  watch trailer
+                </button>
+                <button
+                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F54682] border-[2px] border-solid border-[#F54682] hover:bg-white hover:text-[#F54682] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+                  play free now
+                </button>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- swiper slide -->
+          <!-- <div class="swiper-slide">
             <img src="images/sliderImages/division2.jpg" loading="lazy" alt="Slide 13 image" />
             <div
               class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
@@ -577,45 +670,7 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/sliderImages/skullandbones.jpg" loading="lazy" alt="Slide 14 image" />
-            <div
-              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
-              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
-                Skull And Bones - Shadows of the Deep
-              </h2>
-              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
-                The Indian Ocean stands on the verge of chaos as the Great Shadow, Vikram Rajan, and his cursed beasts descend upon its waters.
-              </p>
-              <div class="buttons flex">
-                <button
-                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#B66030] border-[2px] border-solid border-[#B66030] hover:bg-white hover:text-[#B66030] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
-                  visit vebsite
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/sliderImages/rainbowsixsiege.jpg" loading="lazy" alt="Slide 15 image" />
-            <div
-              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
-              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
-                Operation Collision Point
-              </h2>
-              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
-                This season brings exciting new features to Rainbow Six Siege, including crossplay between PC and console, strengthened player
-                protection with the Cheater Match Cancellation system and Mousetrap V2, balancing update for shields, a remaster of Blackbeard
-                and the full release of the Siege Cup tournament.
-              </p>
-              <div class="buttons flex">
-                <button
-                  class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#C1912D] border-[2px] border-solid border-[#C1912D] hover:bg-white hover:text-[#C1912D] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
-                  visit website
-                </button>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
         <div class="swiper-button-next absolute top-[85%] text-black"></div>
         <div class="swiper-button-prev absolute top-[85%] text-black"></div>
@@ -1375,6 +1430,44 @@
         menu.style.display = "block";
       }
     }
+
+    // swiper slides
+    axios
+      .get("mainSliderSlides.json")
+      .then((response) => {
+        const slides = response.data.slides;
+        const slideContainer = document.getElementById("myswiper2");
+
+        slideContainer.innerHTML += slides
+          .map(
+            (slide, index) => `
+         <div class="swiper-slide">
+            <img src="${slide.image}" loading="lazy" alt="Slide image" />
+            <div
+              class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
+              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
+              ${slide.title}
+              </h2>
+              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
+                ${slide.description}
+              </p>
+              <div class="buttons flex text-white">
+                ${slide.buttons.map(button =>
+              `<a href=""
+                  class="flex justify-center items-center uppercase rounded-[30px] w-[260px] h-[54px] border-[2px] border-solid mb-[40px] mt-[15px] mx-[15px] text-[15px] tracking-[1.6px] font-[700] cursor-pointer ${button.classes.join(" ")}">
+                  <span>${button.text}</span>
+                </a>
+                `).join("")}
+              </div>
+            </div>
+          </div>
+          `
+          )
+          .join("");
+      })
+      .catch((error) => {
+        console.error("JSON fayl yüklənmədi:", error);
+      });
   </script>
 
   <script src="script.js"></script>
