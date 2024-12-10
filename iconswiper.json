@@ -1,0 +1,58 @@
+{
+  "slides": [
+    {
+      "image": "images/iconImages/ubi-homescreen-logo-ubisoft-winter-challenge-v3.png",
+      "title": "winter challenge"
+    },
+    {
+      "image": "images/iconImages/starwarsoutlawsicon.png",
+      "title": "star wars outlaws"
+    },
+    {
+      "image": "images/iconImages/forhonoricon.png",
+      "title": "for honor"
+    },
+
+    {
+      "image": "images/iconImages/justdanceicon.png",
+      "title": "just dance 2025 edition"
+    },
+
+    {
+      "image": "images/iconImages/assasincreedshadowsicon.png",
+      "title": "assassin's creed shadows"
+    },
+    {
+      "image": "images/iconImages/assasincreedsyndicateicon.png",
+      "title": "assassin's creed syndicate"
+    },
+    {
+      "image": "images/iconImages/princeofpersiaicon.png",
+      "title": "prince of persia"
+    },
+    {
+      "image": "images/iconImages/battlecoreicon.png",
+      "title": "battlecore arena"
+    },
+    {
+      "image": "images/iconImages/avataricon.png",
+      "title": "avatar: fronties of pandora"
+    },
+    {
+      "image": "images/iconImages/ridersrepublicicon.png",
+      "title": "riders republic"
+    },
+    {
+      "image": "images/iconImages/skullsndbonesicon.png",
+      "title": "skull and bones"
+    },
+    {
+      "image": "images/iconImages/rainbowsixsiegeicon.png",
+      "title": "rainbow six siege"
+    },
+    {
+      "image": "images/iconImages/thecrewmotorfesticon.png",
+      "title": "the crew motorfest"
+    }
+  ]
+}
