@@ -26,6 +26,7 @@
     .body {
       position: relative;
       width: 100%;
+      height: 120vh;
     }
 
     .body {
@@ -36,6 +37,7 @@
 
     .swiper {
       width: 100%;
+      /* display: flex; */
     }
 
     .swiper-slide {
@@ -49,11 +51,19 @@
       opacity: 0.4;
     }
 
-    .slide img {
+    .swiper-slide img {
+      display: none;
+    }
+
+    .swiper-slide.swiper-slide-active img,
+    .swiper-slide.clicked img {
       display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      animation: flash 1s 1;
+    }
+
+    .swiper-slide.swiper-slide-active span,
+    .swiper-slide.clicked span {
+      display: none;
     }
 
     @keyframes flash {
@@ -70,19 +80,6 @@
 
     .swiper-slide.swiper-slide-active {
       opacity: 1;
-    }
-
-    .swiper-slide img {
-      display: none;
-    }
-
-    .swiper-slide.swiper-slide-active img {
-      display: block;
-      animation: flash 1s 1;
-    }
-
-    .swiper-slide.swiper-slide-active span {
-      display: none;
     }
   </style>
 </head>
@@ -123,27 +120,29 @@
       </button>
     </div>
 
-    <div class="w-full h-full">
-      <img src="images/sliderImages/assasincreedshadow.jpg" loading="lazy" alt="Slide 6 image" />
-      <div
-        class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
-        <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
-          Assassin's Creed Shadows releases February 14th
-        </h2>
-        <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
-          Become a legendary samurai and a shinobi assassin in feudal Japan. Watch more than 12 minutes of gameplay footage now.
-        </p>
-        <div class="buttons flex">
-          <button
-            class="uppercase rounded-[30px] w-[260px] h-[54px] bg-black border-[2px] border-solid border-black hover:bg-white hover:text-black mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
-            watch trailer
-          </button>
-          <button
-            class="uppercase rounded-[30px] w-[260px] h-[54px] bg-black border-[2px] border-solid border-black hover:bg-white hover:text-black mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
-            visit website
-          </button>
+    <div class="w-full h-full slide_container">
+      <!-- <div class="w-full h-full">
+        <img src="images/sliderImages/assasincreedshadow.jpg" loading="lazy" alt="Slide 6 image" class="w-full object-cover" />
+        <div
+          class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
+          <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
+            Assassin's Creed Shadows releases February 14th
+          </h2>
+          <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
+            Become a legendary samurai and a shinobi assassin in feudal Japan. Watch more than 12 minutes of gameplay footage now.
+          </p>
+          <div class="buttons flex">
+            <button
+              class="uppercase rounded-[30px] w-[260px] h-[54px] bg-black border-[2px] border-solid border-black hover:bg-white hover:text-black mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+              watch trailer
+            </button>
+            <button
+              class="uppercase rounded-[30px] w-[260px] h-[54px] bg-black border-[2px] border-solid border-black hover:bg-white hover:text-black mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer">
+              visit website
+            </button>
+          </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- swiper -->
     <div class="body w-full h-full">
@@ -277,11 +276,12 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script>
     // swiper
+    // Swiper-i başlatmaq
     var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      slidesPerView: 5,
-      spaceBetween: 30,
-      centeredSlides: true,
+      loop: true, // Slaydlarda dövr etməsini təmin edir
+      slidesPerView: 5, // 5 slayd göstərilsin
+      spaceBetween: 30, // Slaydlar arasında boşluq
+      centeredSlides: true, // Aktiv slaydı mərkəzə gətir
       watchSlidesProgress: true,
       autoplay: {
         delay: 5000,
@@ -291,62 +291,74 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      thumbs: {
-        swiper: swiper,
-      },
-    });
-    swiper.update();
-    const allSlides = document.querySelectorAll(".swiper-slide");
-    allSlides.forEach((slide, index) => {
-      slide.addEventListener("click", function () {
-        const loopIndex = swiper.loopedSlides + index - 1;
-        swiper.slideTo(loopIndex);
-      });
     });
 
-    // swiper slides
+    let slidesData = []; // Slayd məlumatlarını saxlamaq üçün dəyişən
+
+    // JSON məlumatlarını yükləmək
     axios
       .get("mainSliderSlides.json")
       .then((response) => {
-        const slides = response.data.slides;
-        const slideContainer = document.getElementById("myswiper2");
+        slidesData = response.data.slides;
+        loadSlideData(swiper.realIndex); // İlk aktiv slayda uyğun məlumatı göstərmək
+      })
+      .catch((error) => {
+        console.error("JSON faylı yüklənmədi:", error);
+      });
 
-        slideContainer.innerHTML += slides
+    // Slayda aid məlumatları göstərmək üçün funksiya
+    function loadSlideData(index) {
+      // Dövr edən indeksin JSON məlumatlarına uyğunluğunu təmin etmək
+      const slideIndex = (index + slidesData.length) % slidesData.length; // Dövr edən indeksi düzəldir
+      const selectedSlide = slidesData[slideIndex];
+      const slideContainer = document.querySelector(".slide_container");
+
+      // Mövcud mövqeni saxlayırıq
+      const currentScrollPosition = window.scrollY;
+
+      slideContainer.innerHTML = `
+    <img src="${selectedSlide.image}" loading="lazy" alt="Slide image" class="w-full object-cover" />
+    <div class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
+      <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
+        ${selectedSlide.title}
+      </h2>
+      <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
+        ${selectedSlide.description}
+      </p>
+      <div class="buttons flex text-white">
+        ${selectedSlide.buttons
           .map(
-            (slide, index) => `
-         <div class="swiper-slide">
-            <img src="${slide.image}" loading="lazy" alt="Slide image" />
-            <div class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]">
-              <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">${slide.title
-              }</h2>
-              <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center"> ${slide.description
-              }</p>
-              <div class="buttons flex text-white">${slide.buttons
-                .map(
-                  (button) =>
-                    `<a href="" class="flex justify-center items-center uppercase rounded-[30px] w-[260px] h-[54px] border-[2px] border-solid mb-[40px] mt-[15px] mx-[15px] text-[15px] tracking-[1.6px] font-[700] cursor-pointer ${button.classes.join(
-                      " "
-                    )}">
-                    <span>${button.text}</span>
-                        </a>
-                        ` ).join("")}
-                    </div>
-                </div>
-            </div>
-            ` ).join("");
-      }).catch((error) => { console.error("JSON fayl yüklənmədi:", error); });
-    // icons slides 
-    axios.get("iconswiper.json").then((response) => {
-      const slides = response.data.slides; const slideContainer = document.getElementById("iconslide");
-      slideContainer.innerHTML += slides.map((slide, index) => `
-            <div class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4">
-                <div class="w-[211px]">
-                    <img src="${slide.image}" loading="lazy" alt="${slide.title} icon" />
-                </div>
-                <span class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">${slide.title}</span>
-            </div>
-            ` ).join("");
-    }).catch((error) => { console.error("JSON fayl yüklənmədi:", error); });
+            (button) => `
+            <a href="#" class="flex justify-center items-center uppercase rounded-[30px] w-[260px] h-[54px] border-[2px] border-solid mb-[40px] mt-[15px] mx-[15px] text-[15px] tracking-[1.6px] font-[700] cursor-pointer ${button.classes.join(" ")}">
+              <span>${button.text}</span>
+            </a>
+          `
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+
+      // Mövcud mövqeni yenidən tətbiq edirik
+      window.scrollTo(0, currentScrollPosition);
+    }
+
+    // Slaydlara kliklədikdə məlumatı yeniləmək
+    const allSlides = document.querySelectorAll(".swiper-slide");
+
+    allSlides.forEach((slide, index) => {
+      slide.addEventListener("click", function () {
+        const realIndex = swiper.slides[index].getAttribute("data-swiper-slide-index"); // Real slayd indeksini əldə edir
+        loadSlideData(Number(realIndex)); // JSON məlumatını yeniləyir
+        swiper.slideToLoop(Number(realIndex)); // Slaydı dövrə uyğun aktiv edir
+      });
+    });
+
+    // Swiper-in aktiv slaydı dəyişdikcə JSON məlumatlarını yeniləyir
+    swiper.on("slideChange", function () {
+      const realIndex = swiper.realIndex; // Aktiv slaydın real indeksini əldə edir
+      loadSlideData(realIndex); // JSON məlumatını yeniləyir
+    });
   </script>
 </body>
 
