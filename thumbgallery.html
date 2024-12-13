@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubisoft</title>
+    <link
+      rel="icon"
+      href="images/UbisoftConnectImages/ubisoft.svg"
+      type="image/svg"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .container1,
+      .body {
+        position: relative;
+        width: 100%;
+      }
+
+      .body {
+        background: pink;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        /* height: 100%; */
+      }
+
+      .swiper-slide {
+        /* background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 1px;
+        align-items: center;
+        line-height: 24px;
+        background: transparent; */
+
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        opacity: 0.4;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* swiper-1 */
+
+      .mySwiper {
+        /* height: 20%; */
+        box-sizing: border-box;
+        /* padding: 10px 0; */
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      /* swiper-2 */
+
+      .mySwiper2 {
+        height: 100%;
+        width: 100%;
+      }
+      @keyframes flash {
+        0%,
+        100% {
+          opacity: 1;
+        }
+
+        50% {
+          opacity: 0;
+        }
+      }
+
+      .swiper-slide.swiper-slide-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: none;
+      }
+
+      .swiper-slide.swiper-slide-active img {
+        display: block;
+        animation: flash 1s 1;
+      }
+
+      .swiper-slide.swiper-slide-active span {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="font-['Ubisoft Sans'] relative box-border overflow-x-hidden">
+    <div class="container1 w-full flex flex-col relative">
+      <!-- header -->
+
+      <!-- swiper -->
+      <div class="body w-full h-full">
+        <div
+          style="
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
+          "
+          class="swiper mySwiper2 bg-slate-400"
+        >
+          <div class="swiper-wrapper" id="myswiper2">
+            <!-- Battlecore Arena swiper slide -->
+            <div class="swiper-slide">
+              <img
+                src="images/sliderImages/battlecore.jpg"
+                loading="lazy"
+                alt="Slide 10 image"
+              />
+              <div
+                class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]"
+              >
+                <h2
+                  class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white"
+                >
+                  Battlecore Arena - Play for free now!
+                </h2>
+                <p
+                  class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center"
+                >
+                  BattleCore Arena is a competitive platform shooter where
+                  gravity mastery is the key to victory.
+                </p>
+                <div class="buttons flex">
+                  <button
+                    class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F94308] border-[2px] border-solid border-[#F94308] hover:bg-white hover:text-[#F94308] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer"
+                  >
+                    play for free
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Avatar swiper slide -->
+            <div class="swiper-slide">
+              <img
+                src="images/sliderImages/avatar.jpg"
+                loading="lazy"
+                alt="Slide 11 image"
+              />
+              <div
+                class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]"
+              >
+                <h2
+                  class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white"
+                >
+                  Protect Pandora. Become Na'vi.
+                </h2>
+                <p
+                  class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center"
+                >
+                  Reconnect with your lost heritage, discover what it truly
+                  means to be Na'vi, and join other clans to protect Pandora.
+                </p>
+                <div class="buttons flex">
+                  <button
+                    class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#016AA4] border-[2px] border-solid border-[#016AA4] hover:bg-white hover:text-[#016AA4] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer"
+                  >
+                    watch trailer
+                  </button>
+                  <button
+                    class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#016AA4] border-[2px] border-solid border-[#016AA4] hover:bg-white hover:text-[#016AA4] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer"
+                  >
+                    buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Riders of Republic swiper slide -->
+            <div class="swiper-slide relative flex justify-center items-center">
+              <img
+                src="images/sliderImages/ridersrepublic.jpg"
+                loading="lazy"
+                alt="Slide 12 image"
+              />
+              <div
+                class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]"
+              >
+                <h2
+                  class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white"
+                >
+                  it's fall season
+                </h2>
+                <p
+                  class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center"
+                >
+                  As the leaves turn and the air cools, the Republic is bringing
+                  exciting new content, including the all-new Mountainboard! Get
+                  ready for 13 weeks full of off-road thrills, massive
+                  adventures, and a competitive edge!
+                </p>
+                <div class="buttons flex">
+                  <button
+                    class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#FD6D11] border-[2px] border-solid border-[#FD6D11] hover:bg-white hover:text-[#FD6D11] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer"
+                  >
+                    visit website
+                  </button>
+                  <button
+                    class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#FD6D11] border-[2px] border-solid border-[#FD6D11] hover:bg-white hover:text-[#FD6D11] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer"
+                  >
+                    buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skull And Bones swiper slide -->
+            <div class="swiper-slide">
+              <img
+                src="images/sliderImages/skullandbones.jpg"
+                loading="lazy"
+                alt="Slide 14 image"
+              />
+              <div
+                class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]"
+              >
+                <h2
+                  class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white"
+                >
+                  Skull And Bones - Shadows of the Deep
+                </h2>
+                <p
+                  class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center"
+                >
+                  The Indian Ocean stands on the verge of chaos as the Great
+                  Shadow, Vikram Rajan, and his cursed beasts descend upon its
+                  waters.
+                </p>
+                <div class="buttons flex">
+                  <button
+                    class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#B66030] border-[2px] border-solid border-[#B66030] hover:bg-white hover:text-[#B66030] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer"
+                  >
+                    visit vebsite
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rainbow Six Siege swiper slide -->
+            <div class="swiper-slide">
+              <img
+                src="images/sliderImages/rainbowsixsiege.jpg"
+                loading="lazy"
+                alt="Slide 15 image"
+              />
+              <div
+                class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]"
+              >
+                <h2
+                  class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white"
+                >
+                  Operation Collision Point
+                </h2>
+                <p
+                  class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center"
+                >
+                  This season brings exciting new features to Rainbow Six Siege,
+                  including crossplay between PC and console, strengthened
+                  player protection with the Cheater Match Cancellation system
+                  and Mousetrap V2, balancing update for shields, a remaster of
+                  Blackbeard and the full release of the Siege Cup tournament.
+                </p>
+                <div class="buttons flex">
+                  <button
+                    class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#C1912D] border-[2px] border-solid border-[#C1912D] hover:bg-white hover:text-[#C1912D] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer"
+                  >
+                    visit website
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- THE crew motorfest swiper slide -->
+            <div class="swiper-slide">
+              <img
+                src="images/sliderImages/thecrewmotorfest.jpg"
+                loading="lazy"
+                alt="Slide 4 image"
+              />
+              <div
+                class="content flex flex-col justify-center items-center flex-wrap absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[1330px] h-full mt-[70px]"
+              >
+                <h2
+                  class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white"
+                >
+                  THE CREW MOTORFEST - SEASON 5
+                </h2>
+                <p
+                  class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center"
+                >
+                  With Season 5, The Crew Motorfest is bringing the biggest map
+                  expansion ever, the return of a fan-favorite Playlist, and the
+                  exhilarating premium Chase Squad experience.
+                </p>
+                <div class="buttons flex">
+                  <button
+                    class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F28233] border-[2px] border-solid border-[#F28233] hover:bg-white hover:text-[#F28233] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer"
+                  >
+                    visit website
+                  </button>
+                  <button
+                    class="uppercase rounded-[30px] w-[260px] h-[54px] bg-[#F28233] border-[2px] border-solid border-[#F28233] hover:bg-white hover:text-[#F28233] mb-[40px] mt-[15px] mx-[15px] text-white text-[15px] tracking-[1.6px] font-[700] cursor-pointer"
+                  >
+                    watch trailer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next absolute top-[85%] text-black"></div>
+          <div class="swiper-button-prev absolute top-[85%] text-black"></div>
+
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/battlecoreicon.png"
+                    loading="lazy"
+                    alt="Battlecore icon"
+                  />
+                </div>
+                <span
+                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
+                  >battlecore arena</span
+                >
+              </div>
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/avataricon.png"
+                    loading="lazy"
+                    alt="Avatar icon"
+                  />
+                </div>
+                <span
+                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
+                  >avatar: fronties of pandora</span
+                >
+              </div>
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/ridersrepublicicon.png"
+                    class="w-full object-cover"
+                    loading="lazy"
+                    alt="Riders Republic icon"
+                  />
+                </div>
+                <span
+                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
+                  >riders republic</span
+                >
+              </div>
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/division2icon.png"
+                    class="w-full object-cover"
+                    loading="lazy"
+                    alt="Division 2 icon"
+                  />
+                </div>
+                <span
+                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
+                  >the division 2</span
+                >
+              </div>
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/skullsndbonesicon.png"
+                    loading="lazy"
+                    alt="Skull and Bones icon"
+                  />
+                </div>
+                <span
+                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
+                  >skull and bones</span
+                >
+              </div>
+              <div
+                class="swiper-slide bg-fuchsia-600 flex flex-col justify-between h-[200px] cursor-pointer gap-4"
+              >
+                <div class="w-[211px]">
+                  <img
+                    src="images/iconImages/rainbowsixsiegeicon.png"
+                    loading="lazy"
+                    alt="Rainbow Six Siege icon"
+                  />
+                </div>
+                <span
+                  class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2"
+                  >rainbow six siege</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 30,
+        centeredSlides: true,
+        watchSlidesProgress: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+      swiper.update();
+      const allSlides = document.querySelectorAll(".swiper-slide");
+      allSlides.forEach((slide, index) => {
+        slide.addEventListener("click", function () {
+          const loopIndex = swiper.loopedSlides + index - 1;
+          swiper.slideTo(loopIndex);
+        });
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 0,
+        centeredSlides: true,
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+      });
+    </script> -->
+    <script>
+      // İlk Swiper
+      var swiper1 = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 30,
+        centeredSlides: true,
+        watchSlidesProgress: true,
+        autoplay: {
+          delay: 5000, // Avtomatik keçid gecikməsi
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // İkinci Swiper
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 0,
+        centeredSlides: true,
+        cssMode: true,
+        autoplay: {
+          delay: 5000, // Avtomatik keçid gecikməsi
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // Sinxronizasiya üçün slideChange hadisəsini dinləyirik
+      swiper1.on("slideChangeTransitionStart", function () {
+        swiper2.slideTo(swiper1.realIndex); // İkinci Swiper uyğun slayda keçir
+      });
+
+      swiper2.on("slideChangeTransitionStart", function () {
+        swiper1.slideTo(swiper2.realIndex); // İlk Swiper uyğun slayda keçir
+      });
+
+      // Slayd üzərinə klik etmək üçün funksionallıq
+      const allSlides = document.querySelectorAll(".swiper-slide");
+      allSlides.forEach((slide, index) => {
+        slide.addEventListener("click", function () {
+          const loopIndex = swiper1.loopedSlides + index - 1;
+          swiper1.slideTo(loopIndex);
+          swiper2.slideTo(loopIndex); // Hər iki swiper sinxron olaraq slayda keçir
+        });
+      });
+    </script>
+  </body>
+</html>
