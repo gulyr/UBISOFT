@@ -37,13 +37,13 @@
       height: 100%;
     }
 
-    .swiper {
+    .mySwiper {
       width: 100%;
       padding-left: 10px;
       padding-right: 10px;
     }
 
-    .swiper-slide {
+    .mySwiper .swiper-slide {
       text-align: center;
       font-size: 18px;
       display: flex;
@@ -53,12 +53,12 @@
       opacity: 0.4;
     }
 
-    .swiper-slide img {
+    .mySwiper .swiper-slide img {
       display: none;
     }
 
-    .swiper-slide.swiper-slide-active img,
-    .swiper-slide.clicked img {
+    .mySwiper .swiper-slide.swiper-slide-active img,
+    .mySwiper .swiper-slide.clicked img {
       display: block;
       animation: flash 1s 1;
     }
@@ -68,8 +68,8 @@
       text-shadow: rgb(0, 0, 0) 0px 2px 10px;
     }
 
-    .swiper-slide.swiper-slide-active span,
-    .swiper-slide.clicked span {
+    .mySwiper .swiper-slide.swiper-slide-active span,
+    .mySwiper .swiper-slide.clicked span {
       display: none;
     }
 
@@ -214,7 +214,7 @@
     <div class=" body w-full h-full">
       <div class=" swiper mySwiper absolute bottom-0 left-0 ">
         <div class=" swiper-wrapper ">
-          <div class=" swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-5 ">
+          <div class=" swiper-slide flex flex-col justify-between h-[200px] cursor-pointer gap-5 ">
             <div class=" w-[211px] ">
               <img src=" images/iconImages/ubi-homescreen-logo-ubisoft-winter-challenge-v3.png " loading=" lazy " alt=" Winter Challenge icon "
                 class=" animate__flash " />
