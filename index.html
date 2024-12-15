@@ -355,7 +355,7 @@
         <input type="text"
           class="border-none focus:border-none outline-none focus:outline-none pt-[2px] pr-[30px] leading-[32px] rounded-tr-[20px] rounded-br-[20px] bg-[#F0F3F4] w-full placeholder:text-black"
           placeholder="Type your search" onclick="">
-        <button class="text-[#db287f] border-none bg-transparent pl-[12px] leading-[20px]" onclick="togglepanel2()">Cancel</button>
+        <button type="button" class="text-[#db287f] border-none bg-transparent pl-[12px] leading-[20px]" onclick="togglepanel2()">Cancel</button>
       </form>
     </div>
     <div class="w-full flex flex-col">
@@ -458,7 +458,7 @@
   <div class="container1 w-full h-full flex flex-col relative">
     <!-- header -->
     <header class="header flex text-center justify-around items-center gap-[100px] w-full sticky top-0 left-0 z-10">
-      <button class="menu text-[20px] text-white" onclick="togglepanel()">
+      <button type="button" class="menu text-[20px] text-white" onclick="togglepanel()">
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </button>
       <a href="" class="svg_link">
@@ -473,10 +473,10 @@
           </path>
         </svg>
       </a>
-      <a href="" target="" onclick="openChromeWindow()"
+      <button type="button" onclick="openChromeWindow()"
         class="user mr-[50px] flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black">
         <i class="fa-solid fa-user p-[6px] text-[20px] text-[#929293] bg-[#BEBEC0] hover:bg-[#EDEEF0]"></i>
-      </a>
+      </button>
     </header>
 
     <!-- banner -->
@@ -1113,9 +1113,11 @@
 
       // Toggle the content's max-height for smooth opening and closing
       if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+        // document.querySelector("body").style.overflow = "hidden";
         content.style.maxHeight = "0";
         icon.innerHTML = upSVG;
       } else {
+        // document.querySelector("body").style.overflow = "scroll";
         content.style.maxHeight = content.scrollHeight + "px";
         icon.innerHTML = downSVG;
       }
@@ -1123,14 +1125,18 @@
     // Toggle Panel
     const menu = document.querySelector(".menu");
     function togglepanel() {
+      // document.querySelector("body").style.overflow = "hidden";
       if (menu.style.display === "block") {
         menu.style.display = "none";
+        document.querySelector("body").style.overflow = "scroll";
       } else {
         menu.style.display = "block";
+        document.querySelector("body").style.overflow = "hidden";
       }
     }
 
     const menu2 = document.querySelector(".menu2");
+    // document.querySelector("body").style.overflow = "hidden";
     function togglepanel2() {
       menu.style.display = "block";
       if (menu2.style.display === "flex") {
