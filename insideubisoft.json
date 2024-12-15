@@ -2,17 +2,17 @@
   "cards": [
     {
       "href": "insideubisoft1.html",
-      "image": "images/insideUbisoft/insideubisoft1.png",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6t0bHfZtjQSoM6bOkr23K4/a7077a1153c3c86cd99ad45865d87bae/V1_2024_UBISOFT_FWD_STD_1-1.png",
       "title": "ubisoft forward 2024 announce"
     },
     {
       "href": "#",
-      "image": "images/insideUbisoft/insideubisoft2.jpg",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Jiy0xlbsM3yAfOBlWqLjP/73597f0849b0df6a3fb610e86f8a83a7/ubi-inside_ubisoft-story_of_the_crew.jpg",
       "title": "the inside story of the crew"
     },
     {
       "href": "#",
-      "image": "images/insideUbisoft/insideubisoft3.jpg",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7gNozofogBtXA0jBWH3KTE/783a16421f3434ec40df225aa412d0e3/ubi-homescreen-inside-ubisoft-UbiPride2023_480x480.jpg",
       "title": "ubisoft commitment to lgbtqia+ communities"
     }
   ]
