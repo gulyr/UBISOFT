@@ -215,6 +215,48 @@
     button[role="tab"][aria-selected="true"] {
       font-weight: 700;
     }
+
+    .grid_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      /* gap: 10px; */
+    }
+
+    .grid_item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .grid_item:nth-child(1) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+
+    .grid_item:nth-child(2) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    .grid_item:nth-child(3) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    .grid_item:nth-child(4) {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    .grid_item:nth-child(5) {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
   </style>
 </head>
 
@@ -509,7 +551,6 @@
     <div class=" body w-full h-full relative">
       <div class=" swiper mySwiper absolute bottom-[5px] left-0">
         <div class=" swiper-wrapper ">
-
           <div class=" swiper-slide flex flex-col justify-between items-center h-[150px] cursor-pointer gap-4 ">
             <div class=" w-[211px]">
               <img src=" images/iconImages/ubi-homescreen-logo-ubisoft-winter-challenge-v3.png " loading=" lazy " alt=" Winter Challenge icon "
@@ -519,7 +560,6 @@
         duration-[0.5s] order-2 ">winter
               challenge</span>
           </div>
-
           <div class=" swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4 ">
             <div class=" w-[211px] ">
               <img src=" images/iconImages/starwarsoutlawsicon.png " loading=" lazy " alt=" Star Wars Outlaws icon " />
@@ -528,7 +568,6 @@
         duration-[0.5s] order-2 ">star
               wars outlaws</span>
           </div>
-
           <div class=" swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4 ">
             <div class=" w-[211px] ">
               <img src=" images/iconImages/forhonoricon.png " loading=" lazy " alt=" For Honor icon " />
@@ -537,7 +576,6 @@
         duration-[0.5s] order-2 ">for
               honor</span>
           </div>
-
           <div class=" swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4 ">
             <div class=" w-[211px] ">
               <img src=" images/iconImages/justdanceicon.png " loading=" lazy " alt=" Just Dance icon " />
@@ -546,7 +584,6 @@
         duration-[0.5s] order-2 ">just
               dance 2025 edition</span>
           </div>
-
           <div class=" swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4 ">
             <div class=" w-[211px] ">
               <img src=" images/iconImages/assasincreedshadowsicon.png " loading=" lazy " alt="
@@ -556,7 +593,6 @@
               class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">assassin'
               s creed shadows</span>
           </div>
-
           <div class="swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4">
             <div class="w-[211px]">
               <img src="images/iconImages/assasincreedsyndicateicon.png" loading="lazy" alt="Assassin's Creed Syndicate icon" />
@@ -565,7 +601,6 @@
               class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">assassin's
               creed syndicate</span>
           </div>
-
           <div class="swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4">
             <div class="w-[211px]">
               <img src="images/iconImages/princeofpersiaicon.png" loading="lazy" alt="Prince of Persia icon" />
@@ -574,7 +609,6 @@
               class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">prince
               of persia</span>
           </div>
-
           <div class="swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4">
             <div class="w-[211px]">
               <img src="images/iconImages/battlecoreicon.png" loading="lazy" alt="Battlecore icon" />
@@ -583,7 +617,6 @@
               class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">battlecore
               arena</span>
           </div>
-
           <div class="swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4">
             <div class="w-[211px]">
               <img src="images/iconImages/avataricon.png" loading="lazy" alt="Avatar icon" />
@@ -592,7 +625,6 @@
               class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">avatar:
               fronties of pandora</span>
           </div>
-
           <div class="swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4">
             <div class="w-[211px]">
               <img src="images/iconImages/ridersrepublicicon.png" class="w-full object-cover" loading="lazy" alt="Riders Republic icon" />
@@ -601,7 +633,6 @@
               class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">riders
               republic</span>
           </div>
-
           <div class="swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4">
             <div class="w-[211px]">
               <img src="images/iconImages/skullsndbonesicon.png" loading="lazy" alt="Skull and Bones icon" />
@@ -610,7 +641,6 @@
               class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">skull
               and bones</span>
           </div>
-
           <div class="swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4">
             <div class="w-[211px]">
               <img src="images/iconImages/rainbowsixsiegeicon.png" loading="lazy" alt="Rainbow Six Siege icon" />
@@ -619,7 +649,6 @@
               class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">rainbow
               six siege</span>
           </div>
-
           <div class="swiper-slide flex flex-col justify-between h-[150px] cursor-pointer gap-4">
             <div class="w-[211px]">
               <img src="images/iconImages/thecrewmotorfesticon.png" loading="lazy" alt="The Crew Motorfest icon" />
@@ -638,7 +667,6 @@
     <section
       class="join_now w-full relative h-[380px] bg-[url('images/Ubidotcom-Secondary_Ubisoft__SWO-ULT-July24_1920x680_desk__1_.jpg')] bg-cover bg-center z-[10] clear-both ">
       <img src="images/ubisoft+.png" alt="Ubisoft+ logo" loading="lazy" class=" w-[150px] h-[51.1094px]" />
-
       <div class="w-full h-full content flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
         <h2
           class="text-[32px] font-[700] leading-[36px] duration-[1.2s] transition-all delay-[0.2s] text-white text-center mt-[10px] mb-[5px] mx-[30px] transform custom-ease custom-matrix w-[667px]"
@@ -649,11 +677,13 @@
           data-aos="fade-up" data-aos-duration="1000">
           Buy now or play it with Ubisoft+
         </p>
-        <button aria-label="Join Now"
-          class="bg-[#d80388] w-[167.531px] h-[54px] tracking-[1.6px] leading-[15px] m-[10px] text-[15px] font-[700] max-w-[300px] min-w-[100px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer"
-          data-aos="fade-up" data-aos-duration="1000">
-          join now
-        </button>
+        <div class="w-full flex items-center justify-center text-white m-[20px]">
+          <a href="ubisoftplus.html" target="_blank"
+            class="bg-[#d80388] inline-flex items-center justify-center mx-auto w-[167.531px] h-[54px] tracking-[1.6px] leading-[15px] text-[15px] my-[10px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center uppercase rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[0.2s] transform transition-all delay-[0s] ease-custom-ease custom-matrix-2 cursor-pointer hover:bg-white hover:text-[#d80388]"
+            data-aos="fade-up" data-aos-duration="1000">
+            join now
+          </a>
+        </div>
       </div>
     </section>
 
@@ -676,47 +706,37 @@
     </section>
 
     <!-- Latest News section -->
-    <section class="latest_news w-full h-[1015.3px] flex flex-col bg-[#F0F3F4]">
+    <section class="latest_news w-full flex flex-col bg-[#F0F3F4]">
       <h2 class="pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-[700] text-black">
         latest news
       </h2>
       <div class="w-full mb-[24px] leading-[24px] flex flex-wrap justify-center">
         <ul class="w-full flex justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-          <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
-            role="presentation">
+          <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
             <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="first-tab" data-tabs-target="#first" type="button" role="tab"
               aria-controls="first" aria-selected="false">all news</button>
           </li>
-          <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
-            role="presentation">
+          <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
             <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="second-tab" data-tabs-target="#second" type="button"
               role="tab" aria-controls="second" aria-selected="false">assassin's creed</button>
           </li>
-          <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
-            role="presentation">
+          <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
             <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="third-tab" data-tabs-target="#third" type="button" role="tab"
               aria-controls="third" aria-selected="false">rainbow six</button>
           </li>
-          <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
-            role="presentation">
+          <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
             <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="fourth-tab" data-tabs-target="#fourth" type="button"
               role="tab" aria-controls="fourth" aria-selected="false">star wars outlaws</button>
           </li>
-          <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
-            role="presentation">
+          <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
             <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="fifth-tab" data-tabs-target="#fifth" type="button" role="tab"
               aria-controls="fifth" aria-selected="false">the division</button>
           </li>
         </ul>
       </div>
       <div class="cards justify-center max-w-[1472px] w-full font-[400] leading-[24px] flex-row flex-wrap" id="default-tab-content">
-        <div class="hidden p-4 rounded-lg" id="first" role="tabpanel" aria-labelledby="first-tab">
-          <p class="text-sm">all news</p>
+        <div class="hidden w-full p-4 rounded-lg flex flex-col flex-wrap" id="first" role="tabpanel" aria-labelledby="first-tab">
+          <div class="grid_container w-full"></div>
         </div>
         <div class="hidden w-full p-4 rounded-lg flex flex-wrap" id="second" role="tabpanel" aria-labelledby="second-tab"></div>
         <div class="hidden w-full p-4 rounded-lg flex flex-wrap" id="third" role="tabpanel" aria-labelledby="third-tab"></div>
@@ -736,25 +756,7 @@
       <h2 class="pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-[700] text-black">
         ubisoft store
       </h2>
-      <div class="cards flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full h-[589.547px] px-[30px] gap-10">
-        <a href="#"
-          class="bg-[url('images/ubisoftStore/blackfridaydeal1.jpg')] bg-center bg-cover hover:underline text-white w-[30%] h-[500px] leading-[24px] grow-[1] shrink-0">
-          <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">
-            black friday deal: £8.33
-          </h2>
-        </a>
-        <a href="#"
-          class="bg-[url('images/ubisoftStore/blackfridaydeal2.jpg')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] max-w-[33.3%] leading-[24px] grow-[1] shrink-0">
-          <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">
-            black friday deal: £4.20
-          </h2>
-        </a>
-        <a href="#"
-          class="bg-[url('images/ubisoftStore/blackfridaydeal3.jpg')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] leading-[24px] grow-[1] shrink-0">
-          <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">
-            black friday deal: £4.37
-          </h2>
-        </a>
+      <div class="cards cards_ubisoft_store flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full h-[589.547px] px-[30px] gap-10">
       </div>
     </section>
 
@@ -763,33 +765,7 @@
       <h2 class="font-['Ubisoft Sans Bold'] pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-bold text-black">
         inside ubisoft
       </h2>
-      <div class="cards_inside flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full px-[30px] gap-10">
-        <!-- <a href="insideubisoft1.html" target="_blank"
-          class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
-          <img src="images/insideUbisoft/insideubisoft1.png" alt="Card1 image" loading="lazy" class="w-full object-cover rounded-xl" />
-          <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
-            <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
-              ubisoft forward 2024 announce
-            </h2>
-          </div>
-        </a> -->
-        <!-- <a href="#" class="group relative cursor-pointer text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
-          <img src="images/insideUbisoft/insideubisoft2.jpg" alt="Card2 image" loading="lazy" class="w-full object-cover rounded-xl" />
-          <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
-            <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
-              the inside story of the crew
-            </h2>
-          </div>
-        </a> -->
-        <!-- <a href="#" class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0 rounded-sm">
-          <img src="images/insideUbisoft/insideubisoft3.jpg" alt="Inside Ubisoft Wallpaper" loading="lazy" class="w-full object-cover rounded-xl" />
-          <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
-            <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
-              ubisoft commitment to lgbtqia+ communities
-            </h2>
-          </div>
-        </a> -->
-      </div>
+      <div class="cards_inside flex flex-row justify-center font-[400] leading-[24px] pb-[70px] w-full px-[30px] gap-10"></div>
     </section>
 
     <!-- Ubisoft Wallpapers section -->
@@ -1170,6 +1146,37 @@
       .get("latestnews.json")
       .then((response) => {
         const news = response.data.news;
+        const cardsNewsFirst = document.querySelector(".grid_container");
+
+        const firstNews = news[0];
+
+        cardsNewsFirst.innerHTML += `
+         <a href="#"
+              class="grid_item group image flex flex-col gap-4 cursor-pointer font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+              <div class="mr-[16px] mt-[16px] w-full basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <img src="${firstNews.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="mr-[16px] mb-[16px] w-full content basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${firstNews.date}</span>
+                <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${firstNews.title}</p>
+              </div>
+            </a>
+          `
+        const allNews = news.slice(1, 5);
+        cardsNewsFirst.innerHTML += allNews
+          .map(
+            (card, index) => `
+         <a href="#"
+          class="grid_item group image flex gap-4 cursor-pointer font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+          <div class="my-[16px] mr-[16px] w-full basis-0 grow-[1] shrink-[1] leading-[24px]">
+            <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover" />
+          </div>
+          <div class="my-[16px] mr-[16px] w-full content basis-0 grow-[1] shrink-[1] leading-[24px]">
+            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
+            <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
+          </div>
+        </a>
+          `).join("");
         const cardsNewsSecond = document.getElementById("second");
         const assassinNews = news.filter(card => card.title.includes("Assassin’s Creed")).slice(0, 6);
         cardsNewsSecond.innerHTML += assassinNews
@@ -1227,6 +1234,24 @@
          </a>
           `).join("");
 
+      })
+      .catch((error) => {
+        console.error("JSON fayl yüklənmədi:", error);
+      });
+
+    // Ubisoft Store section
+    axios
+      .get("ubisoftstore.json")
+      .then((response) => {
+        const cards = response.data.cards;
+        const cardsUbisoftStore = document.querySelector(".cards_ubisoft_store");
+        cardsUbisoftStore.innerHTML += cards
+          .map(
+            (card, index) => `
+          <a href="#" class="bg-[url('${card.background}')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] max-w-[33.3%] leading-[24px] grow-[1] shrink-0">
+            <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">${card.title}</h2>
+          </a>
+          `).join("");
       })
       .catch((error) => {
         console.error("JSON fayl yüklənmədi:", error);
