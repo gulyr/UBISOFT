@@ -1,0 +1,16 @@
+{
+  "cards": [
+    {
+      "title": "add to wishlist",
+      "background": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3g1RltwC4KHuFv3lnNvxnw/4d2bc55fed4f51fb3358e8249a6550c0/Ubidotcom_ACRed_Announce_STD_908x1080.jpg"
+    },
+    {
+      "title": "discover the ubisoft loyalty program",
+      "background": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/68qIO1ntRsCUec3YSu1dEr/c5bf58bc49f480821a68d15677c2a9f7/Ubidotcom_WIS_Nov2024_908x1080_Agnostic.jpg"
+    },
+    {
+      "title": "add to wishlist",
+      "background": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3WnvCyUjTHVGvVhyJByb1o/425bfae03ebeae967df0ce3b6d84b9b0/ubi-homescreen-store_promo-anno117.jpg"
+    }
+  ]
+}
