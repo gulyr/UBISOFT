@@ -20,6 +20,7 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
   <style>
     .container1 {
       width: 100%;
@@ -200,6 +201,19 @@
     .mySwiper3 .swiper-button-next::after {
       border-top-left-radius: 30px !important;
       border-bottom-left-radius: 30px !important;
+    }
+
+    button[role="tab"] {
+      color: #d80388;
+      transition: color 0.3s ease;
+    }
+
+    button[role="tab"]:hover {
+      color: #000;
+    }
+
+    button[role="tab"][aria-selected="true"] {
+      font-weight: 700;
     }
   </style>
 </head>
@@ -496,7 +510,7 @@
       <div class=" swiper mySwiper absolute bottom-[5px] left-0">
         <div class=" swiper-wrapper ">
 
-          <div class=" swiper-slide flex flex-col bg-black justify-between h-[150px] cursor-pointer gap-4 ">
+          <div class=" swiper-slide flex flex-col justify-between items-center h-[150px] cursor-pointer gap-4 ">
             <div class=" w-[211px]">
               <img src=" images/iconImages/ubi-homescreen-logo-ubisoft-winter-challenge-v3.png " loading=" lazy " alt=" Winter Challenge icon "
                 class=" animate__flash w-full object-cover" />
@@ -644,14 +658,14 @@
     </section>
 
     <!-- explore more games -->
-    <section class="explore_more_games w-full h-full leading-[24px] relative">
+    <section class="explore_more_games w-full h-full leading-[24px] relative pb-[50px]">
       <h2 class="w-full text-center uppercase text-black pt-[50px] pb-[45px] leading-[40px] text-[40px] font-[700]">
         explore more games
       </h2>
       <div class="swiper mySwiper3">
         <div class="swiper-wrapper " id="exploremoregamescards"></div>
         <div class="swiper-button-next"></div>
-        <div class="w-full flex items-center justify-center text-white">
+        <div class="w-full flex items-center justify-center text-white m-[20px]">
           <a href="viewallgames.html" target="_blank"
             class="bg-[#d80388] inline-flex items-center justify-center mx-auto w-[250px] h-[54px] tracking-[1.6px] leading-[15px] text-[15px] my-[10px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center uppercase rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[0.2s] transform transition-all delay-[0s] ease-custom-ease custom-matrix-2 cursor-pointer hover:bg-white hover:text-[#d80388]">
             view all games
@@ -662,99 +676,56 @@
     </section>
 
     <!-- Latest News section -->
-    <section class="latest_news w-full h-[1015.3px] flex flex-col">
+    <section class="latest_news w-full h-[1015.3px] flex flex-col bg-[#F0F3F4]">
       <h2 class="pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-[700] text-black">
         latest news
       </h2>
-      <nav class="w-full mx-auto my-0">
-        <ul class="w-full flex justify-center">
+      <div class="w-full mb-[24px] leading-[24px] flex flex-wrap justify-center">
+        <ul class="w-full flex justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
           <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] font-[700] px-[20px] py-[6px] hover:text-black hover:underline">
-            <a href="#">all news</a>
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
+            role="presentation">
+            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="first-tab" data-tabs-target="#first" type="button" role="tab"
+              aria-controls="first" aria-selected="false">all news</button>
           </li>
           <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline">
-            <a href="#">assassin's creed</a>
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
+            role="presentation">
+            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="second-tab" data-tabs-target="#second" type="button"
+              role="tab" aria-controls="second" aria-selected="false">assassin's creed</button>
           </li>
           <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline">
-            <a href="#">rainbow six</a>
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
+            role="presentation">
+            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="third-tab" data-tabs-target="#third" type="button" role="tab"
+              aria-controls="third" aria-selected="false">rainbow six</button>
           </li>
           <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline">
-            <a href="#">star wars outlaws</a>
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
+            role="presentation">
+            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="fourth-tab" data-tabs-target="#fourth" type="button"
+              role="tab" aria-controls="fourth" aria-selected="false">star wars outlaws</button>
           </li>
           <li
-            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline">
-            <a href="#">the division</a>
+            class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[#d80388] text-[16px] px-[20px] py-[6px] hover:text-black hover:underline"
+            role="presentation">
+            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="fifth-tab" data-tabs-target="#fifth" type="button" role="tab"
+              aria-controls="fifth" aria-selected="false">the division</button>
           </li>
         </ul>
-      </nav>
-      <div class="cards justify-center max-w-[1472px] w-full font-[400] leading-[24px] flex-row flex-wrap grid grid-cols-[664.5px_664.5px] gap-4">
-        <a href="#"
-          class="group image mb-[16px] block cursor-pointer px-[16px] max-w-[750px] h-[475.781px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c] row-span-2 row-start-1">
-          <img src="images/latestNewsImages/assassinscreedsyndicatenews.jpg" alt="Assassin's Creed Syndicate" loading="lazy" class="w-full" />
-          <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 26, 2024</span>
-          <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">
-            Assassin's Creed Syndicate - Build an Underworld Empire in Victorian London with Ubisoft+
-          </p>
-        </a>
-        <a href="#"
-          class="group image flex cursor-pointer max-w-[750px] h-[237.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-          <img src="images/latestNewsImages/starwarsoutlawsnews.jpeg" alt="Star Wars Outlaws" loading="lazy" class="w-[300.25px] h-[168.891px]" />
-          <div class="content m-[16px]">
-            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 21, 2024</span>
-            <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">
-              Star Wars Outlaws<sup>TM</sup> Now Available on Steam, Wild Card Story Pack Out Now
-            </p>
-          </div>
-        </a>
-        <a href="#"
-          class="group image flex cursor-pointer max-w-[750px] h-[237.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-          <img src="images/latestNewsImages/princeofpersianews.jpg" alt="Prince of Persia" loading="lazy" class="w-[300.25px] h-[168.891px]" />
-          <div class="content m-[16px]">
-            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 21, 2024</span>
-            <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">
-              The Rogue Prince of Persia's The Second Act Update Out Now
-            </p>
-          </div>
-        </a>
-        <a href="#"
-          class="group image flex cursor-pointer max-w-[750px] h-[200.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-          <img src="images/latestNewsImages/starwarsoutlawsnews2.jpg" alt="Star Wars Outlaws" loading="lazy"
-            class="w-[300.25px] h-[168.891px] max-w-full align-middle" />
-          <div class="content m-[16px]">
-            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 21, 2024</span>
-            <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">
-              Star Wars Outlaws<sup>TM</sup> Accessibility Spotlight
-            </p>
-          </div>
-        </a>
-        <a href="#"
-          class="group image flex cursor-pointer max-w-[750px] h-[200.891px] px-[16px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-          <img src="images/latestNewsImages/skullandbonesnews.jpg" alt="Skull and Bones" loading="lazy"
-            class="w-[300.25px] h-[168.891px] max-w-full align-middle" />
-          <div class="content m-[16px]">
-            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">November 19, 2024</span>
-            <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">
-              Skull and Bones Season 4: Shadows of the Deep Out Today
-            </p>
-          </div>
-        </a>
       </div>
-      <div class="w-full flex justify-center text-white">
-        <!-- <button
-          class="bg-[#d80388] mx-auto w-[250px] h-[54px] tracking-[1.6px] leading-[15px] text-[15px] my-[30px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer">
-          all news
-        </button> -->
-
-        <!-- <a href="allnews.html" target="_blank"
-          class="bg-[#d80388] inline-flex items-center justify-center mx-auto w-[250px] h-[54px] tracking-[1.6px] leading-[15px] text-[15px] my-[10px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[0.2s] transform transition-all delay-[0s] ease-custom-ease custom-matrix-2 cursor-pointer hover:bg-white hover:text-[#d80388]">
-          all news
-        </a> -->
-
+      <div class="cards justify-center max-w-[1472px] w-full font-[400] leading-[24px] flex-row flex-wrap" id="default-tab-content">
+        <div class="hidden p-4 rounded-lg" id="first" role="tabpanel" aria-labelledby="first-tab">
+          <p class="text-sm">all news</p>
+        </div>
+        <div class="hidden w-full p-4 rounded-lg flex flex-wrap" id="second" role="tabpanel" aria-labelledby="second-tab"></div>
+        <div class="hidden w-full p-4 rounded-lg flex flex-wrap" id="third" role="tabpanel" aria-labelledby="third-tab"></div>
+        <div class="hidden w-full p-4 rounded-lg flex flex-wrap" id="fourth" role="tabpanel" aria-labelledby="fourth-tab"></div>
+        <div class="hidden w-full p-4 rounded-lg flex flex-wrap" id="fifth" role="tabpanel" aria-labelledby="fifth-tab"></div>
+      </div>
+      <div class="w-full flex items-center justify-center text-white">
         <a href="allnews.html" target="_blank"
-          class="uppercase rounded-[30px] inline-flex w-[250px] h-[54px] text-[15px] font-[700] flex-col justify-center items-center text-center cursor-pointer bg-[#d80388] border-[2px] border-solid border-[#d80388] min-w-[100px] max-w-[300px] leading-[16px] tracking-[1.6px] hover:bg-white hover:text-[#d80388] transform transition-all delay-[0s] ease-custom-ease custom-matrix-2">
+          class="bg-[#d80388] inline-flex items-center justify-center mx-auto w-[250px] h-[54px] tracking-[1.6px] leading-[15px] text-[15px] my-[10px] font-[700] max-w-[300px] min-w-[100px] m-x-[695px] overflow-hidden text-center uppercase rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[0.2s] transform transition-all delay-[0s] ease-custom-ease custom-matrix-2 cursor-pointer hover:bg-white hover:text-[#d80388]">
           all news
         </a>
       </div>
@@ -981,6 +952,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   <script>
     AOS.init();
   </script>
@@ -1073,7 +1045,6 @@
       loadSlideData(realIndex); // JSON məlumatını yeniləyir
     });
 
-
     var swiper3 = new Swiper(".mySwiper3", {
       loop: true,
       slidesPerView: 6,
@@ -1103,7 +1074,6 @@
         <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
       </svg>
     `;
-
       // SVG for Up icon
       const upSVG = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
@@ -1113,11 +1083,9 @@
 
       // Toggle the content's max-height for smooth opening and closing
       if (content.style.maxHeight && content.style.maxHeight !== "0px") {
-        // document.querySelector("body").style.overflow = "hidden";
         content.style.maxHeight = "0";
         icon.innerHTML = upSVG;
       } else {
-        // document.querySelector("body").style.overflow = "scroll";
         content.style.maxHeight = content.scrollHeight + "px";
         icon.innerHTML = downSVG;
       }
@@ -1125,7 +1093,6 @@
     // Toggle Panel
     const menu = document.querySelector(".menu");
     function togglepanel() {
-      // document.querySelector("body").style.overflow = "hidden";
       if (menu.style.display === "block") {
         menu.style.display = "none";
         document.querySelector("body").style.overflow = "scroll";
@@ -1134,9 +1101,7 @@
         document.querySelector("body").style.overflow = "hidden";
       }
     }
-
     const menu2 = document.querySelector(".menu2");
-    // document.querySelector("body").style.overflow = "hidden";
     function togglepanel2() {
       menu.style.display = "block";
       if (menu2.style.display === "flex") {
@@ -1152,7 +1117,6 @@
       .then((response) => {
         const cards = response.data.cards;
         const cardsInside = document.querySelector(".cards_inside");
-
         cardsInside.innerHTML += cards
           .map(
             (card, index) => `
@@ -1179,7 +1143,6 @@
       .then((response) => {
         const games = response.data.games;
         const cardsMoreGames = document.getElementById("exploremoregamescards");
-
         cardsMoreGames.innerHTML += games
           .map(
             (game, index) => `
@@ -1197,6 +1160,73 @@
             </a>
           </div>
           `).join("");
+      })
+      .catch((error) => {
+        console.error("JSON fayl yüklənmədi:", error);
+      });
+
+    // Latest News
+    axios
+      .get("latestnews.json")
+      .then((response) => {
+        const news = response.data.news;
+        const cardsNewsSecond = document.getElementById("second");
+        const assassinNews = news.filter(card => card.title.includes("Assassin’s Creed")).slice(0, 6);
+        cardsNewsSecond.innerHTML += assassinNews
+          .map(
+            (card, index) => `
+          <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+           <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+             <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
+            <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
+                <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
+            </div>
+         </a>
+          `).join("");
+        const cardsNewsThird = document.getElementById("third");
+        const rainbowSixSiegeNews = news.filter(card => card.title.includes("Rainbow Six Siege")).slice(0, 6);
+        cardsNewsThird.innerHTML += rainbowSixSiegeNews
+          .map(
+            (card, index) => `
+          <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+           <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+             <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
+            <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
+                <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
+            </div>
+         </a>
+          `).join("");
+        const cardsNewsFourth = document.getElementById("fourth");
+        const starWarsNews = news.filter(card => card.title.includes("Star Wars")).slice(0, 6);
+        cardsNewsFourth.innerHTML += starWarsNews
+          .map(
+            (card, index) => `
+          <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+           <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+             <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
+            <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
+                <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
+            </div>
+         </a>
+          `).join("");
+        const cardsNewsFifth = document.getElementById("fifth");
+        const theDivisionNews = news.filter(card => card.title.includes("The Division")).slice(0, 6);
+        cardsNewsFifth.innerHTML += theDivisionNews
+          .map(
+            (card, index) => `
+          <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+           <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+             <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
+            <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
+                <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
+            </div>
+         </a>
+          `).join("");
+
       })
       .catch((error) => {
         console.error("JSON fayl yüklənmədi:", error);
