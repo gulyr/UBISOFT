@@ -205,12 +205,13 @@
 </head>
 
 <body class="font-['Ubisoft Sans'] relative box-border overflow-x-hidden">
-  <div class="menu absolute top-[40px] left-0 right-0 bg-black w-full h-[100vh] z-[12] px-[20px] hidden">
+  <div class="menu top-[40px] left-0 bg-black w-full h-full z-[12] px-[20px] fixed hidden">
     <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
-      <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
+      <button onclick="toggleAccordion(1)"
+        class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
         <span>Play</span>
         <span id="icon-1" class="text-white transition-transform duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
             <path fill-rule="evenodd"
               d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
               clip-rule="evenodd" />
@@ -232,10 +233,11 @@
       </div>
     </div>
     <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
-      <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
+      <button onclick="toggleAccordion(2)"
+        class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
         <span>Shop</span>
         <span id="icon-2" class="text-white transition-transform duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
             <path fill-rule="evenodd"
               d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
               clip-rule="evenodd" />
@@ -254,10 +256,11 @@
       </div>
     </div>
     <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
-      <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
+      <button onclick="toggleAccordion(3)"
+        class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
         <span>Explore</span>
         <span id="icon-3" class="text-white transition-transform duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
             <path fill-rule="evenodd"
               d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
               clip-rule="evenodd" />
@@ -285,10 +288,11 @@
       </div>
     </div>
     <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
-      <button onclick="toggleAccordion(4)" class="w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
+      <button onclick="toggleAccordion(4)"
+        class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
         <span>Help</span>
         <span id="icon-4" class="text-white transition-transform duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
             <path fill-rule="evenodd"
               d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
               clip-rule="evenodd" />
@@ -321,7 +325,135 @@
         </svg>
       </a>
     </div>
-    <div class="search w-full h-[84px]"></div>
+    <div class="search py-[24px] w-full">
+      <div class="w-full">
+        <form action="" class="w-full flex">
+          <button class="py-[12px] px-[10px] bg-[#393939] rounded-tl-[20px] rounded-bl-[20px]">
+            <svg class="ais-SearchBox-submitIcon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 40 40">
+              <path
+                d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z">
+              </path>
+            </svg>
+          </button>
+          <input type="text"
+            class=" outline-none focus:outline-none pt-[2px] pr-[30px] leading-[32px] rounded-tr-[20px] rounded-br-[20px] bg-[#393939] w-full placeholder:text-white"
+            placeholder="Type your search" onclick="togglepanel2()">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="menu2 top-[40px] left-0 right-0 bg-white w-full h-full z-[100] px-[20px] fixed flex flex-col hidden">
+    <div class="w-full mt-[15px]">
+      <form action="" class="w-full flex">
+        <button class="py-[12px] px-[10px] bg-[#F0F3F4] rounded-tl-[20px] rounded-bl-[20px]">
+          <svg class="ais-SearchBox-submitIcon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 40 40">
+            <path
+              d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z">
+            </path>
+          </svg>
+        </button>
+        <input type="text"
+          class="border-none focus:border-none outline-none focus:outline-none pt-[2px] pr-[30px] leading-[32px] rounded-tr-[20px] rounded-br-[20px] bg-[#F0F3F4] w-full placeholder:text-black"
+          placeholder="Type your search" onclick="">
+        <button class="text-[#db287f] border-none bg-transparent pl-[12px] leading-[20px]" onclick="togglepanel2()">Cancel</button>
+      </form>
+    </div>
+    <div class="w-full flex flex-col">
+      <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">games</h2>
+      <div class="w-full" data-identifier="Products">
+        <ul class="w-full px-[35px] pointer-events-all">
+          <li class="indent-[10px] list-item">
+            <div>
+              <a rel="noreferrer noopener" href="https://www.ubisoft.com/en-us/game/assassins-creed/shadows" target="_blank"
+                class="py-[6px] leading-[20px] cursor-pointer  indent-[10px] text-black text-[16px] hover:underline" role="link" tabindex="0">
+                <span>Assassin’s Creed Shadows</span>
+              </a>
+            </div>
+          </li>
+          <li class="indent-[10px] list-item">
+            <div>
+              <a rel="noreferrer noopener" href="https://www.ubisoft.com/en-us/game/star-wars/outlaws" target="_blank"
+                class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link" tabindex="0">
+                <span">Star Wars Outlaws</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">store products</h2>
+      <div class="w-full" data-identifier="Store products">
+        <ul class="w-full px-[35px] pointer-events-all">
+          <li class="indent-[10px] list-item">
+            <div>
+              <a rel="noreferrer noopener"
+                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US"
+                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
+                tabindex="0">
+                <span>Tom Clancy's Rainbow Six Siege 1,200 R6Credits</span> - <span class="">$9.99</span>
+              </a>
+            </div>
+          </li>
+          <li class="indent-[10px] list-item">
+            <div>
+              <a rel="noreferrer noopener"
+                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US"
+                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
+                tabindex="0"><span>Tom Clancy's Rainbow Six Siege 600 R6 Credits</span> - <span class="">$4.99</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">news</h2>
+      <div class="w-full" data-identifier="Store products">
+        <ul class="w-full px-[35px] pointer-events-all">
+          <li class="indent-[10px] list-item">
+            <div>
+              <a rel="noreferrer noopener"
+                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US"
+                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
+                tabindex="0">
+                <span>New songs from Trans-Siberian Orchestra Available in Rocksmith+!</span>
+              </a>
+            </div>
+          </li>
+          <li class="indent-[10px] list-item">
+            <div>
+              <a rel="noreferrer noopener"
+                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US"
+                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
+                tabindex="0"><span>Star Wars Outlaws - Title Update 1.5.0</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">faqs</h2>
+      <div class="w-full" data-identifier="Store products">
+        <ul class="w-full px-[35px] pointer-events-all">
+          <li class="indent-[10px] list-item">
+            <div>
+              <a rel="noreferrer noopener"
+                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US"
+                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
+                tabindex="0">
+                <span>Multiple charges for your Ubisoft+ subscription</span>
+              </a>
+            </div>
+          </li>
+          <li class="indent-[10px] list-item">
+            <div>
+              <a rel="noreferrer noopener"
+                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US"
+                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
+                tabindex="0"><span>Recovering access to your Ubisoft account</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <span class="text-[#db287f] py-[30px] mx-[35px] leading-[20px] font-[400] text-[16px] hover:underline">See all Results</span>
+    </div>
   </div>
   <div class="container1 w-full h-full flex flex-col relative">
     <!-- header -->
@@ -489,20 +621,23 @@
     </div>
 
     <!-- Join now section -->
-    <section class="join_now w-full relative h-[380px] bg-[url('images/ubisoft+wallpaper.jpg')] bg-cover bg-center z-[10] clear-both ">
+    <section
+      class="join_now w-full relative h-[380px] bg-[url('images/Ubidotcom-Secondary_Ubisoft__SWO-ULT-July24_1920x680_desk__1_.jpg')] bg-cover bg-center z-[10] clear-both ">
       <img src="images/ubisoft+.png" alt="Ubisoft+ logo" loading="lazy" class=" w-[150px] h-[51.1094px]" />
 
-      <div class="content  flex flex-col items-center">
+      <div class="w-full h-full content flex flex-col items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
         <h2
-          class="text-[32px] font-[700] leading-[36px] duration-[1.2s] transition-all delay-[0.2s] text-white text-center mt-[10px] mb-[5px] mx-[30px] transform custom-ease custom-matrix w-[667px]">
-          Get the XDefiant Battle Pass with Ubisoft+!
+          class="text-[32px] font-[700] leading-[36px] duration-[1.2s] transition-all delay-[0.2s] text-white text-center mt-[10px] mb-[5px] mx-[30px] transform custom-ease custom-matrix w-[667px]"
+          data-aos="fade-up" data-aos-duration="1000">
+          Play Star Wars Outlaws now
         </h2>
-        <p
-          class="text-[18px] font-[500] leading-[26px] duration-[1.2s] transition-all delay-[0.2s] custom-ease transform custom-matrix my-[20px] mx-[10px] text-white text-center ms-[10px] me-[10px]">
-          Unlock access to new rewards and dive right into the action.
+        <p class="text-[18px] font-[500] leading-[26px] duration-[1.2s] transition-all delay-[0.2s] custom-ease transform custom-matrix my-[20px] mx-[10px] text-white text-center ms-[10px] me-[10px]"
+          data-aos="fade-up" data-aos-duration="1000">
+          Buy now or play it with Ubisoft+
         </p>
         <button aria-label="Join Now"
-          class="bg-[#d80388] w-[167.531px] h-[54px] tracking-[1.6px] leading-[15px] m-[10px] text-[15px] font-[700] max-w-[300px] min-w-[100px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer">
+          class="bg-[#d80388] w-[167.531px] h-[54px] tracking-[1.6px] leading-[15px] m-[10px] text-[15px] font-[700] max-w-[300px] min-w-[100px] overflow-hidden text-center transform uppercase text-white rounded-[30px] border-[#d80388] border-[2px] border-solid duration-[1.2s] transition-all delay-[0.4s] custom-ease custom-matrix-2 cursor-pointer"
+          data-aos="fade-up" data-aos-duration="1000">
           join now
         </button>
       </div>
@@ -964,14 +1099,14 @@
 
       // SVG for Down icon
       const downSVG = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
         <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
       </svg>
     `;
 
       // SVG for Up icon
       const upSVG = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
         <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
       </svg>
     `;
@@ -987,12 +1122,21 @@
     }
     // Toggle Panel
     const menu = document.querySelector(".menu");
-
     function togglepanel() {
       if (menu.style.display === "block") {
         menu.style.display = "none";
       } else {
         menu.style.display = "block";
+      }
+    }
+
+    const menu2 = document.querySelector(".menu2");
+    function togglepanel2() {
+      menu.style.display = "block";
+      if (menu2.style.display === "flex") {
+        menu2.style.display = "none";
+      } else {
+        menu2.style.display = "flex";
       }
     }
 
