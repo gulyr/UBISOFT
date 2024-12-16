@@ -17,6 +17,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link href="src/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <style></style>
 </head>
 
@@ -73,8 +74,8 @@
 
         <!-- News section -->
         <section class="news w-full flex flex-col pt-[50px]">
-            <div class="grid_container flex flex-col gap-[150px] justify-center items-center w-full">
-                <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+            <div class="grid_container grid_container_1 flex flex-col gap-[150px] justify-center items-center w-full">
+                <!-- <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
                     <div class="flex w-full h-full justify-center">
                         <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
                             <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oheIoncCkrrQVCMNXwwI/d2a14f2680fa1993d6fac1b759ac722e/BrandNewsArticle_Ubisoft__CLASSICS__1_Agnostic_July24_960x540.jpg"
@@ -98,10 +99,36 @@
                             </div>
                         </div>
                     </div>
-                </a>
+                </a> -->
+
+                <!-- <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                    <div class="flex w-full h-full justify-center">
+                        <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                            <p class="leading-[21px] text-[16px] font-[400]">
+                                <span>December 6, 2024</span> |
+                                <span>1 Min Read</span>
+                            </p>
+                            <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">Get Your First Month of Ubisoft+ Classics for
+                                $1
+                            </h2>
+                            <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">Play beloved games like Assassin’s Creed
+                                Valhalla, Far Cry 6, and Rainbow Six Siege with your subscription.
+                            </p>
+                            <div class="flex">
+                                <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read
+                                    more</span>
+                                <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                            </div>
+                        </div>
+                        <div class="max-w-[550px] w-[34rem]">
+                            <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oheIoncCkrrQVCMNXwwI/d2a14f2680fa1993d6fac1b759ac722e/BrandNewsArticle_Ubisoft__CLASSICS__1_Agnostic_July24_960x540.jpg"
+                                alt="" class="w-full object-cover">
+                        </div>
+                    </div>
+                </a> -->
             </div>
             <!-- Read More section -->
-            <section class="w-full flex bg-black items-center justify-center relative">
+            <section class="w-full flex bg-black items-center justify-center relative my-[100px]">
                 <div
                     class="p-[10px] max-w-[700px] ml-[130px] leading-[24px] flex flex-col items-start justify-center text-left absolute top-[80px] left-[20px]">
                     <div class="w-full h-full" style="background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5));">
@@ -127,11 +154,14 @@
                     </div>
                 </div>
             </section>
+
+            <div class="grid_container grid_container_2  flex flex-col gap-[150px] justify-center items-center w-full"></div>
+
             <!-- Pagination -->
             <ul class="w-full mt-[50px] mb-[100px] leading-[24px] flex justify-center items-center text-[16px]">
                 <li class="w-[40px] h-[30px] text-[16px] leading-[24px] flex justify-center items-center">
-                    <button aria-label="Next" class="py-[6px] px-[1px] flex items-start" data-innertext="Next" data-ccm-m="buttonMaster"
-                        type="button">
+                    <button aria-label="Previous" class="prev-button py-[6px] px-[1px] flex items-start" data-innertext="Previous"
+                        data-ccm-m="buttonMaster" type="button">
                         <i class="fa-solid fa-caret-left w-[25px] text-left text-[14px] text-[#d80388] ml-[15px]"></i>
                     </button>
                 </li>
@@ -162,7 +192,7 @@
                     </button>
                 </li>
                 <li class="w-[40px] h-[30px] text-[16px] leading-[24px] flex justify-center items-center">
-                    <button aria-label="Next" class="py-[6px] px-[1px] flex items-start" data-innertext="Next" data-ccm-m="buttonMaster"
+                    <button aria-label="Next" class="next-button py-[6px] px-[1px] flex items-start" data-innertext="Next" data-ccm-m="buttonMaster"
                         type="button">
                         <i class="fa-solid fa-caret-right w-[25px] text-right text-[14px] text-[#d80388] ml-[15px]"></i>
                     </button>
@@ -291,6 +321,140 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        axios
+            .get("allnews.json")
+            .then((response) => {
+                const news = response.data.news; // JSON obyektindən 'news' array'ini alın
+                const cardsNews = document.querySelector(".grid_container_1"); // `.grid_container` elementini seçin
+
+                // Yalnız ilk 3 kartı göstərmək üçün 'slice(0, 3)' istifadə edirik
+                const firstThreeNews = news.slice(0, 3);
+
+                // `map` ilə hər bir kartı yaradın və HTML şəklində birləşdirin
+                cardsNews.innerHTML = firstThreeNews
+                    .map((card, index) => {
+                        // Cüt kartlar üçün fərqli dizayn tətbiq edirik
+                        if (index % 2 === 0) {
+                            // Tək kartlar üçün əvvəlki dizayn
+                            return `
+                    <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                        <div class="flex w-full h-full justify-center">
+                            <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                                <img src="${card.image}" alt="" class="w-full object-cover">
+                            </div>
+                            <div class="max-w-[550px] w-[34rem]">
+                                <p class="leading-[21px] text-[16px] font-[400]">
+                                    <span>${card.date}</span> |
+                                    <span>${card.readingTime}</span>
+                                </p>
+                                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                                <div class="flex">
+                                    <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                                    <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>`;
+                        } else {
+                            // Cüt kartlar üçün yeni dizayn
+                            return `
+                    <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                        <div class="flex w-full h-full justify-center">
+                            <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                                <p class="leading-[21px] text-[16px] font-[400]">
+                                    <span>${card.date}</span> |
+                                    <span>${card.readingTime}</span>
+                                </p>
+                                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                                <div class="flex">
+                                    <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                                    <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                                </div>
+                            </div>
+                            <div class="max-w-[550px] w-[34rem]">
+                                <img src="${card.image}"alt="" class="w-full object-cover">
+                            </div>
+                        </div>
+                    </a>
+                `;
+                        }
+                    })
+                    .join(""); // `map` ilə yaranan array'ı birləşdiririk
+                const cardsNews2 = document.querySelector(".grid_container_2");
+                const firstFourNews = news.slice(4, 8);
+                cardsNews2.innerHTML = firstFourNews
+                    .map((card, index) => {
+                        // Cüt kartlar üçün fərqli dizayn tətbiq edirik
+                        if (index % 2 !== 0) {
+                            // Tək kartlar üçün əvvəlki dizayn
+                            return `
+                    <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                        <div class="flex w-full h-full justify-center">
+                            <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                                <img src="${card.image}" alt="" class="w-full object-cover">
+                            </div>
+                            <div class="max-w-[550px] w-[34rem]">
+                                <p class="leading-[21px] text-[16px] font-[400]">
+                                    <span>${card.date}</span> |
+                                    <span>${card.readingTime}</span>
+                                </p>
+                                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                                <div class="flex">
+                                    <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                                    <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>`;
+                        } else {
+                            // Cüt kartlar üçün yeni dizayn
+                            return `
+                    <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                        <div class="flex w-full h-full justify-center">
+                            <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                                <p class="leading-[21px] text-[16px] font-[400]">
+                                    <span>${card.date}</span> |
+                                    <span>${card.readingTime}</span>
+                                </p>
+                                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                                <div class="flex">
+                                    <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                                    <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                                </div>
+                            </div>
+                            <div class="max-w-[550px] w-[34rem]">
+                                <img src="${card.image}"alt="" class="w-full object-cover">
+                            </div>
+                        </div>
+                    </a>
+                `;
+                        }
+                    })
+                    .join("");
+            })
+            .catch((error) => {
+                console.error("JSON fayl yüklənmədi:", error); // Xəta varsa konsola yazdırılır
+            });
+
+        // Pagination
+        // Hər bir `li` elementinə click event listener əlavə edirik
+        const pageItems = document.querySelectorAll('li[data-page]');
+
+        pageItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Səhifə nömrəsini əldə edirik
+                const pageNumber = item.getAttribute('data-page');
+
+                // Burada səhifə nömrəsinə əsasən müvafiq əməliyyatları həyata keçirə bilərsiniz
+                // Məsələn, yeni məzmunu yükləmək və ya göstərmək
+            });
+        });
+    </script>
 </body>
 
 </html>
