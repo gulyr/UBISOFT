@@ -2,16 +2,6 @@
   "games": [
     {
       "id": 1,
-      "name": "Star Wars Outlaws",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/51bQpXtlo48CyMrxj8F1RU/8cc9f5ae3fa67c590b7d6d2ca51e883c/swo-boxshot.jpg",
-      "icons": [
-        "fa-brands fa-xbox",
-        "fa-brands fa-playstation",
-        "fa-brands fa-windows"
-      ]
-    },
-    {
-      "id": 2,
       "name": "Assassin's Creed: Shadows",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/25jYqtlv4yZXspIIIrPYcy/a586ea8ff962a3391f450746928a9181/AC-Shadows-boxshot.jpg",
       "icons": [
@@ -20,51 +10,56 @@
         "fa-brands fa-windows",
         "bi bi-triangle",
         "fa-brands fa-apple"
-      ]
+      ],
+      "platforms": ["PlayStation", "Xbox", "PC", "Luna", "IOS"]
+    },
+    {
+      "id": 2,
+      "name": "Star Wars Outlaws",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/51bQpXtlo48CyMrxj8F1RU/8cc9f5ae3fa67c590b7d6d2ca51e883c/swo-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation",
+        "fa-brands fa-windows"
+      ],
+      "platforms": ["Xbox", "PlayStation", "PC", "Luna"]
     },
     {
       "id": 3,
-      "name": "XDefiant",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg",
-      "icons": [
-        "fa-brands fa-playstation",
-        "fa-brands fa-xbox",
-        "fa-brands fa-windows",
-        "bi bi-triangle"
-      ]
-    },
-    {
-      "id": 4,
       "name": "Anno 117: Pax Romana",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2lepn90pHxYMhFRYD7s2Yk/7699afba40ed0a6425a8e5140bac583a/anno-117-pax-romana-boxshot.jpg",
       "icons": [
         "fa-brands fa-windows",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox"]
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Avatar: Frontiers of Pandora",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3a1Eo3mixiKRP69sewbisM/19c27f9470353122ee7c4592a56c9e05/avatar-frontiers-of-pandora-boxshot.jpg",
       "icons": [
         "fa-brands fa-playstation",
         "fa-brands fa-xbox",
         "fa-brands fa-windows"
-      ]
+      ],
+      "platforms": ["PlayStation", "Xbox", "PC"]
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Skull and Bones",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7k7xD3KL0E3WGKOQptarrY/6ffd9fc14fdbba6933cd388583344f9e/skull-and-bones.jpg",
       "icons": [
         "fa-brands fa-windows",
         "fa-brands fa-playstation",
-        "fa-brands fa-xbox"
-      ]
+        "fa-brands fa-xbox",
+        "bi bi-triangle"
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox", "Luna"]
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "Prince of Persia: The Lost Crown",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Ldpa61RRMW3ER8Ilvx5s8/d837c9914e3f19ae6688f210202fc911/POPTLC_Packshot_v2.jpg",
       "icons": [
@@ -73,20 +68,22 @@
         "bi bi-nintendo-switch",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["PC", "Luna", "Nintendo Switch", "PlayStation", "Xbox"]
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "The Crew Motorfest",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7DiCOQ3GnZhqEALF3sX6Kf/f9409175464a733696c30a9dec0939d9/TCM_Packshot.jpg",
       "icons": [
         "fa-brands fa-windows",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox"]
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "Assassin's Creed Mirage",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/30dd8syYR9JAPhV759qTQe/66e1f4978d8a6ff11201bc1c6dd7b7f9/acm-boxshot.jpg",
       "icons": [
@@ -94,54 +91,60 @@
         "fa-brands fa-windows",
         "fa-brands fa-xbox",
         "bi bi-triangle"
-      ]
+      ],
+      "platforms": ["PlayStation", "PC", "Xbox", "Luna"]
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "Just Dance 2024 Edition",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/54Qzk9R0090zSHaHL1dTyy/092b2edba4f893833c24e252cd976ac6/jd24-gameCard-exp.jpg",
       "icons": [
         "bi bi-triangle",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["Luna", "PlayStation", "Xbox"]
+    },
+    {
+      "id": 10,
+      "name": "Assassins's Creed Nexus VR",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/13wgIb1aUEmkTLCvYIka5R/de87abadc854a648bf590c46681e698a/acnx-box_art-official.jpg",
+      "icons": ["fa-solid fa-vr-cardboard"],
+      "platforms": ["Virtual Reality"]
     },
     {
       "id": 11,
-      "name": "Assassins's Creed Nexus VR",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/13wgIb1aUEmkTLCvYIka5R/de87abadc854a648bf590c46681e698a/acnx-box_art-official.jpg",
-      "icons": ["a-solid fa-vr-cardboard"]
-    },
-    {
-      "id": 12,
       "name": "Riders Republic",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/TcdclIdtLBu6i1YW9Ysdx/a97ca5e8fc38d0d2fefffd769e5c4618/riders-republic.jpg",
       "icons": [
         "fa-brands fa-windows",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox"]
+    },
+    {
+      "id": 12,
+      "name": "Assassin's Creed Jade",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dA78458QCHaC4f5mYPGzH/c9848a87ed283ed63b8df617cb8eac38/ac-jade-box-no-crest.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"],
+      "platforms": ["IOS", "Android"]
     },
     {
       "id": 13,
-      "name": "Assassin's Creed Jade",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dA78458QCHaC4f5mYPGzH/c9848a87ed283ed63b8df617cb8eac38/ac-jade-box-no-crest.jpg",
-      "icons": ["bi bi-apple", "bi bi-android2"]
-    },
-    {
-      "id": 14,
       "name": "Mario + Rabbids Sparks of Hope",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3l8a1iv0wCVkfNnNmPf95g/ff5d28fa91bfefdabe43523bae4d6315/rkb2-game_info-boxart-keyart-01-560x698-logo_Tablet-_1_.jpg",
       "icons": ["bi bi-nintendo-switch"]
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "The Division Resurgance",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1QBKENDc0Bfx9Blg8JE460/12312d5a0a7f3222286dbd49fb0109fa/Resurgence_Packshot_464x608_EN.jpg",
-      "icons": ["bi bi-apple", "bi bi-android2"]
+      "icons": ["bi bi-apple", "bi bi-android2"],
+      "platforms": ["IOS", "Android"]
     },
     {
-      "id": 16,
+      "id": 15,
       "name": "Roller Champions",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7eA295Gbsyn8ydRdJmRCM/af24716c28fb2ddf9b169880fc6e3015/roller-champions-s3-boxshot.jpg",
       "icons": [
@@ -149,20 +152,22 @@
         "fa-brands fa-playstation",
         "fa-brands fa-xbox",
         "bi bi-nintendo-switch"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"]
     },
     {
-      "id": 17,
+      "id": 16,
       "name": "Rocksmith+",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1k4oo2ekPcs0VLFkUxCHZP/a443aef524eb668032bb3076c0cc7f33/rsplus-game_info-boxart-keyart-02-348x434.jpg",
       "icons": [
         "fa-brands fa-windows",
         "fa-brands fa-xbox",
         "fa-brands fa-playstation"
-      ]
+      ],
+      "platforms": ["PC", "Xbox", "PlayStation"]
     },
     {
-      "id": 18,
+      "id": 17,
       "name": "The Settlers: New Allies",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/29G0BFEY0utT1gbvlGKQaL/33f1cbf10e85d8e483aad9c478143bbc/Boxshot.png",
       "icons": [
@@ -171,10 +176,11 @@
         "fa-brands fa-xbox",
         "bi bi-nintendo-switch",
         "bi bi-triangle"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch", "Luna"]
     },
     {
-      "id": 19,
+      "id": 18,
       "name": "Brawlhalla",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5UmjmHnuHsCtRZMCNyWg0k/d90be8ba795837385ccd8784e9f51e3d/bwl_keyart-gamecard__2_.jpg",
       "icons": [
@@ -183,68 +189,75 @@
         "fa-brands fa-xbox",
         "bi bi-apple",
         "bi bi-android2"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox", "IOS", "Android"]
     },
     {
-      "id": 20,
+      "id": 19,
       "name": "For Honor",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/ASrxpoQFPm53ba7kwnZWz/d3b6ac267b07d66a5639811b9da4786c/for-honor.jpg",
       "icons": [
         "fa-brands fa-windows",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox"]
+    },
+    {
+      "id": 20,
+      "name": "NFL Primetime Fantasy",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6HoYFTxGASTjY7WU8zT4pE/ace8c35ecf83f08ad07062a38e89f2f6/nfl-primetime-fantasy-boxshot-fpo.jpg",
+      "icons": ["bi bi-nintendo-switch"],
+      "platforms": ["Nintendo Switch"]
     },
     {
       "id": 21,
-      "name": "NFL Primetime Fantasy",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6HoYFTxGASTjY7WU8zT4pE/ace8c35ecf83f08ad07062a38e89f2f6/nfl-primetime-fantasy-boxshot-fpo.jpg",
-      "icons": ["bi bi-nintendo-switch"]
-    },
-    {
-      "id": 22,
       "name": "Prince of Persia: The sands of Time",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7xCWEWPL7e0Fy24ambzWv6/66fc66918e64f740f14df63c4f7193d8/POPR_temporaryPACKSHOT.jpg",
       "icons": [
         "fa-brands fa-windows",
         "fa-brands fa-xbox",
         "fa-brands fa-playstation"
-      ]
+      ],
+      "platforms": ["PC", "Xbox", "PlayStation"]
     },
     {
-      "id": 23,
+      "id": 22,
       "name": "Beyond Good and Evil 2",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1MDP58pf0Z7FZgteuE9skd/8144ee26006e114a5b2796cf31ffdc89/BGE2_UBICOM_GAME_INFO_NAKED_BOXSHOT_Mobile.jpg",
       "icons": [
         "fa-brands fa-windows",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox"]
+    },
+    {
+      "id": 23,
+      "name": "Rainbow Six Mobile",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Rcg1PzbpLcmBbxyzpJBtn/b3218610d5f2cb6e8c74d01da89dda87/R6M-Explore-More-Games-Carrousel.png",
+      "icons": ["bi bi-nintendo-switch"],
+      "platforms": ["Nintendo Switch"]
     },
     {
       "id": 24,
-      "name": "Rainbow Six Mobile",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Rcg1PzbpLcmBbxyzpJBtn/b3218610d5f2cb6e8c74d01da89dda87/R6M-Explore-More-Games-Carrousel.png",
-      "icons": ["bi bi-nintendo-switch"]
-    },
-    {
-      "id": 25,
       "name": "Just Dance 2025 Edition",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3IbgJKxwu2IL4o7BYd9rGh/0341fd2a8fe95a7e89d4fee3a560f5a5/just-dance-2025-boxshot.jpg",
       "icons": [
         "bi bi-nintendo-switch",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["Nintendo Switch", "PlayStation", "Xbox"]
     },
     {
-      "id": 26,
+      "id": 25,
       "name": "Just Dance VR",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2fhW1ZQN2DdwTeIje8pBRJ/6fb74b3f9b8fa18d44be4cfe4d12e418/jdVR-boxshot.jpg",
       "icons": []
     },
     {
-      "id": 27,
+      "id": 26,
       "name": "MONOPOLY®",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1hcaftR8LPXqujrRAHHzx8/1b0772df0ecfcb800dfb89b3cdc79d9b/monopoly-2024-boxshot.jpg",
       "icons": [
@@ -253,10 +266,11 @@
         "fa-brands fa-playstation",
         "bi bi-nintendo-switch",
         "bi bi-triangle"
-      ]
+      ],
+      "platforms": ["PC", "Xbox", "PlayStation", "Nintendo Switch", "Luna"]
     },
     {
-      "id": 28,
+      "id": 27,
       "name": "Beyond Good & Evil 20th Anniversary Edition",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3f2S7WTjgIZ8Q7QVGARFF7/5b90a35392baf9160ce70cf2449e8856/BGER_Packshot.jpg",
       "icons": [
@@ -265,22 +279,24 @@
         "bi bi-nintendo-switch",
         "fa-brands fa-windows",
         "bi bi-triangle"
-      ]
+      ],
+      "platforms": ["PlayStation", "Xbox", "Nintendo Switch", "PC", "Luna"]
+    },
+    {
+      "id": 28,
+      "name": "BattleCore Arena",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1bsdTEbSIrToINLUPiU0TD/7f8a26a4ce3e62d629f6c08439a02444/BCA_Packshot.jpg",
+      "icons": ["fa-brands fa-windows"],
+      "platforms": ["PC"]
     },
     {
       "id": 29,
-      "name": "BattleCore Arena",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1bsdTEbSIrToINLUPiU0TD/7f8a26a4ce3e62d629f6c08439a02444/BCA_Packshot.jpg",
-      "icons": ["fa-brands fa-windows"]
-    },
-    {
-      "id": 30,
       "name": "The Rogue Prince of Persia",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3khj4gt1oXuEhkMkkUyaWD/39f186b04e598a5b708e08653a103d58/Musset--KEYART-Packshot-464x608.jpg",
       "icons": []
     },
     {
-      "id": 31,
+      "id": 30,
       "name": "Valiant Hearts: Coming Home",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5rlXuzbksSATFOSQhcYOrK/af01ed37f53809b44e66c21f5c931a9a/vhch-boxshot-464x608.jpg",
       "icons": [
@@ -290,34 +306,46 @@
         "fa-brands fa-xbox",
         "bi bi-apple",
         "bi bi-android2"
+      ],
+      "platforms": [
+        "PC",
+        "Nintendo Switch",
+        "PlayStation",
+        "Xbox",
+        "IOS",
+        "Android"
       ]
     },
     {
-      "id": 32,
+      "id": 31,
       "name": "Rainbow Six: SMOL",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1G1LG5x9m8ArpgZfuzGeeq/bd14cc4a12385683f3f4898e40a2e25b/r6smol_packshot.jpg",
-      "icons": ["bi bi-apple", "bi bi-android2"]
+      "icons": ["bi bi-apple", "bi bi-android2"],
+      "platforms": ["IOS", "Android"]
+    },
+    {
+      "id": 32,
+      "name": "Invincible: Guarding the Globe",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6D0qcqyX5jDxbbyXARwehT/8db1dc21ec047c9f9821d0501b40ec80/IGTG-boxshot.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"],
+      "platforms": ["IOS", "Android"]
     },
     {
       "id": 33,
-      "name": "Invincible: Guarding the Globe",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6D0qcqyX5jDxbbyXARwehT/8db1dc21ec047c9f9821d0501b40ec80/IGTG-boxshot.jpg",
-      "icons": ["bi bi-apple", "bi bi-android2"]
+      "name": "Gwen's Getaway",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4rZYFCBNy6DNa3jPDS7jME/284a2dc98c191e4157f0ae5134ab8090/gg_packshot.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"],
+      "platforms": ["IOS", "Android"]
     },
     {
       "id": 34,
-      "name": "Gwen's Getaway",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4rZYFCBNy6DNa3jPDS7jME/284a2dc98c191e4157f0ae5134ab8090/gg_packshot.jpg",
-      "icons": ["bi bi-apple", "bi bi-android2"]
+      "name": "Anno 1800 Console Edition",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4I6QCZhBCKpidDtSLjt8EK/9be30b7e335b112bdda331c62fd8476a/anno1800_gamecard.jpg",
+      "icons": ["fa-brands fa-xbox", "fa-brands fa-playstation"],
+      "platforms": ["Xbox", "PlayStation"]
     },
     {
       "id": 35,
-      "name": "Anno 1800 Console Edition",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4I6QCZhBCKpidDtSLjt8EK/9be30b7e335b112bdda331c62fd8476a/anno1800_gamecard.jpg",
-      "icons": ["fa-brands fa-xbox", "fa-brands fa-playstation"]
-    },
-    {
-      "id": 36,
       "name": "OddBallers",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/733AgNMf4OSGqsSMQGo1Oe/8c4cdec35a276ee6c8f4b12fc1899323/OddBallers_gamecard-v2.jpg",
       "icons": [
@@ -326,20 +354,22 @@
         "fa-brands fa-playstation",
         "fa-brands fa-xbox",
         "bi bi-triangle"
-      ]
+      ],
+      "platforms": ["PC", "Nintendo Switch", "PlayStation", "Xbox", "Luna"]
     },
     {
-      "id": 37,
+      "id": 36,
       "name": "Just Dance 2023 Edition",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/39R4qgW9vOgKuGLaMJIbdV/aa8e509d1230e38e94626045355e8f25/jd23-boxshot-v1.jpg",
       "icons": [
         "bi bi-nintendo-switch",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["Nintendo Switch", "PlayStation", "Xbox"]
     },
     {
-      "id": 38,
+      "id": 37,
       "name": "Rabbids: Party of Legends",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/ohniW4oA5ibqKi95rCfxa/6f5555745465705f35c8a4e26c00b679/rabbids_party_of_legends_boxshot.jpg",
       "icons": [
@@ -347,30 +377,33 @@
         "fa-brands fa-playstation",
         "fa-brands fa-xbox",
         "fa-brands fa-windows"
-      ]
+      ],
+      "platforms": ["Nintendo Switch", "PlayStation", "Xbox", "PC"]
     },
     {
-      "id": 39,
+      "id": 38,
       "name": "TRIVIAL PURSUIT LIive! 2",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4s42FRlN0846EEDZyNR6Vm/b36112590f1db0870b85036d062d081a/MicrosoftTeams-image__6_.png",
       "icons": [
         "bi bi-nintendo-switch",
         "fa-brands fa-playstation",
         "fa-brands fa-xbox"
-      ]
+      ],
+      "platforms": ["Nintendo Switch", "PlayStation", "Xbox"]
     },
     {
-      "id": 40,
+      "id": 39,
       "name": "Rainbow Six Extraction",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7A2Kk4CzmRgGwtY6JUP6TZ/4b52fdd8ef5942d0802ca4bfa1eff89f/r6-extraction.jpg",
       "icons": [
         "fa-brands fa-xbox",
         "fa-brands fa-playstation",
         "fa-brands fa-windows"
-      ]
+      ],
+      "platforms": ["Xbox", "PlayStation", "PC"]
     },
     {
-      "id": 41,
+      "id": 40,
       "name": "Monopoly Madness",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1DcHuCnOlwhJDbxC1U2tVA/e55c8b7433b917818b1eb6acaf286a1b/monopoly-madness-boxshot.jpg",
       "icons": [
@@ -379,10 +412,11 @@
         "bi bi-nintendo-switch",
         "fa-brands fa-windows",
         "bi bi-triangle"
-      ]
+      ],
+      "platforms": ["Xbox", "PlayStation", "Nintendo Switch", "PC", "Luna"]
     },
     {
-      "id": 42,
+      "id": 41,
       "name": "Far Cry 6",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3Ws9s8x33yHSJANZFl0W6h/a8e6ecd6a870204eccf5ef20bed352fa/far-cry-6.jpg",
       "icons": [
@@ -390,16 +424,18 @@
         "fa-brands fa-playstation",
         "fa-brands fa-xbox",
         "bi bi-triangle"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox", "Luna"]
+    },
+    {
+      "id": 42,
+      "name": "Clash of Beasts",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2kUxm0W5QrbVxXIrxDl1Uj/6c31cf65b12fa21bd2c336b6ea8c6761/clash-of-beasts.jpg",
+      "icons": ["bi bi-android2", "bi bi-apple"],
+      "platforms": ["Android", "IOS"]
     },
     {
       "id": 43,
-      "name": "Clash of Beasts",
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2kUxm0W5QrbVxXIrxDl1Uj/6c31cf65b12fa21bd2c336b6ea8c6761/clash-of-beasts.jpg",
-      "icons": ["bi bi-android2", "bi bi-apple"]
-    },
-    {
-      "id": 44,
       "name": "Scott Pilgrim vs. The World: The Game - Complete Edition",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5EDx4It6Dm3ahl6RNDRlq2/ef76b3dda70fd5c219cb0fbb13acf257/scott-pilgrim-vs-the-world.jpg",
       "icons": [
@@ -407,10 +443,11 @@
         "fa-brands fa-xbox",
         "fa-brands fa-playstation",
         "bi bi-nintendo-switch"
-      ]
+      ],
+      "platforms": ["PC", "Xbox", "PlayStation", "Nintendo Switch"]
     },
     {
-      "id": 45,
+      "id": 44,
       "name": "Immortals Fenyx Rising",
       "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5dcR6gg1mhwBz9L2viNBMi/46d8ec0260b8c128f0d1d817503cefa1/immortals-fenyx-rising.jpg",
       "icons": [
@@ -419,7 +456,152 @@
         "fa-brands fa-xbox",
         "bi bi-nintendo-switch",
         "bi bi-triangle"
-      ]
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch", "Luna"]
+    },
+    {
+      "id": 45,
+      "name": "Family Feud",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5ZnWfW1AoHFkYzIbvxVLAB/4aa50adad5ee26c34cf07d664e710017/family-feud.jpg",
+      "icons": [
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation",
+        "bi bi-nintendo-switch"
+      ],
+      "platforms": ["Xbox", "PlayStation", "Nintendo Switch"]
+    },
+    {
+      "id": 46,
+      "name": "Assassin's Creed Valhalla",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5EBrXfSnjwvZRpDRtnqmpG/374f103250d4ed61cbb7f2323e063868/ac-valhalla.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox",
+        "bi bi-triangle"
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox", "Luna"]
+    },
+    {
+      "id": 47,
+      "name": "Watch Dogs: Legion",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3dok9ncNbJn9MsN09W8by1/f5803076e457c3e836de78f847920713/watch-dogs-legion.jpg",
+      "icons": [
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation",
+        "fa-brands fa-windows",
+        "bi bi-triangle"
+      ],
+      "platforms": ["Xbox", "PlayStation", "PC", "Luna"]
+    },
+    {
+      "id": 48,
+      "name": "AGOS: A Game of Space",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Z13nTRFZ6zhqANtnDgaik/d1a5de37bbc558dd80749adfe0859d05/agos.jpg",
+      "icons": ["fa-brands fa-windows", "fa-solid fa-vr-cardboard"],
+      "platforms": ["PC", "Virtual Reality"]
+    },
+    {
+      "id": 49,
+      "name": "Trackmania",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Uc4fQDNodTnBRDqQi2n1r/350afe7870c8df010f0b63c388a5e48a/trackmania-boxshot.jpg",
+      "icons": ["fa-brands fa-windows"],
+      "platforms": ["PC"]
+    },
+    {
+      "id": 50,
+      "name": "Anno History Collection",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5HjxgCVlbTLVjNdkNYGZKO/1bd365d70009258b33e4d17a050280e1/hearder_348px_362596.jpg",
+      "icons": ["fa-brands fa-windows"],
+      "platforms": ["PC"]
+    },
+    {
+      "id": 51,
+      "name": "Assassin's Creed The Rebel Collection",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7ejV21INd8nfliWa9Uyigi/ae7098da203fd3c5271214f34b9ad143/ac-rebel-collection.jpg",
+      "icons": ["bi bi-nintendo-switch"],
+      "platforms": ["Nintendo Switch"]
+    },
+    {
+      "id": 52,
+      "name": "Might & Magic Era of Chaos",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4TbWnt0ZwfGMc7HFrchVDs/0edba9134038c32d223c2326c54ee673/mmeoc-dragon-game_info-boxart-keyart-01-560x698-v2-logo_357265.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"],
+      "platforms": ["PC", "IOS", "Android"]
+    },
+    {
+      "id": 53,
+      "name": "Rabbids Coding",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7I7Q8banzwVxEwMDPfIQHH/4d139e3bde5a3fc0c2076a13c13c5e96/Product_Page_Packshot_464x608_EN.jpg",
+      "icons": ["fa-brands fa-windows", "bi bi-apple", "bi bi-android2"],
+      "platforms": ["PC", "IOS", "Android"]
+    },
+    {
+      "id": 54,
+      "name": "Ghost Recon Breakpoint",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6dpFe0TWw9ltC0VAMwhKQF/cc647a58252d1b23a772a6553aeb5c27/ghost-recon-breakpoint-boxshot.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox"]
+    },
+    {
+      "id": 55,
+      "name": "Rayman Mini",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4v4jU6WSyzX1E2Mu2QMZxq/8d9561e5897ac039650d7f271077d549/rayman-mini.jpg",
+      "icons": ["bi bi-apple"],
+      "platforms": ["IOS"]
+    },
+    {
+      "id": 56,
+      "name": "Anno 1800",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/631rGcQDPAnqRvU5so5515/9eb75fa1c55ab249e7e83a072358a59c/anno-1800.jpg",
+      "icons": ["fa-brands fa-windows"],
+      "platforms": ["PC"]
+    },
+    {
+      "id": 57,
+      "name": "Assassin's Creed III Remastered",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5r4sU2xqUTTuYjrKzdydfE/11b3d0e8b66406041797e951766f8158/ac-3-remastered.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "bi bi-nintendo-switch",
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation"
+      ],
+      "platforms": ["PC", "Nintendo Switch", "Xbox", "PlayStation"]
+    },
+    {
+      "id": 58,
+      "name": "The Division 2",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7b3mChftpfSJFyYvrwXIAj/212ec191018559d4d6137899e83e7e43/the-division-2.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-xbox",
+        "fa-brands fa-playstation",
+        "bi bi-triangle"
+      ],
+      "platforms": ["PC", "Xbox", "PlayStation", "Luna"]
+    },
+    {
+      "id": 59,
+      "name": "Far Cry New Dawn",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1e3ONytwv2oGtYBZiWINxh/51b05e52c28b3191f89ec27cf434f875/fc_newdawn-ubicom-gameinfo-boxart_ncsa-02-348x434_mobile_341174.jpg",
+      "icons": [
+        "fa-brands fa-windows",
+        "fa-brands fa-playstation",
+        "fa-brands fa-xbox"
+      ],
+      "platforms": ["PC", "PlayStation", "Xbox"]
+    },
+    {
+      "id": 60,
+      "name": "Assassin's Creed Rebellion",
+      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/16qlC1toB91MI3BMOpqABq/a5786e6c64482c2355f56e749c4c5119/ac_rebellion-game_info-boxart-keyart-02-348x434-v2-logo_358649.jpg",
+      "icons": ["bi bi-apple", "bi bi-android2"],
+      "platforms": ["IOS", "Android"]
     }
   ]
 }
