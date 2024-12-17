@@ -1,343 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ubisoft</title>
-    <link rel="icon" href="images/UbisoftConnectImages/ubisoft.svg" type="image/svg" />
+    <link
+      rel="icon"
+      href="images/UbisoftConnectImages/ubisoft.svg"
+      type="image/svg"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link href="src/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <style></style>
-</head>
+  </head>
 
-<body class="text-[14px]">
+  <body class="text-[14px]">
     <div class="container1 w-full flex flex-col relative">
-        <!-- header -->
-        <header class="header flex text-center justify-around items-center gap-[100px] w-full sticky top-0 left-0 z-10">
-            <button class="menu text-[20px] text-white" onclick="togglepanel()">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </button>
-            <a href="" class="svg_link">
-                <svg role="img" class="icon icon-ubisoft-logo-desktop text-white w-[93px] h-[50px]" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                    aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
-                    <title id="logo-desktop-title">Ubisoft</title>
-                    <path class="st0"
-                        d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
-                    </path>
-                    <path class="st0"
-                        d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z">
-                    </path>
-                </svg>
-            </a>
-            <a href="" target="" onclick="openChromeWindow()"
-                class="user mr-[50px] flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black">
-                <i class="fa-solid fa-user p-[6px] text-[20px] text-[#929293] bg-[#BEBEC0] hover:bg-[#EDEEF0]"></i>
-            </a>
-        </header>
+      <!-- header -->
+      <header
+        class="header flex text-center justify-around items-center gap-[100px] w-full sticky top-0 left-0 z-10"
+      >
+        <button class="menu text-[20px] text-white" onclick="togglepanel()">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+        <a href="" class="svg_link">
+          <svg
+            role="img"
+            class="icon icon-ubisoft-logo-desktop text-white w-[93px] h-[50px]"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            aria-labelledby="logo-desktop-title"
+            viewBox="0 0 99.2 31.6"
+          >
+            <title id="logo-desktop-title">Ubisoft</title>
+            <path
+              class="st0"
+              d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z"
+            ></path>
+            <path
+              class="st0"
+              d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href=""
+          target=""
+          onclick="openChromeWindow()"
+          class="user mr-[50px] flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black"
+        >
+          <i
+            class="fa-solid fa-user p-[6px] text-[20px] text-[#929293] bg-[#BEBEC0] hover:bg-[#EDEEF0]"
+          ></i>
+        </a>
+      </header>
 
-        <!-- Search section -->
-        <section class="w-full fixed top-[50px] h-[50px] text-[16px] font-serif leading-[24px] z-40">
-            <div class="w-full h-full text-[#d80388] leading-[24px] bg-white">
-                <div class="flex w-[1233px] h-full leading-[24px] max-w-[1440px] mx-[68.5px] text-[#d80388]">
-                    <div class="w-[616px] h-[50px]">
-                        <nav class="w-[616px] h-[50px]">
-                            <div class="min-w-[150px] w-full h-full ml-[92px] leading-[24px] tracking-[0.16px] text-[20px]">
-                                <button class="w-[150px] h-full text-left cursor-pointer flex items-center relative font-[700]">
-                                    <span class="w-full leading-[40px] text-left text-[20px] cursor-pointer pr-[25px] text-[#d80388]">All News</span>
-                                    <i class="fa-solid fa-sort-down w-[12px] text-left text-[16px]"></i>
-                                </button>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="w-[616px] h-[50px] flex justify-end ">
-                        <div class="w-[150px] h-full min-w-[150px] flex justify-end items-center cursor-pointer leading-[20px]">
-                            <a href="" class="w-[93px] cursor-pointer tracking-[0.16px] text-[#d80388] relative flex items-center font-[700]">
-                                <span class="w-full leading-[40px] mr-[20px] text-[20px] cursor-pointer text-[#d80388]">Archive</span>
-                                <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- News section -->
-        <section class="news w-full flex flex-col pt-[50px]">
-            <div class="grid_container grid_container_1 flex flex-col gap-[150px] justify-center items-center w-full">
-                <!-- <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-                    <div class="flex w-full h-full justify-center">
-                        <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                            <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oheIoncCkrrQVCMNXwwI/d2a14f2680fa1993d6fac1b759ac722e/BrandNewsArticle_Ubisoft__CLASSICS__1_Agnostic_July24_960x540.jpg"
-                                alt="" class="w-full object-cover">
-                        </div>
-                        <div class="max-w-[550px] w-[34rem]">
-                            <p class="leading-[21px] text-[16px] font-[400]">
-                                <span>December 6, 2024</span> |
-                                <span>1 Min Read</span>
-                            </p>
-                            <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">Get Your First Month of Ubisoft+ Classics for
-                                $1
-                            </h2>
-                            <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">Play beloved games like Assassin’s Creed
-                                Valhalla, Far Cry 6, and Rainbow Six Siege with your subscription.
-                            </p>
-                            <div class="flex">
-                                <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read
-                                    more</span>
-                                <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a> -->
-
-                <!-- <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-                    <div class="flex w-full h-full justify-center">
-                        <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                            <p class="leading-[21px] text-[16px] font-[400]">
-                                <span>December 6, 2024</span> |
-                                <span>1 Min Read</span>
-                            </p>
-                            <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">Get Your First Month of Ubisoft+ Classics for
-                                $1
-                            </h2>
-                            <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">Play beloved games like Assassin’s Creed
-                                Valhalla, Far Cry 6, and Rainbow Six Siege with your subscription.
-                            </p>
-                            <div class="flex">
-                                <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read
-                                    more</span>
-                                <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                            </div>
-                        </div>
-                        <div class="max-w-[550px] w-[34rem]">
-                            <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oheIoncCkrrQVCMNXwwI/d2a14f2680fa1993d6fac1b759ac722e/BrandNewsArticle_Ubisoft__CLASSICS__1_Agnostic_July24_960x540.jpg"
-                                alt="" class="w-full object-cover">
-                        </div>
-                    </div>
-                </a> -->
-            </div>
-            <!-- Read More section -->
-            <section class="w-full flex bg-black items-center justify-center relative my-[100px]">
+      <!-- Search section -->
+      <section
+        class="w-full fixed top-[50px] h-[50px] text-[16px] font-serif leading-[24px] z-40"
+      >
+        <div class="w-full h-full text-[#d80388] leading-[24px] bg-white">
+          <div
+            class="flex w-[1233px] h-full leading-[24px] max-w-[1440px] mx-[68.5px] text-[#d80388]"
+          >
+            <div class="w-[616px] h-[50px]">
+              <nav class="w-[616px] h-[50px]">
                 <div
-                    class="p-[10px] max-w-[700px] ml-[130px] leading-[24px] flex flex-col items-start justify-center text-left absolute top-[80px] left-[20px]">
-                    <div class="w-full h-full" style="background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5));">
-                        <p class="leading-[21px] text-[16px] font-[400] text-white text-left">
-                            <span>June 11, 2023</span> |
-                            <span>2 min Read</span>
-                        </p>
-                        <h2
-                            class="text-white text-left w-full pt-[15px] pb-[5px] leading-[50px] text-[40px] font-[800] bg-[linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5))]">
-                            Star Wars Outlaws™ Opens Up a Galaxy of Opportunity</h2>
-                        <h3
-                            class="text-left w-full pb-[10px] leading-[34px] text-[20px] font-[400] text-white bg-[linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5))]">
-                            Become an outlaw in a thriving criminal underworld in the first-ever open-world Star Wars™ game, coming in 2024.</h3>
-                    </div>
-                    <a href=""
-                        class="p-[20px] font-[700] cursor-pointer flex justify-center items-center uppercase mt-[68px] leading-[15px] tracking-[1.6px] border-[2px] border-solid border-[#D80388] rounded-[30px] bg-[#D80388] text-white"><span>read
-                            more</span><i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-white ml-[15px]"></i></a>
+                  class="min-w-[150px] w-full h-full ml-[92px] leading-[24px] tracking-[0.16px] text-[20px]"
+                >
+                  <button
+                    class="w-[150px] h-full text-left cursor-pointer flex items-center relative font-[700]"
+                  >
+                    <span
+                      class="w-full leading-[40px] text-left text-[20px] cursor-pointer pr-[25px] text-[#d80388]"
+                      >All News</span
+                    >
+                    <i
+                      class="fa-solid fa-sort-down w-[12px] text-left text-[16px]"
+                    ></i>
+                  </button>
                 </div>
-                <div class="w-full h-full flex justify-end">
-                    <div class="w-[960px] max-h-[800px] max-w-[100%] h-[540px] flex justify-end">
-                        <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5FNpIRuZpF2b36jfCHheEg/6b225b842f26d6c55596bb8f936a8272/SWO_KEYART_960x540.jpg"
-                            alt="" class="w-full object-cover">
+              </nav>
+            </div>
+            <div class="w-[616px] h-[50px] flex justify-end">
+              <div
+                class="w-[150px] h-full min-w-[150px] flex justify-end items-center cursor-pointer leading-[20px]"
+              >
+                <a
+                  href=""
+                  class="w-[93px] cursor-pointer tracking-[0.16px] text-[#d80388] relative flex items-center font-[700]"
+                >
+                  <span
+                    class="w-full leading-[40px] mr-[20px] text-[20px] cursor-pointer text-[#d80388]"
+                    >Archive</span
+                  >
+                  <i
+                    class="fa-solid fa-caret-right w-[12px] text-right text-[16px]"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News section -->
+      <section class="news w-full flex flex-col pt-[50px]">
+        <div
+          class="grid_container grid_container_1 flex flex-col gap-[150px] justify-center items-center w-full"
+        >
+          <!-- <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                    <div class="flex w-full h-full justify-center">
+                        <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                            <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oheIoncCkrrQVCMNXwwI/d2a14f2680fa1993d6fac1b759ac722e/BrandNewsArticle_Ubisoft__CLASSICS__1_Agnostic_July24_960x540.jpg"
+                                alt="" class="w-full object-cover">
+                        </div>
+                        <div class="max-w-[550px] w-[34rem]">
+                            <p class="leading-[21px] text-[16px] font-[400]">
+                                <span>December 6, 2024</span> |
+                                <span>1 Min Read</span>
+                            </p>
+                            <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">Get Your First Month of Ubisoft+ Classics for
+                                $1
+                            </h2>
+                            <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">Play beloved games like Assassin’s Creed
+                                Valhalla, Far Cry 6, and Rainbow Six Siege with your subscription.
+                            </p>
+                            <div class="flex">
+                                <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read
+                                    more</span>
+                                <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </a> -->
 
-            <div class="grid_container grid_container_2  flex flex-col gap-[150px] justify-center items-center w-full"></div>
+          <!-- <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                    <div class="flex w-full h-full justify-center">
+                        <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                            <p class="leading-[21px] text-[16px] font-[400]">
+                                <span>December 6, 2024</span> |
+                                <span>1 Min Read</span>
+                            </p>
+                            <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">Get Your First Month of Ubisoft+ Classics for
+                                $1
+                            </h2>
+                            <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">Play beloved games like Assassin’s Creed
+                                Valhalla, Far Cry 6, and Rainbow Six Siege with your subscription.
+                            </p>
+                            <div class="flex">
+                                <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read
+                                    more</span>
+                                <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                            </div>
+                        </div>
+                        <div class="max-w-[550px] w-[34rem]">
+                            <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oheIoncCkrrQVCMNXwwI/d2a14f2680fa1993d6fac1b759ac722e/BrandNewsArticle_Ubisoft__CLASSICS__1_Agnostic_July24_960x540.jpg"
+                                alt="" class="w-full object-cover">
+                        </div>
+                    </div>
+                </a> -->
+        </div>
+        <!-- Read More section -->
+        <section
+          class="w-full flex bg-black items-center justify-center relative my-[100px]"
+        >
+          <div
+            class="p-[10px] max-w-[700px] ml-[130px] leading-[24px] flex flex-col items-start justify-center text-left absolute top-[80px] left-[20px]"
+          >
+            <div
+              class="w-full h-full"
+              style="
+                background: linear-gradient(
+                  90deg,
+                  rgb(0, 0, 0),
+                  rgba(0, 0, 0, 0.5)
+                );
+              "
+            >
+              <p
+                class="leading-[21px] text-[16px] font-[400] text-white text-left"
+              >
+                <span>June 11, 2023</span> |
+                <span>2 min Read</span>
+              </p>
+              <h2
+                class="text-white text-left w-full pt-[15px] pb-[5px] leading-[50px] text-[40px] font-[800] bg-[linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5))]"
+              >
+                Star Wars Outlaws™ Opens Up a Galaxy of Opportunity
+              </h2>
+              <h3
+                class="text-left w-full pb-[10px] leading-[34px] text-[20px] font-[400] text-white bg-[linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5))]"
+              >
+                Become an outlaw in a thriving criminal underworld in the
+                first-ever open-world Star Wars™ game, coming in 2024.
+              </h3>
+            </div>
+            <a
+              href=""
+              class="p-[20px] font-[700] cursor-pointer flex justify-center items-center uppercase mt-[68px] leading-[15px] tracking-[1.6px] border-[2px] border-solid border-[#D80388] rounded-[30px] bg-[#D80388] text-white"
+              ><span>read more</span
+              ><i
+                class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-white ml-[15px]"
+              ></i
+            ></a>
+          </div>
+          <div class="w-full h-full flex justify-end">
+            <div
+              class="w-[960px] max-h-[800px] max-w-[100%] h-[540px] flex justify-end"
+            >
+              <img
+                src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5FNpIRuZpF2b36jfCHheEg/6b225b842f26d6c55596bb8f936a8272/SWO_KEYART_960x540.jpg"
+                alt=""
+                class="w-full object-cover"
+              />
+            </div>
+          </div>
+        </section>
 
-            <!-- Pagination -->
-            <ul class="w-full mt-[50px] mb-[100px] leading-[24px] flex justify-center items-center text-[16px]">
-                <li class="w-[40px] h-[30px] text-[16px] leading-[24px] flex justify-center items-center">
-                    <button aria-label="Previous" class="prev-button py-[6px] px-[1px] flex items-start" data-innertext="Previous"
-                        data-ccm-m="buttonMaster" type="button">
-                        <i class="fa-solid fa-caret-left w-[25px] text-left text-[14px] text-[#d80388] ml-[15px]"></i>
-                    </button>
-                </li>
-                <li
-                    class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer border-b-[3px] border-b-solid border-b-[#d80388]">
-                    <button aria-current="false" aria-label="page 1" class="" data-innertext="1" data-ccm-m="buttonMaster" type="button">
-                        <span class="h-full w-full" data-innertext="1" data-ccm-l="button" data-ccf-l="buttonText">1</span>
-                    </button>
-                </li>
-                <li class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer">
-                    <button aria-current="false" aria-label="page 1" class="" data-innertext="1" data-ccm-m="buttonMaster" type="button">
-                        <span class="h-full w-full" data-innertext="1" data-ccm-l="button" data-ccf-l="buttonText">2</span>
-                    </button>
-                </li>
-                <li class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer">
-                    <button aria-current="false" aria-label="page 1" class="" data-innertext="1" data-ccm-m="buttonMaster" type="button">
-                        <span class="h-full w-full" data-innertext="1" data-ccm-l="button" data-ccf-l="buttonText">3</span>
-                    </button>
-                </li>
-                <li class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer">
-                    <button aria-current="false" aria-label="page 1" class="" data-innertext="1" data-ccm-m="buttonMaster" type="button">
-                        <span class="h-full w-full" data-innertext="1" data-ccm-l="button" data-ccf-l="buttonText">4</span>
-                    </button>
-                </li>
-                <li class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer">
-                    <button aria-current="false" aria-label="page 1" class="" data-innertext="1" data-ccm-m="buttonMaster" type="button">
-                        <span class="h-full w-full" data-innertext="1" data-ccm-l="button" data-ccf-l="buttonText">5</span>
-                    </button>
-                </li>
-                <li class="w-[40px] h-[30px] text-[16px] leading-[24px] flex justify-center items-center">
-                    <button aria-label="Next" class="next-button py-[6px] px-[1px] flex items-start" data-innertext="Next" data-ccm-m="buttonMaster"
-                        type="button">
-                        <i class="fa-solid fa-caret-right w-[25px] text-right text-[14px] text-[#d80388] ml-[15px]"></i>
-                    </button>
-                </li>
+        <div
+          class="grid_container grid_container_2 flex flex-col gap-[150px] justify-center items-center w-full"
+        ></div>
+
+        <!-- Pagination -->
+        <ul
+          class="w-full mt-[50px] mb-[100px] leading-[24px] flex justify-center items-center text-[16px]"
+        >
+          <li
+            class="w-[40px] h-[30px] text-[16px] leading-[24px] flex justify-center items-center"
+          >
+            <button
+              aria-label="Previous"
+              class="prev-button py-[6px] px-[1px] flex items-start"
+              data-innertext="Previous"
+              data-ccm-m="buttonMaster"
+              type="button"
+            >
+              <i
+                class="fa-solid fa-caret-left w-[25px] text-left text-[14px] text-[#d80388] ml-[15px]"
+              ></i>
+            </button>
+          </li>
+          <li
+            class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer border-b-[3px] border-b-solid border-b-[#d80388]"
+          >
+            <button
+              aria-current="false"
+              aria-label="page 1"
+              class=""
+              data-innertext="1"
+              data-ccm-m="buttonMaster"
+              type="button"
+            >
+              <span
+                class="h-full w-full"
+                data-innertext="1"
+                data-ccm-l="button"
+                data-ccf-l="buttonText"
+                >1</span
+              >
+            </button>
+          </li>
+          <li
+            class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer"
+          >
+            <button
+              aria-current="false"
+              aria-label="page 1"
+              class=""
+              data-innertext="1"
+              data-ccm-m="buttonMaster"
+              type="button"
+            >
+              <span
+                class="h-full w-full"
+                data-innertext="1"
+                data-ccm-l="button"
+                data-ccf-l="buttonText"
+                >2</span
+              >
+            </button>
+          </li>
+          <li
+            class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer"
+          >
+            <button
+              aria-current="false"
+              aria-label="page 1"
+              class=""
+              data-innertext="1"
+              data-ccm-m="buttonMaster"
+              type="button"
+            >
+              <span
+                class="h-full w-full"
+                data-innertext="1"
+                data-ccm-l="button"
+                data-ccf-l="buttonText"
+                >3</span
+              >
+            </button>
+          </li>
+          <li
+            class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer"
+          >
+            <button
+              aria-current="false"
+              aria-label="page 1"
+              class=""
+              data-innertext="1"
+              data-ccm-m="buttonMaster"
+              type="button"
+            >
+              <span
+                class="h-full w-full"
+                data-innertext="1"
+                data-ccm-l="button"
+                data-ccf-l="buttonText"
+                >4</span
+              >
+            </button>
+          </li>
+          <li
+            class="w-[40px] h-[30px] flex items-center justify-center leading-[24px] text-[20px] hover:font-[700] cursor-pointer"
+          >
+            <button
+              aria-current="false"
+              aria-label="page 1"
+              class=""
+              data-innertext="1"
+              data-ccm-m="buttonMaster"
+              type="button"
+            >
+              <span
+                class="h-full w-full"
+                data-innertext="1"
+                data-ccm-l="button"
+                data-ccf-l="buttonText"
+                >5</span
+              >
+            </button>
+          </li>
+          <li
+            class="w-[40px] h-[30px] text-[16px] leading-[24px] flex justify-center items-center"
+          >
+            <button
+              aria-label="Next"
+              class="next-button py-[6px] px-[1px] flex items-start"
+              data-innertext="Next"
+              data-ccm-m="buttonMaster"
+              type="button"
+            >
+              <i
+                class="fa-solid fa-caret-right w-[25px] text-right text-[14px] text-[#d80388] ml-[15px]"
+              ></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Ubisoft Channels -->
+      <section
+        class="ubisoft_channels w-full px-[60px] leading-[24px] bg-black flex justify-between items-center"
+      >
+        <div class="max-w-[1440px] w-[1258px] relative">
+          <h2
+            class="leading-[14.625px] text-[13px] font-[400] text-[#9B9B9B] absolute top-[27px] left-0 custom-matrix-2"
+          >
+            Visit Other Ubisoft Channels
+          </h2>
+          <div class="flex flex-wrap justify-center items-center">
+            <a
+              href="#"
+              class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]"
+              ><i
+                class="fa-brands fa-discord text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              ></i
+            ></a>
+            <a
+              href=""
+              class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]"
+            >
+              <i
+                class="fa-brands fa-linkedin-in text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer
+        class="w-full bg-[#1D1E22] h-[470px] tracking-[1px] px-[60px] py-[20px] flex flex-row flex-wrap items-center text-left"
+      >
+        <div
+          class="footer_top w-full flex justify-between text-white items-center"
+        >
+          <div class="logo w-[305.5px] h-[45px] cursor-pointer">
+            <a href="">
+              <svg
+                role="img"
+                class="icon icon-ubisoft-logo-desktop"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                aria-labelledby="logo-desktop-title"
+                viewBox="0 0 99.2 31.6"
+              >
+                <title id="logo-desktop-title">Ubisoft</title>
+                <path
+                  class="st0"
+                  d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z"
+                ></path>
+                <path
+                  class="st0"
+                  d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="w-[629px] my-[20px] h-[56.5px]">
+            <button
+              class="uppercase py-[14px] px-[28px] ml-[45px] leading-[22.5px] tracking-[1.8px] text-center text-[18px] cursor-pointer text-white bg-[#70707033] border-[3px] border-solid border-[#70707033] rounded-[30px] font-bold bg-clip-padding hover:bg-[#6D6D6D]"
+            >
+              download ubisoft connect
+            </button>
+          </div>
+          <div class="w-[314.5px]h-[72px] my-[20px]">
+            <button
+              class="uppercase text-[15px] font-bold shadow-none tracking-[1px] flex justify-center items-center w-full h-full gap-2"
+            >
+              <i class="fa-solid fa-globe text-[24px]"></i>
+              english
+              <i class="fa-solid fa-chevron-down text-[8px]"></i>
+            </button>
+          </div>
+        </div>
+        <div class="footer_bottom w-full flex">
+          <div
+            class="div1 flex flex-col w-[305.5px] h-[280px] my-[20px] leading-[24px]"
+          >
+            <ul class="flex flex-col text-white uppercase text-[16px]">
+              <li
+                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]"
+              >
+                <a href="" class="hover:underline">contact</a>
+              </li>
+              <li
+                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]"
+              >
+                <a href="" class="hover:underline">privacy & legal</a>
+              </li>
             </ul>
-        </section>
-
-        <!-- Ubisoft Channels -->
-        <section class="ubisoft_channels w-full px-[60px] leading-[24px] bg-black flex justify-between items-center">
-            <div class="max-w-[1440px] w-[1258px] relative">
-                <h2 class="leading-[14.625px] text-[13px] font-[400] text-[#9B9B9B] absolute top-[27px] left-0 custom-matrix-2">
-                    Visit Other Ubisoft Channels
-                </h2>
-                <div class="flex flex-wrap justify-center items-center">
-                    <a href="#" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]"><i
-                            class="fa-brands fa-discord text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i></a>
-                    <a href="" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]">
-                        <i class="fa-brands fa-linkedin-in text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i></a>
-                </div>
+            <ul class="flex flex-col text-[#9b9b9b] text-[14px]">
+              <li class="my-[5px] leading-[24px] list-item">
+                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
+                  >Notice At Collection</a
+                >
+              </li>
+              <li class="my-[5px] leading-[24px] list-item">
+                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
+                  >Interest-Based Ads</a
+                >
+              </li>
+              <li class="my-[5px] leading-[24px] list-item">
+                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
+                  >Do Not Sell / Share My Personal Information</a
+                >
+              </li>
+              <li class="my-[5px] leading-[24px] list-item">
+                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
+                  >Limit Use / Disclosure of My Sensitive Personal
+                  Information</a
+                >
+              </li>
+              <li class="my-[5px] leading-[24px] list-item">
+                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
+                  >Set cookies</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="div2 flex w-[611px] h-[112px] my-[20px] text-white">
+            <ul
+              class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]"
+            >
+              <li
+                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
+              >
+                <a href="" class="hover:underline">ubisoft connect</a>
+              </li>
+              <li
+                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
+              >
+                <a href="" class="hover:underline">support</a>
+              </li>
+            </ul>
+            <ul
+              class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]"
+            >
+              <li
+                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
+              >
+                <a href="" class="hover:underline">investors</a>
+              </li>
+              <li
+                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
+              >
+                <a href="" class="hover:underline">press</a>
+              </li>
+            </ul>
+            <ul
+              class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]"
+            >
+              <li
+                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
+              >
+                <a href="" class="hover:underline">about us</a>
+              </li>
+              <li
+                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
+              >
+                <a href="" class="hover:underline">careers</a>
+              </li>
+              <li
+                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
+              >
+                <a href="" class="hover:underline">locations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="div3 w-[305.5px] h-[212px] flex flex-col items-end">
+            <div class="text-right w-[76px] h-[102px] my-[16px]">
+              <img
+                src="images/privacyFooter.jpg"
+                alt="Privacy"
+                class="w-full object-cover"
+              />
             </div>
-        </section>
-
-        <!-- footer -->
-        <footer class="w-full bg-[#1D1E22] h-[470px] tracking-[1px] px-[60px] py-[20px] flex flex-row flex-wrap items-center text-left">
-            <div class="footer_top w-full flex justify-between text-white items-center">
-                <div class="logo w-[305.5px] h-[45px] cursor-pointer">
-                    <a href="">
-                        <svg role="img" class="icon icon-ubisoft-logo-desktop" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                            aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
-                            <title id="logo-desktop-title">Ubisoft</title>
-                            <path class="st0"
-                                d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
-                            </path>
-                            <path class="st0"
-                                d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="w-[629px] my-[20px] h-[56.5px]">
-                    <button
-                        class="uppercase py-[14px] px-[28px] ml-[45px] leading-[22.5px] tracking-[1.8px] text-center text-[18px] cursor-pointer text-white bg-[#70707033] border-[3px] border-solid border-[#70707033] rounded-[30px] font-bold bg-clip-padding hover:bg-[#6D6D6D]">
-                        download ubisoft connect
-                    </button>
-                </div>
-                <div class="w-[314.5px]h-[72px] my-[20px]">
-                    <button class="uppercase text-[15px] font-bold shadow-none tracking-[1px] flex justify-center items-center w-full h-full gap-2">
-                        <i class="fa-solid fa-globe text-[24px]"></i>
-                        english
-                        <i class="fa-solid fa-chevron-down text-[8px]"></i>
-                    </button>
-                </div>
+            <div class="w-[245.5px] h-[72px]">
+              <p
+                class="text-[12px] leading-[12px] text-right my-[12px] text-[#f0f3f4]"
+              >
+                © 2024 Ubisoft Entertainment. All Rights Reserved. Ubisoft,
+                Ubi.com and the Ubisoft logo are trademarks of Ubisoft
+                Entertainment in the U.S. and/or other countries.
+              </p>
             </div>
-            <div class="footer_bottom w-full flex">
-                <div class="div1 flex flex-col w-[305.5px] h-[280px] my-[20px] leading-[24px]">
-                    <ul class="flex flex-col text-white uppercase text-[16px]">
-                        <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]">
-                            <a href="" class="hover:underline">contact</a>
-                        </li>
-                        <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]">
-                            <a href="" class="hover:underline">privacy & legal</a>
-                        </li>
-                    </ul>
-                    <ul class="flex flex-col text-[#9b9b9b] text-[14px]">
-                        <li class="my-[5px] leading-[24px] list-item">
-                            <a href="" class="leading-[17.5px] hover:underline text-[13px]">Notice At Collection</a>
-                        </li>
-                        <li class="my-[5px] leading-[24px] list-item">
-                            <a href="" class="leading-[17.5px] hover:underline text-[13px]">Interest-Based Ads</a>
-                        </li>
-                        <li class="my-[5px] leading-[24px] list-item">
-                            <a href="" class="leading-[17.5px] hover:underline text-[13px]">Do Not Sell / Share My Personal Information</a>
-                        </li>
-                        <li class="my-[5px] leading-[24px] list-item">
-                            <a href="" class="leading-[17.5px] hover:underline text-[13px]">Limit Use / Disclosure of My Sensitive Personal
-                                Information</a>
-                        </li>
-                        <li class="my-[5px] leading-[24px] list-item">
-                            <a href="" class="leading-[17.5px] hover:underline text-[13px]">Set cookies</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="div2 flex w-[611px] h-[112px] my-[20px] text-white">
-                    <ul class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]">
-                        <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
-                            <a href="" class="hover:underline">ubisoft connect</a>
-                        </li>
-                        <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
-                            <a href="" class="hover:underline">support</a>
-                        </li>
-                    </ul>
-                    <ul class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]">
-                        <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
-                            <a href="" class="hover:underline">investors</a>
-                        </li>
-                        <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
-                            <a href="" class="hover:underline">press</a>
-                        </li>
-                    </ul>
-                    <ul class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]">
-                        <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
-                            <a href="" class="hover:underline">about us</a>
-                        </li>
-                        <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
-                            <a href="" class="hover:underline">careers</a>
-                        </li>
-                        <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
-                            <a href="" class="hover:underline">locations</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="div3 w-[305.5px] h-[212px] flex flex-col items-end">
-                    <div class="text-right w-[76px] h-[102px] my-[16px]">
-                        <img src="images/privacyFooter.jpg" alt="Privacy" class="w-full object-cover" />
-                    </div>
-                    <div class="w-[245.5px] h-[72px]">
-                        <p class="text-[12px] leading-[12px] text-right my-[12px] text-[#f0f3f4]">
-                            © 2024 Ubisoft Entertainment. All Rights Reserved. Ubisoft, Ubi.com and the Ubisoft logo are trademarks of Ubisoft
-                            Entertainment in the U.S. and/or other countries.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        axios
-            .get("allnews.json")
-            .then((response) => {
-                const news = response.data.news; // JSON obyektindən 'news' array'ini alın
-                const cardsNews = document.querySelector(".grid_container_1"); // `.grid_container` elementini seçin
+      axios
+        .get("allnews.json")
+        .then((response) => {
+          const news = response.data.news; // JSON obyektindən 'news' array'ini alın
+          const cardsNews = document.querySelector(".grid_container_1"); // `.grid_container` elementini seçin
 
-                // Yalnız ilk 3 kartı göstərmək üçün 'slice(0, 3)' istifadə edirik
-                const firstThreeNews = news.slice(0, 3);
+          // Yalnız ilk 3 kartı göstərmək üçün 'slice(0, 3)' istifadə edirik
+          const firstThreeNews = news.slice(0, 3);
 
-                // `map` ilə hər bir kartı yaradın və HTML şəklində birləşdirin
-                cardsNews.innerHTML = firstThreeNews
-                    .map((card, index) => {
-                        // Cüt kartlar üçün fərqli dizayn tətbiq edirik
-                        if (index % 2 === 0) {
-                            // Tək kartlar üçün əvvəlki dizayn
-                            return `
+          // `map` ilə hər bir kartı yaradın və HTML şəklində birləşdirin
+          cardsNews.innerHTML = firstThreeNews
+            .map((card, index) => {
+              // Cüt kartlar üçün fərqli dizayn tətbiq edirik
+              if (index % 2 === 0) {
+                // Tək kartlar üçün əvvəlki dizayn
+                return `
                     <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
                         <div class="flex w-full h-full justify-center">
                             <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
@@ -357,9 +619,9 @@
                             </div>
                         </div>
                     </a>`;
-                        } else {
-                            // Cüt kartlar üçün yeni dizayn
-                            return `
+              } else {
+                // Cüt kartlar üçün yeni dizayn
+                return `
                     <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
                         <div class="flex w-full h-full justify-center">
                             <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
@@ -380,81 +642,66 @@
                         </div>
                     </a>
                 `;
-                        }
-                    })
-                    .join(""); // `map` ilə yaranan array'ı birləşdiririk
-                const cardsNews2 = document.querySelector(".grid_container_2");
-                const firstFourNews = news.slice(4, 8);
-                cardsNews2.innerHTML = firstFourNews
-                    .map((card, index) => {
-                        // Cüt kartlar üçün fərqli dizayn tətbiq edirik
-                        if (index % 2 !== 0) {
-                            // Tək kartlar üçün əvvəlki dizayn
-                            return `
-                    <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-                        <div class="flex w-full h-full justify-center">
-                            <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                                <img src="${card.image}" alt="" class="w-full object-cover">
-                            </div>
-                            <div class="max-w-[550px] w-[34rem]">
-                                <p class="leading-[21px] text-[16px] font-[400]">
-                                    <span>${card.date}</span> |
-                                    <span>${card.readingTime}</span>
-                                </p>
-                                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
-                                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
-                                <div class="flex">
-                                    <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
-                                    <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>`;
-                        } else {
-                            // Cüt kartlar üçün yeni dizayn
-                            return `
-                    <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-                        <div class="flex w-full h-full justify-center">
-                            <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                                <p class="leading-[21px] text-[16px] font-[400]">
-                                    <span>${card.date}</span> |
-                                    <span>${card.readingTime}</span>
-                                </p>
-                                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
-                                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
-                                <div class="flex">
-                                    <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
-                                    <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                                </div>
-                            </div>
-                            <div class="max-w-[550px] w-[34rem]">
-                                <img src="${card.image}"alt="" class="w-full object-cover">
-                            </div>
-                        </div>
-                    </a>
-                `;
-                        }
-                    })
-                    .join("");
+              }
             })
-            .catch((error) => {
-                console.error("JSON fayl yüklənmədi:", error); // Xəta varsa konsola yazdırılır
-            });
-
-        // Pagination
-        // Hər bir `li` elementinə click event listener əlavə edirik
-        const pageItems = document.querySelectorAll('li[data-page]');
-
-        pageItems.forEach(item => {
-            item.addEventListener('click', () => {
-                // Səhifə nömrəsini əldə edirik
-                const pageNumber = item.getAttribute('data-page');
-
-                // Burada səhifə nömrəsinə əsasən müvafiq əməliyyatları həyata keçirə bilərsiniz
-                // Məsələn, yeni məzmunu yükləmək və ya göstərmək
-            });
+            .join(""); // `map` ilə yaranan array'ı birləşdiririk
+          const cardsNews2 = document.querySelector(".grid_container_2");
+          const firstFourNews = news.slice(4, 8);
+          cardsNews2.innerHTML = firstFourNews
+            .map((card, index) => {
+              // Cüt kartlar üçün fərqli dizayn tətbiq edirik
+              if (index % 2 !== 0) {
+                // Tək kartlar üçün əvvəlki dizayn
+                return `
+                    <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                        <div class="flex w-full h-full justify-center">
+                            <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                                <img src="${card.image}" alt="" class="w-full object-cover">
+                            </div>
+                            <div class="max-w-[550px] w-[34rem]">
+                                <p class="leading-[21px] text-[16px] font-[400]">
+                                    <span>${card.date}</span> |
+                                    <span>${card.readingTime}</span>
+                                </p>
+                                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                                <div class="flex">
+                                    <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                                    <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>`;
+              } else {
+                // Cüt kartlar üçün yeni dizayn
+                return `
+                    <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                        <div class="flex w-full h-full justify-center">
+                            <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                                <p class="leading-[21px] text-[16px] font-[400]">
+                                    <span>${card.date}</span> |
+                                    <span>${card.readingTime}</span>
+                                </p>
+                                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                                <div class="flex">
+                                    <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                                    <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                                </div>
+                            </div>
+                            <div class="max-w-[550px] w-[34rem]">
+                                <img src="${card.image}"alt="" class="w-full object-cover">
+                            </div>
+                        </div>
+                    </a>
+                `;
+              }
+            })
+            .join("");
+        })
+        .catch((error) => {
+          console.error("JSON fayl yüklənmədi:", error); // Xəta varsa konsola yazdırılır
         });
     </script>
-</body>
-
+  </body>
 </html>
