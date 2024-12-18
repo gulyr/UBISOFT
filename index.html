@@ -513,13 +513,15 @@
   </div>
   <div class="container1 w-full h-full flex flex-col relative">
     <!-- header -->
-    <header class="header flex text-center justify-around items-center gap-[100px] w-full sticky top-0 left-0 z-10">
-      <button type="button" class="menu text-[20px] text-white" onclick="togglepanel()">
+    <header
+      class="sticky top-0 left-0 z-10 w-full h-[50px] bg-[#000000] text-[#fff] py-[10px] px-[20px] text-center leading-[20px] flex justify-between items-center">
+      <button type="button" class=" text-[20px] text-white" onclick="togglepanel()">
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </button>
-      <a href="" class="svg_link">
-        <svg role="img" class="icon icon-ubisoft-logo-desktop text-white w-[93px] h-[50px]" xmlns="http://www.w3.org/2000/svg" version="1.1"
-          aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
+
+      <a href="" class="text-[16px] w-[93px] h-[50px]">
+        <svg role="img" class="icon icon-ubisoft-logo-desktop text-white overflow-hidden w-[93px] cursor-pointer h-[50px] fill-[#fff]"
+          xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
           <title id="logo-desktop-title">Ubisoft</title>
           <path class="st0"
             d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
@@ -529,8 +531,9 @@
           </path>
         </svg>
       </a>
+
       <button type="button" onclick="openChromeWindow()"
-        class="user mr-[50px] flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black">
+        class="flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black">
         <i class="fa-solid fa-user p-[6px] text-[20px] text-[#929293] bg-[#BEBEC0] hover:bg-[#EDEEF0]"></i>
       </button>
     </header>
@@ -826,8 +829,8 @@
       <div class="footer_top w-full flex justify-between text-white items-center">
         <div class="logo w-[305.5px] h-[45px] cursor-pointer">
           <a href="">
-            <svg role="img" class="icon icon-ubisoft-logo-desktop" xmlns="http://www.w3.org/2000/svg" version="1.1"
-              aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
+            <svg role="img" class="icon icon-ubisoft-logo-desktop w-[122px] h-[30px] fill-white cursor-pointer overflow-hidden"
+              xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
               <title id="logo-desktop-title">Ubisoft</title>
               <path class="st0"
                 d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">

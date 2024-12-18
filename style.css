@@ -16,41 +16,6 @@
 }
 
 /* header */
-
-header {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-  height: 50px;
-  line-height: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header svg {
-  height: 50px;
-  fill: #fff;
-  cursor: pointer;
-  overflow: hidden;
-}
-footer svg {
-  width: 122px;
-  height: 39px;
-  fill: #fff;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-header .svg_link {
-  margin-left: 434.5px;
-  margin-right: 434.5px;
-  font-size: 16px;
-  width: 93px;
-  height: 50px;
-}
 .ubisoft_connect button {
   touch-action: manipulation;
   transition-property: background-color border;
@@ -151,23 +116,15 @@ header .svg_link {
   color: #000;
   font-weight: 700;
 }
-/* .games .card {
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-.games .card:hover {
-  transform: scale(1.05);
-} */
+
 .menu {
   overflow: hidden;
 }
 .menu::-webkit-scrollbar {
   display: none;
 }
-.active {
-}
+
 header .header_bottom svg {
-  /* background: white !important; */
 }
 #mega-menu-dropdown-1 {
   box-shadow: rgb(158, 169, 189) 0px 10px 30px -14px;
@@ -186,9 +143,6 @@ header .header_bottom svg {
 .scroll::-webkit-scrollbar-track {
   background: transparent;
 }
-/* .scroll li:hover .scroll::-webkit-scrollbar-thumb {
-  background: #fff;
-} */
 #mega-menu-dropdown-3 {
   box-shadow: rgb(158, 169, 189) 0px 10px 30px -14px;
 }
