@@ -1,0 +1,181 @@
+{
+  "releases": [
+    {
+      "img": "images/ubisoftWallpapersImages/newReleaseImages/section1/newReleaseCard1.jpg",
+      "title": "Assassin's Creed® Shadows",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/newReleaseImages/section1/newReleaseCard2.jpg",
+      "title": "BattleCore Arena",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/newReleaseImages/section1/newReleaseCard3.jpg",
+      "title": "Beyond Good & Evil - 20th Anniversary Edition",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/newReleaseImages/section1/newReleaseCard4.jpg",
+      "title": "Star Wars Outlaws",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/newReleaseImages/section2/newReleaseCard5.jpg",
+      "title": "Avatar: Frontiers of Pandora™",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/newReleaseImages/section2/newReleaseCard6.jpg",
+      "title": "XDefiant",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/newReleaseImages/section2/newReleaseCard7.jpg",
+      "title": "Monopoly",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/newReleaseImages/section2/newReleaseCard8.jpg",
+      "title": "Skull and Bones™",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    }
+  ],
+  "allgames": [
+    {
+      "img": "images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card1.jpg",
+      "title": "AGOS: A Game of Space",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card2.jpg",
+      "title": "Anno 1800",
+      "buttons": [
+        {
+          "text": "wallpaper",
+          "width": "12.8em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card3.jpg",
+      "title": "Anno 2205",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card4.jpg",
+      "title": "Assassin's Creed Brotherhood",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card5.jpg",
+      "title": "Assassin's Creed® III",
+      "buttons": [
+        {
+          "text": "wallpaper",
+          "width": "12.8em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "",
+      "title": "",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        },
+        {
+          "text": "wallpaper",
+          "width": "12.8em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "",
+      "title": "",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        },
+        {
+          "text": "wallpaper",
+          "width": "12.8em",
+          "height": "3.8em"
+        }
+      ]
+    }
+  ]
+}
