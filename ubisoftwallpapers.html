@@ -1,2180 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="icon"
-      href="images/UbisoftConnectImages/ubisoft.svg"
-      type="image/svg"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-    />
-    <link href="src/output.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body class="font-['Ubisoft Sans']">
-    <div class="container1 w-full flex flex-col">
-      <!-- header -->
-      <header
-        class="sticky top-0 left-0 z-10 w-full h-[50px] bg-[#000000] text-[#fff] py-[10px] px-[20px] text-center leading-[20px] flex justify-between items-center"
-      >
-        <button
-          type="button"
-          class="text-[20px] text-white"
-          onclick="togglepanel()"
-        >
-          <i class="fa-solid fa-ellipsis-vertical"></i>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="icon" href="images/UbisoftConnectImages/ubisoft.svg" type="image/svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <link href="src/output.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
 
-        <a href="" class="text-[16px] w-[93px] h-[50px]">
-          <svg
-            role="img"
-            class="icon icon-ubisoft-logo-desktop text-white overflow-hidden w-[93px] cursor-pointer h-[50px] fill-[#fff]"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            aria-labelledby="logo-desktop-title"
-            viewBox="0 0 99.2 31.6"
-          >
-            <title id="logo-desktop-title">Ubisoft</title>
-            <path
-              class="st0"
-              d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z"
-            ></path>
-            <path
-              class="st0"
-              d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z"
-            ></path>
-          </svg>
-        </a>
+<body class="font-['Ubisoft Sans'] text-[14px]">
+  <div class="container1 w-full flex flex-col">
+    <!-- header -->
+    <header
+      class="sticky top-0 left-0 z-10 w-full h-[50px] bg-[#000000] text-[#fff] py-[10px] px-[20px] text-center leading-[20px] flex justify-between items-center">
+      <button type="button" class="text-[20px] text-white" onclick="togglepanel()">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </button>
+      <a href="" class="text-[16px] w-[93px] h-[50px]">
+        <svg role="img" class="icon icon-ubisoft-logo-desktop text-white overflow-hidden w-[93px] cursor-pointer h-[50px] fill-[#fff]"
+          xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
+          <title id="logo-desktop-title">Ubisoft</title>
+          <path class="st0"
+            d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
+          </path>
+          <path class="st0"
+            d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z">
+          </path>
+        </svg>
+      </a>
+      <button type="button" onclick="openChromeWindow()"
+        class="flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black">
+        <i class="fa-solid fa-user p-[6px] text-[20px] text-[#929293] bg-[#BEBEC0] hover:bg-[#EDEEF0]"></i>
+      </button>
+    </header>
+    <!-- Title section -->
+    <section class="title_section w-full h-[284px] bg-[#f0f3f4] text-center py-[70px] px-[30px] leading-[24px]">
+      <h2
+        class="font-['Ubisoft Sans Bold'] max-w-[720px] text-center leading-[72px] text-[60px] font-[700] mx-[274.5px] transition-all delay-[0.4s] duration-[1.4s]">
+        Ubisoft Fan Kits, Wallpapers and More!
+      </h2>
+    </section>
 
-        <button
-          type="button"
-          onclick="openChromeWindow()"
-          class="flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black"
-        >
-          <i
-            class="fa-solid fa-user p-[6px] text-[20px] text-[#929293] bg-[#BEBEC0] hover:bg-[#EDEEF0]"
-          ></i>
-        </button>
-      </header>
-      <!-- Title section -->
-      <section
-        class="title_section w-full h-[284px] bg-[#f0f3f4] text-center py-[70px] px-[30px] leading-[24px]"
-      >
+    <!-- New releases -->
+    <section class="new_release w-full py-[70px] leading-[24px]">
+      <div class="mx-[20px] flex flex-col items-center leading-[24px]">
         <h2
-          class="font-['Ubisoft Sans Bold'] max-w-[720px] text-center leading-[72px] text-[60px] font-[700] mx-[274.5px] transition-all delay-[0.4s] duration-[1.4s]"
-        >
-          Ubisoft Fan Kits, Wallpapers and More!
+          class="w-[60.7em] max-w-[60.7em] text-[2.8em] font-[700] leading-[40px] mb-[30px] mx-[20px] pb-[20px] text-[#2c2c2c] opacity-[1] text-center transition-all delay-[0s] duration-[1.2s]">
+          New Releases
         </h2>
-      </section>
+      </div>
+      <div class="cards new_release_1 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- New releases -->
-      <section
-        class="new_release w-full h-[767.531px] py-[70px] leading-[24px]"
-      >
-        <div class="mx-[20px] flex flex-col items-center">
-          <h2
-            class="w-[850px] max-w-[850px] text-[40px] font-[700] leading-[40px] mb-[30px] mx-[20px] pb-[20px] text-[#2c2c2c] opacity-[1] text-center transition-all delay-[0s] duration-[1.2s]"
-          >
-            New Releases
-          </h2>
-        </div>
-        <div
-          class="cards w-full h-[537.531px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[332.25px] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[252.25px] h-[330.531px]">
-              <img
-                src="images/ubisoftWallpapersImages/newReleaseImages/section1/newReleaseCard1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[292.25px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed® Shadows
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[332.25px] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[252.25px] h-[330.531px]">
-              <img
-                src="images/ubisoftWallpapersImages/newReleaseImages/section1/newReleaseCard2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[292.25px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                BattleCore Arena
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[332.25px] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[252.25px] h-[330.531px]">
-              <img
-                src="images/ubisoftWallpapersImages/newReleaseImages/section1/newReleaseCard3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[292.25px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Beyond Good & Evil - 20th Anniversary Edition
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[332.25px] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[252.25px] h-[330.531px]">
-              <img
-                src="images/ubisoftWallpapersImages/newReleaseImages/section1/newReleaseCard4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[292.25px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Star Wars Outlaws
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- New releases 2 -->
+    <section class="new_release w-full py-[70px] leading-[24px] bg-[#F0F3F4]">
+      <div class="cards new_release_2 w-full h-[537.531px] max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- New releases 2 -->
-      <section
-        class="new_release w-full h-[767.531px] py-[70px] leading-[24px] bg-[#F0F3F4]"
-      >
-        <div
-          class="cards w-full h-[537.531px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[332.25px] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[252.25px] h-[330.531px]">
-              <img
-                src="images/ubisoftWallpapersImages/newReleaseImages/section2/newReleaseCard5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[292.25px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Avatar: Frontiers of Pandora™
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[332.25px] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[252.25px] h-[330.531px]">
-              <img
-                src="images/ubisoftWallpapersImages/newReleaseImages/section2/newReleaseCard6.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[292.25px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                XDefiant
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[332.25px] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[252.25px] h-[330.531px]">
-              <img
-                src="images/ubisoftWallpapersImages/newReleaseImages/section2/newReleaseCard7.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[292.25px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Monopoly
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[332.25px] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[252.25px] h-[330.531px]">
-              <img
-                src="images/ubisoftWallpapersImages/newReleaseImages/section2/newReleaseCard8.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[292.25px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Skull and Bones™
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All games 1 -->
+    <section class="all_games w-full py-[70px] leading-[24px]">
+      <div class="mx-[20px] flex flex-col items-center leading-[24px]">
+        <h2
+          class="w-[60.7em] max-w-[60.7em] text-[2.8em] font-[700] leading-[40px] mb-[30px] mx-[20px] pb-[20px] text-[#2c2c2c] opacity-[1] text-center transition-all delay-[0s] duration-[1.2s]">
+          All Games
+        </h2>
+      </div>
+      <div class="cards all_games_1 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All games 1 -->
-      <section class="all_games w-full h-[767.531px] py-[70px] leading-[24px]">
-        <div class="mx-[20px] flex flex-col items-center">
-          <h2
-            class="w-[850px] max-w-[850px] text-[40px] font-[700] leading-[40px] mb-[30px] mx-[20px] pb-[20px] text-[#2c2c2c] opacity-[1] text-center transition-all delay-[0s] duration-[1.2s]"
-          >
-            All Games
-          </h2>
-        </div>
-        <div
-          class="cards w-full h-[450.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                AGOS: A Game of Space
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Anno 1800
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Anno 2205
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed Brotherhood
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section1/newRelease2Card5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed® III
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All games 2 -->
+    <section class="all_games w-full py-[70px] leading-[24px] bg-[#F0F3F4]">
+      <div class="cards all_games_2 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All games 2 -->
-      <section
-        class="all_games w-full h-[767.531px] py-[70px] leading-[24px] bg-[#F0F3F4]"
-      >
-        <div
-          class="cards w-full h-[450.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section2/ac-4-black-flag.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed® IV Black Flag
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section2/ACL_Packshot.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed® Liberation HD
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section2/acm-boxshot.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed® Mirage
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section2/ac-odyssey.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed® Odyssey
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section2/ac-origins.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed® Origins
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All games 3 -->
+    <section class="all_games w-full py-[70px] leading-[24px]">
+      <div class="cards all_games_3 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All games 3 -->
-      <section class="all_games w-full h-[640.453px] py-[70px] leading-[24px]">
-        <div
-          class="cards w-full h-[500.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section3/section3.1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Anno 1800
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[500.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section3/section3.2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[217px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Far Cry® 5
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section3/section3.3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Anno 2205
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] transition-all delay-[0.4s] duration-[1.2s] max-w-[1520px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section3/section3.4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed Brotherhood
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section3/section3.5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Assassin's Creed® III
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All games 4 -->
+    <section class="all_games w-full py-[70px] leading-[24px] bg-[#F0F3F4]">
+      <div class="cards all_games_4 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All games 4 -->
-      <section
-        class="all_games w-full h-[640.453px] py-[70px] leading-[24px] bg-[#F0F3F4]"
-      >
-        <div
-          class="cards w-full h-[500.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[500.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section4/section3.1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[217px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Far Cry® 5
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section4/section3.2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Far Cry® 6
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section4/section3.3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Far Cry® New Dawn
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] transition-all delay-[0.4s] duration-[1.2s] max-w-[1520px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section4/section3.4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Far Cry® Primal
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section4/section3.5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                For Honor
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All games 5 -->
+    <section class="all_games w-full py-[70px] leading-[24px]">
+      <div class="cards all_games_5 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All games 5 -->
-      <section class="all_games w-full h-[640.453px] py-[70px] leading-[24px]">
-        <div
-          class="cards w-full h-[500.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section5/section5.1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Ghost Recon® Breakpoint
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section5/section5.2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Ghost Recon® Wildlands
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section5/section5.3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Immortals Fenyx Rising
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[500.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section5/section5.4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[217px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Just Dance®
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section5/section5.5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Just Dance® 2019
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All games 6 -->
+    <section class="all_games w-full py-[70px] leading-[24px] bg-[#F0F3F4]">
+      <div class="cards all_games_6 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All games 6 -->
-      <section
-        class="all_games w-full h-[640.453px] py-[70px] leading-[24px] bg-[#F0F3F4]"
-      >
-        <div
-          class="cards w-full h-[500.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[500.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section6/section6.1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[217px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Just Dance® 2020
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section6/section6.2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Just Dance® 2021
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section6/section6.3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Just Dance® 2022
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] transition-all delay-[0.4s] duration-[1.2s] max-w-[1520px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section6/section6.4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Mario + Rabbids® Sparks of Hope
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section6/section6.5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                OddBallers™
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All Games 7 -->
+    <section class="all_games w-full py-[70px] leading-[24px]">
+      <div class="cards all_games_7 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All Games 7 -->
-      <section class="all_games w-full h-[614.453px] py-[70px] leading-[24px]">
-        <div
-          class="cards w-full h-[474.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[474.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section7/section7.1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[191px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Prince of Persia: The Sands of Time Remake
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[474.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section7/section7.2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[191px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Prince of Persia™: The Lost Crown
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section7/section7.3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[191px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Rabbids Party of Legends
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section7/section7.4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[191px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Rainbow Six® Extraction
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section7/section7.5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[191px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Rayman Fiesta Run
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All games 8 -->
+    <section class="all_games w-full py-[70px] leading-[24px] bg-[#F0F3F4]">
+      <div class="cards all_games_8 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All games 8 -->
-      <section
-        class="all_games w-full h-[640.453px] py-[70px] leading-[24px] bg-[#F0F3F4]"
-      >
-        <div
-          class="cards w-full h-[500.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section8/section8.1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Rayman Forever
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section8/section8.2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Riders Republic™
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section8/section8.3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Rocksmith+
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[500.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section8/section8.4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[217px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Roller Champions
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section8/section8.5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[191px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Scott Pilgrim vs. The World™ : The Game – Complete Edition
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All games 9 -->
+    <section class="all_games w-full py-[70px] leading-[24px]">
+      <div class="cards all_games_9 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All games 9 -->
-      <section class="all_games w-full h-[640.453px] py-[70px] leading-[24px]">
-        <div
-          class="cards w-full h-[500.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section9/section9.1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Skull and Bones™
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section9/section9.2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Star Trek™: Bridge Crew
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section9/section9.3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Starlink: Battle for Atlas
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section9/section9.4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                The Crew™ 2
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section9/section9.5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[191px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                The Crew™ Motorfest
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All games 10 -->
+    <section class="all_games w-full py-[70px] leading-[24px] bg-[#F0F3F4]">
+      <div class="cards all_games_10 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All games 10 -->
-      <section
-        class="all_games w-full h-[714.453px] py-[70px] leading-[24px] bg-[#F0F3F4]"
-      >
-        <div
-          class="cards w-full h-[574.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section10/section10.1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Tom Clancy’s Rainbow Six® Siege
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[574.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section10/section10.2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[291px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Tom Clancy's The Division 2
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section10/section10.3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Tom Clancy’s The Division Heartland
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[574.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section10/section10.4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[291px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Trials® Rising
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section10/section10.5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[191px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                TRIVIAL PURSUIT Live! 2
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!-- All Games 11 -->
+    <section class="all_games w-full py-[70px] leading-[24px]">
+      <div class="cards all_games_11 w-full max-w-[1520px] leading-[24px] flex justify-center items-start"></div>
+    </section>
 
-      <!-- All Games 11 -->
-      <section class="all_games w-full h-[714.453px] py-[70px] leading-[24px]">
-        <div
-          class="cards w-full h-[574.453px] max-w-[1520px] leading-[24px] flex justify-center"
-        >
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section11/section11.1.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Valiant Hearts: Coming Home
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[524.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section11/section11.2.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[241pxpx] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                Watch Dogs®: Legion
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section11/section11.3.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                WATCH DOGS® 2
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[179.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>wallpaper</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section11/section11.4.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[167px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                WATCH DOGS™
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
-          <div
-            class="card flex flex-col justify-center items-center w-[265.797px] h-[450.453px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]"
-          >
-            <div class="card_image w-[185.797px] h-[243.453px] mx-[20px]">
-              <img
-                src="images/ubisoftWallpapersImages/allGamesImages/section11/section11.5.jpg"
-                alt=""
-                class="w-full object-cover"
-              />
-            </div>
-            <div
-              class="card_content w-[225.797px] h-[191px] flex flex-col justify-center items-center"
-            >
-              <h2
-                class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]"
-              >
-                XDefiant
-              </h2>
-              <a
-                href=""
-                class="uppercase flex items-center justify-between relative w-[145.406px] h-[54px] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[15px] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] px-[30px]"
-              >
-                <span>fan kit</span>
-                <i class="bi bi-arrow-down"></i>
-              </a>
-            </div>
-          </div>
+    <!-- Ubisoft Channels -->
+    <section class="ubisoft_channels w-full px-[60px] leading-[24px] bg-black flex justify-between items-center">
+      <div class="max-w-[1440px] w-[1258px] relative">
+        <h2 class="leading-[14.625px] text-[13px] font-[400] text-[#9B9B9B] absolute top-[27px] left-0 custom-matrix-2">
+          Visit Other Ubisoft Channels
+        </h2>
+        <div class="flex flex-wrap justify-center items-center">
+          <a href="#" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]"><i
+              class="fa-brands fa-discord text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i></a>
+          <a href="" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]">
+            <i class="fa-brands fa-linkedin-in text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i></a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Ubisoft Channels -->
-      <section
-        class="ubisoft_channels w-full px-[60px] leading-[24px] bg-black flex justify-between items-center"
-      >
-        <div class="max-w-[1440px] w-[1258px] relative">
-          <h2
-            class="leading-[14.625px] text-[13px] font-[400] text-[#9B9B9B] absolute top-[27px] left-0 custom-matrix-2"
-          >
-            Visit Other Ubisoft Channels
-          </h2>
-          <div class="flex flex-wrap justify-center items-center">
-            <a
-              href="#"
-              class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]"
-              ><i
-                class="fa-brands fa-discord text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-              ></i
-            ></a>
-            <a
-              href=""
-              class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]"
-            >
-              <i
-                class="fa-brands fa-linkedin-in text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-              ></i
-            ></a>
+    <!-- Footer -->
+    <footer class="w-full bg-[#1D1E22] h-[470px] tracking-[1px] px-[60px] py-[20px] flex flex-row flex-wrap items-center text-left">
+      <div class="footer_top w-full flex justify-between text-white items-center">
+        <div class="logo w-[305.5px] h-[45px] cursor-pointer">
+          <a href="">
+            <svg role="img" class="icon icon-ubisoft-logo-desktop w-[122px] h-[30px] fill-white cursor-pointer overflow-hidden"
+              xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
+              <title id="logo-desktop-title">Ubisoft</title>
+              <path class="st0"
+                d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
+              </path>
+              <path class="st0"
+                d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="w-[629px] my-[20px] h-[56.5px]">
+          <button
+            class="uppercase py-[14px] px-[28px] ml-[45px] leading-[22.5px] tracking-[1.8px] text-center text-[18px] cursor-pointer text-white bg-[#70707033] border-[3px] border-solid border-[#70707033] rounded-[30px] font-bold bg-clip-padding hover:bg-[#6D6D6D]">
+            download ubisoft connect
+          </button>
+        </div>
+        <div class="w-[314.5px]h-[72px] my-[20px]">
+          <button class="uppercase text-[15px] font-bold shadow-none tracking-[1px] flex justify-center items-center w-full h-full gap-2">
+            <i class="fa-solid fa-globe text-[24px]"></i> english
+            <i class="fa-solid fa-chevron-down text-[8px]"></i>
+          </button>
+        </div>
+      </div>
+      <div class="footer_bottom w-full flex">
+        <div class="div1 flex flex-col w-[305.5px] h-[280px] my-[20px] leading-[24px]">
+          <ul class="flex flex-col text-white uppercase text-[16px]">
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]">
+              <a href="" class="hover:underline">contact</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]">
+              <a href="" class="hover:underline">privacy & legal</a>
+            </li>
+          </ul>
+          <ul class="flex flex-col text-[#9b9b9b] text-[14px]">
+            <li class="my-[5px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Notice At Collection</a>
+            </li>
+            <li class="my-[5px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Interest-Based Ads</a>
+            </li>
+            <li class="my-[5px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Do Not Sell / Share My Personal Information</a>
+            </li>
+            <li class="my-[5px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Limit Use / Disclosure of My Sensitive Personal
+                Information</a>
+            </li>
+            <li class="my-[5px] leading-[24px] list-item">
+              <a href="" class="leading-[17.5px] hover:underline text-[13px]">Set cookies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="div2 flex w-[611px] h-[112px] my-[20px] text-white">
+          <ul class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]">
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">ubisoft connect</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">support</a>
+            </li>
+          </ul>
+          <ul class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]">
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">investors</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">press</a>
+            </li>
+          </ul>
+          <ul class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]">
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">about us</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">careers</a>
+            </li>
+            <li class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]">
+              <a href="" class="hover:underline">locations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="div3 w-[305.5px] h-[212px] flex flex-col items-end">
+          <div class="text-right w-[76px] h-[102px] my-[16px]">
+            <img src="images/privacyFooter.jpg" alt="Privacy" class="w-full object-cover" />
+          </div>
+          <div class="w-[245.5px] h-[72px]">
+            <p class="text-[12px] leading-[12px] text-right my-[12px] text-[#f0f3f4]">
+              © 2024 Ubisoft Entertainment. All Rights Reserved. Ubisoft, Ubi.com and the Ubisoft logo are trademarks of Ubisoft Entertainment in the
+              U.S. and/or other countries.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </footer>
+  </div>
+  <script>
+    axios
+      .get("ubisoftwallpapers.json")
+      .then((response) => {
+        const releases = response.data.releases;
+        const newRelease1 = document.querySelector(".new_release_1");
+        newRelease1.innerHTML += releases.slice(0, 4)
+          .map(
+            (card, index) => `
+         <div class="card flex flex-col justify-center items-center w-[24.3em] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="leading-[24px]">
+            <div class="card_image m-[20px] text-center leading-[24px]">
+              <img src="${card.img}" alt="" class="w-full object-cover text-center leading-[24px] overflow-x-clip overflow-y-clip align-middle" />
+            </div>
+            <div class="card_content leading-[24px] flex flex-col items-center">
+              <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[1.7em] text-[#2c2c2c]">${card.title}</h2>
+              ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+            </div>
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const newRelease2 = document.querySelector(".new_release_2");
+        newRelease2.innerHTML += releases.slice(4, 8)
+          .map(
+            (card, index) => `
+         <div class="card flex flex-col justify-center items-center w-[24.3em] h-[537.531px] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="leading-[24px]">
+            <div class="card_image m-[20px] text-center leading-[24px]">
+              <img src="${card.img}" alt="" class="w-full object-cover text-center leading-[24px] overflow-x-clip overflow-y-clip align-middle" />
+            </div>
+            <div class="card_content leading-[24px] flex flex-col items-center">
+              <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[1.7em] text-[#2c2c2c]">${card.title}</h2>
+              ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+            </div>
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allGames = response.data.allgames;
+        const allgames1 = document.querySelector(".all_games_1");
+        allgames1.innerHTML += allGames.slice(0, 5)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames2 = document.querySelector(".all_games_2");
+        allgames2.innerHTML += allGames.slice(5, 10)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames3 = document.querySelector(".all_games_3");
+        allgames3.innerHTML += allGames.slice(10, 15)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames4 = document.querySelector(".all_games_4");
+        allgames4.innerHTML += allGames.slice(15, 20)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames5 = document.querySelector(".all_games_5");
+        allgames5.innerHTML += allGames.slice(20, 25)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames6 = document.querySelector(".all_games_6");
+        allgames6.innerHTML += allGames.slice(25, 30)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames7 = document.querySelector(".all_games_7");
+        allgames7.innerHTML += allGames.slice(30, 35)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames8 = document.querySelector(".all_games_8");
+        allgames8.innerHTML += allGames.slice(35, 40)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames9 = document.querySelector(".all_games_9");
+        allgames9.innerHTML += allGames.slice(40, 45)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames10 = document.querySelector(".all_games_10");
+        allgames10.innerHTML += allGames.slice(45, 50)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+        const allgames11 = document.querySelector(".all_games_11");
+        allgames11.innerHTML += allGames.slice(50, 55)
+          .map(
+            (card, index) => `
+         <div
+          class="card flex flex-col justify-center items-center w-[19.9em] p-[20px] transition-all delay-[0.4s] duration-[1.2s] max-w-[340px] leading-[24px]">
+          <div class="card_image leading-[24px] text-center mx-[20px]">
+            <img src="${card.img}" alt="" class="w-full object-cover" />
+          </div>
+          <div class="card_content flex flex-col items-center leading-[24px]">
+            <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[24px] text-[#2c2c2c]">${card.title}</h2>
+           ${card.buttons.map(button => `
+              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+                <span>${button.text}</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
+              `).join("")}
+          </div>
+        </div>
+          `
+          )
+          .join("");
+      })
+      .catch((error) => {
+        console.error("JSON fayl yüklənmədi:", error);
+      });
+  </script>
+</body>
 
-      <!-- Footer -->
-      <footer
-        class="w-full bg-[#1D1E22] h-[470px] tracking-[1px] px-[60px] py-[20px] flex flex-row flex-wrap items-center text-left"
-      >
-        <div
-          class="footer_top w-full flex justify-between text-white items-center"
-        >
-          <div class="logo w-[305.5px] h-[45px] cursor-pointer">
-            <a href="">
-              <svg
-                role="img"
-                class="icon icon-ubisoft-logo-desktop w-[122px] h-[30px] fill-white cursor-pointer overflow-hidden"
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                aria-labelledby="logo-desktop-title"
-                viewBox="0 0 99.2 31.6"
-              >
-                <title id="logo-desktop-title">Ubisoft</title>
-                <path
-                  class="st0"
-                  d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z"
-                ></path>
-                <path
-                  class="st0"
-                  d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-          <div class="w-[629px] my-[20px] h-[56.5px]">
-            <button
-              class="uppercase py-[14px] px-[28px] ml-[45px] leading-[22.5px] tracking-[1.8px] text-center text-[18px] cursor-pointer text-white bg-[#70707033] border-[3px] border-solid border-[#70707033] rounded-[30px] font-bold bg-clip-padding hover:bg-[#6D6D6D]"
-            >
-              download ubisoft connect
-            </button>
-          </div>
-          <div class="w-[314.5px]h-[72px] my-[20px]">
-            <button
-              class="uppercase text-[15px] font-bold shadow-none tracking-[1px] flex justify-center items-center w-full h-full gap-2"
-            >
-              <i class="fa-solid fa-globe text-[24px]"></i>
-              english
-              <i class="fa-solid fa-chevron-down text-[8px]"></i>
-            </button>
-          </div>
-        </div>
-        <div class="footer_bottom w-full flex">
-          <div
-            class="div1 flex flex-col w-[305.5px] h-[280px] my-[20px] leading-[24px]"
-          >
-            <ul class="flex flex-col text-white uppercase text-[16px]">
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]"
-              >
-                <a href="" class="hover:underline">contact</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[14px]"
-              >
-                <a href="" class="hover:underline">privacy & legal</a>
-              </li>
-            </ul>
-            <ul class="flex flex-col text-[#9b9b9b] text-[14px]">
-              <li class="my-[5px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Notice At Collection</a
-                >
-              </li>
-              <li class="my-[5px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Interest-Based Ads</a
-                >
-              </li>
-              <li class="my-[5px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Do Not Sell / Share My Personal Information</a
-                >
-              </li>
-              <li class="my-[5px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Limit Use / Disclosure of My Sensitive Personal
-                  Information</a
-                >
-              </li>
-              <li class="my-[5px] leading-[24px] list-item">
-                <a href="" class="leading-[17.5px] hover:underline text-[13px]"
-                  >Set cookies</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="div2 flex w-[611px] h-[112px] my-[20px] text-white">
-            <ul
-              class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]"
-            >
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">ubisoft connect</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">support</a>
-              </li>
-            </ul>
-            <ul
-              class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]"
-            >
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">investors</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">press</a>
-              </li>
-            </ul>
-            <ul
-              class="w-[173.672px] h-[112px] mx-[15px] leading-[24px] shrink-[1] basis-[0px] grow-[1]"
-            >
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">about us</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">careers</a>
-              </li>
-              <li
-                class="uppercase font-bold my-[10px] leading-[24px] list-item text-[16px]"
-              >
-                <a href="" class="hover:underline">locations</a>
-              </li>
-            </ul>
-          </div>
-          <div class="div3 w-[305.5px] h-[212px] flex flex-col items-end">
-            <div class="text-right w-[76px] h-[102px] my-[16px]">
-              <img
-                src="images/privacyFooter.jpg"
-                alt="Privacy"
-                class="w-full object-cover"
-              />
-            </div>
-            <div class="w-[245.5px] h-[72px]">
-              <p
-                class="text-[12px] leading-[12px] text-right my-[12px] text-[#f0f3f4]"
-              >
-                © 2024 Ubisoft Entertainment. All Rights Reserved. Ubisoft,
-                Ubi.com and the Ubisoft logo are trademarks of Ubisoft
-                Entertainment in the U.S. and/or other countries.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
 </html>
