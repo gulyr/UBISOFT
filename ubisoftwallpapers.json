@@ -556,7 +556,7 @@
       ]
     },
     {
-      "img": "images/ubisoftWallpapersImages/allGamesImages/section9/section9.1.jpg",
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7k7xD3KL0E3WGKOQptarrY/6ffd9fc14fdbba6933cd388583344f9e/skull-and-bones.jpg",
       "title": "Skull and Bones™",
       "buttons": [
         {
@@ -567,7 +567,7 @@
       ]
     },
     {
-      "img": "images/ubisoftWallpapersImages/allGamesImages/section9/section9.2.jpg",
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7E1guwwZRPGiI22q4Hu7Aa/eab1ee0ac58cc29f2c9af1d8857c3b5a/startrek-bridgecrew-gameinfo-boxshot_art-ubinew-02-348x434_253824.jpg",
       "title": "Star Trek™: Bridge Crew",
       "buttons": [
         {
@@ -578,7 +578,7 @@
       ]
     },
     {
-      "img": "images/ubisoftWallpapersImages/allGamesImages/section9/section9.3.jpg",
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1BhyFsJTsWCE2wfJz8eGyh/69e1478f82102035a2313750583b45b1/starlink.jpg",
       "title": "Starlink: Battle for Atlas",
       "buttons": [
         {
@@ -589,7 +589,7 @@
       ]
     },
     {
-      "img": "images/ubisoftWallpapersImages/allGamesImages/section9/section9.4.jpg",
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1TLjssD4sWNwplpuJfsGZr/b15e3a0e7eb6039e0b3326a74a123c19/the-crew-2.jpg",
       "title": "The Crew™ 2",
       "buttons": [
         {
@@ -600,7 +600,7 @@
       ]
     },
     {
-      "img": "images/ubisoftWallpapersImages/allGamesImages/section9/section9.5.jpg",
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7DiCOQ3GnZhqEALF3sX6Kf/f9409175464a733696c30a9dec0939d9/TCM_Packshot.jpg",
       "title": "The Crew™ Motorfest",
       "buttons": [
         {
@@ -681,8 +681,19 @@
       ]
     },
     {
-      "img": "",
-      "title": "",
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5rlXuzbksSATFOSQhcYOrK/af01ed37f53809b44e66c21f5c931a9a/vhch-boxshot-464x608.jpg",
+      "title": "Valiant Hearts: Coming Home",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3dok9ncNbJn9MsN09W8by1/f5803076e457c3e836de78f847920713/watch-dogs-legion.jpg",
+      "title": "Watch Dogs®: Legion",
       "buttons": [
         {
           "text": "fan kit",
@@ -690,8 +701,41 @@
           "height": "3.8em"
         },
         {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/27TyehjEahQIHgP5dvm7AI/30e18e2a4815034205e6c7f8086e7b3f/wd2-ubicom-product-boxart-01-agnostic-560x698.jpg",
+      "title": "WATCH DOGS® 2",
+      "buttons": [
+        {
           "text": "wallpaper",
           "width": "12.8em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1PYqazADh2LIV1T5WDkfwv/b08c26f56bf144cba235790a7dff3184/wd1-ubicom-product-boxart-01-560x698.jpg",
+      "title": "WATCH DOGS™",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
+          "height": "3.8em"
+        }
+      ]
+    },
+    {
+      "img": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2BqJijNAP6NFzcrXgiutBC/533bfa0b724eddc5010faea4185bac24/XDefiant_game_info-boxart_464x608.jpg",
+      "title": "XDefiant",
+      "buttons": [
+        {
+          "text": "fan kit",
+          "width": "10.4em",
           "height": "3.8em"
         }
       ]
