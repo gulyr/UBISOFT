@@ -44,7 +44,7 @@
       "icons": [
         " fa-brands fa-windows ",
         " fa-brands fa-playstation ",
-        " fa-brands fa-xbo ",
+        " fa-brands fa-xbox",
         " bi bi-triangle "
       ]
     },
@@ -55,7 +55,6 @@
         " fa-brands fa-windows ",
         " bi bi-triangle ",
         " bi bi-nintendo-switch ",
-        " fa-brands fa-playstation ",
         " fa-brands fa-xbox ",
         " fa-brands fa-playstation "
       ]
