@@ -1153,6 +1153,33 @@
       });
 
     // explore more games cards
+    // axios
+    //   .get("exploremoregames.json")
+    //   .then((response) => {
+    //     const games = response.data.games;
+    //     const cardsMoreGames = document.getElementById("exploremoregamescards");
+    //     cardsMoreGames.innerHTML += games
+    //       .map(
+    //         (game, index) => `
+    //       <div class="swiper-slide max-md:w-[18.3em] max-md:h-[27.3em] md:w-[9.1em] md:h-[16.3em] max-w-[450px] min-h-[1px] leading-[24px] px-[18px] border-none">
+    //         <a href="" class="group card cursor-pointer border-none max-md:w-full max-md:h-[26.8em] md:w-full md:h-[15.9em]">
+    //           <div class="image leading-[24px] max-md:w-full md:w-full md:h-[6.7em]">
+    //             <img src="${game.image}" alt="Card Assassin's Creed Shadows" loading="lazy" class="w-full object-cover overflow-x-clip overflow-y-clip" />
+    //           </div>
+    //           <div class="content mt-[10px]">
+    //             <h3 class="group-hover:underline font-[700] text-black text-left text-[1.3em] leading-[24px] min-h-[57.6px]">${game.title}</h3>
+    //             <div class="icons flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
+    //                ${game.icons.map(icon => `<div class="max-md:w-[1.4em] max-md:h-[1.4em] md:w-[0.9em] md:h-[1.4em] mr-[5px]"><i class="${icon} md:text-[12px]"></i></div>`).join("")}
+    //             </div>
+    //           </div>
+    //         </a>
+    //       </div>
+    //       `).join("");
+    //   })
+    //   .catch((error) => {
+    //     console.error("JSON fayl yüklənmədi:", error);
+    //   });
+
     axios
       .get("exploremoregames.json")
       .then((response) => {
@@ -1161,24 +1188,38 @@
         cardsMoreGames.innerHTML += games
           .map(
             (game, index) => `
-          <div class="swiper-slide max-md:w-[18.3em] max-md:h-[27.3em] md:w-[9.1em] md:h-[16.3em] md:max-w-[450px] md:min-h-[1px] leading-[24px] px-[18px] border-none">
-            <a href="" class="group card cursor-pointer border-none max-md:w-full max-md:h-[26.8em] md:w-full md:h-[15.9em]">
-              <div class="image leading-[24px] max-md:w-full md:w-full md:h-[6.7em]">
-                <img src="${game.image}" alt="Card Assassin's Creed Shadows" loading="lazy" class="w-full object-cover" />
+        <div class="swiper-slide md:w-[9.1em] md:h-[20em] max-md:w-[18.3em] max-md:h-[27.3em] max-w-[450px] min-h-[1px] px-[18px] border-none">
+          <a href="#" class="group card cursor-pointer border-none md:w-full md:h-[19.6em] max-md:w-full max-md:h-[26.8em]">
+            <div class="image md:w-full md:h-[15em] max-md:w-full max-md:h-[12em]">
+              <img src="${game.image}" alt="Card Assassin's Creed Shadows" loading="lazy" class="w-full  object-cover" />
+            </div>
+            <div class="content mt-[10px]">
+              <h3 class="group-hover:underline font-bold text-black text-left text-[1.3em] leading-[24px] min-h-[57.6px]">
+                ${game.title}
+              </h3>
+              <div class="icons flex items-center text-[#676767] font-ubisoft-bold mt-[5px]">
+                ${game.icons
+                .map(
+                  (icon) => `
+                  <div class="md:w-[0.9em] md:h-[1.4em] max-md:w-[1.4em] max-md:h-[1.4em] mr-[5px]">
+                    <i class="${icon} md:text-[12px]"></i>
+                  </div>`
+                )
+                .join("")}
               </div>
-              <div class="content mt-[10px]">
-                <h3 class="group-hover:underline font-[700] text-black text-left text-[18px] leading-[24px] min-h-[57.6px]">${game.title}</h3>
-                <div class="icons flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
-                   ${game.icons.map(icon => `<div class="max-md:w-[1.4em] max-md:h-[1.4em] md:w-[0.9em] md:h-[1.4em] mr-[5px]"><i class="${icon} md:text-[12px]"></i></div>`).join("")}
-                </div>
-              </div>
-            </a>
-          </div>
-          `).join("");
+            </div>
+          </a>
+        </div>
+        `
+          )
+          .join("");
       })
       .catch((error) => {
         console.error("JSON fayl yüklənmədi:", error);
       });
+
+
+
     // <div class="swiper-slide w-[16.4em] h-[24.8em] leading-[24px] px-[18px] border-none">
     //       <a href="" class="group card w-[16.4em] h-full cursor-pointer border-none">
     //         <div class="image leading-[24px] md:w-[6.6em] max-md:w-[15.7em] md:h-[8.7em] max-md:h-[20.6em]">
