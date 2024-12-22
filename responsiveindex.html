@@ -459,15 +459,11 @@
 
       // slide-bottom
       slideContainer.innerHTML = `
-    <div class="w-full h-[120vh] main_slide relative bg-black flex justify-center items-center">
-      <img src="${selectedSlide.image}" loading="lazy" alt="Slide image" class="w-full h-full object-cover"/>
-      <div class="slide-top w-[1330px] content flex flex-col justify-center items-center flex-wrap absolute top-[50%] ">
-        <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">
-          ${selectedSlide.title}
-        </h2>
-        <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">
-          ${selectedSlide.description}
-        </p>
+      <div class="w-full h-[120vh] main_slide relative bg-black flex justify-center items-center">
+        <img src="${selectedSlide.image}" loading="lazy" alt="Slide image" class="w-full h-full object-cover"/>
+        <div class="slide-top w-[1330px] content flex flex-col justify-center items-center flex-wrap absolute top-[50%] ">
+          <h2 class="uppercase text-[56px] font-[700] w-[1076px] leading-[50px] text-center text-white">${selectedSlide.title}</h2>
+          <p class="h-[137px] leading-[32px] px-[130px] text-white text-[26px] py-[15px] text-center">${selectedSlide.description}</p>
         <div class="buttons flex text-white">
           ${selectedSlide.buttons
           .map(
@@ -476,11 +472,10 @@
                   <span>${button.text}</span>
                 </a>
               `
-          )
-          .join("")}
+          ).join("")}
+          </div>
         </div>
       </div>
-    </div>
   `;
     }
 
@@ -585,18 +580,14 @@
         cardsInside.innerHTML += cards
           .map(
             (card, index) => `
-         <a href="${card.href}" target="_blank"
-          class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
-          <img src="${card.image}" alt="Card1 image" loading="lazy" class="w-full object-cover rounded-xl" />
-          <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
-            <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">
-              ${card.title}
-            </h2>
-          </div>
-        </a>
+            <a href="${card.href}" target="_blank" class="group relative cursor-pointer hover:underline text-white w-[30%] h-[77.5%] leading-[24px] grow-[1] shrink-0">
+              <img src="${card.image}" alt="Card1 image" loading="lazy" class="w-full object-cover rounded-xl" />
+              <div class="content w-full bg-[#00000080] max-h-[80%] min-h-[30%] p-[20px] absolute bottom-0 rounded-b-xl left-0">
+                <h2 class="uppercase text-[22px] mb-[12px] group-hover:underline tracking-[1px] font-[700] leading-[28px] w-[350px] text-center">${card.title}</h2>
+              </div>
+            </a>
           `
-          )
-          .join("");
+          ).join("");
       })
       .catch((error) => {
         console.error("JSON fayl yüklənmədi:", error);
@@ -619,7 +610,7 @@
               <div class="content w-[194px] h-[57.5938px]">
                 <h3 class="group-hover:underline font-[700] text-black text-left text-[18px] leading-[24px] min-h-[57.6px]">${game.title}</h3>
                 <div class="icons w-full h-[20px] flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
-                   ${game.icons.map(icon => `<i class="${icon} mr-[5px]"></i>`).join("")}
+                  ${game.icons.map(icon => `<i class="${icon} mr-[5px]"></i>`).join("")}
                 </div>
               </div>
             </a>
@@ -640,87 +631,85 @@
         const firstNews = news[0];
 
         cardsNewsFirst.innerHTML += `
-         <a href="#"
-              class="grid_item group image flex flex-col gap-4 cursor-pointer font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-              <div class="mr-[16px] mt-[16px] w-full basis-0 grow-[1] shrink-[1] leading-[24px]">
-                <img src="${firstNews.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover" />
-              </div>
-              <div class="mr-[16px] mb-[16px] w-full content basis-0 grow-[1] shrink-[1] leading-[24px]">
-                <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${firstNews.date}</span>
-                <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${firstNews.title}</p>
-              </div>
-            </a>
-          `
+        <a href="#" class="grid_item group image flex flex-col gap-4 cursor-pointer font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+          <div class="mr-[16px] mt-[16px] w-full basis-0 grow-[1] shrink-[1] leading-[24px]">
+            <img src="${firstNews.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover" />
+          </div>
+          <div class="mr-[16px] mb-[16px] w-full content basis-0 grow-[1] shrink-[1] leading-[24px]">
+            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${firstNews.date}</span>
+            <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${firstNews.title}</p>
+          </div>
+        </a>
+        `
         const allNews = news.slice(1, 5);
         cardsNewsFirst.innerHTML += allNews
           .map(
             (card, index) => `
-         <a href="#"
-          class="grid_item group image flex gap-4 cursor-pointer font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-          <div class="my-[16px] mr-[16px] w-full basis-0 grow-[1] shrink-[1] leading-[24px]">
-            <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover" />
-          </div>
-          <div class="my-[16px] mr-[16px] w-full content basis-0 grow-[1] shrink-[1] leading-[24px]">
-            <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
-            <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
-          </div>
-        </a>
+            <a href="#" class="grid_item group image flex gap-4 cursor-pointer font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+              <div class="my-[16px] mr-[16px] w-full basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover" />
+              </div>
+              <div class="my-[16px] mr-[16px] w-full content basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
+                <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
+              </div>
+            </a>
           `).join("");
         const cardsNewsSecond = document.getElementById("second");
         const assassinNews = news.filter(card => card.title.includes("Assassin’s Creed")).slice(0, 6);
         cardsNewsSecond.innerHTML += assassinNews
           .map(
             (card, index) => `
-          <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-           <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
-             <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
-            <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+            <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+              <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
+              <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
                 <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
                 <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
-            </div>
-         </a>
+              </div>
+            </a>
           `).join("");
         const cardsNewsThird = document.getElementById("third");
         const rainbowSixSiegeNews = news.filter(card => card.title.includes("Rainbow Six Siege")).slice(0, 6);
         cardsNewsThird.innerHTML += rainbowSixSiegeNews
           .map(
             (card, index) => `
-          <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-           <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
-             <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
-            <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+            <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+              <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
+              <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
                 <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
                 <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
-            </div>
-         </a>
+              </div>
+            </a>
           `).join("");
         const cardsNewsFourth = document.getElementById("fourth");
         const starWarsNews = news.filter(card => card.title.includes("Star Wars")).slice(0, 6);
         cardsNewsFourth.innerHTML += starWarsNews
           .map(
             (card, index) => `
-          <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-           <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
-             <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
-            <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+            <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+              <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
+              <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
                 <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
                 <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
-            </div>
-         </a>
+              </div>
+            </a>
           `).join("");
         const cardsNewsFifth = document.getElementById("fifth");
         const theDivisionNews = news.filter(card => card.title.includes("The Division")).slice(0, 6);
         cardsNewsFifth.innerHTML += theDivisionNews
           .map(
             (card, index) => `
-          <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
-           <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
-             <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
-            <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+            <a href="#" class="group image flex gap-4 cursor-pointer max-w-[750px] font-[400] leading-[24px] basis-[50%] grow-[1] shrink-0 text-[#2c2c2c]">
+              <div class="m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
+                <img src="${card.image}" alt="Prince of Persia" loading="lazy" class="w-full object-cover"/></div>
+              <div class="content m-[16px] basis-0 grow-[1] shrink-[1] leading-[24px]">
                 <span class="leading-[12px] text-[12px] font-[400] text-[#2c2c2c]">${card.date}</span>
                 <p class="group-hover:underline leading-[28px] font-[700] text-[20px] cursor-pointer">${card.title}</p>
-            </div>
-         </a>
+              </div>
+            </a>
           `).join("");
 
       })
@@ -737,14 +726,18 @@
         cardsUbisoftStore.innerHTML += cards
           .map(
             (card, index) => `
-          <a href="#" class="bg-[url('${card.background}')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] max-w-[33.3%] leading-[24px] grow-[1] shrink-0">
-            <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">${card.title}</h2>
-          </a>
+            <a href="#" class="bg-[url('${card.background}')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] max-w-[33.3%] leading-[24px] grow-[1] shrink-0">
+              <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">${card.title}</h2>
+            </a>
           `).join("");
       })
       .catch((error) => {
         console.error("JSON fayl yüklənmədi:", error);
       });
+
+    // <a href="#" class="bg-[url('${card.background}')] inline-block bg-center bg-cover hover:underline text-white w-[30%] h-[500px] max-w-[33.3%] leading-[24px] grow-[1] shrink-0">
+    //         <h2 class="uppercase text-center pt-[20px] px-[20px] leading-[26px] font-[700] text-[22px]">${card.title}</h2>
+    //       </a>
   </script>
 
   <script src="script.js"></script>
