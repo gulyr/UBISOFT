@@ -652,12 +652,11 @@
         <div class=" swiper-wrapper ">
           <div class=" swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4">
             <div class=" w-[15.1rem]">
-              <img src=" images/iconImages/ubi-homescreen-logo-ubisoft-winter-challenge-v3.png " loading=" lazy " alt=" Winter Challenge icon "
+              <img src=" images/iconImages/ubisofticon.png " loading=" lazy " alt=" Winter Challenge icon "
                 class=" animate__flash w-full object-cover" />
             </div>
             <span class="uppercase text-white text-center align-middle font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0
-        duration-[0.5s] order-2 ">winter
-              challenge</span>
+        duration-[0.5s] order-2 ">ubisoft store</span>
           </div>
           <div class=" swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4 ">
             <div class=" w-[15.1rem] ">
@@ -666,6 +665,23 @@
             <span class=" uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0
         duration-[0.5s] order-2 ">star
               wars outlaws</span>
+          </div>
+          <div class="swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4">
+            <div class="w-[211px]">
+              <img src="images/iconImages/rainbowsixsiegeicon.png" loading="lazy" alt="Rainbow Six Siege icon" />
+            </div>
+            <span
+              class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">rainbow
+              six siege</span>
+          </div>
+          <div class=" swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4 ">
+            <div class=" w-[15.1rem] ">
+              <img src=" images/iconImages/assasincreedshadowsicon.png " loading=" lazy " alt="
+        Assassin 's Creed Shadows icon" />
+            </div>
+            <span
+              class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">assassin'
+              s creed shadows</span>
           </div>
           <div class=" swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4 ">
             <div class=" w-[15.1rem] ">
@@ -682,15 +698,6 @@
             <span class=" uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0
         duration-[0.5s] order-2 ">just
               dance 2025 edition</span>
-          </div>
-          <div class=" swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4 ">
-            <div class=" w-[15.1rem] ">
-              <img src=" images/iconImages/assasincreedshadowsicon.png " loading=" lazy " alt="
-        Assassin 's Creed Shadows icon" />
-            </div>
-            <span
-              class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">assassin'
-              s creed shadows</span>
           </div>
           <div class="swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4">
             <div class="w-[15.1rem]">
@@ -726,27 +733,11 @@
           </div>
           <div class="swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4">
             <div class="w-[15.1rem]">
-              <img src="images/iconImages/ridersrepublicicon.png" class="w-full object-cover" loading="lazy" alt="Riders Republic icon" />
-            </div>
-            <span
-              class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">riders
-              republic</span>
-          </div>
-          <div class="swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4">
-            <div class="w-[15.1rem]">
               <img src="images/iconImages/skullsndbonesicon.png" loading="lazy" alt="Skull and Bones icon" />
             </div>
             <span
               class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">skull
               and bones</span>
-          </div>
-          <div class="swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4">
-            <div class="w-[211px]">
-              <img src="images/iconImages/rainbowsixsiegeicon.png" loading="lazy" alt="Rainbow Six Siege icon" />
-            </div>
-            <span
-              class="uppercase text-white font-[700] leading-[24px] min-h-[48px] text-[20px] opacity ease transition-[opacity] delay-0 duration-[0.5s] order-2">rainbow
-              six siege</span>
           </div>
           <div class="swiper-slide flex flex-col justify-between items-center h-[10.7rem] cursor-pointer gap-4">
             <div class="w-[15.1rem]">
@@ -1128,6 +1119,9 @@
       const selectedSlide = slidesData[slideIndex];
       const slideContainer = document.querySelector(".slide_container");
 
+      // <a href="#" class="flex justify-center items-center uppercase rounded-[30px] w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] h-[44px] sm:h-[50px] lg:h-[54px] border-[2px] border-solid my-2 mx-2 text-[14px] sm:text-[15px] tracking-[1.6px] font-[700] cursor-pointer ${button.classes.join(" ")}">
+      //       <span>${button.text}</span>
+      //     </a>
       // slide-bottom
       slideContainer.innerHTML = `
       <div class="w-full h-[120vh] main_slide relative bg-black flex justify-center items-center">
@@ -1139,8 +1133,8 @@
       ${selectedSlide.buttons
           .map(
             (button) => `
-          <a href="#" class="flex justify-center items-center uppercase rounded-[30px] w-[200px] sm:w-[220px] md:w-[240px] lg:w-[260px] h-[44px] sm:h-[50px] lg:h-[54px] border-[2px] border-solid my-2 mx-2 text-[14px] sm:text-[15px] tracking-[1.6px] font-[700] cursor-pointer ${button.classes.join(" ")}">
-            <span>${button.text}</span>
+          <a href="#" target="_blank" class="w-[21.5em] h-[54px] text-white ${button.classes.join(" ")} text-center overflow-x-hidden overflow-y-hidden rounded-[30px] my-[10px] mx-[20px] border-[2px] border-solid cursor-pointer font-[700] uppercase relative min-w-[100px] max-w-[300px] leading-[15px] tracking-[1.6px] inline-flex flex-col justify-center hover:bg-white" style="transition-behavior: normal normal; transition-delay: 0s 0s; transition-duration: 0.3s 0.3s; transition-property: background-color border; transition-timing-function: ease ease;">
+            <span class="${button.span} absolute top-0 left-0 w-full px-[30px] leading-[15px] tracking-[1.6px] justify-center h-[50px] font-[700] text-[1.1em] items-center flex flex-row cursor-pointer">${button.text}</span>
           </a>
         `).join("")}
     </div>
@@ -1245,34 +1239,6 @@
         menu2.style.display = "flex";
       }
     }
-
-    // explore more games cards
-    // axios
-    //   .get("exploremoregames.json")
-    //   .then((response) => {
-    //     const games = response.data.games;
-    //     const cardsMoreGames = document.getElementById("exploremoregamescards");
-    //     cardsMoreGames.innerHTML += games
-    //       .map(
-    //         (game, index) => `
-    //       <div class="swiper-slide max-md:w-[18.3em] max-md:h-[27.3em] md:w-[9.1em] md:h-[16.3em] max-w-[450px] min-h-[1px] leading-[24px] px-[18px] border-none">
-    //         <a href="" class="group card cursor-pointer border-none max-md:w-full max-md:h-[26.8em] md:w-full md:h-[15.9em]">
-    //           <div class="image leading-[24px] max-md:w-full md:w-full md:h-[6.7em]">
-    //             <img src="${game.image}" alt="Card Assassin's Creed Shadows" loading="lazy" class="w-full object-cover overflow-x-clip overflow-y-clip" />
-    //           </div>
-    //           <div class="content mt-[10px]">
-    //             <h3 class="group-hover:underline font-[700] text-black text-left text-[1.3em] leading-[24px] min-h-[57.6px]">${game.title}</h3>
-    //             <div class="icons flex items-center leading-[24px] text-[#676767] font-ubisoft-bold">
-    //                ${game.icons.map(icon => `<div class="max-md:w-[1.4em] max-md:h-[1.4em] md:w-[0.9em] md:h-[1.4em] mr-[5px]"><i class="${icon} md:text-[12px]"></i></div>`).join("")}
-    //             </div>
-    //           </div>
-    //         </a>
-    //       </div>
-    //       `).join("");
-    //   })
-    //   .catch((error) => {
-    //     console.error("JSON fayl yüklənmədi:", error);
-    //   });
 
     // explore more games cards
     axios
