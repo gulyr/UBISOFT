@@ -825,13 +825,13 @@
         </ul>
       </div>
       <div class="cards justify-center max-w-[1472px] w-full font-[400] leading-[24px] flex-row flex-wrap" id="default-tab-content">
-        <div class="hidden w-full p-4 rounded-lg flex flex-col flex-wrap" id="first" role="tabpanel" aria-labelledby="first-tab">
+        <div class="hidden w-full p-4 rounded-lg flex max-lg:flex-col flex-wrap" id="first" role="tabpanel" aria-labelledby="first-tab">
           <div class="grid_container w-full"></div>
         </div>
-        <div class="hidden w-full p-4 rounded-lg lg:flex flex-wrap" id="second" role="tabpanel" aria-labelledby="second-tab"></div>
-        <div class="hidden w-full p-4 rounded-lg lg:flex flex-wrap" id="third" role="tabpanel" aria-labelledby="third-tab"></div>
-        <div class="hidden w-full p-4 rounded-lg lg:flex flex-wrap" id="fourth" role="tabpanel" aria-labelledby="fourth-tab"></div>
-        <div class="hidden w-full p-4 rounded-lg lg:flex flex-wrap" id="fifth" role="tabpanel" aria-labelledby="fifth-tab"></div>
+        <div class="hidden w-full p-4 rounded-lg flex max-lg:flex-col flex-wrap" id="second" role="tabpanel" aria-labelledby="second-tab"></div>
+        <div class="hidden w-full p-4 rounded-lg flex max-lg:flex-col flex-wrap" id="third" role="tabpanel" aria-labelledby="third-tab"></div>
+        <div class="hidden w-full p-4 rounded-lg flex max-lg:flex-col flex-wrap" id="fourth" role="tabpanel" aria-labelledby="fourth-tab"></div>
+        <div class="hidden w-full p-4 rounded-lg flex max-lg:flex-col flex-wrap" id="fifth" role="tabpanel" aria-labelledby="fifth-tab"></div>
       </div>
       <div class="w-full flex items-center justify-center text-white">
         <a href="allnews.html" target="_blank"
@@ -1396,6 +1396,26 @@
       .catch((error) => {
         console.error("JSON fayl yüklənmədi:", error);
       });
+      document.querySelectorAll('[role="tab"]').forEach(tab => {
+  tab.addEventListener('click', function () {
+    const target = document.querySelector(this.dataset.tabsTarget);
+
+    // Bütün məzmun bölmələrini gizlət
+    document.querySelectorAll('[role="tabpanel"]').forEach(panel => {
+      panel.classList.add('hidden');
+    });
+
+    // Bütün tab düymələrini deaktiv et
+    document.querySelectorAll('[role="tab"]').forEach(button => {
+      button.setAttribute('aria-selected', 'false');
+    });
+
+    // Aktiv tabı göstər və seçilmiş kimi təyin et
+    this.setAttribute('aria-selected', 'true');
+    target.classList.remove('hidden');
+  });
+});
+
 
     // Inside Ubisoft section
     var swiper4 = new Swiper(".mySwiper4", {
