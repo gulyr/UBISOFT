@@ -366,7 +366,7 @@
 </head>
 
 <body
-  class="font-['Ubisoft Sans'] relative box-border overflow-x-hidden md:overflow-x-hidden lg:overflow-x-hidden xl:overflow-x-hidden 2xl:overflow-x-hidden">
+  class="font-['Ubisoft Sans'] relative box-border max-sm:overflow-x-hidden sm:overflow-x-hidden md:overflow-x-hidden lg:overflow-x-hidden xl:overflow-x-hidden 2xl:overflow-x-hidden">
   <div class="menu top-[40px] left-0 bg-black w-full h-full z-[12] px-[20px] fixed hidden">
     <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
       <button onclick="toggleAccordion(1)"
@@ -811,30 +811,30 @@
       <h2 class="pt-[50px] pb-[20px] text-center w-full leading-[36px] text-[28px] uppercase font-[700] text-black">
         latest news
       </h2>
-      <div class="w-full mb-[24px] leading-[24px] flex flex-wrap justify-center">
-        <ul class="w-full flex justify-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+      <!-- <div class="w-full text-center leading-[24px] flex flex-wrap justify-center"> -->
+        <ul class="w-full flex justify-center leading-[24px] text-center flex-wrap" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
           <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
-            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="first-tab" data-tabs-target="#first" type="button" role="tab"
-              aria-controls="first" aria-selected="false">all news</button>
+            <button class="uppercase hover:underline inline-block rounded-t-lg flex-start text-center cursor-pointer" id="first-tab" data-tabs-target="#first" type="button" role="tab"
+              aria-controls="first" aria-selected="false"><span>all news</span></button>
           </li>
           <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
-            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="second-tab" data-tabs-target="#second" type="button"
-              role="tab" aria-controls="second" aria-selected="false">assassin's creed</button>
+            <button class="uppercase hover:underline inline-block rounded-t-lg flex-start text-center cursor-pointer" id="second-tab" data-tabs-target="#second" type="button"
+              role="tab" aria-controls="second" aria-selected="false"><span>assassin's creed</span></button>
           </li>
           <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
-            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="third-tab" data-tabs-target="#third" type="button" role="tab"
-              aria-controls="third" aria-selected="false">rainbow six</button>
+            <button class="uppercase hover:underline inline-block rounded-t-lg flex-start text-center cursor-pointer" id="third-tab" data-tabs-target="#third" type="button" role="tab"
+              aria-controls="third" aria-selected="false"><span>rainbow six</span></button>
           </li>
           <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
-            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="fourth-tab" data-tabs-target="#fourth" type="button"
-              role="tab" aria-controls="fourth" aria-selected="false">star wars outlaws</button>
+            <button class="uppercase hover:underline inline-block rounded-t-lg flex-start text-center cursor-pointer" id="fourth-tab" data-tabs-target="#fourth" type="button"
+              role="tab" aria-controls="fourth" aria-selected="false"><span>star wars outlaws</span></button>
           </li>
           <li class="transition-[color] delay-0 duration-[0.5s] ease uppercase text-[16px] px-[20px] py-[6px]" role="presentation">
-            <button class="uppercase hover:underline inline-block p-4 rounded-t-lg" id="fifth-tab" data-tabs-target="#fifth" type="button" role="tab"
-              aria-controls="fifth" aria-selected="false">the division</button>
+            <button class="uppercase hover:underline inline-block rounded-t-lg flex-start text-center cursor-pointer" id="fifth-tab" data-tabs-target="#fifth" type="button" role="tab"
+              aria-controls="fifth" aria-selected="false"><span>the division</span></button>
           </li>
         </ul>
-      </div>
+      <!-- </div> -->
       <div class="cards justify-center max-w-[1472px] w-full font-[400] leading-[24px] flex-row flex-wrap" id="default-tab-content">
         <div class="hidden w-full p-4 rounded-lg flex max-lg:flex-col flex-wrap" id="first" role="tabpanel" aria-labelledby="first-tab">
           <div class="grid_container w-full"></div>
