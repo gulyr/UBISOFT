@@ -366,6 +366,125 @@
         margin-block-start: 28px;
       }
     }
+
+    /* sidenav */
+
+    .nav_container {
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      right: 0;
+      background-color: rgba(17, 17, 17, 0.6);
+      display: none;
+      overflow-x: hidden;
+      transition: 4s;
+    }
+
+    /* overlay */
+    /* .overlay{
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      display: none;
+    } */
+
+    .sidenav {
+      height: 100%;
+      width: 455px;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      right: -455px;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 4s;
+      padding-top: 60px;
+      /* animation-name: animation1; */
+      animation-delay: 0;
+      animation-direction: alternate;
+      animation-duration: 0.5s;
+      animation-fill-mode: none;
+      animation-iteration-count: 1;
+      animation-play-state: running;
+      animation-range-start: normal;
+      animation-range-end: normal;
+      animation-timeline: auto;
+      animation-timing-function: steps(8);
+    }
+
+    .sidenav .line {
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+    }
+
+    .animation_forward {
+      animation-name: animation1;
+    }
+
+    .animation_backward {
+      animation-name: animation2;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      /* font-size: 25px; */
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+      /* display: flex;
+      align-items: center;
+      justify-items: center; */
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        /* font-size: 18px; */
+      }
+    }
+
+    @keyframes animation1 {
+      0% {
+        right: -455px;
+      }
+
+      100% {
+        right: 0;
+      }
+    }
+
+    @keyframes animation2 {
+      0% {
+        right: 0;
+      }
+
+      100% {
+        right: -455px;
+      }
+    }
   </style>
 </head>
 
@@ -997,7 +1116,7 @@
           class="footer__language text-[16px] font-normal leading-[24px] lg:my-[20px] max-lg:order-1 lg:order-3 max-lg:text-center lg:text-right lg:w-[18rem]">
           <div class="language-selector language-selector--region text-[16px] max-lg:text-center lg:text-right leading-[24px] font-normal"
             data-ccid="fUjas6qAwGzBDJlgRSrUv">
-            <button aria-label="Language Selector English"
+            <button onclick="openNav()" aria-label="Language Selector English"
               class="language-selector__btn items-center bg-transparent box-border max-lg:text-center px-[32px] py-[16px] leading-normal tracking-normal text-[16px] inline-flex font-sans"
               style="background-origin: padding-box; padding-block-end: 16px; padding-block-start: 16px; padding-inline-start: 32px; padding-inline-end: 32px;"
               data-innertext="English" data-ccm-m="buttonMaster" type="button">
@@ -1226,6 +1345,103 @@
         </div>
       </section>
     </footer>
+    <section class="nav_container" onclick="closeNav()">
+      <!-- <div class="overlay" onclick="closeNav()"></div> -->
+      <div id="mySidenav" class="sidenav ">
+        <p>Europe</p>
+        <div class="line"></div>
+        <ul>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">DEUTSCH</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">ENGLISH EU/UK</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">ESPANOL</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">FRANÇAIS</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">ITALIANO</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">POLSKI</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">РУССКИЙ</a>
+          </li>
+        </ul>
+        <p>Americas</p>
+        <div class="line"></div>
+        <ul>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">ENGLISH-CA</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">ENGLISH-US</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">ESPANOL-MX</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">FRANÇAIS-CA</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">PORTUGUES-BR</a>
+          </li>
+        </ul>
+        <p>Asias/Pacific</p>
+        <div class="line"></div>
+        <ul>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">ENGLISH-au</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">ENGLISH-SG/PM/MY/ID</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">日本語</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">한국어</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">ภาษาไทย</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">简体中文</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="">繁體中文</a>
+          </li>
+        </ul>
+        <!-- <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a> -->
+      </div>
+    </section>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -1636,6 +1852,23 @@
       .catch((error) => {
         console.error("JSON fayl yüklənmədi:", error);
       });
+
+    // sidenav
+    function openNav() {
+      document.getElementById("mySidenav").style.right = "0";
+      document.querySelector(".nav_container").style.display = "block";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      document.getElementById("mySidenav").classList.remove("animation_backward");
+      document.getElementById("mySidenav").classList.add("animation_forward");
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.right = "-455px";
+      document.querySelector(".nav_container").style.display = "none";
+      document.body.style.backgroundColor = "white";
+      document.getElementById("mySidenav").classList.remove("animation_forward");
+      document.getElementById("mySidenav").classList.add("animation_backward");
+    }
   </script>
 
   <script src="script.js"></script>
