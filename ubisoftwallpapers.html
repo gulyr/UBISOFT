@@ -23,7 +23,7 @@
     <!-- header -->
     <header
       class="sticky top-0 left-0 z-10 w-full h-[50px] bg-[#000000] text-[#fff] py-[10px] px-[20px] text-center leading-[20px] flex justify-between items-center">
-      <button type="button" class="text-[20px] text-white" onclick="togglepanel()">
+      <button type="button" class=" text-[20px] text-white" onclick="togglepanel()">
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </button>
       <a href="" class="text-[16px] w-[93px] h-[50px]">
@@ -262,7 +262,7 @@
             <div class="card_content leading-[24px] flex flex-col items-center">
               <h2 class="font-['Ubisoft Sans Bold'] mt-[25px] mb-[20px] text-center leading-[24px] font-[700] text-[1.7em] text-[#2c2c2c]">${card.title}</h2>
               ${card.buttons.map(button => `
-              <a href="" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
+              <a href="poppins.zip" download="poppins.zip" class="uppercase flex items-center justify-center relative w-[${button.width}] h-[${button.height}] leading-[15px] tracking-[1.6px] m-[10px] font-[700] text-[1.07em] cursor-pointer text-center border-[2px] border-solid border-[#D80388] bg-[#D80388] text-white rounded-[30px] hover:text-[#D80388] hover:bg-white">
                 <span>${button.text}</span>
                 <i class="bi bi-arrow-down"></i>
               </a>
