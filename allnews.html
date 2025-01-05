@@ -22,6 +22,14 @@
     .active {
       border-bottom: 3px solid #d80388;
     }
+
+    .all_news_button:hover .fa-solid {
+      transform: matrix(-1, 0, 0, -1, 0, 0);
+    }
+
+    .all_news_button:hover .all_news_content {
+      display: flex;
+    }
   </style>
 </head>
 
@@ -51,16 +59,116 @@
     </header>
 
     <!-- Search section -->
-    <section class="w-full fixed top-[50px] h-[50px] text-[16px] font-serif leading-[24px] z-40">
+    <section class="sticky top-[40px] text-[16px] bg-blue-600 w-full font-serif leading-[24px] px-[60px]">
+      <div class="w-full h-[50px] max-w-[1440px] leading-[24px] text-[16px] font-normal flex text-[#d80388] justify-between">
+        <div class="w-full h-[50px] max-w-[1440px] leading-[24px] text-[16px] font-normal flex text-[#d80388] justify-between">
+          <div class="w-[50%] h-[50px] bg-red-600 leading-[24px] text-[16px] font-normal text-[#d80388]">
+            <div onclick="showPanel()"
+              class="all_news_button bg-green-500 w-[150px] min-w-[150px] ml-[90px] h-[50px] text-[20px] text-black cursor-pointer font-normal tracking-[0.16px] leading-[23px]">
+              <button aria-expanded="true" aria-controls="drawer-1" aria-label="All News"
+                class="gameSiteNavigation__nav-item__drawerName w-[150px] text-left relative overflow-x-visible overflow-y-visible leading-[40px] tracking-[0.16px] h-[50px] text-[20px] font-normal flex justify-between cursor-pointer items-center text-black"
+                data-innertext="All News" data-ccm-m="buttonMaster" type="button">
+                <span
+                  class="text overflow-ellipsis text-left pr-[25px] text-[#d80388] overflow-x-hidden overflow-y-hidden leading-[40px] tracking-[1px] font-[700] text-[20px] cursor-pointer group-hover:text-black"
+                  data-innertext="All News" data-ccm-l="button" data-ccf-l="buttonText">All
+                  News</span>
+                <i class="fa-solid fa-caret-down cursor-pointer tracking-[0.16px] leading-[40px] text-left "
+                  style="transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); transition: transform 0.6s 0s;"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-[50%] h-[50px] bg-red-400 leading-[24px] text-[16px] font-normal text-[#d80388] flex justify-end relative">
+            <div
+              class="toggle1 bg-green-500 w-[90px] min-w-[90px] h-[50px] group text-[20px] text-black cursor-pointer font-normal tracking-[0.16px] leading-[23px]">
+              <button aria-expanded="true" aria-controls="drawer-1" aria-label="All News"
+                class="gameSiteNavigation__nav-item__drawerName w-[90px] text-left relative overflow-x-visible overflow-y-visible leading-[40px] tracking-[0.16px] h-[50px] text-[20px] font-normal flex justify-between cursor-pointer items-center text-black"
+                data-innertext="All News" data-ccm-m="buttonMaster" type="button">
+                <span
+                  class="text overflow-ellipsis text-left text-[#d80388] overflow-x-hidden overflow-y-hidden leading-[40px] tracking-[1px] font-[700] text-[18px] cursor-pointer group-hover:text-black"
+                  data-innertext="Archieve" data-ccm-l="button" data-ccf-l="buttonText">Archieve</span>
+                <i class="fa-solid fa-caret-right cursor-pointer tracking-[0.16px] leading-[40px] text-[#d80388] text-left group-hover:[transform:rotate(360deg)]"
+                  style="transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); transition: transform 0.3s 0s;"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="all_news_content w-full opacity-100 pt-[40px] bg-gray-500 border-t-[2px] border-t-solid border-t-black hidden overflow-x-visible overflow-y-visible leading-[23px] tracking-[0.16px] justify-left flex-wrap cursor-pointer text-[20px] font-normal">
+      </div>
+    </section>
+    <!-- <section class="w-full fixed top-[50px] h-[50px] text-[16px] font-serif leading-[24px] z-40">
       <div class="w-full h-full text-[#d80388] leading-[24px] bg-white">
-        <div class="flex w-[1233px] h-full leading-[24px] max-w-[1440px] mx-[68.5px] text-[#d80388]">
+        <div class="flex w-[1440px] h-full bg-green-500 leading-[24px] max-w-[1440px] mx-[68.5px] text-[#d80388]">
           <div class="w-[616px] h-[50px]">
-            <nav class="w-[616px] h-[50px]">
-              <div class="min-w-[150px] w-full h-full ml-[92px] leading-[24px] tracking-[0.16px] text-[20px]">
-                <button class="w-[150px] h-full text-left cursor-pointer flex items-center relative font-[700]">
+            <nav class="w-full h-full">
+              <div class="min-w-[150px] w-full h-full group ml-[92px] leading-[24px] tracking-[0.16px] text-[20px]">
+                <button class="all_news_button w-[150px] h-full text-left cursor-pointer flex items-center relative font-[700]">
                   <span class="w-full leading-[40px] text-left text-[20px] cursor-pointer pr-[25px] text-[#d80388]">All News</span>
                   <i class="fa-solid fa-sort-down w-[12px] text-left text-[16px]"></i>
                 </button>
+                <div
+                  class="gameSiteNavigation__nav-item__drawer  overflow-x-visible opacity-100 leading-[23px] tracking-[0.16px] pt-[40px] justify-left hidden group-hover:flex flex-wrap cursor-pointer text-[20px] font-normal border-t-[2px] border-t-solid border-t-black"
+                  id="drawer-1" drawer-items="14">
+                  <a tabindex="-1" aria-hidden="true" aria-label="All News" class="gameSiteNavigation__nav-item active" data-innertext="All News"
+                    data-ccm-m="buttonMaster" href="/en-us/">
+                    <span class="text" data-innertext="All News" data-ccm-l="button" data-ccf-l="buttonText">All News</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Assassin's Creed" class="gameSiteNavigation__nav-item"
+                    data-innertext="Assassin's Creed" data-ccm-m="buttonMaster" href="/en-us/category/assassins-creed">
+                    <span class="text" data-innertext="Assassin's Creed" data-ccm-l="button" data-ccf-l="buttonText">Assassin's Creed</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Rainbow Six Siege" class="gameSiteNavigation__nav-item"
+                    data-innertext="Rainbow Six Siege" data-ccm-m="buttonMaster" href="/en-us/category/rainbow-six-siege">
+                    <span class="text" data-innertext="Rainbow Six Siege" data-ccm-l="button" data-ccf-l="buttonText">Rainbow Six Siege</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="The Crew" class="gameSiteNavigation__nav-item" data-innertext="The Crew"
+                    data-ccm-m="buttonMaster" href="/en-us/category/the-crew">
+                    <span class="text" data-innertext="The Crew" data-ccm-l="button" data-ccf-l="buttonText">The Crew</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Avatar: Frontiers of Pandora" class="gameSiteNavigation__nav-item"
+                    data-innertext="Avatar: Frontiers of Pandora" data-ccm-m="buttonMaster" href="/en-us/category/avatar">
+                    <span class="text" data-innertext="Avatar: Frontiers of Pandora" data-ccm-l="button" data-ccf-l="buttonText">Avatar: Frontiers
+                      of Pandora</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="XDefiant" class="gameSiteNavigation__nav-item" data-innertext="XDefiant"
+                    data-ccm-m="buttonMaster" href="/en-us/category/xdefiant">
+                    <span class="text" data-innertext="XDefiant" data-ccm-l="button" data-ccf-l="buttonText">XDefiant</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Prince of Persia" class="gameSiteNavigation__nav-item"
+                    data-innertext="Prince of Persia" data-ccm-m="buttonMaster" href="/en-us/category/prince-of-persia">
+                    <span class="text" data-innertext="Prince of Persia" data-ccm-l="button" data-ccf-l="buttonText">Prince of Persia</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="The Division" class="gameSiteNavigation__nav-item" data-innertext="The Division"
+                    data-ccm-m="buttonMaster" href="/en-us/category/the-division">
+                    <span class="text" data-innertext="The Division" data-ccm-l="button" data-ccf-l="buttonText">The Division</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Far Cry" class="gameSiteNavigation__nav-item" data-innertext="Far Cry"
+                    data-ccm-m="buttonMaster" href="/en-us/category/far-cry">
+                    <span class="text" data-innertext="Far Cry" data-ccm-l="button" data-ccf-l="buttonText">Far Cry</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Ubisoft Film &amp; Television" class="gameSiteNavigation__nav-item"
+                    data-innertext="Ubisoft Film &amp; Television" data-ccm-m="buttonMaster" href="/en-us/category/ubisoft-film-&amp;-television">
+                    <span class="text" data-innertext="Ubisoft Film &amp; Television" data-ccm-l="button" data-ccf-l="buttonText">Ubisoft Film &amp;
+                      Television</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Accessibility" class="gameSiteNavigation__nav-item" data-innertext="Accessibility"
+                    data-ccm-m="buttonMaster" href="/en-us/category/accessibility">
+                    <span class="text" data-innertext="Accessibility" data-ccm-l="button" data-ccf-l="buttonText">Accessibility</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Inside Ubisoft" class="gameSiteNavigation__nav-item" data-innertext="Inside Ubisoft"
+                    data-ccm-m="buttonMaster" href="/en-us/category/inside-ubisoft">
+                    <span class="text" data-innertext="Inside Ubisoft" data-ccm-l="button" data-ccf-l="buttonText">Inside Ubisoft</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Skull and Bones" class="gameSiteNavigation__nav-item"
+                    data-innertext="Skull and Bones" data-ccm-m="buttonMaster" href="/en-us/category/skull-and-bones">
+                    <span class="text" data-innertext="Skull and Bones" data-ccm-l="button" data-ccf-l="buttonText">Skull and Bones</span>
+                  </a>
+                  <a tabindex="-1" aria-hidden="true" aria-label="Star Wars Outlaws" class="gameSiteNavigation__nav-item"
+                    data-innertext="Star Wars Outlaws" data-ccm-m="buttonMaster" href="/en-us/category/star-wars">
+                    <span class="text" data-innertext="Star Wars Outlaws" data-ccm-l="button" data-ccf-l="buttonText">Star Wars Outlaws</span>
+                  </a>
+                </div>
               </div>
             </nav>
           </div>
@@ -74,7 +182,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- News section -->
     <section class="news w-full flex flex-col pt-[50px]">
@@ -603,6 +711,16 @@
         console.error("JSON fayl yüklənmədi:", error);
       });
 
+    // const showPanel = () => {
+    //   if (document.querySelector(".all_news_content").style.display === "none") {
+    //     document.querySelector(".all_news_content").style.display = "flex";
+    //     document.querySelector(".fa-solid").style.transform = "matrix(-1,0,0,-1,0,0)";
+    //   }
+    //   else {
+    //     document.querySelector(".all_news_content").style.display = "none";
+    //     document.querySelector(".fa-solid").style.transform = "matrix(1,0,0,1,0,0)";
+    //   }
+    // }
 
     // axios
     //   .get("allnews.json")
