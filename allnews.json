@@ -1,319 +1,325 @@
 {
-  "news": [
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2SJe2097h1UTdAqPrBfzdL/31becc040ece1cbed20a5ef05795a06c/Thumb_Composer2-_Wilbert_Roget.jpg",
-      "date": "December 20, 2024",
-      "readingTime": "12 Min Read",
-      "title": "Star Wars Outlaws™ Composer On Creating a Grammy Nominated Soundtrack",
-      "description": "Wilbert Roget II discusses the process of creating music for an open world Star Wars game, which was nominated for Best Score Soundtrack for Video Games at the 2025 Grammy Awards."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3UAOjCSvYQEQz1oHkuPnqu/9122dd4727a79bd78144f100bf6789b5/BrandNewsArticle_WinterSale2024_960x540.jpg",
-      "date": "December 17, 2024",
-      "readingTime": "6 Min Read",
-      "title": "Ubisoft Store Holiday Shopping Guide",
-      "description": "Save up to 85% on exciting games like Star Wars Outlaws, Assassin’s Creed Mirage, The Crew Motorfest, and more."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7DdNpZAqVQekFi8S2nLo9h/0e667a153aa9e5a5e8d26751d3410ec1/R6S_FreezeForAll.jpg",
-      "date": "December 16, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Rainbow Six Siege Freeze For All Permafrost Event Live Now",
-      "description": "Dive into an updated, fast-paced free-for-all winter event in the Arctic Workshop. Collect Frozen Souls for bonus points; plus, unlock two free bundles and collection packs."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2XCwAz1WPH10A9l8xwEk6E/689c5e440efa0998e7c8030498fdde45/RR_WinterSeason.jpg",
-      "date": "December 11, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Riders Republic Year 4 Season 13 Out Now",
-      "description": "From new Mass Races, snowy live events, and a new Season Pass, you won’t want to miss this Winter Season."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oheIoncCkrrQVCMNXwwI/d2a14f2680fa1993d6fac1b759ac722e/BrandNewsArticle_Ubisoft__CLASSICS__1_Agnostic_July24_960x540.jpg",
-      "date": "December 6, 2024",
-      "readingTime": "1 Min Read",
-      "title": "Get Your First Month of Ubisoft+ Classics for $1",
-      "description": "Play beloved games like Assassin’s Creed Valhalla, Far Cry 6, and Rainbow Six Siege with your subscription."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2vGHSHkymPUFcqNBD3mHx7/06a0fd43b85e51fcf825837c24d56b79/Thumbnail_2.jpg",
-      "date": "December 5, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Play Games and Win Rewards in the Ubisoft Winter Challenge 2024",
-      "description": "Sign up and contribute to community challenges to get 100 Ubisoft Units, in-game rewards, and a chance to win a Ubisoft+ Premium subscription."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4QP3lQJ0ot4PUHkU5IwYEn/10c1831d8c0e248d4e14a26ad4277af4/BrandNewsArticle_WIS_Nov2024_960x540.jpg",
-      "date": "December 5, 2024",
-      "readingTime": "3 Min Read",
-      "title": "Get Rewards and Discounts with Ubisoft Units",
-      "description": "Everything you need to know about Ubisoft Units, from how to get them to how to redeem them for discounts on games and exclusive in-game rewards."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3yoO5ureuo02grKS0kngdi/54232d3f3340041a6c4cd258c9118b00/Helix_FH_Y8S4_SK_FINAL_20241004_horizontal__1_.jpg",
-      "date": "December 4, 2024",
-      "readingTime": "3 Min Read",
-      "title": "For Honor Year 8 Season 4, The Serpent Sword, Begins December 5",
-      "description": "An uneasy in-game alliance brings a new Hero skin, the return of the 2v2 Ice Brawlers game mode, a holiday event, and more."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7MQigd4S9aMrwhHrvezX6o/ae4130c13fd82990b08f71f9bebb2c86/BH_StarWars.jpg",
-      "date": "December 4, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Brawlhalla Star Wars Event Wave II",
-      "description": "Characters including Han Solo, Chewbacca, Kay Vess and Nix, and The Mandalorian with Grogu have joined the free-to-play fighting game, bringing a themed Map and Items with them."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Jv27tcn8dufTg2KGQdmdC/41be26c1e9da56fa05935f066f7f0c7a/XD_KEYART_960x540.jpg",
-      "date": "December 4, 2024",
-      "readingTime": "3 Min Read",
-      "title": "Ubisoft Discontinues Development on XDefiant",
-      "description": "As of today, new downloads, player registrations and purchases will no longer be available."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2S1VrysThOs57lk62Xwf1h/4d1402ed03d546e86e6afb43cee1b1e7/XD_PhantomSinga-GUNSAFE_Final.jpg",
-      "date": "December 4, 2024",
-      "readingTime": "3 Min Read",
-      "title": "XDefiant: A Message to Our Community",
-      "description": "A message to the XDefiant community from Executive Producer Mark Rubin."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/QmaQcWduEjFI73J1wqnd8/4a720672d970d26cd90b94f915c6dd3d/BrandNewsArticle_Ubisoft__Rewards_Nov2024_960x540.jpg",
-      "date": "November 29, 2024",
-      "readingTime": "3 Min Read",
-      "title": "Ubisoft+ Revamps Reward System",
-      "description": "In addition to day-one access for new games and a library of classic favorites, players can now choose their monthly rewards in-game."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/uEdbkrKHzeVdY3W4Oo1WN/dcfb548e0b47c8ee2afd5b1c091eec11/Anno117PaxRomana.jpg",
-      "date": "November 28, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Wishlist Anno 117 on Steam Now; Anno 1800 Final Content Update Out December 5",
-      "description": "It’s the End of an Era for one empire, but another will soon be ready to begin. Celebrate Anno 1800’s final content update with the Creative Festival, and wishlist the upcoming Anno 117: Pax Romana on Steam today."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5DxvIB1EOySY5pjVrBzdPt/a173e449af60dc0d87ceee799bd31f6b/AFOP_Secretsofthespires_Keyart_960x540.jpg",
-      "date": "November 28, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Avatar: Frontiers of Pandora’s Second Story Pack, Secrets of the Spires, Available Now",
-      "description": "PS5 Pro players can also enjoy an update that enhances visual quality and performance."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1AJQGxdnD7PTSvBV6jlIOr/e24ec209aa497e4d5567f1fb51ab14a6/Assassins_Creed_Syndicate_Thames_River.jpg",
-      "date": "November 26, 2024",
-      "readingTime": "5 Min Read",
-      "title": "Assassin’s Creed Syndicate – Build an Underworld Empire in Victorian London with Ubisoft+",
-      "description": "Recruit your own street gang and liberate the city from Templar industrialists as Jacob and Evie Frye in the most modern-set Assassin’s Creed to date."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/47XdZk4IQ2FoswqzBMgUBN/575e1332b292963b4d3aa5b6919033f5/RPOP_Act2_Keyart_BeforeAfter_11212024_7PMCET.jpg",
-      "date": "November 21, 2024",
-      "readingTime": "6 Min Read",
-      "title": "The Rogue Prince of Persia's The Second Act Update Out Now",
-      "description": "The Prince isn't purple anymore, and that's just the beginning. Here's everything you need to know about the game's biggest update to date, including new bosses, biomes, and more."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5d1xXUdhiHIlDaVpteYDua/0d40aaab94d57df2e1175eecbd1e0cb9/SWO_WildCard_KeyArt.jpeg",
-      "date": "November 21, 2024",
-      "readingTime": "8 Min Read",
-      "title": "Star Wars Outlaws™ Now Available on Steam, Wild Card Story Pack Out Now",
-      "description": "Jump into the open-world action-adventure on Steam and continue Kay Vess’ journey with the first story pack, Wild Card"
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2KplZ3PnfOTXhKOdtNV3QH/b4b71601009d45b72ecbeafc7744274e/SWO_Accessibility_Thumb_960x540.jpg",
-      "date": "November 21, 2024",
-      "readingTime": "16 Min Read",
-      "title": "Star Wars Outlaws™ Accessibility Spotlight",
-      "description": "The development team provides a first look at their approach to accessibility including audio descriptions, assist features, and more."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4JbyyxyLllrJWFpwoEo1J5/8b8e6a6bef6a1f92d0d13e78db571a4a/JD15thAnnivesary_960x540.jpg",
-      "date": "November 19, 2024",
-      "readingTime": "4 Min Read",
-      "title": "Just Dance Celebrates 15th Anniversary",
-      "description": "Take a look back at the history of the best-selling music videogame franchise of all time."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6vizLDeS0ct0lkI6FxXe6m/fee28fb29927136ed11a418cdc3a2c57/SAB_S4_Keyart.jpg",
-      "date": "November 19, 2024",
-      "readingTime": "5 Min Read",
-      "title": "Skull and Bones Season 4: Shadows of the Deep Out Today",
-      "description": "Vikram Rajan is invading the Indian Ocean with his ghostly fleet. Plus, get a new ship, new weapons, and new world events."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1vZTErml8PBBf6JVhxAP2h/9b9fc278a69284f573bea55762f88c9b/BrandNewsArticle_BlackFriday2024_960x540.jpg",
-      "date": "November 19, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Black Friday Deals at the Ubisoft Store",
-      "description": "Save big on games like Star Wars Outlaws, Assassin’s Creed Valhalla, Anno 1800, and more now through December 3."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5nLi12Tjb2wCp63qGc3b8F/9155f5365fb09010ec0a7a3632e6d892/BCX_Recap.jpg",
-      "date": "November 18, 2024",
-      "readingTime": "3 Min Read",
-      "title": "Everything Revealed at Brawlhalla’s World Championship Event, BCX 2024",
-      "description": "Brawlhalla’s annual world championship event in Atlanta teased an upcoming Star Wars event, new in-game features, a new graphic novel, and more."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2eCy3pgSp9jOGxisUNxUPR/7a13eb273b4d761dbca229f67fb8a2ff/News_Thumbnail_3840x2160.jpg",
-      "date": "November 18, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Assassin’s Creed Syndicate 60 FPS Console Patch Out Now",
-      "description": "Experience Victorian London as Jacob and Evie Frye at double the framerate on PS5, PS5 Pro, and Xbox Series X|S."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7rfgr5OTJMLiSF4lrQKqCF/d2aadf40be4f187d72cb6f58280fd022/Y9S4_Keyart.jpg",
-      "date": "November 17, 2024",
-      "readingTime": "4 Min Read",
-      "title": "Rainbow Six Siege – Operation Collision Point Operator Remaster and Balancing Guide",
-      "description": "Blackbeard gets a new shield with soft-breach capability and rappel coverage in addition to balancing updates for Sens, Ying, and ballistic shields. Plus, console and PC crossplay, and more!"
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6rwam6198KCkDd7X5hzrf8/994ca3ccb15b6377b68b345158ae217b/UbisoftNews_MQ_S4_Thumbnail960x540.jpg",
-      "date": "November 14, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Mythic Quest Season 4 Premieres January 29 on Apple TV+",
-      "description": "The highly anticipated season will follow the newly reunited Mythic Quest team as they navigate a changing videogame landscape and figure out a better work-life balance."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2inhjN6d2goQ9GUH5bUAO9/1ad891e25390f795a8e61fed2f61d936/UbisoftNews_NewCPO_Thumbnail960x540.jpg",
-      "date": "November 12, 2024",
-      "readingTime": "1 Min Read",
-      "title": "Ubisoft Appoints Sébastien Froidefond as New Chief People Officer",
-      "description": "With 30 years of experience in HR leadership at some of the world’s top companies, Froidefond will lead Ubisoft’s global people strategy."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/11WGv1oK3ICep7pCpSYCGb/70c78eb53fe9bf2f4c86e96a1b489eee/KeyArt.jpg",
-      "date": "November 7, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Assassins’ Creed Mirage is Now Enhanced for PlayStation Pro – Here’s What to Expect",
-      "description": "Learn how Basim's adventure through ninth-century Baghdad is optimized for PS5 Pro."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3jjbrqnX2lX5EA3VTP1bKr/deba038da4492058d77fc574627e40c5/Assassins_Creed_Unity_WW2_IconicTower_1415412322.jpg",
-      "date": "November 1, 2024",
-      "readingTime": "5 Min Read",
-      "title": "Discover Assassin’s Creed Unity’s Full-Scale Paris Map with Ubisoft+",
-      "description": "Subscribe today to start exploring 18th-century Paris as the graceful Assassin Arno Dorian and begin uncovering the secrets of the city’s rich history."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3AnIaRWiQebGSTnwNoNlrE/ea8df787bea387e36237117a49321e94/Y6S2_KeyArt.jpg",
-      "date": "October 31, 2024",
-      "readingTime": "3 Min Read",
-      "title": "The Division 2 Free Weekend Shines Spotlight on New Seasonal Progression System",
-      "description": "Year 6 Season 2 – Shades of Red – reworks manhunts, seasonal journey, modifiers, and more with a host of new ways to unlock rewards; play free now through November 4."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/qHJ3dxpCy1piil4I3VnPI/36dab8f0aad1edb9e0d37c836d17f223/POP35_Visual_Wallpaper_960x540.jpg",
-      "date": "October 31, 2024",
-      "readingTime": "10 Min Read",
-      "title": "How Prince of Persia Made its Double Comeback in 2024",
-      "description": "Following 14 years of relative quiet, Prince of Persia: The Lost Crown and The Rogue Prince of Persia resurrected the franchise in time for its 35th anniversary. Find out more about how they came together behind the scenes."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3XXcNOIeL0BYrAkQRL6lnX/f449687ec6c9cd6da4a85c5939ccd4b3/TCM_OpenRoad.jpg",
-      "date": "October 30, 2024",
-      "readingTime": "4 Min Read",
-      "title": "How The Crew Keeps Growing",
-      "description": "As the development team looks at what’s coming in The Crew Motorfest Year 2, they reflect on the community that helped make the franchise what it is today."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/HXufZkSzxHIEjZhw78Z3O/01639a887c0282554f0f02a1cb0e50e6/thumbnail.jpg",
-      "date": "October 23, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Destiny and For Honor Join Forces In New Halloween Event",
-      "description": "The limited-time Light of the Guardians event adds a spooky event, Destiny-themed items, and more."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/220VsZbZsPF01ZGJ9QZEnm/1a82bbd3f579df1c53d0a2b2677b7a87/JD_BangBang_Keyart.jpg",
-      "date": "October 23, 2024",
-      "readingTime": "8 Min Read",
-      "title": "How Just Dance 2025 Edition Raises ADHD Awareness",
-      "description": "Music meets neurodiversity in this bespoke map that takes players on a journey through having attention-deficit/hyperactivity disorder."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/WM2WlDDWYL0XYKO5lap4c/275bde633faa394f10547a02bd45c615/Ubisoft__BrandNewsArticle_R6S_Oct2024_960x540.jpg",
-      "date": "October 18, 2024",
-      "readingTime": "4 Min Read",
-      "title": "Unlock 50-Plus Rainbow Six Siege Operators Instantly With Ubisoft+ Premium",
-      "description": "Get access to the Ultimate Edition with every Operator from Years 1-8 of the crossplay-enabled tactical shooter (plus the base game and Disruptor Pack), all included with a subscription."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2EMjFlbRF8QOUSXdOUhNAj/a9b212f027dd3e56cb10f1db9f789774/POP35_Visual_Wallpaper_960x540.jpg",
-      "date": "October 17, 2024",
-      "readingTime": "9 Min Read",
-      "title": "How Prince of Persia Split the Timeline",
-      "description": "Find out how the dawn of new hardware led to the creation of an all-new Prince in 2008 – and one more Sands of Time adventure with 2010’s The Forgotten Sands."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1CxDSBGubJfZrZ93QgWg5B/eddb130e630d051f6c55bcfeb64d453d/UN-R6S-Drs-Curse24_thumbnail960x540.jpg",
-      "date": "October 16, 2024",
-      "readingTime": "3 Min Read",
-      "title": "Rainbow Six Siege Doktor’s Curse Event Returns for Halloween",
-      "description": "New Hunters Zofia and Deimos and new Monster Fenrir join the hide-and-seek game mode set in a creepy night version of the Theme Park map."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2AsfvfzW4jYNb4wed6aXML/96208b7c40944974fc92bcfbe4098342/UN_XDefiant_Air-and-Space_Thumbnail960x540.jpg",
-      "date": "October 16, 2024",
-      "readingTime": "3 Min Read",
-      "title": "XDefiant Air & Space Map, Stellar Strike Event Launch October 17",
-      "description": "The new Air & Space map provides perfect sniper sightlines, twisty corners for close-range gameplay, and aliens and astronauts to watch the fast-paced action unfold."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/34tj07IV3eIAtwBF85aMeL/399b027bbf99cf502f56f92456ca1540/JD25_KEYART_960x540.jpg",
-      "date": "October 15, 2024",
-      "readingTime": "6 Min Read",
-      "title": "Just Dance 2025 Edition & Just Dance VR: Welcome to Dancity Available Now",
-      "description": "Check out the full Just Dance 2025 song list and find out more about dancing in VR with Meta Quest headsets."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7jCDCJyNX6yRSl3oWWhwZb/2972d37dd24606f1d491d9645c35e6c8/Ubisoft__BrandNewsArticle_CLASSICS_NewGames_Oct2024_960x540.jpg",
-      "date": "October 15, 2024",
-      "readingTime": "3 Min Read",
-      "title": "Ubisoft+ Classics: Upcoming Releases and Old Favorites",
-      "description": "Ghost Recon Wildlands, Rabbids: Party of Legends, and Hungry Shark World coming to Ubisoft+ Classics for PC."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/PCP0CNxKxXFcSOlJ8SECm/aaa6294a62ae5133d5adad6dfff91549/Ubisoft__BrandNewsArticle_XD_S02_Oct2024_960x540.jpg",
-      "date": "October 11, 2024",
-      "readingTime": "2 Min Read",
-      "title": "Get the XDefiant Battle Pass With Ubisoft+ Premium",
-      "description": "Unlock the Highwaymen, exclusive cosmetics, and more with XDefiant’s Season 2 premium Battle Pass."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6nnZtAAr4bymbU6YV1PTX/4cd4242ee67778eb04db7845239d0c40/UbiNews_POP35_Visual_Wallpaper_960x540.jpg",
-      "date": "October 10, 2024",
-      "readingTime": "11 Min Read",
-      "title": "Prince of Persia – Creating The Sands of Time Trilogy",
-      "description": "Key developers behind the wall-running, time-rewinding trilogy offer a behind-the-scenes look at Prince of Persia: The Sands of Time, Warrior Within, and The Two Thrones."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1AgyzK6wgE9E1gOY44AST4/658ad85b8f7586d0b5587d50cfdfe683/SWO_Screenshots_CapturedInEngine_Toshara_Hook_Final_WIDE_LOGO.jpg",
-      "date": "October 3, 2024",
-      "readingTime": "6 Min Read",
-      "title": "Star Wars Outlaws™ - Become the Galaxy's Greatest Scoundrel on Ubisoft+",
-      "description": "Discover the thrill of double-crossing syndicates, raiding imperials, and jumping into the pilot's seat in this galactic adventure, available now on Ubisoft's subscription service."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2pKyxUOCSOQeIk7hRadooe/2a2628616377ebe827f6d132a12791fc/POP_35_ANNIVERSARY_All_Pixel_Princes_960.jpg",
-      "date": "October 3, 2024",
-      "readingTime": "10 Min Read",
-      "title": "Prince of Persia 35th Anniversary - A Look Back at the Original Game",
-      "description": "Series creator Jordan Mechner and others share stories from the creation of 1989's Prince of Persia and what it means to them."
-    },
-    {
-      "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4kNVIAWCZPhBb7pLU17jUk/29e14912ec25d9c4144facf633c34f5e/JustDance_MusicPacks.jpg",
-      "date": "October 3, 2024",
-      "readingTime": "3 Min Read",
-      "title": "Just Dance’s New Music Packs Out Now",
-      "description": "From Disney songs to pop anthems, these themed collections let players expand and personalize their song libraries."
-    },
-    {
-      "image": "",
-      "date": "December 5, 2024",
-      "readingTime": "3 Min Read",
-      "title": "",
-      "description": ""
-    }
-  ]
+    "news": [{
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2NYnrvLi73h06GhTvcuVuR/91a4d7c17b3e712cbf5ac46ccaee8666/MQS4_Hero.jpg",
+            "date": "January 8, 2025",
+            "readingTime": "2 Min Read",
+            "title": "Watch Mythic Quest Season 4’s Trailer",
+            "description": "The workplace comedy from Apple TV and Ubisoft Film & Television teases a season full of hilarity as characters navigate a changing videogame industry and gain a little more work work life balance."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2SJe2097h1UTdAqPrBfzdL/31becc040ece1cbed20a5ef05795a06c/Thumb_Composer2-_Wilbert_Roget.jpg",
+            "date": "December 20, 2024",
+            "readingTime": "12 Min Read",
+            "title": "Star Wars Outlaws™ Composer On Creating a Grammy Nominated Soundtrack",
+            "description": "Wilbert Roget II discusses the process of creating music for an open world Star Wars game, which was nominated for Best Score Soundtrack for Video Games at the 2025 Grammy Awards."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3UAOjCSvYQEQz1oHkuPnqu/9122dd4727a79bd78144f100bf6789b5/BrandNewsArticle_WinterSale2024_960x540.jpg",
+            "date": "December 17, 2024",
+            "readingTime": "6 Min Read",
+            "title": "Ubisoft Store Holiday Shopping Guide",
+            "description": "Save up to 85% on exciting games like Star Wars Outlaws, Assassin’s Creed Mirage, The Crew Motorfest, and more."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7DdNpZAqVQekFi8S2nLo9h/0e667a153aa9e5a5e8d26751d3410ec1/R6S_FreezeForAll.jpg",
+            "date": "December 16, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Rainbow Six Siege Freeze For All Permafrost Event Live Now",
+            "description": "Dive into an updated, fast-paced free-for-all winter event in the Arctic Workshop. Collect Frozen Souls for bonus points; plus, unlock two free bundles and collection packs."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2XCwAz1WPH10A9l8xwEk6E/689c5e440efa0998e7c8030498fdde45/RR_WinterSeason.jpg",
+            "date": "December 11, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Riders Republic Year 4 Season 13 Out Now",
+            "description": "From new Mass Races, snowy live events, and a new Season Pass, you won’t want to miss this Winter Season."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/0oheIoncCkrrQVCMNXwwI/d2a14f2680fa1993d6fac1b759ac722e/BrandNewsArticle_Ubisoft__CLASSICS__1_Agnostic_July24_960x540.jpg",
+            "date": "December 6, 2024",
+            "readingTime": "1 Min Read",
+            "title": "Get Your First Month of Ubisoft+ Classics for $1",
+            "description": "Play beloved games like Assassin’s Creed Valhalla, Far Cry 6, and Rainbow Six Siege with your subscription."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2vGHSHkymPUFcqNBD3mHx7/06a0fd43b85e51fcf825837c24d56b79/Thumbnail_2.jpg",
+            "date": "December 5, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Play Games and Win Rewards in the Ubisoft Winter Challenge 2024",
+            "description": "Sign up and contribute to community challenges to get 100 Ubisoft Units, in-game rewards, and a chance to win a Ubisoft+ Premium subscription."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4QP3lQJ0ot4PUHkU5IwYEn/10c1831d8c0e248d4e14a26ad4277af4/BrandNewsArticle_WIS_Nov2024_960x540.jpg",
+            "date": "December 5, 2024",
+            "readingTime": "3 Min Read",
+            "title": "Get Rewards and Discounts with Ubisoft Units",
+            "description": "Everything you need to know about Ubisoft Units, from how to get them to how to redeem them for discounts on games and exclusive in-game rewards."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3yoO5ureuo02grKS0kngdi/54232d3f3340041a6c4cd258c9118b00/Helix_FH_Y8S4_SK_FINAL_20241004_horizontal__1_.jpg",
+            "date": "December 4, 2024",
+            "readingTime": "3 Min Read",
+            "title": "For Honor Year 8 Season 4, The Serpent Sword, Begins December 5",
+            "description": "An uneasy in-game alliance brings a new Hero skin, the return of the 2v2 Ice Brawlers game mode, a holiday event, and more."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7MQigd4S9aMrwhHrvezX6o/ae4130c13fd82990b08f71f9bebb2c86/BH_StarWars.jpg",
+            "date": "December 4, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Brawlhalla Star Wars Event Wave II",
+            "description": "Characters including Han Solo, Chewbacca, Kay Vess and Nix, and The Mandalorian with Grogu have joined the free-to-play fighting game, bringing a themed Map and Items with them."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5Jv27tcn8dufTg2KGQdmdC/41be26c1e9da56fa05935f066f7f0c7a/XD_KEYART_960x540.jpg",
+            "date": "December 4, 2024",
+            "readingTime": "3 Min Read",
+            "title": "Ubisoft Discontinues Development on XDefiant",
+            "description": "As of today, new downloads, player registrations and purchases will no longer be available."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2S1VrysThOs57lk62Xwf1h/4d1402ed03d546e86e6afb43cee1b1e7/XD_PhantomSinga-GUNSAFE_Final.jpg",
+            "date": "December 4, 2024",
+            "readingTime": "3 Min Read",
+            "title": "XDefiant: A Message to Our Community",
+            "description": "A message to the XDefiant community from Executive Producer Mark Rubin."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/QmaQcWduEjFI73J1wqnd8/4a720672d970d26cd90b94f915c6dd3d/BrandNewsArticle_Ubisoft__Rewards_Nov2024_960x540.jpg",
+            "date": "November 29, 2024",
+            "readingTime": "3 Min Read",
+            "title": "Ubisoft+ Revamps Reward System",
+            "description": "In addition to day-one access for new games and a library of classic favorites, players can now choose their monthly rewards in-game."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/uEdbkrKHzeVdY3W4Oo1WN/dcfb548e0b47c8ee2afd5b1c091eec11/Anno117PaxRomana.jpg",
+            "date": "November 28, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Wishlist Anno 117 on Steam Now; Anno 1800 Final Content Update Out December 5",
+            "description": "It’s the End of an Era for one empire, but another will soon be ready to begin. Celebrate Anno 1800’s final content update with the Creative Festival, and wishlist the upcoming Anno 117: Pax Romana on Steam today."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5DxvIB1EOySY5pjVrBzdPt/a173e449af60dc0d87ceee799bd31f6b/AFOP_Secretsofthespires_Keyart_960x540.jpg",
+            "date": "November 28, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Avatar: Frontiers of Pandora’s Second Story Pack, Secrets of the Spires, Available Now",
+            "description": "PS5 Pro players can also enjoy an update that enhances visual quality and performance."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1AJQGxdnD7PTSvBV6jlIOr/e24ec209aa497e4d5567f1fb51ab14a6/Assassins_Creed_Syndicate_Thames_River.jpg",
+            "date": "November 26, 2024",
+            "readingTime": "5 Min Read",
+            "title": "Assassin’s Creed Syndicate – Build an Underworld Empire in Victorian London with Ubisoft+",
+            "description": "Recruit your own street gang and liberate the city from Templar industrialists as Jacob and Evie Frye in the most modern-set Assassin’s Creed to date."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/47XdZk4IQ2FoswqzBMgUBN/575e1332b292963b4d3aa5b6919033f5/RPOP_Act2_Keyart_BeforeAfter_11212024_7PMCET.jpg",
+            "date": "November 21, 2024",
+            "readingTime": "6 Min Read",
+            "title": "The Rogue Prince of Persia's The Second Act Update Out Now",
+            "description": "The Prince isn't purple anymore, and that's just the beginning. Here's everything you need to know about the game's biggest update to date, including new bosses, biomes, and more."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5d1xXUdhiHIlDaVpteYDua/0d40aaab94d57df2e1175eecbd1e0cb9/SWO_WildCard_KeyArt.jpeg",
+            "date": "November 21, 2024",
+            "readingTime": "8 Min Read",
+            "title": "Star Wars Outlaws™ Now Available on Steam, Wild Card Story Pack Out Now",
+            "description": "Jump into the open-world action-adventure on Steam and continue Kay Vess’ journey with the first story pack, Wild Card"
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2KplZ3PnfOTXhKOdtNV3QH/b4b71601009d45b72ecbeafc7744274e/SWO_Accessibility_Thumb_960x540.jpg",
+            "date": "November 21, 2024",
+            "readingTime": "16 Min Read",
+            "title": "Star Wars Outlaws™ Accessibility Spotlight",
+            "description": "The development team provides a first look at their approach to accessibility including audio descriptions, assist features, and more."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4JbyyxyLllrJWFpwoEo1J5/8b8e6a6bef6a1f92d0d13e78db571a4a/JD15thAnnivesary_960x540.jpg",
+            "date": "November 19, 2024",
+            "readingTime": "4 Min Read",
+            "title": "Just Dance Celebrates 15th Anniversary",
+            "description": "Take a look back at the history of the best-selling music videogame franchise of all time."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6vizLDeS0ct0lkI6FxXe6m/fee28fb29927136ed11a418cdc3a2c57/SAB_S4_Keyart.jpg",
+            "date": "November 19, 2024",
+            "readingTime": "5 Min Read",
+            "title": "Skull and Bones Season 4: Shadows of the Deep Out Today",
+            "description": "Vikram Rajan is invading the Indian Ocean with his ghostly fleet. Plus, get a new ship, new weapons, and new world events."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1vZTErml8PBBf6JVhxAP2h/9b9fc278a69284f573bea55762f88c9b/BrandNewsArticle_BlackFriday2024_960x540.jpg",
+            "date": "November 19, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Black Friday Deals at the Ubisoft Store",
+            "description": "Save big on games like Star Wars Outlaws, Assassin’s Creed Valhalla, Anno 1800, and more now through December 3."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5nLi12Tjb2wCp63qGc3b8F/9155f5365fb09010ec0a7a3632e6d892/BCX_Recap.jpg",
+            "date": "November 18, 2024",
+            "readingTime": "3 Min Read",
+            "title": "Everything Revealed at Brawlhalla’s World Championship Event, BCX 2024",
+            "description": "Brawlhalla’s annual world championship event in Atlanta teased an upcoming Star Wars event, new in-game features, a new graphic novel, and more."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2eCy3pgSp9jOGxisUNxUPR/7a13eb273b4d761dbca229f67fb8a2ff/News_Thumbnail_3840x2160.jpg",
+            "date": "November 18, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Assassin’s Creed Syndicate 60 FPS Console Patch Out Now",
+            "description": "Experience Victorian London as Jacob and Evie Frye at double the framerate on PS5, PS5 Pro, and Xbox Series X|S."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7rfgr5OTJMLiSF4lrQKqCF/d2aadf40be4f187d72cb6f58280fd022/Y9S4_Keyart.jpg",
+            "date": "November 17, 2024",
+            "readingTime": "4 Min Read",
+            "title": "Rainbow Six Siege – Operation Collision Point Operator Remaster and Balancing Guide",
+            "description": "Blackbeard gets a new shield with soft-breach capability and rappel coverage in addition to balancing updates for Sens, Ying, and ballistic shields. Plus, console and PC crossplay, and more!"
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6rwam6198KCkDd7X5hzrf8/994ca3ccb15b6377b68b345158ae217b/UbisoftNews_MQ_S4_Thumbnail960x540.jpg",
+            "date": "November 14, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Mythic Quest Season 4 Premieres January 29 on Apple TV+",
+            "description": "The highly anticipated season will follow the newly reunited Mythic Quest team as they navigate a changing videogame landscape and figure out a better work-life balance."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2inhjN6d2goQ9GUH5bUAO9/1ad891e25390f795a8e61fed2f61d936/UbisoftNews_NewCPO_Thumbnail960x540.jpg",
+            "date": "November 12, 2024",
+            "readingTime": "1 Min Read",
+            "title": "Ubisoft Appoints Sébastien Froidefond as New Chief People Officer",
+            "description": "With 30 years of experience in HR leadership at some of the world’s top companies, Froidefond will lead Ubisoft’s global people strategy."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/11WGv1oK3ICep7pCpSYCGb/70c78eb53fe9bf2f4c86e96a1b489eee/KeyArt.jpg",
+            "date": "November 7, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Assassins’ Creed Mirage is Now Enhanced for PlayStation Pro – Here’s What to Expect",
+            "description": "Learn how Basim's adventure through ninth-century Baghdad is optimized for PS5 Pro."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3jjbrqnX2lX5EA3VTP1bKr/deba038da4492058d77fc574627e40c5/Assassins_Creed_Unity_WW2_IconicTower_1415412322.jpg",
+            "date": "November 1, 2024",
+            "readingTime": "5 Min Read",
+            "title": "Discover Assassin’s Creed Unity’s Full-Scale Paris Map with Ubisoft+",
+            "description": "Subscribe today to start exploring 18th-century Paris as the graceful Assassin Arno Dorian and begin uncovering the secrets of the city’s rich history."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3AnIaRWiQebGSTnwNoNlrE/ea8df787bea387e36237117a49321e94/Y6S2_KeyArt.jpg",
+            "date": "October 31, 2024",
+            "readingTime": "3 Min Read",
+            "title": "The Division 2 Free Weekend Shines Spotlight on New Seasonal Progression System",
+            "description": "Year 6 Season 2 – Shades of Red – reworks manhunts, seasonal journey, modifiers, and more with a host of new ways to unlock rewards; play free now through November 4."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/qHJ3dxpCy1piil4I3VnPI/36dab8f0aad1edb9e0d37c836d17f223/POP35_Visual_Wallpaper_960x540.jpg",
+            "date": "October 31, 2024",
+            "readingTime": "10 Min Read",
+            "title": "How Prince of Persia Made its Double Comeback in 2024",
+            "description": "Following 14 years of relative quiet, Prince of Persia: The Lost Crown and The Rogue Prince of Persia resurrected the franchise in time for its 35th anniversary. Find out more about how they came together behind the scenes."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3XXcNOIeL0BYrAkQRL6lnX/f449687ec6c9cd6da4a85c5939ccd4b3/TCM_OpenRoad.jpg",
+            "date": "October 30, 2024",
+            "readingTime": "4 Min Read",
+            "title": "How The Crew Keeps Growing",
+            "description": "As the development team looks at what’s coming in The Crew Motorfest Year 2, they reflect on the community that helped make the franchise what it is today."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/HXufZkSzxHIEjZhw78Z3O/01639a887c0282554f0f02a1cb0e50e6/thumbnail.jpg",
+            "date": "October 23, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Destiny and For Honor Join Forces In New Halloween Event",
+            "description": "The limited-time Light of the Guardians event adds a spooky event, Destiny-themed items, and more."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/220VsZbZsPF01ZGJ9QZEnm/1a82bbd3f579df1c53d0a2b2677b7a87/JD_BangBang_Keyart.jpg",
+            "date": "October 23, 2024",
+            "readingTime": "8 Min Read",
+            "title": "How Just Dance 2025 Edition Raises ADHD Awareness",
+            "description": "Music meets neurodiversity in this bespoke map that takes players on a journey through having attention-deficit/hyperactivity disorder."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/WM2WlDDWYL0XYKO5lap4c/275bde633faa394f10547a02bd45c615/Ubisoft__BrandNewsArticle_R6S_Oct2024_960x540.jpg",
+            "date": "October 18, 2024",
+            "readingTime": "4 Min Read",
+            "title": "Unlock 50-Plus Rainbow Six Siege Operators Instantly With Ubisoft+ Premium",
+            "description": "Get access to the Ultimate Edition with every Operator from Years 1-8 of the crossplay-enabled tactical shooter (plus the base game and Disruptor Pack), all included with a subscription."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2EMjFlbRF8QOUSXdOUhNAj/a9b212f027dd3e56cb10f1db9f789774/POP35_Visual_Wallpaper_960x540.jpg",
+            "date": "October 17, 2024",
+            "readingTime": "9 Min Read",
+            "title": "How Prince of Persia Split the Timeline",
+            "description": "Find out how the dawn of new hardware led to the creation of an all-new Prince in 2008 – and one more Sands of Time adventure with 2010’s The Forgotten Sands."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1CxDSBGubJfZrZ93QgWg5B/eddb130e630d051f6c55bcfeb64d453d/UN-R6S-Drs-Curse24_thumbnail960x540.jpg",
+            "date": "October 16, 2024",
+            "readingTime": "3 Min Read",
+            "title": "Rainbow Six Siege Doktor’s Curse Event Returns for Halloween",
+            "description": "New Hunters Zofia and Deimos and new Monster Fenrir join the hide-and-seek game mode set in a creepy night version of the Theme Park map."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2AsfvfzW4jYNb4wed6aXML/96208b7c40944974fc92bcfbe4098342/UN_XDefiant_Air-and-Space_Thumbnail960x540.jpg",
+            "date": "October 16, 2024",
+            "readingTime": "3 Min Read",
+            "title": "XDefiant Air & Space Map, Stellar Strike Event Launch October 17",
+            "description": "The new Air & Space map provides perfect sniper sightlines, twisty corners for close-range gameplay, and aliens and astronauts to watch the fast-paced action unfold."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/34tj07IV3eIAtwBF85aMeL/399b027bbf99cf502f56f92456ca1540/JD25_KEYART_960x540.jpg",
+            "date": "October 15, 2024",
+            "readingTime": "6 Min Read",
+            "title": "Just Dance 2025 Edition & Just Dance VR: Welcome to Dancity Available Now",
+            "description": "Check out the full Just Dance 2025 song list and find out more about dancing in VR with Meta Quest headsets."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7jCDCJyNX6yRSl3oWWhwZb/2972d37dd24606f1d491d9645c35e6c8/Ubisoft__BrandNewsArticle_CLASSICS_NewGames_Oct2024_960x540.jpg",
+            "date": "October 15, 2024",
+            "readingTime": "3 Min Read",
+            "title": "Ubisoft+ Classics: Upcoming Releases and Old Favorites",
+            "description": "Ghost Recon Wildlands, Rabbids: Party of Legends, and Hungry Shark World coming to Ubisoft+ Classics for PC."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/PCP0CNxKxXFcSOlJ8SECm/aaa6294a62ae5133d5adad6dfff91549/Ubisoft__BrandNewsArticle_XD_S02_Oct2024_960x540.jpg",
+            "date": "October 11, 2024",
+            "readingTime": "2 Min Read",
+            "title": "Get the XDefiant Battle Pass With Ubisoft+ Premium",
+            "description": "Unlock the Highwaymen, exclusive cosmetics, and more with XDefiant’s Season 2 premium Battle Pass."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6nnZtAAr4bymbU6YV1PTX/4cd4242ee67778eb04db7845239d0c40/UbiNews_POP35_Visual_Wallpaper_960x540.jpg",
+            "date": "October 10, 2024",
+            "readingTime": "11 Min Read",
+            "title": "Prince of Persia – Creating The Sands of Time Trilogy",
+            "description": "Key developers behind the wall-running, time-rewinding trilogy offer a behind-the-scenes look at Prince of Persia: The Sands of Time, Warrior Within, and The Two Thrones."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1AgyzK6wgE9E1gOY44AST4/658ad85b8f7586d0b5587d50cfdfe683/SWO_Screenshots_CapturedInEngine_Toshara_Hook_Final_WIDE_LOGO.jpg",
+            "date": "October 3, 2024",
+            "readingTime": "6 Min Read",
+            "title": "Star Wars Outlaws™ - Become the Galaxy's Greatest Scoundrel on Ubisoft+",
+            "description": "Discover the thrill of double-crossing syndicates, raiding imperials, and jumping into the pilot's seat in this galactic adventure, available now on Ubisoft's subscription service."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2pKyxUOCSOQeIk7hRadooe/2a2628616377ebe827f6d132a12791fc/POP_35_ANNIVERSARY_All_Pixel_Princes_960.jpg",
+            "date": "October 3, 2024",
+            "readingTime": "10 Min Read",
+            "title": "Prince of Persia 35th Anniversary - A Look Back at the Original Game",
+            "description": "Series creator Jordan Mechner and others share stories from the creation of 1989's Prince of Persia and what it means to them."
+        },
+        {
+            "image": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4kNVIAWCZPhBb7pLU17jUk/29e14912ec25d9c4144facf633c34f5e/JustDance_MusicPacks.jpg",
+            "date": "October 3, 2024",
+            "readingTime": "3 Min Read",
+            "title": "Just Dance’s New Music Packs Out Now",
+            "description": "From Disney songs to pop anthems, these themed collections let players expand and personalize their song libraries."
+        },
+        {
+            "image": "",
+            "date": "December 5, 2024",
+            "readingTime": "3 Min Read",
+            "title": "",
+            "description": ""
+        }
+    ]
 }
