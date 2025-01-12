@@ -24,13 +24,6 @@
         .all_news_button:hover .fa-solid {
             transform: matrix(-1, 0, 0, -1, 0, 0);
         }
-        /* .all_news_button:hover .all_news_content {
-            display: flex;
-        } */
-        /* .all_news_content.hidden { */
-        /* display: none; */
-        /* Əsasən görünməz */
-        /* } */
         
         .toggle1:hover .fa-solid {
             transform: rotate(360deg);
@@ -160,8 +153,8 @@
     </style>
 </head>
 
-<body class="text-[14px]">
-    <div class="menu top-[40px] left-0 bg-black w-full h-full z-[12] px-[20px] fixed hidden">
+<body class="text-[14px] h-full">
+    <div class="menu top-[40px] left-0 bg-black w-full h-full z-[12] px-[20px] fixed hidden overflow-y-auto">
         <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
             <button onclick="toggleAccordion(1)" class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
         <span>Play</span>
@@ -275,7 +268,7 @@
         </svg>
             </a>
         </div>
-        <div class="search py-[24px] w-full">
+        <div class="search py-[24px] w-full mb-[50px]">
             <div class="w-full">
                 <form action="" class="w-full flex">
                     <button class="py-[12px] px-[10px] bg-[#393939] rounded-tl-[20px] rounded-bl-[20px]">
@@ -290,7 +283,7 @@
             </div>
         </div>
     </div>
-    <div class="menu2 top-[40px] left-0 right-0 bg-white w-full h-full z-[100] px-[20px] fixed flex flex-col hidden">
+    <div class="menu2 left-0 right-0 bg-white w-full h-full z-[100] px-[20px] fixed flex flex-col hidden">
         <div class="w-full mt-[15px]">
             <form action="" class="w-full flex">
                 <button class="py-[12px] px-[10px] bg-[#F0F3F4] rounded-tl-[20px] rounded-bl-[20px]">
@@ -410,24 +403,24 @@
         </header>
 
         <!-- Search section -->
-        <section class="sticky top-[40px] text-[16px] w-full font-serif leading-[24px] px-[60px] bg-white">
+        <section class="sticky top-[40px] text-[16px] w-full font-serif leading-[24px] md:px-[60px] bg-white">
             <div class="w-full h-[50px] max-w-[1440px] leading-[24px] text-[16px] font-normal flex text-[#d80388] justify-between">
                 <div class="w-full h-[50px] max-w-[1440px] leading-[24px] text-[16px] font-normal flex text-[#d80388] justify-between">
-                    <div class="w-[50%] h-[50px] leading-[24px] text-[16px] font-normal text-[#d80388]">
-                        <div onclick="showPanel()" class="all_news_button w-[150px] min-w-[150px] ml-[90px] h-[50px] text-[20px] text-black cursor-pointer font-normal tracking-[0.16px] leading-[23px]">
+                    <div class="w-[50%] max-md:pl-[50px] h-[50px] leading-[24px] text-[16px] font-normal text-[#d80388]">
+                        <div onclick="showPanel()" class="all_news_button w-[150px] min-w-[150px] md:ml-[90px] h-[50px] text-[20px] text-black cursor-pointer font-normal tracking-[0.16px] leading-[23px]">
                             <button aria-expanded="true" aria-controls="drawer-1" aria-label="All News" class="gameSiteNavigation__nav-item__drawerName w-[150px] text-left relative overflow-x-visible overflow-y-visible leading-[40px] tracking-[0.16px] h-[50px] text-[20px] font-normal flex justify-between cursor-pointer items-center text-black"
                                 data-innertext="All News" data-ccm-m="buttonMaster" type="button">
                 <span
                   class="text overflow-ellipsis text-left pr-[25px] text-[#d80388] overflow-x-hidden overflow-y-hidden leading-[40px] tracking-[1px] font-[700] text-[20px] cursor-pointer"
                   data-innertext="All News" data-ccm-l="button" data-ccf-l="buttonText">All
                   News</span>
-                <i class="fa-solid fa-caret-down cursor-pointer tracking-[0.16px] leading-[40px] text-left "
+                <i class="fa-solid fa-caret-down cursor-pointer tracking-[0.16px] leading-[40px] text-left"
                   style="transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); transition: transform 0.6s 0s;"></i>
               </button>
                         </div>
                     </div>
-                    <div class="w-[50%] h-[50px] leading-[24px] text-[16px] font-normal text-[#d80388] flex justify-end relative">
-                        <div class="toggle1 w-[90px] min-w-[90px] h-[50px] text-[20px] text-black cursor-pointer font-normal tracking-[0.16px] leading-[23px]">
+                    <div class="w-[50%] max-md:pr-[20px] h-[50px] leading-[24px] text-[16px] font-normal text-[#d80388] flex justify-end relative">
+                        <div class="toggle1 md:w-[90px] min-w-[90px] h-[50px] text-[20px] text-black cursor-pointer font-normal tracking-[0.16px] leading-[23px]">
                             <button aria-expanded="true" aria-controls="drawer-1" aria-label="All News" class="gameSiteNavigation__nav-item__drawerName w-[90px] text-left relative overflow-x-visible overflow-y-visible leading-[40px] tracking-[0.16px] h-[50px] text-[20px] font-normal flex justify-between cursor-pointer items-center text-black"
                                 data-innertext="All News" data-ccm-m="buttonMaster" type="button">
                 <span
@@ -439,60 +432,60 @@
                         </div>
                     </div>
                 </div>
-                <div class="all_news_content w-[1230px] absolute top-[50px] opacity-100 hidden pt-[40px] bg-white border-t-[2px] border-t-solid border-t-black overflow-x-visible overflow-y-visible leading-[23px] tracking-[0.16px] justify-left flex-wrap cursor-pointer text-[20px] font-normal">
-                    <a tabindex="-1" aria-hidden="true" aria-label="All News" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                <div class="all_news_content md:w-[1230px] absolute top-[50px] opacity-100 hidden pt-[40px] bg-white border-t-[2px] border-t-solid border-t-black overflow-x-visible md:overflow-y-visible max-md:h-[100vh] max-md:overflow-y-auto leading-[23px] tracking-[0.16px] justify-left flex-wrap cursor-pointer text-[20px] font-normal">
+                    <a tabindex="-1" aria-hidden="true" aria-label="All News" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)" data-innertext="All News" data-ccm-m="buttonMaster" href="/en-us/">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="All News" data-ccm-l="button" data-ccf-l="buttonText">All News</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Assassin's Creed" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Assassin's Creed" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)" data-innertext="Assassin's Creed" data-ccm-m="buttonMaster" href="/en-us/category/assassins-creed">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Assassin's Creed" data-ccm-l="button" data-ccf-l="buttonText">Assassin's Creed</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Rainbow Six Siege" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Rainbow Six Siege" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)" data-innertext="Rainbow Six Siege" data-ccm-m="buttonMaster" href="/en-us/category/rainbow-six-siege">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Rainbow Six Siege" data-ccm-l="button" data-ccf-l="buttonText">Rainbow Six Siege</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="The Crew" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="The Crew" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)" data-innertext="The Crew" data-ccm-m="buttonMaster" href="/en-us/category/the-crew">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="The Crew" data-ccm-l="button" data-ccf-l="buttonText">The Crew</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Avatar: Frontiers of Pandora" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Avatar: Frontiers of Pandora" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)" data-innertext=" Avatar: Frontiers of Pandora" data-ccm-m="buttonMaster" href="/en-us/category/avatar">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Avatar: Frontiers of Pandora" data-ccm-l="button" data-ccf-l="buttonText">Avatar: Frontiers of Pandora</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="XDefiant" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="XDefiant" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         data-innertext="XDefiant" data-ccm-m="buttonMaster" href="/en-us/category/xdefiant" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="XDefiant" data-ccm-l="button" data-ccf-l="buttonText" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">XDefiant</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Prince of Persia" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Prince of Persia" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         data-innertext="Prince of Persia" data-ccm-m="buttonMaster" href="/en-us/category/prince-of-persia" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Prince of Persia" data-ccm-l="button" data-ccf-l="buttonText">Prince of Persia</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="The Division" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="The Division" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         data-innertext="The Division" data-ccm-m="buttonMaster" href="/en-us/category/the-division" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="The Division" data-ccm-l="button" data-ccf-l="buttonText">The Division</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Far Cry" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Far Cry" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         data-innertext="Far Cry" data-ccm-m="buttonMaster" href="/en-us/category/far-cry" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Far Cry" data-ccm-l="button" data-ccf-l="buttonText">Far Cry</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Ubisoft Film &amp; Television" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Ubisoft Film &amp; Television" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         data-innertext="Ubisoft Film &amp; Television" data-ccm-m="buttonMaster" href="/en-us/category/ubisoft-film-&amp;-television" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Ubisoft Film &amp; Television" data-ccm-l="button" data-ccf-l="buttonText">Ubisoft Film &amp; Television</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Accessibility" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Accessibility" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         data-innertext="Accessibility" data-ccm-m="buttonMaster" href="/en-us/category/accessibility" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Accessibility" data-ccm-l="button" data-ccf-l="buttonText">Accessibility</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Inside Ubisoft" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Inside Ubisoft" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         data-innertext="Inside Ubisoft" data-ccm-m="buttonMaster" href="/en-us/category/inside-ubisoft" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Inside Ubisoft" data-ccm-l="button" data-ccf-l="buttonText">Inside Ubisoft</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Skull and Bones" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Skull and Bones" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         data-innertext="Skull and Bones" data-ccm-m="buttonMaster" href="/en-us/category/skull-and-bones" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Skull and Bones" data-ccm-l="button" data-ccf-l="buttonText">Skull and Bones</span>
                     </a>
-                    <a tabindex="-1" aria-hidden="true" aria-label="Star Wars Outlaws" class="gameSiteNavigation__nav-item inline-block w-[24%] basis-[25%] cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
+                    <a tabindex="-1" aria-hidden="true" aria-label="Star Wars Outlaws" class="gameSiteNavigation__nav-item inline-block md:w-[24%] md:basis-[25%] max-md:w-full cursor-pointer text-[20px] font-normal h-[83px] hover:text-black tracking-[0.16px] leading-[23px] opacity-100 pb-[50px] pt-[10px] px-[10px] text-[#d80388] delay-[0.2s] duration-[0.6s]"
                         data-innertext="Star Wars Outlaws" data-ccm-m="buttonMaster" href="/en-us/category/star-wars" style="transition: all; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1)">
                         <span class="text text-[20px] font-[700] tracking-[0.16px] leading-[23px]" data-innertext="Star Wars Outlaws" data-ccm-l="button" data-ccf-l="buttonText">Star Wars Outlaws</span>
                     </a>
@@ -502,8 +495,8 @@
 
         <!-- News section -->
         <section class="news w-full flex flex-col">
-            <div class="grid_container grid_container_1 flex flex-col gap-[150px] justify-center items-center w-full"></div>
-            <div class="grid_container grid_container_2 flex flex-col gap-[150px] justify-center items-center w-full"></div>
+            <div class="grid_container grid_container_1 flex flex-col gap-[130px] justify-center items-center w-full"></div>
+            <div class="grid_container grid_container_2 flex flex-col gap-[130px] justify-center items-center w-full"></div>
 
             <!-- Pagination -->
             <ul class="w-full mt-[50px] mb-[100px] leading-[24px] flex justify-center items-center text-[16px]">
@@ -844,136 +837,134 @@
                 const news = response.data.news;
                 const cardsNews = document.querySelector(".grid_container_1");
                 const cardsNews2 = document.querySelector(".grid_container_2");
-                // const readMore = document.querySelector(".read_more");
                 const firstThreeNews = news.slice(0, 3);
                 const firstFourNews = news.slice(4, 8);
 
                 function loadInitialNews() {
                     document.querySelector(".read_more").style.display = "block"; // Görünür etmək
-                    cardsNews.innerHTML = firstThreeNews
-                        .map((card, index) => {
-                            if (index % 2 === 0) {
-                                return `
-          <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-              <div class="flex w-full h-full justify-center">
-                  <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                      <img src="${card.image}" alt="" class="w-full object-cover">
-                  </div>
-                  <div class="max-w-[550px] w-[34rem]">
-                      <p class="leading-[21px] text-[16px] font-[400]">
-                          <span>${card.date}</span> |
-                          <span>${card.readingTime}</span>
-                      </p>
-                      <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
-                      <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
-                      <div class="flex">
-                          <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
-                          <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                      </div>
-                  </div>
-              </div>
-          </a>`;
-                            } else {
-                                return `
-          <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-              <div class="flex w-full h-full justify-center">
-                  <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                      <p class="leading-[21px] text-[16px] font-[400]">
-                          <span>${card.date}</span> |
-                          <span>${card.readingTime}</span>
-                      </p>
-                      <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
-                      <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
-                      <div class="flex">
-                          <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
-                          <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                      </div>
-                  </div>
-                  <div class="max-w-[550px] w-[34rem]">
-                      <img src="${card.image}" alt="" class="w-full object-cover">
-                  </div>
-              </div>
-          </a>`;
-                            }
-                        })
-                        .join("");
+                    // cardsNews.innerHTML = firstThreeNews
+                    //   .map((card, index) => {
+                    //     if (index % 2 === 0) {
+                    //       return `
+                    //       <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                    //         <div class="flex w-full h-full justify-center">
+                    //           <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                    //               <img src="${card.image}" alt="" class="w-full object-cover">
+                    //           </div>
+                    //           <div class="max-w-[550px] w-[34rem]">
+                    //             <p class="leading-[21px] text-[16px] font-[400]">
+                    //               <span>${card.date}</span> |
+                    //               <span>${card.readingTime}</span>
+                    //             </p>
+                    //             <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                    //             <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                    //             <div class="flex">
+                    //               <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                    //               <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                    //             </div>
+                    //           </div>
+                    //         </div>
+                    //       </a>`;
+                    //     } else {
+                    //       return `
+                    //       <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                    //         <div class="flex w-full h-full justify-center">
+                    //           <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                    //             <p class="leading-[21px] text-[16px] font-[400]">
+                    //               <span>${card.date}</span> |
+                    //               <span>${card.readingTime}</span>
+                    //             </p>
+                    //             <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                    //             <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                    //             <div class="flex">
+                    //               <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                    //               <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                    //             </div>
+                    //           </div>
+                    //           <div class="max-w-[550px] w-[34rem]">
+                    //             <img src="${card.image}" alt="" class="w-full object-cover">
+                    //           </div>
+                    //         </div>
+                    //       </a>`;
+                    //     }
+                    //   })
+                    //   .join("");
 
                     // Read More bölməsinin göstərilməsi
-                    cardsNews.insertAdjacentHTML("afterend", `
-    <section class="read_more w-full flex bg-black items-center justify-center relative my-[100px]" style="position: relative; z-index: 1;">
-        <div class="p-[10px] max-w-[700px] ml-[130px] leading-[24px] flex flex-col items-start justify-center text-left absolute top-[80px] left-[20px]">
-            <div class="w-full h-full" style="background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5));">
-                <p class="leading-[21px] text-[16px] font-[400] text-white text-left">
-                    <span>June 11, 2023</span> |
-                    <span>2 min Read</span>
-                </p>
-                <h2 class="text-white text-left w-full pt-[15px] pb-[5px] leading-[50px] text-[40px] font-[800]">
-                    Star Wars Outlaws™ Opens Up a Galaxy of Opportunity
-                </h2>
-                <h3 class="text-left w-full pb-[10px] leading-[34px] text-[20px] font-[400] text-white">
-                    Become an outlaw in a thriving criminal underworld in the first-ever open-world Star Wars™ game, coming in 2024.
-                </h3>
-            </div>
-            <a href="" class="p-[20px] font-[700] cursor-pointer flex justify-center items-center uppercase mt-[68px] leading-[15px] tracking-[1.6px] border-[2px] border-solid border-[#D80388] rounded-[30px] bg-[#D80388] text-white">
-                <span>read more</span>
-                <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-white ml-[15px]"></i>
-            </a>
-        </div>
-        <div class="w-full h-full flex justify-end">
-            <div class="w-[960px] max-h-[800px] max-w-[100%] h-[540px] flex justify-end">
-                <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5FNpIRuZpF2b36jfCHheEg/6b225b842f26d6c55596bb8f936a8272/SWO_KEYART_960x540.jpg" alt="" class="w-full object-cover" />
-            </div>
-        </div>
-    </section>`);
+                    // cardsNews.insertAdjacentHTML("afterend", `
+                    // <section class="read_more w-full flex bg-black items-center justify-center relative my-[100px]" style="position: relative; z-index: 1;">
+                    //   <div class="p-[10px] max-w-[700px] ml-[130px] leading-[24px] flex flex-col items-start justify-center text-left absolute top-[80px] left-[20px]">
+                    //     <div class="w-full h-full" style="background: linear-gradient(90deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.5));">
+                    //       <p class="leading-[21px] text-[16px] font-[400] text-white text-left">
+                    //         <span>June 11, 2023</span> |
+                    //         <span>2 min Read</span>
+                    //       </p>
+                    //       <h2 class="text-white text-left w-full pt-[15px] pb-[5px] leading-[50px] text-[40px] font-[800]">
+                    //         Star Wars Outlaws™ Opens Up a Galaxy of Opportunity
+                    //       </h2>
+                    //       <h3 class="text-left w-full pb-[10px] leading-[34px] text-[20px] font-[400] text-white">
+                    //         Become an outlaw in a thriving criminal underworld in the first-ever open-world Star Wars™ game, coming in 2024.
+                    //       </h3>
+                    //     </div>
+                    //     <a href="" class="p-[20px] font-[700] cursor-pointer flex justify-center items-center uppercase mt-[68px] leading-[15px] tracking-[1.6px] border-[2px] border-solid border-[#D80388] rounded-[30px] bg-[#D80388] text-white">
+                    //       <span>read more</span>
+                    //       <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-white ml-[15px]"></i>
+                    //     </a>
+                    //   </div>
+                    //   <div class="w-full h-full flex justify-end">
+                    //     <div class="w-[960px] max-h-[800px] max-w-[100%] h-[540px] flex justify-end">
+                    //       <img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5FNpIRuZpF2b36jfCHheEg/6b225b842f26d6c55596bb8f936a8272/SWO_KEYART_960x540.jpg" alt="" class="w-full object-cover" />
+                    //     </div>
+                    //   </div>
+                    // </section>`);
 
-                    cardsNews2.innerHTML = firstFourNews
-                        .map((card, index) => {
-                            if (index % 2 !== 0) {
-                                return `
-          <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-              <div class="flex w-full h-full justify-center">
-                  <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                      <img src="${card.image}" alt="" class="w-full object-cover">
-                  </div>
-                  <div class="max-w-[550px] w-[34rem]">
-                      <p class="leading-[21px] text-[16px] font-[400]">
-                          <span>${card.date}</span> |
-                          <span>${card.readingTime}</span>
-                      </p>
-                      <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
-                      <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
-                      <div class="flex">
-                          <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
-                          <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                      </div>
-                  </div>
-              </div>
-          </a>`;
-                            } else {
-                                return `
-          <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-              <div class="flex w-full h-full justify-center">
-                  <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                      <p class="leading-[21px] text-[16px] font-[400]">
-                          <span>${card.date}</span> |
-                          <span>${card.readingTime}</span>
-                      </p>
-                      <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
-                      <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
-                      <div class="flex">
-                          <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
-                          <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                      </div>
-                  </div>
-                  <div class="max-w-[550px] w-[34rem]">
-                      <img src="${card.image}" alt="" class="w-full object-cover">
-                  </div>
-              </div>
-          </a>
-      `;
-                            }
-                        })
-                        .join("");
+                    // cardsNews2.innerHTML = firstFourNews
+                    //   .map((card, index) => {
+                    //     if (index % 2 !== 0) {
+                    //       return `
+                    //       <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                    //         <div class="flex w-full h-full justify-center">
+                    //           <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                    //             <img src="${card.image}" alt="" class="w-full object-cover">
+                    //           </div>
+                    //           <div class="max-w-[550px] w-[34rem]">
+                    //             <p class="leading-[21px] text-[16px] font-[400]">
+                    //               <span>${card.date}</span> |
+                    //               <span>${card.readingTime}</span>
+                    //             </p>
+                    //             <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                    //             <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                    //             <div class="flex">
+                    //               <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                    //               <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                    //             </div>
+                    //           </div>
+                    //         </div>
+                    //       </a>`;
+                    //     } else {
+                    //       return `
+                    //       <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
+                    //         <div class="flex w-full h-full justify-center">
+                    //           <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
+                    //             <p class="leading-[21px] text-[16px] font-[400]">
+                    //               <span>${card.date}</span> |
+                    //               <span>${card.readingTime}</span>
+                    //             </p>
+                    //             <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
+                    //             <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                    //             <div class="flex">
+                    //               <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                    //               <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                    //             </div>
+                    //           </div>
+                    //           <div class="max-w-[550px] w-[34rem]">
+                    //             <img src="${card.image}" alt="" class="w-full object-cover">
+                    //           </div>
+                    //         </div>
+                    //       </a>`;
+                    //     }
+                    //   })
+                    //   .join("");
                 }
 
                 // Pagination
@@ -992,59 +983,53 @@
                     cardsNews.innerHTML = "";
                     cardsNews2.innerHTML = "";
 
-                    // if (startIndex === 0) {
-                    //   document.querySelector(".read_more").style.display = "block";
-                    // } else {
-                    //   document.querySelector(".read_more").style.display = "none";
-                    // }
-
                     // Yeni kartları ekrana əlavə et
                     cardsNews.innerHTML = eightNews
                         .map((card, index) => {
                             if (index % 2 === 0) {
                                 // Tək kartlar üçün dizayn
                                 return `
-          <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-            <div class="flex w-full h-full justify-center">
-              <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                <img src="${card.image}" alt="" class="w-full object-cover">
-              </div>
-              <div class="max-w-[550px] w-[34rem]">
-                <p class="leading-[21px] text-[16px] font-[400]">
-                  <span>${card.date}</span> |
-                  <span>${card.readingTime}</span>
-                </p>
-                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
-                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
-                <div class="flex">
-                  <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
-                  <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                </div>
-              </div>
-            </div>
-          </a>`;
+                <a href="" class="grid_item max-2xl:w-[calc(100%-(100%/5))] 2xl:w-[1200px] cursor-pointer">
+                  <div class="flex lg:flex-row max-lg:flex-col w-full h-full justify-center">
+                    <div class="lg:max-w-[550px] lg:mr-[100px] leading-[21px] lg:w-[32rem] max-lg:w-full max-lg:mb-[20px]">
+                      <img src="${card.image}" alt="" class="w-full object-cover">
+                    </div>
+                    <div class="max-w-[550px] w-[34rem] leading-[21px] break-words whitespace-normal overflow-hidden max-w-full">
+                      <p class="leading-[21px] text-[16px] font-[400]">
+                        <span>${card.date}</span> |
+                        <span>${card.readingTime}</span>
+                      </p>
+                      <h2 class="mt-[30px] leading-[40px] text-black lg:text-[2.5rem] break-words max-lg:text-[2rem] font-[800] cursor-pointer">${card.title}</h2>
+                      <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                      <div class="flex">
+                        <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                        <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>`;
                             } else {
                                 // Cüt kartlar üçün dizayn
                                 return `
-          <a href="" class="grid_item w-[74rem] max-w-[1200px] cursor-pointer">
-            <div class="flex w-full h-full justify-center">
-              <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem]">
-                <p class="leading-[21px] text-[16px] font-[400]">
-                  <span>${card.date}</span> |
-                  <span>${card.readingTime}</span>
-                </p>
-                <h2 class="mt-[30px] leading-[40px] text-[40px] font-[800] cursor-pointer">${card.title}</h2>
-                <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
-                <div class="flex">
-                  <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
-                  <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
-                </div>
-              </div>
-              <div class="max-w-[550px] w-[34rem]">
-                <img src="${card.image}" alt="" class="w-full object-cover">
-              </div>
-            </div>
-          </a>`;
+                <a href="" class="grid_item max-2xl:w-[calc(100%-(100%/5))] 2xl:w-[1200px] cursor-pointer">
+                  <div class="flex lg:flex-row max-lg:flex-col w-full h-full justify-center">
+                    <div class="lg:max-w-[550px] lg:mr-[100px] leading-[21px] lg:w-[32rem] max-lg:w-full max-lg:mb-[20px] max-lg:order-1 lg:order-2">
+                      <img src="${card.image}" alt="" class="w-full object-cover">
+                    </div>
+                    <div class="max-w-[550px] mr-[100px] leading-[21px] w-[32rem] break-words whitespace-normal overflow-hidden max-w-full max-lg:order-2 lg:order-1">
+                      <p class="leading-[21px] text-[16px] font-[400]">
+                        <span>${card.date}</span> |
+                        <span>${card.readingTime}</span>
+                      </p>
+                      <h2 class="mt-[30px] leading-[40px] lg:text-[40px] text-black max-lg:text-[32px] font-[800] cursor-pointer">${card.title}</h2>
+                      <p class="text-[16px] leading-[21px] cursor-pointer font-[400] my-[16px]">${card.description}</p>
+                      <div class="flex">
+                        <span class="font-[700] uppercase tracking-[3.2px] text-[#d80388] text-[16px] leading-[20px] cursor-pointer">read more</span>
+                        <i class="fa-solid fa-caret-right w-[12px] text-right text-[16px] text-[#d80388]"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>`;
                             }
                         })
                         .join("");
@@ -1139,14 +1124,18 @@
                 document.querySelector("body").style.overflow = "hidden";
             }
         }
+
         const menu2 = document.querySelector(".menu2");
+        const header = document.querySelector("header")
 
         function togglepanel2() {
             menu.style.display = "block";
-            if (menu2.style.display === "flex") {
+            if (menu2.style.display === "flex" && header.style.display === "none") {
                 menu2.style.display = "none";
+                header.style.display = "flex";
             } else {
                 menu2.style.display = "flex";
+                header.style.display = "none";
             }
         }
 
@@ -1182,29 +1171,62 @@
         const button = document.querySelector('.all_news_button');
         const content = document.querySelector('.all_news_content');
 
-        // Hover etdikdə content göstərilsin
-        button.addEventListener('mouseenter', function() {
-            content.style.display = 'block';
+        let isClicked = false; // Klik edilib-edilmədiyini izah edən dəyişən
+
+        const mediaQuery = window.matchMedia('(min-width: 1220px)'); // xl ölçüsü (1220px)
+
+        function handleHover() {
+            if (mediaQuery.matches) { // Yalnız xl ölçüsündən yuxarı olduqda işləsin
+                // Hover zamanı content göstərilir
+                button.addEventListener('mouseenter', function() {
+                    if (!isClicked) { // Əgər klik edilməyibsə
+                        content.style.display = 'block';
+                    }
+                });
+
+                content.addEventListener('mouseenter', function() {
+                    if (!isClicked) { // Əgər klik edilməyibsə
+                        content.style.display = 'block';
+                    }
+                });
+
+                // Hover-dan çıxanda klik edilməyibsə gizlənir
+                button.addEventListener('mouseleave', function() {
+                    setTimeout(function() {
+                        if (!isClicked && !content.matches(':hover')) {
+                            content.style.display = 'none';
+                        }
+                    }, 200);
+                });
+
+                // Content-dən çıxanda klik edilməyibsə gizlənir
+                content.addEventListener('mouseleave', function() {
+                    if (!isClicked) {
+                        content.style.display = 'none';
+                    }
+                });
+            }
+        }
+
+        // Klik zamanı göstər/gizlət məntiqi
+        button.addEventListener('click', function() {
+            isClicked = !isClicked; // Klik edildikcə vəziyyət dəyişir
+            content.style.display = isClicked ? 'block' : 'none';
         });
 
-        // content üzərinə hover edildikdə, content gizlənməsin
-        content.addEventListener('mouseenter', function() {
-            content.style.display = 'block';
+        // Dokumentdə başqa yerə klik edildikdə sıfırlanır
+        document.addEventListener('click', function(e) {
+            if (!button.contains(e.target) && !content.contains(e.target)) {
+                isClicked = false; // Başqa yerə klik edildikdə sıfırlanır
+                content.style.display = 'none'; // Content gizlədilir
+            }
         });
 
-        // Hover bitəndə content gizlənsin, amma content üzərinə hover edilərsə gizlənməsin
-        button.addEventListener('mouseleave', function() {
-            setTimeout(function() {
-                if (!content.matches(':hover')) { // Əgər content üzərində mouse yoxdursa, gizlət
-                    content.style.display = 'none';
-                }
-            }, 200); // Bir neçə millisekund gözləyirik ki, content-ə hover edildiyi halda gizlənməsin
-        });
+        // Media query dəyişdikdə funksiyanı yeniləyirik
+        mediaQuery.addEventListener('change', handleHover);
 
-        // content üzərindən mouse çıxdıqda gizlədilsin
-        content.addEventListener('mouseleave', function() {
-            content.style.display = 'none';
-        });
+        // İlk dəfə çağırırıq
+        handleHover();
     </script>
 </body>
 
