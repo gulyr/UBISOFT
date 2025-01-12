@@ -2,148 +2,143 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ubisoft</title>
-  <link rel="icon" href="images/UbisoftConnectImages/ubisoft.svg" type="image/svg" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
-  <link href="src/output.css" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <style>
-    /* sidenav */
-
-    .nav_container {
-      height: 100vh;
-      width: 100vw;
-      position: fixed;
-      z-index: 999;
-      top: 0;
-      right: 0;
-      background-color: rgba(17, 17, 17, 0.8);
-      display: none;
-      overflow-x: hidden;
-      transition: 4s;
-    }
-
-    .sidenav {
-      height: 100%;
-      width: 320px;
-      position: fixed;
-      z-index: 1000;
-      top: 0;
-      right: -320px;
-      padding: 45px;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 4s;
-      animation-delay: 0;
-      animation-direction: alternate;
-      animation-duration: 0.5s;
-      animation-fill-mode: none;
-      animation-iteration-count: 1;
-      animation-play-state: running;
-      animation-range-start: normal;
-      animation-range-end: normal;
-      animation-timeline: auto;
-      animation-timing-function: steps(8);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .sidenav p {
-      color: #f2f0d6;
-      font-weight: 700;
-    }
-
-    .sidenav .line {
-      width: 100%;
-      height: 1px;
-      background-color: #4d4d4f;
-    }
-
-    .sidenav li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .sidenav a {
-      color: #c3c3c3;
-      font-size: 12px;
-    }
-
-    .sidenav i {
-      color: #c3c3c3;
-      font-size: 12px;
-    }
-
-    .sidenav i:hover {
-      /* color: #CD7929; */
-    }
-
-    .animation_forward {
-      animation-name: animation1;
-    }
-
-    .sidenav a:hover {
-      /* color: #CD7929; */
-    }
-
-    .animation_backward {
-      animation-name: animation2;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav {
-        padding-top: 15px;
-      }
-
-      .sidenav a {}
-    }
-
-    @keyframes animation1 {
-      0% {
-        right: -320px;
-      }
-
-      100% {
-        right: 0;
-      }
-    }
-
-    @keyframes animation2 {
-      0% {
-        right: 0;
-      }
-
-      100% {
-        right: -320px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubisoft</title>
+    <link rel="icon" href="images/UbisoftConnectImages/ubisoft.svg" type="image/svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <link href="src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        /* sidenav */
+        
+        .nav_container {
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            right: 0;
+            background-color: rgba(17, 17, 17, 0.8);
+            display: none;
+            overflow-x: hidden;
+            transition: 4s;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 320px;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            right: -320px;
+            padding: 45px;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 4s;
+            animation-delay: 0;
+            animation-direction: alternate;
+            animation-duration: 0.5s;
+            animation-fill-mode: none;
+            animation-iteration-count: 1;
+            animation-play-state: running;
+            animation-range-start: normal;
+            animation-range-end: normal;
+            animation-timeline: auto;
+            animation-timing-function: steps(8);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .sidenav p {
+            color: #f2f0d6;
+            font-weight: 700;
+        }
+        
+        .sidenav .line {
+            width: 100%;
+            height: 1px;
+            background-color: #4d4d4f;
+        }
+        
+        .sidenav li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sidenav a {
+            color: #c3c3c3;
+            font-size: 12px;
+        }
+        
+        .sidenav i {
+            color: #c3c3c3;
+            font-size: 12px;
+        }
+        
+        .sidenav i:hover {
+            /* color: #CD7929; */
+        }
+        
+        .animation_forward {
+            animation-name: animation1;
+        }
+        
+        .sidenav a:hover {
+            /* color: #CD7929; */
+        }
+        
+        .animation_backward {
+            animation-name: animation2;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {}
+        }
+        
+        @keyframes animation1 {
+            0% {
+                right: -320px;
+            }
+            100% {
+                right: 0;
+            }
+        }
+        
+        @keyframes animation2 {
+            0% {
+                right: 0;
+            }
+            100% {
+                right: -320px;
+            }
+        }
+    </style>
 </head>
 
 <body class="font-['Ubisoft Sans']">
-  <div class="menu top-[40px] left-0 bg-black w-full h-full z-[12] px-[20px] fixed hidden">
-    <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
-      <button onclick="toggleAccordion(1)"
-        class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
+    <div class="menu top-[40px] left-0 bg-black w-full h-full z-[12] px-[20px] fixed hidden">
+        <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
+            <button onclick="toggleAccordion(1)" class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
         <span>Play</span>
         <span id="icon-1" class="text-white transition-transform duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
@@ -153,23 +148,22 @@
           </svg>
         </span>
       </button>
-      <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-        <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="viewallgames.html" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>browse by category</span></a>
-          </li>
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="viewallgames.html" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>browse by game</span></a>
-          </li>
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="ubisoftplus.html" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>ubisoft+</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
-      <button onclick="toggleAccordion(2)"
-        class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
+            <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="viewallgames.html" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>browse by category</span></a>
+                    </li>
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="viewallgames.html" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>browse by game</span></a>
+                    </li>
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="ubisoftplus.html" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>ubisoft+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
+            <button onclick="toggleAccordion(2)" class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
         <span>Shop</span>
         <span id="icon-2" class="text-white transition-transform duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
@@ -179,20 +173,19 @@
           </svg>
         </span>
       </button>
-      <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-        <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>shop by game</span></a>
-          </li>
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>most popular</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
-      <button onclick="toggleAccordion(3)"
-        class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
+            <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>shop by game</span></a>
+                    </li>
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>most popular</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
+            <button onclick="toggleAccordion(3)" class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
         <span>Explore</span>
         <span id="icon-3" class="text-white transition-transform duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
@@ -202,29 +195,28 @@
           </svg>
         </span>
       </button>
-      <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-        <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>news</span></a>
-          </li>
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>about us</span></a>
-          </li>
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>careers</span></a>
-          </li>
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>social impact</span></a>
-          </li>
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>more than games</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
-      <button onclick="toggleAccordion(4)"
-        class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
+            <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>news</span></a>
+                    </li>
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>about us</span></a>
+                    </li>
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>careers</span></a>
+                    </li>
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>social impact</span></a>
+                    </li>
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>more than games</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
+            <button onclick="toggleAccordion(4)" class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]">
         <span>Help</span>
         <span id="icon-4" class="text-white transition-transform duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
@@ -234,173 +226,151 @@
           </svg>
         </span>
       </button>
-      <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-        <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>get help</span></a>
-          </li>
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>join discord</span></a>
-          </li>
-          <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
-            <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>download ubisoft connect pc</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="download m-[10px] flex justify-center w-full h-[50px] leading-[24px]">
-      <a href=""
-        class="text-center relative min-w-[200px] leading-[20px] h-[50px] text-[16px] font-[400] cursor-pointer flex justify-center items-center text-white">
-        <span>Download Ubisoft Connect</span>
-        <svg width="16" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-          class="download-icon text-[16px] leading-[20px] ml-[5px] cursor-pointer">
+            <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>get help</span></a>
+                    </li>
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>join discord</span></a>
+                    </li>
+                    <li class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]">
+                        <a href="" class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"><span>download ubisoft connect pc</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="download m-[10px] flex justify-center w-full h-[50px] leading-[24px]">
+            <a href="" class="text-center relative min-w-[200px] leading-[20px] h-[50px] text-[16px] font-[400] cursor-pointer flex justify-center items-center text-white">
+                <span>Download Ubisoft Connect</span>
+                <svg width="16" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="download-icon text-[16px] leading-[20px] ml-[5px] cursor-pointer">
           <path fill-rule="evenodd" clip-rule="evenodd"
             d="M8.125 0.9375C8.125 0.592322 7.84518 0.3125 7.5 0.3125C7.15482 0.3125 6.875 0.592322 6.875 0.9375L6.875 8.10644L4.51857 5.59167C4.28255 5.33979 3.88703 5.32694 3.63515 5.56296C3.38327 5.79898 3.37041 6.19449 3.60643 6.44637L7.04393 10.1149C7.16209 10.241 7.32719 10.3125 7.5 10.3125C7.67281 10.3125 7.83791 10.241 7.95607 10.1149L11.3936 6.44637C11.6296 6.19449 11.6167 5.79898 11.3649 5.56296C11.113 5.32694 10.7175 5.33979 10.4814 5.59167L8.125 8.10644L8.125 0.9375ZM2.8125 13.4375C2.46732 13.4375 2.1875 13.7173 2.1875 14.0625C2.1875 14.4077 2.46732 14.6875 2.8125 14.6875H12.1875C12.5327 14.6875 12.8125 14.4077 12.8125 14.0625C12.8125 13.7173 12.5327 13.4375 12.1875 13.4375H2.8125Z"
             fill="#F2F2F2"></path>
         </svg>
-      </a>
-    </div>
-    <div class="search py-[24px] w-full">
-      <div class="w-full">
-        <form action="" class="w-full flex">
-          <button class="py-[12px] px-[10px] bg-[#393939] rounded-tl-[20px] rounded-bl-[20px]">
+            </a>
+        </div>
+        <div class="search py-[24px] w-full">
+            <div class="w-full">
+                <form action="" class="w-full flex">
+                    <button class="py-[12px] px-[10px] bg-[#393939] rounded-tl-[20px] rounded-bl-[20px]">
             <svg class="ais-SearchBox-submitIcon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 40 40">
               <path
                 d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z">
               </path>
             </svg>
           </button>
-          <input type="text"
-            class=" outline-none focus:outline-none pt-[2px] pr-[30px] leading-[32px] rounded-tr-[20px] rounded-br-[20px] bg-[#393939] w-full placeholder:text-white"
-            placeholder="Type your search" onclick="togglepanel2()">
-        </form>
-      </div>
+                    <input type="text" class=" outline-none focus:outline-none pt-[2px] pr-[30px] leading-[32px] rounded-tr-[20px] rounded-br-[20px] bg-[#393939] w-full placeholder:text-white" placeholder="Type your search" onclick="togglepanel2()">
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="menu2 top-[40px] left-0 right-0 bg-white w-full h-full z-[100] px-[20px] fixed flex flex-col hidden">
-    <div class="w-full mt-[15px]">
-      <form action="" class="w-full flex">
-        <button class="py-[12px] px-[10px] bg-[#F0F3F4] rounded-tl-[20px] rounded-bl-[20px]">
+    <div class="menu2 top-[40px] left-0 right-0 bg-white w-full h-full z-[100] px-[20px] fixed flex flex-col hidden">
+        <div class="w-full mt-[15px]">
+            <form action="" class="w-full flex">
+                <button class="py-[12px] px-[10px] bg-[#F0F3F4] rounded-tl-[20px] rounded-bl-[20px]">
           <svg class="ais-SearchBox-submitIcon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 40 40">
             <path
               d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z">
             </path>
           </svg>
         </button>
-        <input type="text"
-          class="border-none focus:border-none outline-none focus:outline-none pt-[2px] pr-[30px] leading-[32px] rounded-tr-[20px] rounded-br-[20px] bg-[#F0F3F4] w-full placeholder:text-black"
-          placeholder="Type your search" onclick="">
-        <button type="button" class="text-[#db287f] border-none bg-transparent pl-[12px] leading-[20px]" onclick="togglepanel2()">Cancel</button>
-      </form>
-    </div>
-    <div class="w-full flex flex-col">
-      <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">games</h2>
-      <div class="w-full" data-identifier="Products">
-        <ul class="w-full px-[35px] pointer-events-all">
-          <li class="indent-[10px] list-item">
-            <div>
-              <a rel="noreferrer noopener" href="https://www.ubisoft.com/en-us/game/assassins-creed/shadows" target="_blank"
-                class="py-[6px] leading-[20px] cursor-pointer  indent-[10px] text-black text-[16px] hover:underline" role="link" tabindex="0">
-                <span>Assassin’s Creed Shadows</span>
-              </a>
-            </div>
-          </li>
-          <li class="indent-[10px] list-item">
-            <div>
-              <a rel="noreferrer noopener" href="https://www.ubisoft.com/en-us/game/star-wars/outlaws" target="_blank"
-                class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link" tabindex="0">
+                <input type="text" class="border-none focus:border-none outline-none focus:outline-none pt-[2px] pr-[30px] leading-[32px] rounded-tr-[20px] rounded-br-[20px] bg-[#F0F3F4] w-full placeholder:text-black" placeholder="Type your search" onclick="">
+                <button type="button" class="text-[#db287f] border-none bg-transparent pl-[12px] leading-[20px]" onclick="togglepanel2()">Cancel</button>
+            </form>
+        </div>
+        <div class="w-full flex flex-col">
+            <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">games</h2>
+            <div class="w-full" data-identifier="Products">
+                <ul class="w-full px-[35px] pointer-events-all">
+                    <li class="indent-[10px] list-item">
+                        <div>
+                            <a rel="noreferrer noopener" href="https://www.ubisoft.com/en-us/game/assassins-creed/shadows" target="_blank" class="py-[6px] leading-[20px] cursor-pointer  indent-[10px] text-black text-[16px] hover:underline" role="link" tabindex="0">
+                                <span>Assassin’s Creed Shadows</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="indent-[10px] list-item">
+                        <div>
+                            <a rel="noreferrer noopener" href="https://www.ubisoft.com/en-us/game/star-wars/outlaws" target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link" tabindex="0">
                 <span">Star Wars Outlaws</span>
               </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-        </ul>
-      </div>
-      <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">store products</h2>
-      <div class="w-full" data-identifier="Store products">
-        <ul class="w-full px-[35px] pointer-events-all">
-          <li class="indent-[10px] list-item">
-            <div>
-              <a rel="noreferrer noopener"
-                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US"
-                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
-                tabindex="0">
-                <span>Tom Clancy's Rainbow Six Siege 1,200 R6Credits</span> - <span class="">$9.99</span>
+            <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">store products</h2>
+            <div class="w-full" data-identifier="Store products">
+                <ul class="w-full px-[35px] pointer-events-all">
+                    <li class="indent-[10px] list-item">
+                        <div>
+                            <a rel="noreferrer noopener" href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US" target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                                role="link" tabindex="0">
+                                <span>Tom Clancy's Rainbow Six Siege 1,200 R6Credits</span> - <span class="">$9.99</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="indent-[10px] list-item">
+                        <div>
+                            <a rel="noreferrer noopener" href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US" target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                                role="link" tabindex="0"><span>Tom Clancy's Rainbow Six Siege 600 R6 Credits</span> - <span class="">$4.99</span>
               </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li class="indent-[10px] list-item">
-            <div>
-              <a rel="noreferrer noopener"
-                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US"
-                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
-                tabindex="0"><span>Tom Clancy's Rainbow Six Siege 600 R6 Credits</span> - <span class="">$4.99</span>
+            <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">news</h2>
+            <div class="w-full" data-identifier="Store products">
+                <ul class="w-full px-[35px] pointer-events-all">
+                    <li class="indent-[10px] list-item">
+                        <div>
+                            <a rel="noreferrer noopener" href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US" target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                                role="link" tabindex="0">
+                                <span>New songs from Trans-Siberian Orchestra Available in Rocksmith+!</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="indent-[10px] list-item">
+                        <div>
+                            <a rel="noreferrer noopener" href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US" target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                                role="link" tabindex="0"><span>Star Wars Outlaws - Title Update 1.5.0</span>
               </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-        </ul>
-      </div>
-      <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">news</h2>
-      <div class="w-full" data-identifier="Store products">
-        <ul class="w-full px-[35px] pointer-events-all">
-          <li class="indent-[10px] list-item">
-            <div>
-              <a rel="noreferrer noopener"
-                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US"
-                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
-                tabindex="0">
-                <span>New songs from Trans-Siberian Orchestra Available in Rocksmith+!</span>
+            <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">faqs</h2>
+            <div class="w-full" data-identifier="Store products">
+                <ul class="w-full px-[35px] pointer-events-all">
+                    <li class="indent-[10px] list-item">
+                        <div>
+                            <a rel="noreferrer noopener" href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US" target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                                role="link" tabindex="0">
+                                <span>Multiple charges for your Ubisoft+ subscription</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="indent-[10px] list-item">
+                        <div>
+                            <a rel="noreferrer noopener" href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US" target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                                role="link" tabindex="0"><span>Recovering access to your Ubisoft account</span>
               </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li class="indent-[10px] list-item">
-            <div>
-              <a rel="noreferrer noopener"
-                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US"
-                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
-                tabindex="0"><span>Star Wars Outlaws - Title Update 1.5.0</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <h2 class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black">faqs</h2>
-      <div class="w-full" data-identifier="Store products">
-        <ul class="w-full px-[35px] pointer-events-all">
-          <li class="indent-[10px] list-item">
-            <div>
-              <a rel="noreferrer noopener"
-                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US"
-                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
-                tabindex="0">
-                <span>Multiple charges for your Ubisoft+ subscription</span>
-              </a>
-            </div>
-          </li>
-          <li class="indent-[10px] list-item">
-            <div>
-              <a rel="noreferrer noopener"
-                href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US"
-                target="_blank" class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline" role="link"
-                tabindex="0"><span>Recovering access to your Ubisoft account</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <span class="text-[#db287f] py-[30px] mx-[35px] leading-[20px] font-[400] text-[16px] hover:underline">See all Results</span>
+            <span class="text-[#db287f] py-[30px] mx-[35px] leading-[20px] font-[400] text-[16px] hover:underline">See all Results</span>
+        </div>
     </div>
-  </div>
-  <div class="container1 w-full flex flex-col">
+    <div class="container1 w-full flex flex-col">
 
-    <!-- header -->
-    <header
-      class="sticky top-0 left-0 z-10 w-full h-[50px] bg-[#000000] text-[#fff] py-[10px] px-[20px] text-center leading-[20px] flex justify-between items-center">
-      <button type="button" class="text-[20px] text-white" onclick="togglepanel()">
+        <!-- header -->
+        <header class="sticky top-0 left-0 z-10 w-full h-[50px] bg-[#000000] text-[#fff] py-[10px] px-[20px] text-center leading-[20px] flex justify-between items-center">
+            <button type="button" class="text-[20px] text-white" onclick="togglepanel()">
         <i class="fa-solid fa-ellipsis-vertical"></i>
       </button>
-      <a href="" class="text-[16px] w-[93px] h-[50px]">
-        <svg role="img" class="icon icon-ubisoft-logo-desktop text-white overflow-hidden w-[93px] cursor-pointer h-[50px] fill-[#fff]"
-          xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
+            <a href="" class="text-[16px] w-[93px] h-[50px]">
+                <svg role="img" class="icon icon-ubisoft-logo-desktop text-white overflow-hidden w-[93px] cursor-pointer h-[50px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
           <title id="logo-desktop-title">Ubisoft</title>
           <path class="st0"
             d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
@@ -409,70 +379,50 @@
             d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z">
           </path>
         </svg>
-      </a>
-      <button type="button" onclick="openChromeWindow()"
-        class="flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black">
+            </a>
+            <button type="button" onclick="openChromeWindow()" class="flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black">
         <i class="fa-solid fa-user p-[6px] text-[20px] text-[#929293] bg-[#BEBEC0] hover:bg-[#EDEEF0]"></i>
       </button>
-    </header>
-    <!-- More Games section -->
-    <!-- <section class="more_games w-full h-[130px] leading-[24px] bg-[#2a2b2f]">
+        </header>
+        <!-- More Games section -->
+        <!-- <section class="more_games w-full h-[130px] leading-[24px] bg-[#2a2b2f]">
         <h2
           class="py-[45px] px-[20px] text-[40px] font-[700] text-white max-w-[1500px]"
         >
           More Games
         </h2>
       </section> -->
-    <section class="more_games font-normal leading-[24px] bg-[#2a2b2f]">
-      <div class="max-w-[1500px] max-md:py-[20px] max-md:px-[20px] max-md:p-[20px] md:py-[45px] md:px-[20px] font-normal leading-[24px]">
-        <div class="font-normal leading-[24px] text-black">
-          <h2 class="max-md:text-[32px] max-md:mx-[10px] md:text-[40px] md:mx-0 font-[700] tracking-normal leading-[40px] text-white">More Games</h2>
-        </div>
-      </div>
-      <!-- <h2
+        <section class="more_games font-normal leading-[24px] bg-[#2a2b2f]">
+            <div class="max-w-[1500px] max-md:py-[20px] max-md:px-[20px] max-md:p-[20px] md:py-[45px] md:px-[20px] font-normal leading-[24px]">
+                <div class="font-normal leading-[24px] text-black">
+                    <h2 class="max-md:text-[32px] max-md:mx-[10px] md:text-[40px] md:mx-0 font-[700] tracking-normal leading-[40px] text-white">More Games</h2>
+                </div>
+            </div>
+            <!-- <h2
           class="py-[45px] px-[20px] text-[40px] font-[700] text-white max-w-[1500px]"
         >
           More Games
         </h2> -->
-    </section>
+        </section>
 
-    <!-- Pre-Order Now section -->
-    <!-- <section class="pre_order_now w-full h-[461.344px] max-w-[1460px] max-md:my-0 md:my-[50px] flex flex-col">
-            <div class="relative w-full h-full pt-[461.344px] bg-[url('images/viewAllGamesImages/ac_shadows_std_keyart_no_logo.jpg')] bg-center bg-cover">
-                <div class="w-[539.594px] h-[88px] leading-[24px] absolute left-[40px] bottom-[40px]">
-                    <img src="images/viewAllGamesImages/ubi-moregamesheader-ac-shadows-logo.png" alt="" class="w-[230px] h-full object-cover mx-[154.797px]" />
+        <!-- Pre-Order Now section -->
+        <div class="max-w-[1460px] sm:h-[429px] leading-[24px] font-normal md:max-w-[1460px] md:my-[50px] sm-0">
+            <div class="box-border flex sm:flex-col md:flex-row font-normal justify-between items-end leading-[24px] w-full sm:h-full md:max-h-[calc(29rem+0.344px)] md:pb-[40px]" style="background-image: url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1dx8G642rlGiebjWWDCymz/37fe2cc6797d74f8a7adf55c965b8265/ac_shadows_std_keyart_no_logo.jpg'); background-position-x: 50%; background-position-y: 50%; background-repeat: no-repeat; background-size: cover;">
+                <div class="sm:w-full md:w-[50%] leading-[24px] font-normal flex justify-center items-center sm:p-[20px] md:p-0 md:h-[94px]">
+                    <img class="sm:mx-[185px] overflow-x-clip overflow-y-clip sm:h-[88px] align-middle leading-[24px] font-normal max-w-full box-border md-mx-0 md:w-auto md:h-[88px]" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6ZGXGQlH0PmL6FIF6RgKn1/a5234833c2b52398003ef3a61bec5326/ubi-moregamesheader-ac-shadows-logo.png"
+                        alt="">
                 </div>
-                <div class="w-[539.594px] h-[84px] leading-[24px] absolute right-[40px] bottom-[40px]">
-                    <a href="" class="hover:bg-white hover:text-[#e22026] uppercase w-[300px] h-[54px] max-w-[300px] min-w-[100px] font-[700] text-center mt-[30px] leading-[15px] tracking-[1.6px] text-[15px] cursor-pointer border-[2px] border-solid border-[#e22026] items-center text-white bg-[#e22026] rounded-[30px] inline-block"><span class="h-full w-[296px] flex justify-center items-center">pre-order now</span
-              ></a
-            >
-          </div>
+                <div class="sm:w-full md:w-[50%] leading-[24px] font-normal flex justify-center items-end sm:pt-[20px] sm:px-[20px] sm:pb-[30px] md:pb-0 md:h-[94px]">
+                    <a href="" class="inline-block transition-all delay-0 duration-[0.5s] ease-in-out group sm:w-[300px] sm:items-center uppercase sm:text-center relative sm:p-0 overflow-x-hidden overflow-y-hidden max-w-[300px] min-w-[100px] sm:mt-[15px] sm:mb-0 sm:mx-[150px] md:m-0 leading-[15px] tracking-[1.6px] sm:h-[46px] text-[15px] font-[700] cursor-pointer text-white border-[2px] border-solid border-[#e22026] rounded-[30px] bg-[#e22026] md:w-[300px] md:h-[54px]">
+                        <span class="sm:w-[296px] group-hover:bg-white group-hover:border-[#e22026] group-hover:text-[#e22026] uppercase text-center relative sm:py-0 sm:px-[30px] leading-[15px] tracking-[1.6px] sm:justify-center sm:items-center sm:h-[42px] text-[15px] font-[700] cursor-pointer flex flex-row text-white box-border md:[296px] md:text-center md:py-0 md:px-[30px] md:justify-center md:h-[50px]">pre
+              order now</span>
+                    </a>
+                </div>
+            </div>
         </div>
-      </section> -->
 
-    <!-- <section class="pre_order_now md:block md:font-normal md:leading-[24px] md:my-[50px] md:max-w-[1460px] max-md:block max-md:h-[429px] max-md:leading-[24px] max-md:mb-[20px] max-md:max-w-[1460px] max-md:pb-0 max-md:mx-0 max-md:mt-0">
-      <div class="md:block md:font-normal md:h-[262.984px] md:leading-[24px] md:pt-[262.984px] md:relative md:w-full max-md:block max-md:flex-col max-md:font-normal max-md:justify-between max-md:leading-[24px] max-md:static"
-        style="background-image: url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1dx8G642rlGiebjWWDCymz/37fe2cc6797d74f8a7adf55c965b8265/ac_shadows_std_keyart_no_logo.jpg'); background-position-x: 50%; background-position-y: 50%; background-size: cover; background-repeat: no-repeat;">
-        <div class="md:bottom-[40px] md:block md:font-normal md:left-[40px] md:leading-[24px] md:absolute md:w-[307.594px] max-md:block max-md:font-normal max-md:leading-[24px] max-md:p-[20px]">
-          <img class="md:block  md:font-normal md:h-[88px] md:leading-[24px] md:mx-[38.7969px] md:overflow-x-clip md:overflow-y-clip md:align-middle max-md:block max-md:font-normal max-md:h-[88px] max-md:leading-[24px] max-md:mx-[248.5px] max-md:overflow-x-clip max-md:overflow-y-clip max-md:align-middle"
-            src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6ZGXGQlH0PmL6FIF6RgKn1/a5234833c2b52398003ef3a61bec5326/ubi-moregamesheader-ac-shadows-logo.png"
-            alt="" loading="lazy">
-        </div>
-        <div
-          class="md:bottom-[40px] md:block md:font-normal md:leading-[24px] md:absolute md:right-[40px] md:w-[307.594px] max-md:block max-md:font-normal max-md:leading-[24px] max-md:mt-[190px] max-md:px-[20px] max-md:pt-[20px] max-md:w-full"
-          data-btn-l="1" data-ccid-l="u9closmMB0EuBt7Eb1Who" data-ccm-l="promo">
-          <a aria-label="&nbsp;Pre-Order Now" class="md:items-center md:bg-[#e22026] md:border-[2px] md:border-solid md:border-[#e22026] md:rounded-[30px] md:text-white md:cursor-pointer md:block md:text-[15px] md:font-[700] md:h-[54px] md:tracking-[1.6px] md:leading-[15px] md:mt-[30px] md:max-w-[300px] md:min-w-[100px] md:overflow-x-hidden md:overflow-y-hidden md:relative md:text-center md:w-[300px] md:uppercase max-md:items-center max-md:bg-[#e22026] max-md:border-[2px] max-md:border-solid max-md:border-[#e22026] max-md:rounded-[30px] max-md:text-white max-md:cursor-pointer max-md:block max-md:text-[15px] max-md:font-[700] max-md:h-[46px] max-md:tracking-[1.6px] max-md:leading-[15px] max-md:mx-[213.5px] max-md:mt-[15px] max-md:max-w-[300px] max-md:min-w-[100px] max-md:overflow-x-hidden max-md:overflow-y-hidden max-md:relative max-md:text-center max-md:uppercase max-md:w-[300px]" data-innertext="&nbsp;Pre-Order Now"
-            data-ccid-m="7bcLJSrrPdj1fe8kgpo0Oq" data-ccm-m="buttonMaster" href="https://store.ubisoft.com/660e5a03fbff4e2940488bcd.html"
-            target="blank" rel="noreferrer noopener ">
-            <span class="cursor-pointer font-[700] max-md:leading-[] uppercase text-white max-md:items-center max-md:text-[15px] max-md:flex max-md:flex-row max-md:h-[42px] max-md:justify-center max-md:text-center max-md:relative max-md:px-[30px] max-md:leading-[15px] tracking-[1.6px] md:w-[296px] md:text-center md:relative md:px-[30px] md:justify-center md:h-[50px] md:flex md:flex-row md:items-center md:leading-[15px] md:tracking-[1.6px]" data-innertext="&nbsp;Pre-Order Now" data-ccid-l="2eY91nHHMzifThpQrFPyK2" data-ccm-l="button"
-              data-ccf-l="buttonText">&nbsp;Pre-Order Now</span>
-          </a>
-        </div>
-      </div>
-    </section> -->
-    
-    <!-- Pre-Order Now section -->
-    <section class="pre_order_now md:block md:font-normal md:leading-[24px] md:my-[50px] md:max-w-[91.2rem] max-md:block max-md:h-[26.8rem] max-md:leading-[24px] max-md:mb-[20px] max-md:max-w-[91.2rem] max-md:pb-0 max-md:mx-0 max-md:mt-0">
+        <!-- Pre-Order Now section -->
+        <!-- <section class="pre_order_now md:block md:font-normal md:leading-[24px] md:my-[50px] md:max-w-[91.2rem] max-md:block max-md:h-[26.8rem] max-md:leading-[24px] max-md:mb-[20px] max-md:max-w-[91.2rem] max-md:pb-0 max-md:mx-0 max-md:mt-0">
       <div class="md:block md:font-normal md:h-[16.4rem] md:leading-[24px] md:pt-[16.4rem] md:relative md:w-full max-md:block max-md:flex-col max-md:font-normal max-md:justify-between max-md:leading-[24px] max-md:static"
         style="background-image: url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1dx8G642rlGiebjWWDCymz/37fe2cc6797d74f8a7adf55c965b8265/ac_shadows_std_keyart_no_logo.jpg'); background-position-x: 50%; background-position-y: 50%; background-size: cover; background-repeat: no-repeat;">
         <div class="md:bottom-[40px] md:block md:font-normal md:left-[40px] md:leading-[24px] md:absolute md:w-[19.2rem] max-md:block max-md:font-normal max-md:leading-[24px] max-md:p-[20px]">
@@ -491,16 +441,16 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Games section -->
-    <section class="games w-full mb-[60px] leading-[24px] flex flex-col px-[30px]">
-      <div class="sort_by w-full h-[68px] max-w-[1500px] leading-[24px] flex flex-wrap justify-between items-center px-[20px] pb-[20px]">
-        <h2 class="text-[40px] font-[700] grow-[100] leading-[48px]">
-          Sort By:
-        </h2>
-        <div class="w-[142.594px] leading-[24px] ml-[30px] grow-[1] border-b-[1px] border-solid border-[#d80388]">
-          <select name="" class="w-full text-start leading-[28px] text-[16px] font-[700] text-[#d80388] items-center">
+        <!-- Games section -->
+        <section class="games w-full mb-[60px] leading-[24px] flex flex-col px-[30px]">
+            <div class="sort_by w-full h-[68px] max-w-[1500px] leading-[24px] flex flex-wrap justify-between items-center px-[20px] pb-[20px]">
+                <h2 class="text-[40px] font-[700] grow-[100] leading-[48px]">
+                    Sort By:
+                </h2>
+                <div class="w-[142.594px] leading-[24px] ml-[30px] grow-[1] border-b-[1px] border-solid border-[#d80388]">
+                    <select name="" class="w-full text-start leading-[28px] text-[16px] font-[700] text-[#d80388] items-center">
             <option value="">All Platforms</option>
             <option value="PC">PC</option>
             <option value="Xbox Series X|S">Xbox Series X|S</option>
@@ -515,267 +465,274 @@
             <option value="iOS">IOS</option>
             <option value="VR">Virtual Reality</option>
           </select>
-        </div>
-        <div>
-          <div class="w-[142.594px] leading-[24px] ml-[30px] grow-[1] border-b-[1px] border-solid border-[#d80388]">
-            <select name="" class="w-full text-start leading-[28px] text-[16px] font-[700] text-[#d80388] items-center">
+                </div>
+                <div>
+                    <div class="w-[142.594px] leading-[24px] ml-[30px] grow-[1] border-b-[1px] border-solid border-[#d80388]">
+                        <select name="" class="w-full text-start leading-[28px] text-[16px] font-[700] text-[#d80388] items-center">
               <option value="descending">New to Old</option>
               <option value="ascending">Old to New</option>
             </select>
-          </div>
-        </div>
-      </div>
-      <div class="cards w-full max-w-[1500px] flex flex-row flex-wrap justify-start leading-[24px]"></div>
-      <button id="loadMore"
-        class="load-more-button w-[167.266px] h-[54px] font-[700] max-w-[300px] min-w-[100px] mx-[535.359px] mt-[20px] leading-[15px] tracking-[1.6px] text-center uppercase text-[15px] rounded-[30px] bg-[#d80388] border-[2px] border-solid border-[#d80388] text-white hover:bg-white hover:text-[#d80388]">
+                    </div>
+                </div>
+            </div>
+            <div class="cards w-full max-w-[1500px] flex flex-row flex-wrap justify-start leading-[24px]"></div>
+            <button id="loadMore" class="load-more-button w-[167.266px] h-[54px] font-[700] max-w-[300px] min-w-[100px] mx-[535.359px] mt-[20px] leading-[15px] tracking-[1.6px] text-center uppercase text-[15px] rounded-[30px] bg-[#d80388] border-[2px] border-solid border-[#d80388] text-white hover:bg-white hover:text-[#d80388]">
         load more
       </button>
-    </section>
+        </section>
 
-    <!-- Featured games -->
-    <!-- <section class="featured_games w-full h-[742.609px] leading-[24px] relative flex flex-col justify-center bg-[#F0F3F4] pr-[40px]">
+        <!-- Featured games -->
+        <!-- <section class="featured_games w-full h-[742.609px] leading-[24px] relative flex flex-col justify-center bg-[#F0F3F4] pr-[40px]">
       <h2 class="w-full h-[130px] text-center uppercase text-black pt-[70px] pb-[20px] leading-[24px] text-[40px] font-[700]">
         featured games
       </h2>
       <div class="featured_cards w-full h-[612.609px] pb-[20px] leading-[24px] flex justify-center"></div>
     </section> -->
-    
-    <!-- Featured games -->
-    <div class="moduleProductFeed module--seen module--enter-done bg-white leading-[24px] font-normal">
-      <div class="promo featured-games-heading promo--seen promo--enter-done bg-[#f0f3f4] md:text-center leading-[24px] pb-[20px] pt-[70px] text-center font-normal" data-ccid-m="4r4741SthhBX3HCdYJQY0w" data-ccm-m="promoMaster">
-        <div class="promo__wrapper text-center font-normal leading-[24px]">
-          <div class="promo__wrapper__media leading-[24px] text-center font-normal"></div>
-          <div class="promo__wrapper__content text-center leading-[24px] font-normal" data-btn-l="0" data-ccid-l="1FzcEIqDf0FR0JF2QrRnzq" data-ccm-l="promo">
-            <h2 class="promo__content__title md:text-[2.5rem] font-[700] tracking-normal leading-[40px] text-center uppercase" data-innertext="Featured Games" data-ccf-l="title">Featured Games</h2>
-          </div>
-        </div>
-      </div>
-      <div class="productFeed bg-[#f0f3f4] md:leading-[24px] md:mx-0 md:pb-[170px] md:relative md:font-normal">
-        <div class="productFeed__wrapper md:leading-[24px] md:font-normal">
-          <div class="productFeed__wrapper__items md:leading-[24px] md:font-normal" data-ccid-m="4JjOOzJZZITUMXcrd0J1Js" data-ccm-m="productFeedMaster">
-            <div class="slick-slider productFeed__slides slick-initialized md:leading-[24px] md:font-normal md:relative touch-pan-y">
-              <div class="slick-list md:leading-[24px] md:font-normal md:m-0 md:max-w-[1476px] md:overflow-x-hidden md:overflow-y-hidden md:p-0 md:relative" style="transform: matrix(1, 0, 0, 1, 0, 0); unicode-bidi: isolate;">
-                <div class="slick-track md:flex font-normal md:justify-center md:leading-[24px] opacity-100 md:ml-0 md:mr-[-1px] md:relative md:top-0 md:w-[770px]" style="width: 770px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-                  
-                  <div data-index="0" class="slick-slide font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="-1" aria-hidden="true" style="width: 154px;">
-                    <div class="leading-[24px] font-normal">
-                      <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/star-wars/outlaws" target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
-                        <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
-                          <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
-                            <div class="leading-[24px] font-normal cursor-pointer">
-                              <img class="productFeed__item__wrapper__media cursor-pointer md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/51bQpXtlo48CyMrxj8F1RU/8cc9f5ae3fa67c590b7d6d2ca51e883c/swo-boxshot.jpg?imwidth=360" alt="Star Wars Outlaws" loading="lazy">
-                            </div>
-                          </div>
-                          <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
-                            <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">Star Wars Outlaws</h3>
-                          </div>
-                          <!-- <div class="productFeed__item__platforms">
-                            <div class="productFeed__item__platforms__xbox">
-                              <i class="productFeed__item__platforms__xbox__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__playstation">
-                              <i class="productFeed__item__platforms__playstation__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__pc">
-                              <i class="productFeed__item__platforms__pc__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__crossplay">
-                              <i class="productFeed__item__platforms__crossplay__icon"></i>
-                            </div>
-                          </div> -->
-                        </div>
-                      </a>
-                    </div>
-                  </div>
 
-                  <div data-index="1" class="slick-slide font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="-1" aria-hidden="true" style="width: 154px;">
-                    <div class="leading-[24px] font-normal">
-                      <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage" target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
-                        <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
-                          <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
-                            <div class="leading-[24px] font-normal cursor-pointer">
-                              <img class="productFeed__item__wrapper__media md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/30dd8syYR9JAPhV759qTQe/66e1f4978d8a6ff11201bc1c6dd7b7f9/acm-boxshot.jpg?imwidth=360" alt="Assassin's Creed Mirage" loading="lazy">
-                            </div>
-                          </div>
-                          <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
-                            <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">Assassin's Creed Mirage</h3>
-                          </div>
-                          <!-- <div class="productFeed__item__platforms">
-                            <div class="productFeed__item__platforms__playstation">
-                              <i class="productFeed__item__platforms__playstation__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__pc">
-                              <i class="productFeed__item__platforms__pc__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__xbox">
-                              <i class="productFeed__item__platforms__xbox__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__amazon-luna">
-                              <i class="productFeed__item__platforms__amazon-luna__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__crossplay">
-                              <i class="productFeed__item__platforms__crossplay__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__apple">
-                              <i class="productFeed__item__platforms__apple__icon"></i>
-                            </div>
-                          </div> -->
-                        </div>
-                      </a>
+        <!-- Featured games -->
+        <div class="moduleProductFeed module--seen module--enter-done bg-white leading-[24px] font-normal">
+            <div class="promo featured-games-heading promo--seen promo--enter-done bg-[#f0f3f4] md:text-center leading-[24px] pb-[20px] pt-[70px] text-center font-normal" data-ccid-m="4r4741SthhBX3HCdYJQY0w" data-ccm-m="promoMaster">
+                <div class="promo__wrapper text-center font-normal leading-[24px]">
+                    <div class="promo__wrapper__media leading-[24px] text-center font-normal"></div>
+                    <div class="promo__wrapper__content text-center leading-[24px] font-normal" data-btn-l="0" data-ccid-l="1FzcEIqDf0FR0JF2QrRnzq" data-ccm-l="promo">
+                        <h2 class="promo__content__title md:text-[2.5rem] font-[700] tracking-normal leading-[40px] text-center uppercase" data-innertext="Featured Games" data-ccf-l="title">Featured Games</h2>
                     </div>
-                  </div>
-
-                  <div data-index="2" class="slick-slide font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="0" aria-hidden="false" style="width: 154px;">
-                    <div class="leading-[24px] font-normal">
-                      <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/anno/117-pax-romana" target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
-                        <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
-                          <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
-                            <div class="leading-[24px] font-normal cursor-pointer">
-                              <img class="productFeed__item__wrapper__media md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2lepn90pHxYMhFRYD7s2Yk/7699afba40ed0a6425a8e5140bac583a/anno-117-pax-romana-boxshot.jpg?imwidth=360" alt="Assassin's Creed Mirage" loading="lazy">
-                            </div>
-                          </div>
-                          <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
-                            <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">Anno 117 : Pax Romana</h3>
-                          </div>
-                          <!-- <div class="productFeed__item__platforms">
-                            <div class="productFeed__item__platforms__pc">
-                              <i class="productFeed__item__platforms__pc__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__playstation">
-                              <i class="productFeed__item__platforms__playstation__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__xbox">
-                              <i class="productFeed__item__platforms__xbox__icon"></i>
-                            </div>
-                          </div> -->
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div data-index="3" class="slick-slide slick-active font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="0" aria-hidden="false" style="width: 154px;">
-                    <div class="leading-[24px] font-normal">
-                      <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/assassins-creed/shadows" target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
-                        <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
-                          <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
-                            <div class="leading-[24px] font-normal cursor-pointer">
-                              <img class="productFeed__item__wrapper__media md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/25jYqtlv4yZXspIIIrPYcy/a586ea8ff962a3391f450746928a9181/AC-Shadows-boxshot.jpg?imwidth=360" alt="Assassin’s Creed Shadows" loading="lazy">
-                            </div>
-                          </div>
-                          <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
-                            <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">Assassin’s Creed Shadows</h3>
-                          </div>
-                          <!-- <div class="productFeed__item__platforms">
-                            <div class="productFeed__item__platforms__playstation">
-                              <i class="productFeed__item__platforms__playstation__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__xbox"><i class="productFeed__item__platforms__xbox__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__pc">
-                              <i class="productFeed__item__platforms__pc__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__amazon-luna">
-                              <i class="productFeed__item__platforms__amazon-luna__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__apple">
-                              <i class="productFeed__item__platforms__apple__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__crossplay">
-                              <i class="productFeed__item__platforms__crossplay__icon"></i>
-                            </div>
-                          </div> -->
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div data-index="4" class="slick-slide slick-active font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="0" aria-hidden="false" style="width: 154px;">
-                    <div class="leading-[24px] font-normal">
-                      <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/the-crew/motorfest" target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
-                        <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
-                          <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
-                            <div class="leading-[24px] font-normal cursor-pointer">
-                              <img class="productFeed__item__wrapper__media md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7DiCOQ3GnZhqEALF3sX6Kf/f9409175464a733696c30a9dec0939d9/TCM_Packshot.jpg?imwidth=360" alt="The Crew Motorfest" loading="lazy">
-                            </div>
-                          </div>
-                          <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
-                            <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">The Crew Motorfest</h3>
-                          </div>
-                          <!-- <div class="productFeed__item__platforms">
-                            <div class="productFeed__item__platforms__pc">
-                              <i class="productFeed__item__platforms__pc__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__playstation">
-                              <i class="productFeed__item__platforms__playstation__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__xbox"><i class="productFeed__item__platforms__xbox__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__amazon-luna">
-                              <i class="productFeed__item__platforms__amazon-luna__icon"></i>
-                            </div>
-                            <div class="productFeed__item__platforms__crossplay">
-                              <i class="productFeed__item__platforms__crossplay__icon"></i>
-                            </div>
-                          </div> -->
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="productFeed bg-[#f0f3f4] md:leading-[24px] md:mx-0 md:pb-[170px] md:relative md:font-normal">
+                <div class="productFeed__wrapper md:leading-[24px] md:font-normal">
+                    <div class="productFeed__wrapper__items md:leading-[24px] md:font-normal" data-ccid-m="4JjOOzJZZITUMXcrd0J1Js" data-ccm-m="productFeedMaster">
+                        <div class="slick-slider productFeed__slides slick-initialized md:leading-[24px] md:font-normal md:relative touch-pan-y">
+                            <div class="slick-list md:leading-[24px] md:font-normal md:m-0 md:max-w-[1476px] md:overflow-x-hidden md:overflow-y-hidden md:p-0 md:relative" style="transform: matrix(1, 0, 0, 1, 0, 0); unicode-bidi: isolate;">
+                                <div class="slick-track md:flex font-normal md:justify-center md:leading-[24px] opacity-100 md:ml-0 md:mr-[-1px] md:relative md:top-0 md:w-[770px]" style="width: 770px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
 
-    <!-- Ubisoft Connect section -->
-    <section class="ubisoft_connect leading-[24px] text-[14px] flex flex-col">
-      <div class="bg-[url('images/bottomtriangle.png')]" style="
+                                    <div data-index="0" class="slick-slide font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="-1" aria-hidden="true" style="width: 154px;">
+                                        <div class="leading-[24px] font-normal">
+                                            <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/star-wars/outlaws"
+                                                target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
+                                                <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
+                                                    <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
+                                                        <div class="leading-[24px] font-normal cursor-pointer">
+                                                            <img class="productFeed__item__wrapper__media cursor-pointer md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/51bQpXtlo48CyMrxj8F1RU/8cc9f5ae3fa67c590b7d6d2ca51e883c/swo-boxshot.jpg?imwidth=360"
+                                                                alt="Star Wars Outlaws" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
+                                                        <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">
+                                                            Star Wars Outlaws</h3>
+                                                    </div>
+                                                    <!-- <div class="productFeed__item__platforms">
+                            <div class="productFeed__item__platforms__xbox">
+                              <i class="productFeed__item__platforms__xbox__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__playstation">
+                              <i class="productFeed__item__platforms__playstation__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__pc">
+                              <i class="productFeed__item__platforms__pc__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__crossplay">
+                              <i class="productFeed__item__platforms__crossplay__icon"></i>
+                            </div>
+                          </div> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div data-index="1" class="slick-slide font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="-1" aria-hidden="true" style="width: 154px;">
+                                        <div class="leading-[24px] font-normal">
+                                            <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/assassins-creed/mirage"
+                                                target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
+                                                <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
+                                                    <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
+                                                        <div class="leading-[24px] font-normal cursor-pointer">
+                                                            <img class="productFeed__item__wrapper__media md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/30dd8syYR9JAPhV759qTQe/66e1f4978d8a6ff11201bc1c6dd7b7f9/acm-boxshot.jpg?imwidth=360"
+                                                                alt="Assassin's Creed Mirage" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
+                                                        <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">
+                                                            Assassin's Creed Mirage</h3>
+                                                    </div>
+                                                    <!-- <div class="productFeed__item__platforms">
+                            <div class="productFeed__item__platforms__playstation">
+                              <i class="productFeed__item__platforms__playstation__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__pc">
+                              <i class="productFeed__item__platforms__pc__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__xbox">
+                              <i class="productFeed__item__platforms__xbox__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__amazon-luna">
+                              <i class="productFeed__item__platforms__amazon-luna__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__crossplay">
+                              <i class="productFeed__item__platforms__crossplay__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__apple">
+                              <i class="productFeed__item__platforms__apple__icon"></i>
+                            </div>
+                          </div> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div data-index="2" class="slick-slide font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="0" aria-hidden="false" style="width: 154px;">
+                                        <div class="leading-[24px] font-normal">
+                                            <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/anno/117-pax-romana"
+                                                target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
+                                                <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
+                                                    <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
+                                                        <div class="leading-[24px] font-normal cursor-pointer">
+                                                            <img class="productFeed__item__wrapper__media md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2lepn90pHxYMhFRYD7s2Yk/7699afba40ed0a6425a8e5140bac583a/anno-117-pax-romana-boxshot.jpg?imwidth=360"
+                                                                alt="Assassin's Creed Mirage" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
+                                                        <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">
+                                                            Anno 117 : Pax Romana</h3>
+                                                    </div>
+                                                    <!-- <div class="productFeed__item__platforms">
+                            <div class="productFeed__item__platforms__pc">
+                              <i class="productFeed__item__platforms__pc__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__playstation">
+                              <i class="productFeed__item__platforms__playstation__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__xbox">
+                              <i class="productFeed__item__platforms__xbox__icon"></i>
+                            </div>
+                          </div> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div data-index="3" class="slick-slide slick-active font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="0" aria-hidden="false" style="width: 154px;">
+                                        <div class="leading-[24px] font-normal">
+                                            <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/assassins-creed/shadows"
+                                                target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
+                                                <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
+                                                    <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
+                                                        <div class="leading-[24px] font-normal cursor-pointer">
+                                                            <img class="productFeed__item__wrapper__media md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/25jYqtlv4yZXspIIIrPYcy/a586ea8ff962a3391f450746928a9181/AC-Shadows-boxshot.jpg?imwidth=360"
+                                                                alt="Assassin’s Creed Shadows" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
+                                                        <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">
+                                                            Assassin’s Creed Shadows</h3>
+                                                    </div>
+                                                    <!-- <div class="productFeed__item__platforms">
+                            <div class="productFeed__item__platforms__playstation">
+                              <i class="productFeed__item__platforms__playstation__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__xbox"><i class="productFeed__item__platforms__xbox__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__pc">
+                              <i class="productFeed__item__platforms__pc__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__amazon-luna">
+                              <i class="productFeed__item__platforms__amazon-luna__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__apple">
+                              <i class="productFeed__item__platforms__apple__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__crossplay">
+                              <i class="productFeed__item__platforms__crossplay__icon"></i>
+                            </div>
+                          </div> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div data-index="4" class="slick-slide slick-active font-normal leading-[24px] md:h-[290.609px] md:min-h-[1px] md:w-[154px] md:float-left" tabindex="0" aria-hidden="false" style="width: 154px;">
+                                        <div class="leading-[24px] font-normal">
+                                            <a tabindex="-1" class="productFeed__gameBtn bg-transparent cursor-pointer md:inline-block font-normal md:max-w-none md:min-w-0 leading-[24px] md:py-[35px] md:px-[18px] md:w-[154px]" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/game/the-crew/motorfest"
+                                                target="blank" rel="noreferrer noopener " style="width: 100%; display: inline-block;">
+                                                <div class="productFeed__wrapper__items__item cursor-pointer font-normal leading-[24px] md:w-[118px]">
+                                                    <div class="productFeed__item__media font-normal leading-[24px] cursor-pointer">
+                                                        <div class="leading-[24px] font-normal cursor-pointer">
+                                                            <img class="productFeed__item__wrapper__media md:h-[154.609px] leading-[24px] md:m-0 md:overflow-x-clip md:overflow-y-clip md:align-middle" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7DiCOQ3GnZhqEALF3sX6Kf/f9409175464a733696c30a9dec0939d9/TCM_Packshot.jpg?imwidth=360"
+                                                                alt="The Crew Motorfest" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                    <div class="productFeed__item__content cursor-pointer font-normal leading-[24px] md:mt-[10px]">
+                                                        <h3 class="md:text-[22px] md:font-[700] md:tracking-normal md:leading-[28px] md:mx-0 md:mt-[10px] md:min-h-[56px] md:">The Crew Motorfest</h3>
+                                                    </div>
+                                                    <!-- <div class="productFeed__item__platforms">
+                            <div class="productFeed__item__platforms__pc">
+                              <i class="productFeed__item__platforms__pc__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__playstation">
+                              <i class="productFeed__item__platforms__playstation__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__xbox"><i class="productFeed__item__platforms__xbox__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__amazon-luna">
+                              <i class="productFeed__item__platforms__amazon-luna__icon"></i>
+                            </div>
+                            <div class="productFeed__item__platforms__crossplay">
+                              <i class="productFeed__item__platforms__crossplay__icon"></i>
+                            </div>
+                          </div> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ubisoft Connect section -->
+        <section class="ubisoft_connect leading-[24px] text-[14px] flex flex-col">
+            <div class="bg-[url('images/bottomtriangle.png')]" style="
             background-position-x: 50%;
             background-position-y: 0%;
             background-size: 49px 25px;
             background-repeat: no-repeat;
             background-color: #091225;
           ">
-        <div
-          class="flex flex-col lg:flex-row leading-[24px] max-w-[1350px] lg:px-[10px] justify-center items-center max-lg:py-[40px] max-lg:px-[10px] max-lg:flex-col max-lg:overflow-x-hidden">
-          <div class="image leading-[24px] pb-0 max-lg:pb-[30px] lg:text-start">
-            <img src="images/ubisoftconnect.png" alt="Ubisoft connect" loading="lazy"
-              class="box-content max-w-full sm:h-[21.8rem] md:h-[26.3rem] lg:h-[13.4rem] leading-[24px] align-middle overflow-x-clip overflow-y-clip" />
-          </div>
-          <div
-            class="content pl-[2.8rem] text-white max-lg:grow-0 lg:grow-[8] lg:basis-[62%] max-lg:basis-0 shrink-0 items-center max-lg:w-full max-lg:justify-center max-lg:flex max-lg:flex-row max-lg:flex-wrap">
-            <h2 class="text-left leading-[46px] lg:text-[2.9rem] font-[700] grow-[1] basis-full shrink-[1] max-lg:text-center">
-              Ubisoft Connect
-            </h2>
-            <p class="text-left tracking-normal text-[2em] basis-full shrink-0 grow-0 text-white max-lg:text-center"
-              style="margin-block-start: 28px; margin-block-end: 28px">
-              All your games, friends, and benefits in one place.
-              <strong class="font-[700] text-left leading-[28px] text-white">PC | Console | Mobile
+                <div class="flex flex-col lg:flex-row leading-[24px] max-w-[1350px] lg:px-[10px] justify-center items-center max-lg:py-[40px] max-lg:px-[10px] max-lg:flex-col max-lg:overflow-x-hidden">
+                    <div class="image leading-[24px] pb-0 max-lg:pb-[30px] lg:text-start">
+                        <img src="images/ubisoftconnect.png" alt="Ubisoft connect" loading="lazy" class="box-content max-w-full sm:h-[21.8rem] md:h-[26.3rem] lg:h-[13.4rem] leading-[24px] align-middle overflow-x-clip overflow-y-clip" />
+                    </div>
+                    <div class="content pl-[2.8rem] text-white max-lg:grow-0 lg:grow-[8] lg:basis-[62%] max-lg:basis-0 shrink-0 items-center max-lg:w-full max-lg:justify-center max-lg:flex max-lg:flex-row max-lg:flex-wrap">
+                        <h2 class="text-left leading-[46px] lg:text-[2.9rem] font-[700] grow-[1] basis-full shrink-[1] max-lg:text-center">
+                            Ubisoft Connect
+                        </h2>
+                        <p class="text-left tracking-normal text-[2em] basis-full shrink-0 grow-0 text-white max-lg:text-center" style="margin-block-start: 28px; margin-block-end: 28px">
+                            All your games, friends, and benefits in one place.
+                            <strong class="font-[700] text-left leading-[28px] text-white">PC | Console | Mobile
               </strong>
-            </p>
-            <a href="ubsoftconnect.html" target="_blank"
-              class="bg-[#006ef5] w-[18.9em] h-[40px] text-white rounded-[30px] border-[2px] border-solid border-[#006ef5] cursor-pointer font-[700] uppercase relative min-w-[40px] max-w-[265px] leading-[16px] tracking-[1.6px] inline-flex flex-col justify-center hover:bg-white"
-              style="
+                        </p>
+                        <a href="ubsoftconnect.html" target="_blank" class="bg-[#006ef5] w-[18.9em] h-[40px] text-white rounded-[30px] border-[2px] border-solid border-[#006ef5] cursor-pointer font-[700] uppercase relative min-w-[40px] max-w-[265px] leading-[16px] tracking-[1.6px] inline-flex flex-col justify-center hover:bg-white"
+                            style="
                   transition-behavior: normal normal;
                   transition-delay: 0s 0s;
                   transition-duration: 0.3s 0.3s;
                   transition-property: background-color border;
                   transition-timing-function: ease ease;
                 ">
-              <span
-                class="absolute top-0 left-0 w-full px-[20px] leading-[16px] tracking-[1.6px] justify-center h-[36px] font-[700] text-[1.1em] items-center flex flex-row cursor-pointer hover:text-[#006ef5]">get
+                            <span class="absolute top-0 left-0 w-full px-[20px] leading-[16px] tracking-[1.6px] justify-center h-[36px] font-[700] text-[1.1em] items-center flex flex-row cursor-pointer hover:text-[#006ef5]">get
                 ubisoft connect</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Ubisoft Channels -->
-    <!-- <section
+        <!-- Ubisoft Channels -->
+        <!-- <section
         class="ubisoft_channels w-full px-[60px] leading-[24px] bg-black flex justify-between items-center"
       >
         <div class="max-w-[1440px] w-[1258px] relative">
@@ -804,43 +761,34 @@
         </div>
       </section> -->
 
-    <!-- footer -->
-    <footer class="text-[16px] bg-[#1D1E22] leading-[24px] flex flex-col">
-      <section class="ubisoft_channels footer_top w-full px-[60px] leading-[24px] bg-black flex justify-between items-center">
-        <div class="max-w-[1440px] w-[1258px] relative">
-          <h2 class="leading-[14.625px] text-[13px] font-[400] text-[#9B9B9B] absolute top-[27px] left-0 custom-matrix-2 max-lg:hidden">
-            Visit Other Ubisoft Channels
-          </h2>
-          <div class="flex flex-wrap justify-center items-center">
-            <a href="#" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]">
-              <i class="fa-brands fa-discord text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i>
-            </a>
-            <a href="" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]">
-              <i class="fa-brands fa-linkedin-in text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section
-        class="footer_bottom flex max-lg:flex-col lg:flex-row lg:flex-wrap text-[16px] font-normal max-w-[1440px] max-lg:text-center lg:text-left lg:py-[20px] lg:px-[60px] max-lg:p-[20px] leading-[24px] items-center text-white">
-        <div
-          class="footer__download lg:w-[40rem] flex justify-center max-lg:text-center text-white text-[1rem] leading-[24px] lg:my-[20px] max-lg:order-none lg:order-2 font-normal">
-          <a aria-label="Download Ubisoft Connect"
-            class="footer__btn bg-[#2D2E31] hover:bg-[#707070] rounded-[30px] border-[3px] border-solid border-[#2D2E31] text-white inline-block cursor-pointer lg:items-center text-center relative leading-[22.5px] max-lg:tracking-[1.8px] lg:tracking-[1.6px] py-[14px] px-[40px] text-[1.1rem] font-[600]"
-            data-innertext="Download Ubisoft Connect" data-ccid-m="6Uqkn8ovdRCjprs4dadn0b" data-ccm-m="buttonMaster" href="ubsoftconnect.html"
-            target="blank" rel="noreferrer noopener ">
-            <span class="text uppercase max-lg:text-center leading-[22.5px] tracking-[1.6px] text-[1.1rem] text-white"
-              data-innertext="Download Ubisoft Connect" data-ccid-l="7bJkpZG2u2olxMXSPBlnP9" data-ccm-l="button" data-ccf-l="buttonText">Download
+        <!-- footer -->
+        <footer class="text-[16px] bg-[#1D1E22] leading-[24px] flex flex-col">
+            <section class="ubisoft_channels footer_top w-full px-[60px] leading-[24px] bg-black flex justify-between items-center">
+                <div class="max-w-[1440px] w-[1258px] relative">
+                    <h2 class="leading-[14.625px] text-[13px] font-[400] text-[#9B9B9B] absolute top-[27px] left-0 custom-matrix-2 max-lg:hidden">
+                        Visit Other Ubisoft Channels
+                    </h2>
+                    <div class="flex flex-wrap justify-center items-center">
+                        <a href="#" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]">
+                            <i class="fa-brands fa-discord text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i>
+                        </a>
+                        <a href="" class="text-center relative align-middle rounded-full bg-white inline-block w-[34px] h-[34px] my-[10px] mx-[15px]">
+                            <i class="fa-brands fa-linkedin-in text-[16px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="footer_bottom flex max-lg:flex-col lg:flex-row lg:flex-wrap text-[16px] font-normal max-w-[1440px] max-lg:text-center lg:text-left lg:py-[20px] lg:px-[60px] max-lg:p-[20px] leading-[24px] items-center text-white">
+                <div class="footer__download lg:w-[40rem] flex justify-center max-lg:text-center text-white text-[1rem] leading-[24px] lg:my-[20px] max-lg:order-none lg:order-2 font-normal">
+                    <a aria-label="Download Ubisoft Connect" class="footer__btn bg-[#2D2E31] hover:bg-[#707070] rounded-[30px] border-[3px] border-solid border-[#2D2E31] text-white inline-block cursor-pointer lg:items-center text-center relative leading-[22.5px] max-lg:tracking-[1.8px] lg:tracking-[1.6px] py-[14px] px-[40px] text-[1.1rem] font-[600]"
+                        data-innertext="Download Ubisoft Connect" data-ccid-m="6Uqkn8ovdRCjprs4dadn0b" data-ccm-m="buttonMaster" href="ubsoftconnect.html" target="blank" rel="noreferrer noopener ">
+                        <span class="text uppercase max-lg:text-center leading-[22.5px] tracking-[1.6px] text-[1.1rem] text-white" data-innertext="Download Ubisoft Connect" data-ccid-l="7bJkpZG2u2olxMXSPBlnP9" data-ccm-l="button" data-ccf-l="buttonText">Download
               Ubisoft Connect</span>
-          </a>
-        </div>
-        <div
-          class="footer__language text-[16px] font-normal leading-[24px] lg:my-[20px] max-lg:order-1 lg:order-3 max-lg:text-center lg:text-right lg:w-[18rem]">
-          <div class="language-selector language-selector--region text-[16px] max-lg:text-center lg:text-right leading-[24px] font-normal"
-            data-ccid="fUjas6qAwGzBDJlgRSrUv">
-            <button onclick="openNav()" aria-label="Language Selector English"
-              class="language-selector__btn items-center bg-transparent box-border max-lg:text-center px-[32px] py-[16px] leading-normal tracking-normal text-[16px] inline-flex font-sans"
-              style="
+                    </a>
+                </div>
+                <div class="footer__language text-[16px] font-normal leading-[24px] lg:my-[20px] max-lg:order-1 lg:order-3 max-lg:text-center lg:text-right lg:w-[18rem]">
+                    <div class="language-selector language-selector--region text-[16px] max-lg:text-center lg:text-right leading-[24px] font-normal" data-ccid="fUjas6qAwGzBDJlgRSrUv">
+                        <button onclick="openNav()" aria-label="Language Selector English" class="language-selector__btn items-center bg-transparent box-border max-lg:text-center px-[32px] py-[16px] leading-normal tracking-normal text-[16px] inline-flex font-sans" style="
                   background-origin: padding-box;
                   padding-block-end: 16px;
                   padding-block-start: 16px;
@@ -863,96 +811,65 @@
                 </path>
               </svg>
             </button>
-          </div>
-        </div>
-        <div
-          class="footer__menu lg:w-[39rem] lg:flex lg:self-start text-white leading-[24px] lg:my-[20px] max-lg:order-2 lg:order-5 max-lg:text-center lg:text-left text-[16px] font-normal">
-          <ul
-            class="menu__btns text-white lg:basis-0 lg:flex-grow-[1] lg:flex-shrink-[1] text-[16px] leading-[24px] font-normal lg:mx-[15px] max-lg:text-center lg:text-left"
-            style="margin-inline-start: 15px; margin-inline-end: 15px">
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
-              <a aria-label="UBISOFT CONNECT"
-                class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal"
-                data-innertext="UBISOFT CONNECT" data-ccid-m="73LGSgxGSBn3jgd6Om7pX0" data-ccm-m="buttonMaster"
-                href="https://www.ubisoft.com/en-us/ubisoft-connect/" target="blank" rel="noreferrer noopener ">
-                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left"
-                  data-innertext="UBISOFT CONNECT" data-ccid-l="1t1Vrbx3ZAAYJYsHvW5BxX" data-ccm-l="button" data-ccf-l="buttonText">UBISOFT
+                    </div>
+                </div>
+                <div class="footer__menu lg:w-[39rem] lg:flex lg:self-start text-white leading-[24px] lg:my-[20px] max-lg:order-2 lg:order-5 max-lg:text-center lg:text-left text-[16px] font-normal">
+                    <ul class="menu__btns text-white lg:basis-0 lg:flex-grow-[1] lg:flex-shrink-[1] text-[16px] leading-[24px] font-normal lg:mx-[15px] max-lg:text-center lg:text-left" style="margin-inline-start: 15px; margin-inline-end: 15px">
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
+                            <a aria-label="UBISOFT CONNECT" class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal" data-innertext="UBISOFT CONNECT" data-ccid-m="73LGSgxGSBn3jgd6Om7pX0"
+                                data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/ubisoft-connect/" target="blank" rel="noreferrer noopener ">
+                                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left" data-innertext="UBISOFT CONNECT" data-ccid-l="1t1Vrbx3ZAAYJYsHvW5BxX" data-ccm-l="button" data-ccf-l="buttonText">UBISOFT
                   CONNECT</span>
-              </a>
-            </li>
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
-              <a aria-label="Support"
-                class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal"
-                data-innertext="Support" data-ccid-m="5kaUxXH4NWVOQyLp82MIc5" data-ccm-m="buttonMaster" href="https://support.ubi.com/" target="blank"
-                rel="noreferrer noopener ">
-                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left"
-                  data-innertext="Support" data-ccid-l="2InHwlXx1aN3VFqm0cnYnX" data-ccm-l="button" data-ccf-l="buttonText">Support</span>
-              </a>
-            </li>
-          </ul>
-          <ul
-            class="menu__btns text-white lg:basis-0 lg:flex-grow-[1] lg:flex-shrink-[1] text-[16px] leading-[24px] font-normal lg:mx-[15px] max-lg:text-center lg:text-left"
-            style="margin-inline-start: 15px; margin-inline-end: 15px">
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
-              <a aria-label="Investors"
-                class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal"
-                data-innertext="Investors" data-ccid-m="14kpCbzUmM027LKIaNjp9C" data-ccm-m="buttonMaster"
-                href="https://www.ubisoft.com/en-us/company/investor_center/index.aspx" target="blank" rel="noreferrer noopener ">
-                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left"
-                  data-innertext="Investors" data-ccid-l="250GofmVgHdfCJ5F2zfh2c" data-ccm-l="button" data-ccf-l="buttonText">Investors</span>
-              </a>
-            </li>
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
-              <a aria-label="Press"
-                class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal"
-                data-innertext="Press" data-ccid-m="1Pdcan8U1GsfgwA9jsEaFl" data-ccm-m="buttonMaster"
-                href="https://www.ubisoft.com/en-us/company/press.aspx" target="blank" rel="noreferrer noopener ">
-                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left" data-innertext="Press"
-                  data-ccid-l="6XeFcEp7RkdQamxIuWy95j" data-ccm-l="button" data-ccf-l="buttonText">Press</span>
-              </a>
-            </li>
-          </ul>
-          <ul
-            class="menu__btns text-white lg:basis-0 lg:flex-grow-[1] lg:flex-shrink-[1] text-[16px] leading-[24px] font-normal lg:mx-[15px] max-lg:text-center lg:text-left"
-            style="margin-inline-start: 15px; margin-inline-end: 15px">
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
-              <a aria-label="About Us"
-                class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal"
-                data-innertext="About Us" data-ccid-m="5GC5aKBa5BIycr1H6zZrjJ" data-ccm-m="buttonMaster"
-                href="https://www.ubisoft.com/en-us/company/overview.aspx" target="blank" rel="noreferrer noopener ">
-                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left"
-                  data-innertext="About Us" data-ccid-l="38E5Cql9EFAbN1jSdsyfEM" data-ccm-l="button" data-ccf-l="buttonText">About Us</span>
-              </a>
-            </li>
-            <li class="list-item text-[16px] my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
-              <a aria-label="Careers"
-                class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal"
-                data-innertext="Careers" data-ccid-m="3qvNBGIVsED2ByzIYIhI25" data-ccm-m="buttonMaster"
-                href="https://www.ubisoft.com/en-us/careers/experience.aspx" target="blank" rel="noreferrer noopener ">
-                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left"
-                  data-innertext="Careers" data-ccid-l="4ntq5KmnUB9PpzKUmEdaKk" data-ccm-l="button" data-ccf-l="buttonText">Careers</span>
-              </a>
-            </li>
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
-              <a aria-label="Locations"
-                class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal"
-                data-innertext="Locations" data-ccid-m="3gWrnkk1CyQeNM3Bv16wrf" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/r/locations"
-                target="blank" rel="noreferrer noopener ">
-                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left"
-                  data-innertext="Locations" data-ccid-l="2uqaVOtC2Tocr8k5MfdpWa" data-ccm-l="button" data-ccf-l="buttonText">Locations</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="footer__logo lg:w-[18.6rem] max-lg:text-center lg:text-left max-lg:order-3 lg:order-1 max-lg:my-[20px] leading-[24px] font-normal text-[16px] text-white">
-          <div class="logo text-white text-[16px] leading-[24px] max-lg:text-center lg:text-left">
-            <a class="logo__btn cursor-pointer text-[16px] font-[400] leading-[24px] max-lg:text-center lg:text-left" data-ccm-m="buttonMaster"
-              href="https://www.ubisoft.com/" data-cy="same-window">
-              <div class="logo__btn__desktop cursor-pointer text-[16px] font-[400] leading-[24px] max-lg:text-center lg:text-left">
-                <svg role="img"
-                  class="icon icon-ubisoft-logo-desktop h-[2.4rem] w-[7.6rem] text-white text-center lg:text-left fill-white overflow-x-hidden overflow-y-hidden leading-[24px] text-[16px]"
-                  xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title" viewBox="0 0 99.2 31.6">
+                            </a>
+                        </li>
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
+                            <a aria-label="Support" class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal" data-innertext="Support" data-ccid-m="5kaUxXH4NWVOQyLp82MIc5" data-ccm-m="buttonMaster"
+                                href="https://support.ubi.com/" target="blank" rel="noreferrer noopener ">
+                                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left" data-innertext="Support" data-ccid-l="2InHwlXx1aN3VFqm0cnYnX" data-ccm-l="button" data-ccf-l="buttonText">Support</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu__btns text-white lg:basis-0 lg:flex-grow-[1] lg:flex-shrink-[1] text-[16px] leading-[24px] font-normal lg:mx-[15px] max-lg:text-center lg:text-left" style="margin-inline-start: 15px; margin-inline-end: 15px">
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
+                            <a aria-label="Investors" class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal" data-innertext="Investors" data-ccid-m="14kpCbzUmM027LKIaNjp9C" data-ccm-m="buttonMaster"
+                                href="https://www.ubisoft.com/en-us/company/investor_center/index.aspx" target="blank" rel="noreferrer noopener ">
+                                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left" data-innertext="Investors" data-ccid-l="250GofmVgHdfCJ5F2zfh2c" data-ccm-l="button" data-ccf-l="buttonText">Investors</span>
+                            </a>
+                        </li>
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
+                            <a aria-label="Press" class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal" data-innertext="Press" data-ccid-m="1Pdcan8U1GsfgwA9jsEaFl" data-ccm-m="buttonMaster"
+                                href="https://www.ubisoft.com/en-us/company/press.aspx" target="blank" rel="noreferrer noopener ">
+                                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left" data-innertext="Press" data-ccid-l="6XeFcEp7RkdQamxIuWy95j" data-ccm-l="button" data-ccf-l="buttonText">Press</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu__btns text-white lg:basis-0 lg:flex-grow-[1] lg:flex-shrink-[1] text-[16px] leading-[24px] font-normal lg:mx-[15px] max-lg:text-center lg:text-left" style="margin-inline-start: 15px; margin-inline-end: 15px">
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
+                            <a aria-label="About Us" class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal" data-innertext="About Us" data-ccid-m="5GC5aKBa5BIycr1H6zZrjJ" data-ccm-m="buttonMaster"
+                                href="https://www.ubisoft.com/en-us/company/overview.aspx" target="blank" rel="noreferrer noopener ">
+                                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left" data-innertext="About Us" data-ccid-l="38E5Cql9EFAbN1jSdsyfEM" data-ccm-l="button" data-ccf-l="buttonText">About Us</span>
+                            </a>
+                        </li>
+                        <li class="list-item text-[16px] my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
+                            <a aria-label="Careers" class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal" data-innertext="Careers" data-ccid-m="3qvNBGIVsED2ByzIYIhI25" data-ccm-m="buttonMaster"
+                                href="https://www.ubisoft.com/en-us/careers/experience.aspx" target="blank" rel="noreferrer noopener ">
+                                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left" data-innertext="Careers" data-ccid-l="4ntq5KmnUB9PpzKUmEdaKk" data-ccm-l="button" data-ccf-l="buttonText">Careers</span>
+                            </a>
+                        </li>
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
+                            <a aria-label="Locations" class="footer__btn hover:underline text-white cursor-pointer tracking-normal leading-[20px] max-lg:text-center lg:text-left text-[1rem] font-normal" data-innertext="Locations" data-ccid-m="3gWrnkk1CyQeNM3Bv16wrf" data-ccm-m="buttonMaster"
+                                href="https://www.ubisoft.com/r/locations" target="blank" rel="noreferrer noopener ">
+                                <span class="text text-white uppercase text-[1rem] font-normal leading-[20px] max-lg:text-center lg:text-left" data-innertext="Locations" data-ccid-l="2uqaVOtC2Tocr8k5MfdpWa" data-ccm-l="button" data-ccf-l="buttonText">Locations</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__logo lg:w-[18.6rem] max-lg:text-center lg:text-left max-lg:order-3 lg:order-1 max-lg:my-[20px] leading-[24px] font-normal text-[16px] text-white">
+                    <div class="logo text-white text-[16px] leading-[24px] max-lg:text-center lg:text-left">
+                        <a class="logo__btn cursor-pointer text-[16px] font-[400] leading-[24px] max-lg:text-center lg:text-left" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/" data-cy="same-window">
+                            <div class="logo__btn__desktop cursor-pointer text-[16px] font-[400] leading-[24px] max-lg:text-center lg:text-left">
+                                <svg role="img" class="icon icon-ubisoft-logo-desktop h-[2.4rem] w-[7.6rem] text-white text-center lg:text-left fill-white overflow-x-hidden overflow-y-hidden leading-[24px] text-[16px]" xmlns="http://www.w3.org/2000/svg" version="1.1" aria-labelledby="logo-desktop-title"
+                                    viewBox="0 0 99.2 31.6">
                   <title id="logo-desktop-title">Ubisoft</title>
                   <path class="st0"
                     d="M30.4,15.8C30.1-0.4,8.6-6.4,0.3,8.7C0.7,9,1.2,9.4,1.5,9.6c-0.6,1.3-1.1,2.7-1.3,4C0.1,14.5,0,15.4,0,16.4 c0,8.4,6.8,15.2,15.2,15.2s15.2-6.8,15.2-15.2C30.4,16.2,30.4,16,30.4,15.8L30.4,15.8z M3.8,18.5c-0.2,1.6-0.1,2.2-0.1,2.4L3.3,21 c-0.1-0.3-0.5-1.2-0.6-2.5c-0.4-4.9,2.9-9.3,8-10.1c4.7-0.7,9.1,2.2,10.2,6.3l-0.4,0.1c-0.1-0.1-0.3-0.4-1-1.2 C13.9,7.9,5,10.5,3.8,18.5L3.8,18.5z M18.2,21.2c-0.8,1.1-2,1.8-3.4,1.8c-2.3,0-4.2-1.9-4.2-4.2c0-2.2,1.7-4,3.9-4.1l0,0 c1.3-0.1,2.6,0.7,3.2,1.8c0.6,1.3,0.4,2.8-0.6,3.9C17.5,20.7,17.9,21,18.2,21.2L18.2,21.2z M26.9,21.4c-2.2,5-6.7,7.6-11.5,7.5 c-9.3-0.5-12-11.1-5.8-15l0.3,0.3c-0.1,0.1-0.5,0.4-1,1.6c-0.7,1.4-0.9,2.7-0.8,3.6c0.5,7.5,10.9,9,14.5,1.6 C27.1,10.8,15,0.5,4.2,8.4L4,8.1C6.8,3.7,12.3,1.7,17.6,3C25.7,5.1,30.1,13.5,26.9,21.4z">
@@ -961,241 +878,203 @@
                     d="M45.2,9.8v7c0,2.8-1.7,4.9-4.8,4.9s-4.8-2.1-4.8-4.9v-7h2.5v6.8c0,1.7,0.8,2.7,2.3,2.7c1.5,0,2.3-1,2.3-2.7V9.8 C42.7,9.8,45.2,9.8,45.2,9.8z M54.7,18.2c0,2-1.6,3.5-4.2,3.5h-4.1V9.9h3.9c2.3,0,3.8,1.1,3.8,2.8c0,1.3-0.6,2.1-1.5,2.5 C53.8,15.7,54.7,16.6,54.7,18.2L54.7,18.2z M49,12.2v2.5h1.3c0.8,0,1.3-0.5,1.3-1.2s-0.5-1.2-1.3-1.2L49,12.2L49,12.2z M50.4,19.4 c1.1,0,1.7-0.5,1.7-1.5s-0.6-1.5-1.7-1.5H49v2.9L50.4,19.4L50.4,19.4z M55.7,9.9h2.5v11.7h-2.5V9.9z M64.3,14.7c2,0.7,3,1.6,3,3.4 c0,2.4-1.9,3.8-4.1,3.8c-2,0-3.6-0.9-4.2-2.6l2-1.5c0.4,1.1,1.3,1.7,2.3,1.7c0.8,0,1.4-0.5,1.4-1.2c0-0.7-0.5-1.1-2.1-1.7 c-1.8-0.7-3.2-1.6-3.2-3.5c0-1.9,1.6-3.3,3.8-3.3c1.8,0,3.2,0.7,3.8,2.1l-2,1.4c-0.4-0.9-1-1.4-1.9-1.4c-0.8,0-1.3,0.4-1.3,1 C61.9,13.6,62.6,14.1,64.3,14.7z M80,15.8c0,3.4-2.5,6-6,6c-3.6,0-6-2.6-6-5.6c0-2,0.8-3.5,1.9-4.4l-0.4-0.4 c0.9-0.9,2.5-1.6,4.4-1.6C77.5,9.7,80,12.4,80,15.8L80,15.8z M77.4,15.8c0-2.1-1.3-3.6-3.4-3.6c-1.2,0-2.1,0.5-2.6,1l0.4,0.4 c-0.6,0.5-1.2,1.2-1.2,2.5c0,1.8,1.3,3.3,3.4,3.3C76.1,19.4,77.4,17.9,77.4,15.8L77.4,15.8z M83.6,12.4v2.7h5V17h-5v4.6H81V9.9h8 v2.4H83.6L83.6,12.4z M99.2,12.4h-3.3v9.3h-2.5v-9.3H90V9.9h9.1V12.4z">
                   </path>
                 </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div
-          class="footer__corporate lg:self-start text-white leading-[24px] lg:my-[20px] max-lg:order-4 lg:order-4 max-lg:text-center lg:text-left lg:w-[18.6rem]">
-          <ul class="legal__btns leading-[24px] max-lg:text-center lg:text-left text-[16px] font-normal mt-[28px]">
-            <li class="list-item text-[1rem] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
-              <a aria-label="Contact Us"
-                class="footer__btn hover:underline uppercase max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer font-normal bg-transparent text-white"
-                data-innertext="Contact Us" data-ccid-m="3Lo1rZLrApWX4E8ZbJeqPk" data-ccm-m="buttonMaster"
-                href="https://www.ubisoft.com/en-us/company/contact-us" target="blank" rel="noreferrer noopener ">
-                <span class="text uppercase leading-[17.5px] text-[14px] tracking-normal font-normal max-lg:text-center lg:text-left cursor-pointer"
-                  data-innertext="Contact Us" data-ccid-l="3brYEALfvtGsVDNwdRy47l" data-ccm-l="button" data-ccf-l="buttonText">Contact Us</span>
-              </a>
-            </li>
-            <li class="list-item text-[1rem] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
-              <a aria-label="Privacy &amp; Legal"
-                class="footer__btn hover:underline uppercase max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer font-normal bg-transparent text-white"
-                data-innertext="Privacy &amp; Legal" data-ccid-m="5NEwmHSyQ6Rah46lp81BB2" data-ccm-m="buttonMaster"
-                href="https://legal.ubi.com/privacypolicy/en-US" target="blank" rel="noreferrer noopener ">
-                <span class="text uppercase leading-[17.5px] text-[14px] tracking-normal font-normal max-lg:text-center lg:text-left cursor-pointer"
-                  data-innertext="Privacy &amp; Legal" data-ccid-l="3JzLudDWjji26ug2x02C1Q" data-ccm-l="button" data-ccf-l="buttonText">Privacy &amp;
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__corporate lg:self-start text-white leading-[24px] lg:my-[20px] max-lg:order-4 lg:order-4 max-lg:text-center lg:text-left lg:w-[18.6rem]">
+                    <ul class="legal__btns leading-[24px] max-lg:text-center lg:text-left text-[16px] font-normal mt-[28px]">
+                        <li class="list-item text-[1rem] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
+                            <a aria-label="Contact Us" class="footer__btn hover:underline uppercase max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer font-normal bg-transparent text-white" data-innertext="Contact Us" data-ccid-m="3Lo1rZLrApWX4E8ZbJeqPk"
+                                data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/company/contact-us" target="blank" rel="noreferrer noopener ">
+                                <span class="text uppercase leading-[17.5px] text-[14px] tracking-normal font-normal max-lg:text-center lg:text-left cursor-pointer" data-innertext="Contact Us" data-ccid-l="3brYEALfvtGsVDNwdRy47l" data-ccm-l="button" data-ccf-l="buttonText">Contact Us</span>
+                            </a>
+                        </li>
+                        <li class="list-item text-[1rem] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left">
+                            <a aria-label="Privacy &amp; Legal" class="footer__btn hover:underline uppercase max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer font-normal bg-transparent text-white" data-innertext="Privacy &amp; Legal" data-ccid-m="5NEwmHSyQ6Rah46lp81BB2"
+                                data-ccm-m="buttonMaster" href="https://legal.ubi.com/privacypolicy/en-US" target="blank" rel="noreferrer noopener ">
+                                <span class="text uppercase leading-[17.5px] text-[14px] tracking-normal font-normal max-lg:text-center lg:text-left cursor-pointer" data-innertext="Privacy &amp; Legal" data-ccid-l="3JzLudDWjji26ug2x02C1Q" data-ccm-l="button" data-ccf-l="buttonText">Privacy &amp;
                   Legal</span>
-              </a>
-            </li>
-          </ul>
-          <ul
-            class="privacy__btns custom-margin bg-transparent font-normal text-[16px] leading-[24px] max-lg:text-center lg:text-left max-lg:mt-[28px] lg:mt-[18px] lg:mr-[15px]">
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
-              <a aria-label="Notice At Collection"
-                class="footer__btn hover:underline max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer text-[#9b9b9b] bg-transparent"
-                data-innertext="Notice At Collection" data-ccid-m="46wAJ5LKNhH4W240LMG11I" data-ccm-m="buttonMaster"
-                href="https://legal.ubi.com/privacypolicy/en-US#ubi_mceLegalContentIndex_19" target="blank" rel="noreferrer noopener ">
-                <span
-                  class="text max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] font-normal cursor-pointer text-[#9b9b9b]"
-                  data-innertext="Notice At Collection" data-ccid-l="34o1Q5hviad7UCaAOQ2vbU" data-ccm-l="button" data-ccf-l="buttonText">Notice At
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="privacy__btns custom-margin bg-transparent font-normal text-[16px] leading-[24px] max-lg:text-center lg:text-left max-lg:mt-[28px] lg:mt-[18px] lg:mr-[15px]">
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
+                            <a aria-label="Notice At Collection" class="footer__btn hover:underline max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer text-[#9b9b9b] bg-transparent" data-innertext="Notice At Collection" data-ccid-m="46wAJ5LKNhH4W240LMG11I"
+                                data-ccm-m="buttonMaster" href="https://legal.ubi.com/privacypolicy/en-US#ubi_mceLegalContentIndex_19" target="blank" rel="noreferrer noopener ">
+                                <span class="text max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] font-normal cursor-pointer text-[#9b9b9b]" data-innertext="Notice At Collection" data-ccid-l="34o1Q5hviad7UCaAOQ2vbU" data-ccm-l="button" data-ccf-l="buttonText">Notice At
                   Collection</span>
-              </a>
-            </li>
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
-              <a aria-label="Interest-Based Ads"
-                class="footer__btn hover:underline max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer text-[#9b9b9b] bg-transparent"
-                data-innertext="Interest-Based Ads" data-ccid-m="1WDOTfs0ZyBZTIATb701dF" data-ccm-m="buttonMaster"
-                href="https://legal.ubi.com/InterestBasedAdvertising/en-US?cache=22828524de97e0687d728e89b46a300c" target="blank"
-                rel="noreferrer noopener ">
-                <span
-                  class="text max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] font-normal cursor-pointer text-[#9b9b9b]"
-                  data-innertext="Interest-Based Ads" data-ccid-l="7vAjx6RKAyuUkzj5qPaKbu" data-ccm-l="button" data-ccf-l="buttonText">Interest-Based
+                            </a>
+                        </li>
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
+                            <a aria-label="Interest-Based Ads" class="footer__btn hover:underline max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer text-[#9b9b9b] bg-transparent" data-innertext="Interest-Based Ads" data-ccid-m="1WDOTfs0ZyBZTIATb701dF"
+                                data-ccm-m="buttonMaster" href="https://legal.ubi.com/InterestBasedAdvertising/en-US?cache=22828524de97e0687d728e89b46a300c" target="blank" rel="noreferrer noopener ">
+                                <span class="text max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] font-normal cursor-pointer text-[#9b9b9b]" data-innertext="Interest-Based Ads" data-ccid-l="7vAjx6RKAyuUkzj5qPaKbu" data-ccm-l="button" data-ccf-l="buttonText">Interest-Based
                   Ads</span>
-              </a>
-            </li>
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
-              <a aria-label="Do Not Sell / Share My Personal Information"
-                class="footer__btn hover:underline text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer text-[#9b9b9b] bg-transparent"
-                data-innertext="Do Not Sell / Share My Personal Information" data-ccid-m="5rgieW9hPVRELuSdrPiy63" data-ccm-m="buttonMaster"
-                href="https://www.ubisoft.com/en-us/help/contact?game=50003&amp;platform=29&amp;category=389&amp;hidefields=all&amp;gf=1&amp;af=1"
-                target="blank" rel="noreferrer noopener ">
-                <span
-                  class="text max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] font-normal cursor-pointer text-[#9b9b9b]"
-                  data-innertext="Do Not Sell / Share My Personal Information" data-ccid-l="2upsTzDlEveqePYPTzr224" data-ccm-l="button"
-                  data-ccf-l="buttonText">Do Not Sell / Share My Personal Information</span>
-              </a>
-            </li>
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
-              <a aria-label="Limit Use / Disclosure of My Sensitive Personal Information"
-                class="footer__btn hover:underline max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer text-[#9b9b9b] bg-transparent"
-                data-innertext="Limit Use / Disclosure of My Sensitive Personal Information" data-ccid-m="5roTsV3YmCwiItQlKUWFlr"
-                data-ccm-m="buttonMaster"
-                href="https://www.ubisoft.com/en-us/help/contact?game=50003&amp;platform=29&amp;category=389&amp;hidefields=all&amp;gf=1&amp;af=1"
-                target="blank" rel="noreferrer noopener ">
-                <span
-                  class="text max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] font-normal cursor-pointer text-[#9b9b9b]"
-                  data-innertext="Limit Use / Disclosure of My Sensitive Personal Information" data-ccid-l="7bYJ2focjSQHiu6kk1Io7f"
-                  data-ccm-l="button" data-ccf-l="buttonText">Limit Use / Disclosure of My Sensitive Personal
+                            </a>
+                        </li>
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
+                            <a aria-label="Do Not Sell / Share My Personal Information" class="footer__btn hover:underline text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer text-[#9b9b9b] bg-transparent" data-innertext="Do Not Sell / Share My Personal Information"
+                                data-ccid-m="5rgieW9hPVRELuSdrPiy63" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/help/contact?game=50003&amp;platform=29&amp;category=389&amp;hidefields=all&amp;gf=1&amp;af=1" target="blank" rel="noreferrer noopener ">
+                                <span class="text max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] font-normal cursor-pointer text-[#9b9b9b]" data-innertext="Do Not Sell / Share My Personal Information" data-ccid-l="2upsTzDlEveqePYPTzr224" data-ccm-l="button"
+                                    data-ccf-l="buttonText">Do Not Sell / Share My Personal Information</span>
+                            </a>
+                        </li>
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
+                            <a aria-label="Limit Use / Disclosure of My Sensitive Personal Information" class="footer__btn hover:underline max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] cursor-pointer text-[#9b9b9b] bg-transparent" data-innertext="Limit Use / Disclosure of My Sensitive Personal Information"
+                                data-ccid-m="5roTsV3YmCwiItQlKUWFlr" data-ccm-m="buttonMaster" href="https://www.ubisoft.com/en-us/help/contact?game=50003&amp;platform=29&amp;category=389&amp;hidefields=all&amp;gf=1&amp;af=1" target="blank" rel="noreferrer noopener ">
+                                <span class="text max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] font-normal cursor-pointer text-[#9b9b9b]" data-innertext="Limit Use / Disclosure of My Sensitive Personal Information" data-ccid-l="7bYJ2focjSQHiu6kk1Io7f"
+                                    data-ccm-l="button" data-ccf-l="buttonText">Limit Use / Disclosure of My Sensitive Personal
                   Information</span>
-              </a>
-            </li>
-            <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
-              <button aria-label="Set cookies" class="footer__btn hover:underline" data-innertext="Set cookies" data-ccid-m="1la9Dm5pmhS9ltvGUl5pBQ"
-                data-ccm-m="buttonMaster" target="blank" type="button" rel="noreferrer noopener" style="padding: 0px">
+                            </a>
+                        </li>
+                        <li class="list-item text-[16px] max-lg:my-[20px] lg:my-[10px] leading-[24px] max-lg:text-center lg:text-left text-white">
+                            <button aria-label="Set cookies" class="footer__btn hover:underline" data-innertext="Set cookies" data-ccid-m="1la9Dm5pmhS9ltvGUl5pBQ" data-ccm-m="buttonMaster" target="blank" type="button" rel="noreferrer noopener" style="padding: 0px">
                 <span
                   class="text max-lg:text-center lg:text-left leading-[17.5px] tracking-normal text-[14px] font-normal cursor-pointer text-[#9b9b9b]"
                   data-innertext="Set cookies" data-ccid-l="66rhpSJfeIIJ7UIBeR44Te" data-ccm-l="button" data-ccf-l="buttonText">Set cookies</span>
               </button>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="footer__exclusive lg:w-[19rem] max-lg:order-5 lg:order-6 max-lg:text-center lg:text-left lg:my-[20px] leading-[24px] text-[16px] font-normal flex flex-col lg:self-start text-white">
-          <div
-            class="footer__copyright max-lg:order-1 lg:order-2 text-[12px] max-lg:text-center lg:text-right lg:ml-[60px] tracking-normal font-normal text-white">
-            <p class="max-lg:text-center lg:text-right tracking-normal text-[#f0f3f4] text-[12px] font-normal leading-[12px]"
-              style="margin-block-start: 12px; margin-block-end: 12px">
-              © 2024 Ubisoft Entertainment. All Rights Reserved. Ubisoft,
-              Ubi.com and the Ubisoft logo are trademarks of Ubisoft
-              Entertainment in the U.S. and/or other countries.
-            </p>
-          </div>
-          <div
-            class="footer__rating text-whitetext-[16px] leading-[24px] max-lg:text-center lg:text-right max-lg:order-2 lg:order-1 max-lg:my-[20px] lg:my-[16px] font-normal">
-            <div class="rating__btns text-white text-[16px] leading-[24px] max-lg:text-center lg:text-right">
-              <a aria-label="ESRB Privacy Certified Logo Seal"
-                class="footer__btn leading-[24px] text-[16px] max-lg:text-center lg:text-right font-normal cursor-pointer"
-                data-ccid-m="6Y9kjRB0QhDl2twPadf0i8" data-ccm-m="buttonMaster" href="http://www.esrb.org/confirm/ubisoft-confirmation.aspx"
-                target="blank" rel="noreferrer noopener ">
-                <img class="image inline max-lg:text-center lg:text-right cursor-pointer overflow-x-clip overflow-y-clip"
-                  src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3TWaCi5CyuZBRpzsRP1iy/6384003e7b534b4962db554a21c696bb/esrb-privacy-footer.jpg"
-                  alt="ESRB Privacy Certified Logo Seal" loading="lazy" />
-              </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__exclusive lg:w-[19rem] max-lg:order-5 lg:order-6 max-lg:text-center lg:text-left lg:my-[20px] leading-[24px] text-[16px] font-normal flex flex-col lg:self-start text-white">
+                    <div class="footer__copyright max-lg:order-1 lg:order-2 text-[12px] max-lg:text-center lg:text-right lg:ml-[60px] tracking-normal font-normal text-white">
+                        <p class="max-lg:text-center lg:text-right tracking-normal text-[#f0f3f4] text-[12px] font-normal leading-[12px]" style="margin-block-start: 12px; margin-block-end: 12px">
+                            © 2024 Ubisoft Entertainment. All Rights Reserved. Ubisoft, Ubi.com and the Ubisoft logo are trademarks of Ubisoft Entertainment in the U.S. and/or other countries.
+                        </p>
+                    </div>
+                    <div class="footer__rating text-whitetext-[16px] leading-[24px] max-lg:text-center lg:text-right max-lg:order-2 lg:order-1 max-lg:my-[20px] lg:my-[16px] font-normal">
+                        <div class="rating__btns text-white text-[16px] leading-[24px] max-lg:text-center lg:text-right">
+                            <a aria-label="ESRB Privacy Certified Logo Seal" class="footer__btn leading-[24px] text-[16px] max-lg:text-center lg:text-right font-normal cursor-pointer" data-ccid-m="6Y9kjRB0QhDl2twPadf0i8" data-ccm-m="buttonMaster" href="http://www.esrb.org/confirm/ubisoft-confirmation.aspx"
+                                target="blank" rel="noreferrer noopener ">
+                                <img class="image inline max-lg:text-center lg:text-right cursor-pointer overflow-x-clip overflow-y-clip" src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3TWaCi5CyuZBRpzsRP1iy/6384003e7b534b4962db554a21c696bb/esrb-privacy-footer.jpg"
+                                    alt="ESRB Privacy Certified Logo Seal" loading="lazy" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <section class="nav_container" onclick="closeNav()">
+            <!-- <div class="overlay" onclick="closeNav()"></div> -->
+            <div id="mySidenav" class="sidenav">
+                <div class="flex flex-col gap-[10px]">
+                    <p>Europe</p>
+                    <div class="line"></div>
+                    <ul>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">DEUTSCH</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">ENGLISH EU/UK</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">ESPANOL</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">FRANÇAIS</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">ITALIANO</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">POLSKI</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">РУССКИЙ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-[10px]">
+                    <p>Americas</p>
+                    <div class="line"></div>
+                    <ul>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">ENGLISH-CA</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">ENGLISH-US</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">ESPANOL-MX</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">FRANÇAIS-CA</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">PORTUGUES-BR</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-[10px]">
+                    <p>Asia / Pacific</p>
+                    <div class="line"></div>
+                    <ul>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">ENGLISH-au</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">ENGLISH-SG/PM/MY/ID</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">日本語</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">한국어</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">ภาษาไทย</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">简体中文</a>
+                        </li>
+                        <li class="group">
+                            <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
+                            <a href="" class="group-hover:text-[#CD7929]">繁體中文</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </footer>
-    <section class="nav_container" onclick="closeNav()">
-      <!-- <div class="overlay" onclick="closeNav()"></div> -->
-      <div id="mySidenav" class="sidenav">
-        <div class="flex flex-col gap-[10px]">
-          <p>Europe</p>
-          <div class="line"></div>
-          <ul>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">DEUTSCH</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">ENGLISH EU/UK</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">ESPANOL</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">FRANÇAIS</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">ITALIANO</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">POLSKI</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">РУССКИЙ</a>
-            </li>
-          </ul>
-        </div>
+        </section>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const cardsPerPage = 15;
+        let allGames = [];
 
-        <div class="flex flex-col gap-[10px]">
-          <p>Americas</p>
-          <div class="line"></div>
-          <ul>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">ENGLISH-CA</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">ENGLISH-US</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">ESPANOL-MX</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">FRANÇAIS-CA</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">PORTUGUES-BR</a>
-            </li>
-          </ul>
-        </div>
+        axios
+            .get("games.json")
+            .then((response) => {
+                    const data = response.data.games;
+                    allGames = data;
+                    const cardContainer = document.querySelector(".cards");
 
-        <div class="flex flex-col gap-[10px]">
-          <p>Asia / Pacific</p>
-          <div class="line"></div>
-          <ul>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">ENGLISH-au</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">ENGLISH-SG/PM/MY/ID</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">日本語</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">한국어</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">ภาษาไทย</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">简体中文</a>
-            </li>
-            <li class="group">
-              <i class="fa-solid fa-angle-right group-hover:text-[#CD7929]"></i>
-              <a href="" class="group-hover:text-[#CD7929]">繁體中文</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script>
-    let currentIndex = 0;
-    const cardsPerPage = 15;
-    let allGames = [];
-
-    axios
-      .get("games.json")
-      .then((response) => {
-        const data = response.data.games;
-        allGames = data;
-        const cardContainer = document.querySelector(".cards");
-
-        // Funksiya cardları göstərmək üçün
-        function showCards(startIndex, endIndex) {
-          const cardsToShow = allGames.slice(startIndex, endIndex); // Başlanğıc və bitiş indekslərinə əsaslanaraq cardları alırıq
-          cardContainer.innerHTML += cardsToShow
-            .map(
-              (game) => `
+                    // Funksiya cardları göstərmək üçün
+                    function showCards(startIndex, endIndex) {
+                        const cardsToShow = allGames.slice(startIndex, endIndex); // Başlanğıc və bitiş indekslərinə əsaslanaraq cardları alırıq
+                        cardContainer.innerHTML += cardsToShow
+                            .map(
+                                (game) => `
         <a href="#" class="card block w-[255.391px] h-[456.953px] leading-[24px] flex flex-col">
           <div class="w-[210.391px] h-[406.953px] my-[25px] mx-[20px] leading-[24px]">
             <div class="image w-full h-[297.953px] leading-[24px]">
@@ -1350,7 +1229,7 @@
         menu2.style.display = "flex";
       }
     }
-  </script>
+    </script>
 </body>
 
 </html>
