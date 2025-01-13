@@ -289,20 +289,520 @@
   </head>
 
   <body
-    class="font-['Ubisoft Sans'] bg-[url('images/UbisoftConnectImages/UbisoftConnectBackground.jpg')] bg-cover bg-center bg-fixed"
+    class="font-['Ubisoft Sans'] bg-[url('images/UbisoftConnectImages/UbisoftConnectBackground.jpg')] bg-cover bg-center bg-fixed text-[14px] font-['Ubisoft Sans'] relative box-border overflow-x-hidden max-sm:overflow-x-hidden sm:overflow-x-hidden md:overflow-x-hidden lg:overflow-x-hidden xl:overflow-x-hidden 2xl:overflow-x-hidden"
   >
+    <div
+      class="menu top-[40px] left-0 bg-black w-full h-full z-[12] px-[20px] fixed hidden overflow-y-auto"
+    >
+      <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
+        <button
+          onclick="toggleAccordion(1)"
+          class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]"
+        >
+          <span>Play</span>
+          <span
+            id="icon-1"
+            class="text-white transition-transform duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-1"
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href="viewallgames.html"
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>browse by category</span></a
+              >
+            </li>
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href="viewallgames.html"
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>browse by game</span></a
+              >
+            </li>
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href="ubisoftplus.html"
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>ubisoft+</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
+        <button
+          onclick="toggleAccordion(2)"
+          class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]"
+        >
+          <span>Shop</span>
+          <span
+            id="icon-2"
+            class="text-white transition-transform duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-2"
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>shop by game</span></a
+              >
+            </li>
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>most popular</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
+        <button
+          onclick="toggleAccordion(3)"
+          class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]"
+        >
+          <span>Explore</span>
+          <span
+            id="icon-3"
+            class="text-white transition-transform duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-3"
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>news</span></a
+              >
+            </li>
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>about us</span></a
+              >
+            </li>
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>careers</span></a
+              >
+            </li>
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>social impact</span></a
+              >
+            </li>
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>more than games</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-b-[1px] border-[#70707066] py-[20px] px-[18px]">
+        <button
+          onclick="toggleAccordion(4)"
+          class="uppercase font-[700] w-full flex justify-between items-center text-white text-[24px] leading-[42px]"
+        >
+          <span>Help</span>
+          <span
+            id="icon-4"
+            class="text-white transition-transform duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          id="content-4"
+          class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <ul class="text-white text-[16px] mb-[10px] leading-[24px]">
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>get help</span></a
+              >
+            </li>
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>join discord</span></a
+              >
+            </li>
+            <li
+              class="list-item leading-[24px] max-h-[72px] py-[10px] px-[14px]"
+            >
+              <a
+                href=""
+                class="uppercase leading-[14px] cursor-pointer text-left text-[14px]"
+                ><span>download ubisoft connect pc</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="download m-[10px] flex justify-center w-full h-[50px] leading-[24px]"
+      >
+        <a
+          href=""
+          class="text-center relative min-w-[200px] leading-[20px] h-[50px] text-[16px] font-[400] cursor-pointer flex justify-center items-center text-white"
+        >
+          <span>Download Ubisoft Connect</span>
+          <svg
+            width="16"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="download-icon text-[16px] leading-[20px] ml-[5px] cursor-pointer"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.125 0.9375C8.125 0.592322 7.84518 0.3125 7.5 0.3125C7.15482 0.3125 6.875 0.592322 6.875 0.9375L6.875 8.10644L4.51857 5.59167C4.28255 5.33979 3.88703 5.32694 3.63515 5.56296C3.38327 5.79898 3.37041 6.19449 3.60643 6.44637L7.04393 10.1149C7.16209 10.241 7.32719 10.3125 7.5 10.3125C7.67281 10.3125 7.83791 10.241 7.95607 10.1149L11.3936 6.44637C11.6296 6.19449 11.6167 5.79898 11.3649 5.56296C11.113 5.32694 10.7175 5.33979 10.4814 5.59167L8.125 8.10644L8.125 0.9375ZM2.8125 13.4375C2.46732 13.4375 2.1875 13.7173 2.1875 14.0625C2.1875 14.4077 2.46732 14.6875 2.8125 14.6875H12.1875C12.5327 14.6875 12.8125 14.4077 12.8125 14.0625C12.8125 13.7173 12.5327 13.4375 12.1875 13.4375H2.8125Z"
+              fill="#F2F2F2"
+            ></path>
+          </svg>
+        </a>
+      </div>
+      <div class="search py-[24px] w-full mb-[50px]">
+        <div class="w-full">
+          <form action="" class="w-full flex">
+            <button
+              class="py-[12px] px-[10px] bg-[#393939] rounded-tl-[20px] rounded-bl-[20px]"
+            >
+              <svg
+                class="ais-SearchBox-submitIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 40 40"
+              >
+                <path
+                  d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
+                ></path>
+              </svg>
+            </button>
+            <input
+              type="text"
+              class="outline-0 focus:outline-0 border-0 pt-[2px] pr-[30px] leading-[32px] rounded-tr-[20px] rounded-br-[20px] bg-[#393939] w-full placeholder:text-white"
+              placeholder="Type your search"
+              onclick="togglepanel2()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="menu2 left-0 right-0 bg-white w-full h-full z-[100] px-[20px] fixed flex flex-col hidden"
+    >
+      <div class="w-full mt-[15px]">
+        <form action="" class="w-full flex">
+          <button
+            class="py-[12px] px-[10px] bg-[#F0F3F4] rounded-tl-[20px] rounded-bl-[20px]"
+          >
+            <svg
+              class="ais-SearchBox-submitIcon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 40 40"
+            >
+              <path
+                d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
+              ></path>
+            </svg>
+          </button>
+          <input
+            type="text"
+            class="border-0 focus:border-0 outline-0 focus:outline-0 pt-[2px] pr-[30px] leading-[32px] rounded-tr-[20px] rounded-br-[20px] bg-[#F0F3F4] w-full placeholder:text-black"
+            placeholder="Type your search"
+            onclick=""
+          />
+          <button
+            type="button"
+            class="text-[#db287f] border-none bg-transparent pl-[12px] leading-[20px]"
+            onclick="togglepanel2()"
+          >
+            Cancel
+          </button>
+        </form>
+      </div>
+      <div class="w-full flex flex-col">
+        <h2
+          class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black"
+        >
+          games
+        </h2>
+        <div class="w-full" data-identifier="Products">
+          <ul class="w-full px-[35px] pointer-events-all">
+            <li class="indent-[10px] list-item">
+              <div>
+                <a
+                  rel="noreferrer noopener"
+                  href="https://www.ubisoft.com/en-us/game/assassins-creed/shadows"
+                  target="_blank"
+                  class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                  role="link"
+                  tabindex="0"
+                >
+                  <span>Assassin’s Creed Shadows</span>
+                </a>
+              </div>
+            </li>
+            <li class="indent-[10px] list-item">
+              <div>
+                <a
+                  rel="noreferrer noopener"
+                  href="https://www.ubisoft.com/en-us/game/star-wars/outlaws"
+                  target="_blank"
+                  class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                  role="link"
+                  tabindex="0"
+                >
+                  <span>Star Wars Outlaws</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <h2
+          class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black"
+        >
+          store products
+        </h2>
+        <div class="w-full" data-identifier="Store products">
+          <ul class="w-full px-[35px] pointer-events-all">
+            <li class="indent-[10px] list-item">
+              <div>
+                <a
+                  rel="noreferrer noopener"
+                  href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US"
+                  target="_blank"
+                  class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                  role="link"
+                  tabindex="0"
+                >
+                  <span>Tom Clancy's Rainbow Six Siege 1,200 R6Credits</span> -
+                  <span class="">$9.99</span>
+                </a>
+              </div>
+            </li>
+            <li class="indent-[10px] list-item">
+              <div>
+                <a
+                  rel="noreferrer noopener"
+                  href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US"
+                  target="_blank"
+                  class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                  role="link"
+                  tabindex="0"
+                >
+                  <span>Tom Clancy's Rainbow Six Siege 600 R6 Credits</span> -
+                  <span class="">$4.99</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <h2
+          class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black"
+        >
+          news
+        </h2>
+        <div class="w-full" data-identifier="Store products">
+          <ul class="w-full px-[35px] pointer-events-all">
+            <li class="indent-[10px] list-item">
+              <div>
+                <a
+                  rel="noreferrer noopener"
+                  href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US"
+                  target="_blank"
+                  class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                  role="link"
+                  tabindex="0"
+                >
+                  <span
+                    >New songs from Trans-Siberian Orchestra Available in
+                    Rocksmith+!</span
+                  >
+                </a>
+              </div>
+            </li>
+            <li class="indent-[10px] list-item">
+              <div>
+                <a
+                  rel="noreferrer noopener"
+                  href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US"
+                  target="_blank"
+                  class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                  role="link"
+                  tabindex="0"
+                >
+                  <span>Star Wars Outlaws - Title Update 1.5.0</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <h2
+          class="uppercase text-[11px] font-[700] px-[44px] pt-[12px] pb-[10px] text-black"
+        >
+          faqs
+        </h2>
+        <div class="w-full" data-identifier="Store products">
+          <ul class="w-full px-[35px] pointer-events-all">
+            <li class="indent-[10px] list-item">
+              <div>
+                <a
+                  rel="noreferrer noopener"
+                  href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-1%2C200-r6-credits/5a6b4a7dadc72424c61718eb.html?lang=en_US"
+                  target="_blank"
+                  class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                  role="link"
+                  tabindex="0"
+                >
+                  <span>Multiple charges for your Ubisoft+ subscription</span>
+                </a>
+              </div>
+            </li>
+            <li class="indent-[10px] list-item">
+              <div>
+                <a
+                  rel="noreferrer noopener"
+                  href="https://store.ubisoft.com/us/tom-clancys-rainbow-six-siege-600-r6-credits/5a6b4a7dadc72424c61718e9.html?lang=en_US"
+                  target="_blank"
+                  class="py-[6px] leading-[20px] cursor-pointer indent-[10px] text-black text-[16px] hover:underline"
+                  role="link"
+                  tabindex="0"
+                >
+                  <span>Recovering access to your Ubisoft account</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <span
+          class="text-[#db287f] py-[30px] mx-[35px] leading-[20px] font-[400] text-[16px] hover:underline"
+          >See all Results</span
+        >
+      </div>
+    </div>
     <div class="container1 w-full flex flex-col">
       <!-- header -->
       <header
-        class="header flex text-center justify-around items-center gap-[100px] w-full sticky top-0 left-0 z-10"
+        class="sticky top-0 left-0 z-10 w-full h-[50px] bg-[#000000] text-[#fff] py-[10px] px-[20px] text-center leading-[20px] flex justify-between items-center"
       >
-        <button class="menu text-[20px] text-white">
+        <button
+          type="button"
+          class="text-[20px] text-white"
+          onclick="togglepanel()"
+        >
           <i class="fa-solid fa-ellipsis-vertical"></i>
         </button>
-        <a href="" class="svg_link">
+        <a href="" class="text-[16px] w-[93px] h-[50px]">
           <svg
             role="img"
-            class="icon icon-ubisoft-logo-desktop text-white w-[93px] h-[50px]"
+            class="icon icon-ubisoft-logo-desktop text-white overflow-hidden w-[93px] cursor-pointer h-[50px] fill-[#fff]"
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             aria-labelledby="logo-desktop-title"
@@ -319,17 +819,17 @@
             ></path>
           </svg>
         </a>
-        <a
-          href=""
-          target=""
+        <button
+          type="button"
           onclick="openChromeWindow()"
-          class="user mr-[50px] flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black"
+          class="flex justify-center items-center w-[50px] h-[50px] opacity-[0.8] leading-[20px] transition-all delay-0 duration-[0.2s] text-center text-[18px] bg-black"
         >
           <i
             class="fa-solid fa-user p-[6px] text-[20px] text-[#929293] bg-[#BEBEC0] hover:bg-[#EDEEF0]"
           ></i>
-        </a>
+        </button>
       </header>
+
       <!-- title section -->
       <section
         class="w-full h-[500px] bg-[url('images/UbisoftConnectImages/UbisoftConnectSection.png')] bg-center bg-cover"
@@ -1322,6 +1822,58 @@
         document
           .getElementById("mySidenav")
           .classList.add("animation_backward");
+      }
+
+      // Accordion
+      function toggleAccordion(index) {
+        const content = document.getElementById(`content-${index}`);
+        const icon = document.getElementById(`icon-${index}`);
+
+        // SVG for Down icon
+        const downSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
+        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+      </svg>
+    `;
+        // SVG for Up icon
+        const upSVG = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
+        <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+      </svg>
+    `;
+
+        // Toggle the content's max-height for smooth opening and closing
+        if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+          content.style.maxHeight = "0";
+          icon.innerHTML = upSVG;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.innerHTML = downSVG;
+        }
+      }
+      // Toggle Panel
+      const menu = document.querySelector(".menu");
+      function togglepanel() {
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+          document.querySelector("body").style.overflow = "scroll";
+        } else {
+          menu.style.display = "block";
+          document.querySelector("body").style.overflow = "hidden";
+        }
+      }
+      const menu2 = document.querySelector(".menu2");
+      const header = document.querySelector("header");
+
+      function togglepanel2() {
+        menu.style.display = "block";
+        if (menu2.style.display === "flex" && header.style.display === "none") {
+          menu2.style.display = "none";
+          header.style.display = "flex";
+        } else {
+          menu2.style.display = "flex";
+          header.style.display = "none";
+        }
       }
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
