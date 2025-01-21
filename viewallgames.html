@@ -532,11 +532,11 @@
             <div class="promo featured-games-heading promo--seen promo--enter-done bg-[#f0f3f4] md:text-center leading-[24px] pb-[20px] pt-[70px] text-center font-normal" data-ccid-m="4r4741SthhBX3HCdYJQY0w" data-ccm-m="promoMaster">
                 <div class="promo__wrapper text-center font-normal leading-[24px]">
                     <div class="promo__wrapper__media leading-[24px] text-center font-normal"></div>
-                    <div class="promo__wrapper__content text-center leading-[24px] font-normal" data-btn-l="0" data-ccid-l="1FzcEIqDf0FR0JF2QrRnzq" data-ccm-l="promo">
-                        <h2 class="promo__content__title text-[1.5rem] md:text-[2.5rem] font-[700] tracking-normal leading-[40px] text-center uppercase" data-innertext="Featured Games" data-ccf-l="title">Featured Games</h2>
+                    <div class="promo__wrapper__content text-center leading-[24px] font-normal mb-[50px]" data-btn-l="0" data-ccid-l="1FzcEIqDf0FR0JF2QrRnzq" data-ccm-l="promo">
+                        <h2 class="promo__content__title text-[1.5rem] md:text-[2.5rem] font-extrabold text-black tracking-normal leading-[40px] text-center uppercase" data-innertext="Featured Games" data-ccf-l="title">Featured Games</h2>
                     </div>
                 </div>
-                <div class="featured_cards box-border flex flex-row flex-wrap gap-5 font-normal justify-between items-center leading-[24px] mx-0 max-w-[1500px]">
+                <div class="featured_cards box-border flex flex-row flex-wrap font-normal justify-center items-center gap-6 leading-[24px] mx-0 max-w-[1500px]">
                 </div>
             </div>
         </div>
@@ -946,17 +946,15 @@
             .then((response) => {
                 const cards = response.data.cards;
                 const cardContainer = document.querySelector(".featured_cards");
-
+                // md:w-[calc(100vw/6)]
                 cardContainer.innerHTML += cards
                     .map(
                         (card) => `
-         
-
         <a href="" class="w-[46%] h-auto inline-block m-0 leading-[24px] font-normal cursor-pointer box-border md:w-[18%]">
                             <div
-                                class="box-border cursor-pointer font-normal leading-[24px] my-[25px] mx-[20px] flex flex-col  justify-between">
+                                class="box-border cursor-pointer font-normal leading-[24px] my-[25px] mx-[20px] md:mx-0 flex flex-col justify-between">
                                 <div class="cursor-pointer font-normal leading-[24px]">
-                                    <div class="cursor-pointer font-normal leading-[24px] md:w-[calc(100vw/6)]">
+                                    <div class="cursor-pointer font-normal leading-[24px] w-full">
                                         <img src="${card.image}"
                                             alt="${card.name}"
                                             class="w-full overflow-x-clip overflow-y-clip align-middle leading-[24px] font-normal cursor-pointer box-border">
