@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
     <link href="src/output.css" rel="stylesheet" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <style>
@@ -132,6 +138,87 @@
                 right: -320px;
             }
         }
+
+        /* swiper-4 */
+
+      .mySwiper4 {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .mySwiper4 .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 40px;
+      }
+
+      .mySwiper4 .swiper-slide img {
+        display: none;
+      }
+
+      .mySwiper4 .swiper-slide.swiper-slide-active img,
+      .mySwiper4 .swiper-slide.clicked img {
+        display: block;
+      }
+
+      .main_slide h2,
+      .main_slide p {
+        text-shadow: rgb(0, 0, 0) 0px 2px 10px;
+      }
+
+      .mySwiper4 .swiper-slide.swiper-slide-active span,
+      .mySwiper .swiper-slide.clicked span {
+        display: none;
+      }
+
+      .mySwiper4 .swiper-button-prev {
+        position: absolute;
+        left: -5px;
+      }
+
+      .mySwiper4 .swiper-button-next {
+        position: absolute;
+        right: 25px;
+      }
+
+      .mySwiper4 .swiper-button-prev {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .mySwiper4 .swiper-button-next::after,
+      .mySwiper4 .swiper-button-prev::after {
+        font-size: 22px !important;
+        color: #c1b9c9 !important;
+        font-weight: bolder !important;
+        padding: 15px 40px !important;
+        cursor: pointer !important;
+        text-align: center !important;
+        /* background: #e5e9ea66 !important; */
+        background: #fff !important;
+        width: 80px !important;
+        font-size: 30px !important;
+        /* background-color: aliceblue !important; */
+      }
+
+      .mySwiper4 .swiper-button-next:hover::after,
+      .mySwiper4 .swiper-button-prev:hover::after {
+        background: rgba(255, 255, 255, 0.5) !important;
+      }
+
+      .mySwiper4 .swiper-button-prev::after {
+        border-top-right-radius: 30px !important;
+        border-bottom-right-radius: 30px !important;
+      }
+
+      .mySwiper4 .swiper-button-next::after {
+        border-top-left-radius: 30px !important;
+        border-bottom-left-radius: 30px !important;
+      }
     </style>
 </head>
 
@@ -523,6 +610,18 @@
                     </div>
                     <div class="cards box-border flex flex-row flex-wrap gap-5 md:gap-14 font-normal justify-center items-center leading-[24px] mx-0 max-w-[1500px]">
                     </div>
+                    <div
+          class="w-full h-full leading-[24px] lg:hidden max-lg:block relative top-0 left-0 opacity-100"
+          style="transform: matrix(1, 0, 0, 1, 0, 0)"
+        >
+          <div class="swiper mySwiper4">
+            <div class="swiper-wrapper relative inside_ubisoft_slides"></div>
+            <div class="w-full absolute bottom-[30px] left-0 right-0">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
                 </div>
                 <button id="loadMore" class="load-more-button w-[167.266px] h-[54px] font-[700] max-w-[300px] min-w-[100px] mx-[535.359px] mt-[20px] leading-[15px] tracking-[1.6px] text-center uppercase text-[15px] rounded-[30px] bg-[#d80388] border-[2px] border-solid border-[#d80388] text-white hover:bg-white hover:text-[#d80388]">load
                     more</button>
@@ -530,7 +629,7 @@
         </section>
 
         <!-- Featured games -->
-        <div class=" bg-white leading-[24px] font-normal pb-[170px]">
+        <div class="bg-white leading-[24px] font-normal pb-[170px]">
             <div class="promo featured-games-heading promo--seen promo--enter-done bg-[#f0f3f4] md:text-center leading-[24px] pb-[20px] pt-[70px] text-center font-normal" data-ccid-m="4r4741SthhBX3HCdYJQY0w" data-ccm-m="promoMaster">
                 <div class="promo__wrapper text-center font-normal leading-[24px]">
                     <div class="promo__wrapper__media leading-[24px] text-center font-normal"></div>
@@ -538,7 +637,19 @@
                         <h2 class="promo__content__title text-[1.5rem] md:text-[2.5rem] font-extrabold text-black tracking-normal leading-[40px] text-center uppercase" data-innertext="Featured Games" data-ccf-l="title">Featured Games</h2>
                     </div>
                 </div>
-                <div class="featured_cards box-border flex flex-row flex-wrap font-normal justify-center items-center gap-8 md:gap-6 leading-[24px] mx-0 max-w-[1500px]">
+                <div class="featured_cards box-border hidden md:flex flex-row flex-wrap font-normal md:justify-center md:items-center gap-8 md:gap-6 leading-[24px] mx-0 max-w-[1500px]">
+                </div>
+                <div
+                class="w-full h-full leading-[24px] relative top-0 left-0 opacity-100 block md:hidden"
+                style="transform: matrix(1, 0, 0, 1, 0, 0)"
+                >
+                    <div class="swiper mySwiper4">
+                        <div class="swiper-wrapper relative swiper_slides"></div>
+                        <div class="w-full absolute bottom-[30px] left-0 right-0">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -943,6 +1054,18 @@
             });
 
         // Featured Games
+        var swiper4 = new Swiper(".mySwiper4", {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 10,
+        // centeredSlides: true,
+        watchSlidesProgress: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
         axios
             .get("featuredgames.json")
             .then((response) => {
@@ -968,6 +1091,32 @@
                                 </div>
                             </div>
                         </a>
+          `
+                    )
+                    .join("");
+
+                    const swiper_slides = document.querySelector(".swiper_slides");
+                    swiper_slides.innerHTML += cards
+                    .map(
+                        (card) => `
+                        <div class="swiper-slide bg-red-500 flex flex-col justify-between items-center w-full h-full cursor-pointer gap-4">
+        <a href="" class="w-[46%] h-auto inline-block m-0 leading-[24px] font-normal cursor-pointer box-border md:w-[18%]">
+                            <div
+                                class="box-border cursor-pointer font-normal leading-[24px] my-[25px] mx-[20px] md:mx-0 flex flex-col justify-between">
+                                <div class="cursor-pointer font-normal leading-[24px]">
+                                    <div class="cursor-pointer font-normal leading-[24px] w-full">
+                                        <img src="${card.image}"
+                                            alt="${card.name}"
+                                            class="w-full overflow-x-clip overflow-y-clip align-middle leading-[24px] font-normal cursor-pointer box-border">
+                                    </div>
+                                </div>
+                                <div class="leading-[24px] font-normal cursor-pointer">
+                                    <h3 class="box-border cursor-pointer text-black text-[18px] font-[700] mt-[10px] mx-0 min-h-[56px] tracking-normal md:min-h-[56px] md:mt-[10px] md:mb-0 md:mx-0 md:leading-[28px] md:text-[22px]"
+                                        style="margin-block-start: 10px; margin-block-start: 0px;">${card.name}</h3>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
           `
                     )
                     .join("");
