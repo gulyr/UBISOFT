@@ -90,16 +90,8 @@
             font-size: 12px;
         }
         
-        .sidenav i:hover {
-            /* color: #CD7929; */
-        }
-        
         .animation_forward {
             animation-name: animation1;
-        }
-        
-        .sidenav a:hover {
-            /* color: #CD7929; */
         }
         
         .animation_backward {
@@ -157,15 +149,6 @@
         margin-bottom: 40px;
       }
 
-      .mySwiper4 .swiper-slide img {
-        /* display: none; */
-      }
-
-      .mySwiper4 .swiper-slide.swiper-slide-active img,
-      .mySwiper4 .swiper-slide.clicked img {
-        /* display: block; */
-      }
-
       .main_slide h2,
       .main_slide p {
         text-shadow: rgb(0, 0, 0) 0px 2px 10px;
@@ -199,11 +182,9 @@
         padding: 15px 40px !important;
         cursor: pointer !important;
         text-align: center !important;
-        /* background: #e5e9ea66 !important; */
         background: #fff !important;
         width: 80px !important;
         font-size: 30px !important;
-        /* background-color: aliceblue !important; */
       }
 
       .mySwiper4 .swiper-button-next:hover::after,
@@ -505,40 +486,6 @@
         </div>
 
         <!-- Games section -->
-        <!-- <section class="games w-full mb-[60px] leading-[24px] flex flex-col px-[30px]">
-            <div class="sort_by w-full h-[68px] max-w-[1500px] leading-[24px] flex flex-wrap justify-between items-center px-[20px] pb-[20px]">
-                <h2 class="text-[40px] font-[700] grow-[100] leading-[48px]">Sort By:</h2>
-                <div class="w-[142.594px] leading-[24px] ml-[30px] grow-[1] border-b-[1px] border-solid border-[#d80388]">
-                    <select name="" class="w-full text-start leading-[28px] text-[16px] font-[700] text-[#d80388] items-center">
-                        <option value="">All Platforms</option>
-                        <option value="PC">PC</option>
-                        <option value="Xbox Series X|S">Xbox Series X|S</option>
-                        <option value="PlayStation 5">PlayStation 5</option>
-                        <option value="Xbox One">Xbox One</option>
-                        <option value="PlayStation 4">PlayStation 4</option>
-                        <option value="Xbox 360">Xbox 360</option>
-                        <option value="PlayStation 3">PlayStation 3</option>
-                        <option value="Nintendo Switch">Nintendo Switch</option>
-                        <option value="Wii">Wii</option>
-                        <option value="Android">Android</option>
-                        <option value="iOS">IOS</option>
-                        <option value="VR">Virtual Reality</option>
-                    </select>
-                </div>
-                <div>
-                    <div class="w-[142.594px] leading-[24px] ml-[30px] grow-[1] border-b-[1px] border-solid border-[#d80388]">
-                        <select name="" class="w-full text-start leading-[28px] text-[16px] font-[700] text-[#d80388] items-center">
-                            <option value="descending">New to Old</option>
-                            <option value="ascending">Old to New</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            <div class="cards w-full max-w-[1500px] flex flex-row flex-wrap justify-start leading-[24px]"></div>
-            <button id="loadMore" class="load-more-button w-[167.266px] h-[54px] font-[700] max-w-[300px] min-w-[100px] mx-[535.359px] mt-[20px] leading-[15px] tracking-[1.6px] text-center uppercase text-[15px] rounded-[30px] bg-[#d80388] border-[2px] border-solid border-[#d80388] text-white hover:bg-white hover:text-[#d80388]">load more</button>
-        </section> -->
-
-        <!-- Games section -->
         <section class="games mx-0 mb-[60px] leading-[24px] font-normal md:mx-[30px]">
             <div class="sort_by box-border leading-[24px] font-normal">
                 <div class="flex w-full justify-between max-w-[1500px] m-0 leading-[24px] md:block gap-3 font-normal flex-wrap box-border">
@@ -612,17 +559,17 @@
                     <div class="cards box-border flex flex-row flex-wrap gap-5 md:gap-14 font-normal justify-center items-center leading-[24px] mx-0 max-w-[1500px]">
                     </div>
                     <div
-          class="w-full h-full leading-[24px] lg:hidden max-lg:block relative top-0 left-0 opacity-100"
-          style="transform: matrix(1, 0, 0, 1, 0, 0)"
-        >
-          <div class="swiper mySwiper4">
-            <div class="swiper-wrapper relative inside_ubisoft_slides"></div>
-            <div class="w-full absolute bottom-[30px] left-0 right-0">
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-          </div>
-        </div>
+                        class="w-full h-full leading-[24px] lg:hidden max-lg:block relative top-0 left-0 opacity-100"
+                        style="transform: matrix(1, 0, 0, 1, 0, 0)"
+                        >
+                        <div class="swiper mySwiper4">
+                            <div class="swiper-wrapper relative inside_ubisoft_slides"></div>
+                            <div class="w-full absolute bottom-[30px] left-0 right-0">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <button id="loadMore" class="load-more-button w-[167.266px] h-[54px] font-[700] max-w-[300px] min-w-[100px] mx-[535.359px] mt-[20px] leading-[15px] tracking-[1.6px] text-center uppercase text-[15px] rounded-[30px] bg-[#d80388] border-[2px] border-solid border-[#d80388] text-white hover:bg-white hover:text-[#d80388]">load
                     more</button>
@@ -891,7 +838,6 @@
             </section>
         </footer>
         <section class="nav_container" onclick="closeNav()">
-            <!-- <div class="overlay" onclick="closeNav()"></div> -->
             <div id="mySidenav" class="sidenav">
                 <div class="flex flex-col gap-[10px]">
                     <p>Europe</p>
