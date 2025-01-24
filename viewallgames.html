@@ -970,7 +970,7 @@
                                 </div>
                                 <div class="leading-[24px] font-normal cursor-pointer">
                                     <h3 class="box-border cursor-pointer text-black text-[18px] font-[700] mt-[10px] mx-0 min-h-[56px] tracking-normal md:min-h-[56px] md:mt-[10px] md:mb-0 md:mx-0 md:leading-[28px] md:text-[22px]"
-                                        style="margin-block-start: 10px; margin-block-start: 0px;">${game.name}s</h3>
+                                        style="margin-block-start: 10px; margin-block-start: 0px;">${game.name}</h3>
                                 </div>
                                 <div class="cursor-pointer flex leading-[24px] font-normal w-full">
                                     ${game.icons.map((icon) =>
@@ -1009,15 +1009,28 @@
                 axios
             .get("games.json")
             .then((response) => {
-                    const data = response.data.games;
+                    const games = response.data.games;
                     // allGames = data;
                     const cardContainer = document.querySelector(".cards");
 
-                    cardContainer.innerHTML += data.platforms.map(platform => {
-                        return `
-                        <div class="icon flex w-[18px] h-[15px] mr-[10px] leading-[24px] flex justify-center items-center"><i class="${icon} text-[#999999] text-[14px]"></i></div>
-                        `
-                    }).join("");
+                    // cardContainer.innerHTML += data[0].platforms.join(" ");
+                    cardContainer.innerHTML += games
+                            .map(
+                                (game) =>
+                                `
+                               <div class="cursor-pointer flex leading-[24px] font-normal w-full">
+                                    ${game.icons.map((icon) =>
+                                    `<div class="icon flex w-[18px] h-[15px] mr-[10px] leading-[24px] flex justify-center items-center"><i class="${icon} text-[#999999] text-[14px]"></i></div>`).join("")}
+                                </div>
+                                <div class="cursor-pointer flex leading-[24px] font-normal w-full">
+                                    ${game.platforms}
+                                </div>
+                                `
+                            ).join("");
+
+
+
+
                     // Funksiya cardları göstərmək üçün
                 //     function showCards() {
                 //         // const cardsToShow = allGames.slice(startIndex, endIndex); // Başlanğıc və bitiş indekslərinə əsaslanaraq cardları alırıq
